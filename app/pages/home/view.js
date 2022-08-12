@@ -4,6 +4,7 @@ const Image = require("nordic/image");
 const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
+const SearchInput = require("../../components/SearchInput");
 
 function View(props) {
   const { products, i18n, translations } = props;
@@ -28,12 +29,7 @@ function View(props) {
       </Script>
       <Script src="vendor.js" />
       <Script src="home.js" />
-      <button onClick={() => setState("Hello 👋🏽")}>Pincha aquí</button>
-      <Image
-        className="demo-images__img"
-        src="demo-image.jpg"
-        alt={i18n.gettext("Mural painting")}
-      />
+      <SearchInput />
     </>
   );
 }
