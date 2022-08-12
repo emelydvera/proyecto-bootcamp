@@ -1,16 +1,20 @@
 const React = require('react');
-const ProductsCard = require('../ProductsCard/ProductsCard');
+const {useState} = React
+const Filter = require('../Filter');
+const ProductsCard = require('../ProductsCard');
 
 const ProductsList = (props) => {
 
     const { products } = props;
+    const [productsState, setProductsState] = useState(products);
 
     return (
         <>
+            <Filter products={products} setProductsState={setProductsState}/>
             <ul>
                 {
-                     products.length > 0 ?
-                     products.map(product => {
+                     productsState.length > 0 ?
+                     productsState.map(product => {
                         return (
                             <ProductsCard key={product.id} product={product} />
                         )

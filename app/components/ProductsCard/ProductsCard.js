@@ -16,7 +16,7 @@ const ProductsCard = ({ product }) => {
                     </a>
                     <figcaption>{title}</figcaption>
                 </figure>
-                <p>{price}</p>
+                <p>${price}</p>
                 <p>{title}</p>
                 <span>{address?.state_name}</span>
 

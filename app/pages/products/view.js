@@ -1,9 +1,8 @@
 const React = require("react");
-const { useState } = React;
 const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
-const ProductsList = require("../../components/ProductsList/ProductsList");
+const ProductsList = require("../../components/ProductsList");
 
 function View(props) {
   const { products, i18n, translations } = props;
@@ -12,10 +11,6 @@ function View(props) {
     i18n,
     translations,
   };
-
-  const [state, setState] = useState("");
-
-  console.log(state);
 
   return (
     <>
