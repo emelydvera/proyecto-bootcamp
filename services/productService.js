@@ -6,13 +6,11 @@ const restclient = require("nordic/restclient")({
 const normalizer = require("./transforms/normalizer");
 
 class ProductService {
-  static getProducts(sitedId, name, limit, offset) {
+  static getProducts(sitedId, q) {
     return restclient
       .get(`/sites/${sitedId}/search`, {
         params: {
-          q: name,
-          limit,
-          offset,
+          q
         },
       })
       .then((response) => normalizer(response.data.results))

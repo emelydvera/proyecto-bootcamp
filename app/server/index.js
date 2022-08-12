@@ -17,6 +17,7 @@ require("../../mocks");
  */
 const demoRoute = require("../pages/demo");
 const homeRoute = require("../pages/home");
+const productsRoute = require ("../pages/products");
 
 /**
  * Use global middlewares
@@ -35,6 +36,7 @@ router.use(polyfillsMiddleware(config.polyfillLimits));
  */
 router.use("/", homeRoute);
 router.use("/demo", demoRoute);
+router.use("/listado", productsRoute);
 
 /**
  * Expose router
