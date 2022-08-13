@@ -12,25 +12,10 @@ const SearchButton = (props) => {
 
   return (
     <>
-      {/* {value.length < 2 ? (
-        <button
-          aria-label="Boton buscar producto"
-          type="submit"
-          disabled
-          onClick={handleClick}
-        >
-          Buscar
-        </button>
-      ) : (
-        <button type="submit" onClick={handleClick}>
-          Buscar
-        </button>
-      )} */}
-
       <button
         aria-label={i18n.gettext("Boton buscar producto")}
         type="submit"
-        disabled={value.length < 2}
+        disabled={value.length < 1}
         onClick={handleClick}
       >
         {i18n.gettext("Buscar")}
