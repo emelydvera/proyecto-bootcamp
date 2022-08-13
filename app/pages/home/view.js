@@ -1,22 +1,15 @@
 const React = require("react");
-const { useState } = React;
-const Image = require("nordic/image");
 const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
 const SearchInput = require("../../components/SearchInput");
 
 function View(props) {
-  const { products, i18n, translations } = props;
+  const { i18n, translations } = props;
   const preloadedState = {
-    products,
     i18n,
     translations,
   };
-
-  const [state, setState] = useState("");
-
-  console.log(state);
 
   return (
     <>
@@ -29,7 +22,7 @@ function View(props) {
       </Script>
       <Script src="vendor.js" />
       <Script src="home.js" />
-      <SearchInput />
+      <SearchInput i18n={i18n} />
     </>
   );
 }

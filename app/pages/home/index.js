@@ -1,6 +1,6 @@
 const router = require("nordic/ragnar").router();
-const { fetchProducts, render } = require("./controller");
+const { render } = require("./controller");
 
-router.get("/", fetchProducts, render);
+router.get("/", render);
 
 module.exports = router;
