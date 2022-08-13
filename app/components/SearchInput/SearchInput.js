@@ -17,7 +17,7 @@ const SearchInput = ({ i18n }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} role={i18n.gettext("search")}>
         <label htmlFor="searchInput">{i18n.gettext("Buscar")}</label>
         <input
           aria-label={i18n.gettext("Ingrese producto a buscar")}
