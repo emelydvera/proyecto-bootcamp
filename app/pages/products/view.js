@@ -17,21 +17,18 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-          isJSON: true,
-        })};
+            isJSON: true,
+          })};
         `}
       </Script>
       <Script src="vendor.js" />
       <Script src="products.js" />
 
-      {
-        products.length > 0 ?
-
-          <ProductsList products={products} />
-          :
-          <p>No se encontraron productos</p>
-      }
-
+      {products.length > 0 ? (
+        <ProductsList products={products} i18n={i18n} />
+      ) : (
+        <p>{i18n.gettext("No se encontraron productos")}</p>
+      )}
     </>
   );
 }
