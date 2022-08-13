@@ -9,7 +9,6 @@ const SearchInput = ({ i18n }) => {
 
   const handleChange = (e) => {
     setValue(() => inputValue.current.value);
-    // setValue((value) => value);
 
     if (inputValue.current.value.length >= 2) {
       setError("");
