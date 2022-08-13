@@ -1,31 +1,32 @@
-const React = require('react');
-const {useState} = React
-const Filter = require('../Filter');
-const ProductsCard = require('../ProductsCard');
+const React = require("react");
+const { useState } = React;
+const Filter = require("../Filter");
+const ProductsCard = require("../ProductsCard");
 
 const ProductsList = (props) => {
+  const { products, i18n } = props;
+  const [productsState, setProductsState] = useState(products);
 
-    const { products } = props;
-    const [productsState, setProductsState] = useState(products);
-
-    return (
-        <>
-            <Filter products={products} setProductsState={setProductsState}/>
-            <ul>
-                {
-                     productsState.length > 0 ?
-                     productsState.map(product => {
-                        return (
-                            <ProductsCard key={product.id} product={product} />
-                        )
-
-                    })
-                    :
-                    <p>No se encontraron productos</p>
-                }
-            </ul>
-        </>
-    )
-}
+  return (
+    <>
+      <Filter
+        products={products}
+        setProductsState={setProductsState}
+        i18n={i18n}
+      />
+      <ul>
+        {productsState.length > 0 ? (
+          productsState.map((product) => {
+            return (
+              <ProductsCard key={product.id} product={product} i18n={i18n} />
+            );
+          })
+        ) : (
+          <p>{i18n.gettext("No se encontraron productos")}</p>
+        )}
+      </ul>
+    </>
+  );
+};
 
 module.exports = ProductsList;
