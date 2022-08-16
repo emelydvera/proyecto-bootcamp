@@ -1,11 +1,13 @@
 const React = require("react");
 const SearchButton = require("../SearchButton");
-const { useState } = React;
+const { useState, useRef } = React;
 
 const SearchInput = ({ i18n }) => {
   const [value, setValue] = useState("");
+  const isMounted = useRef(false);
 
   const handleChange = (e) => {
+    isMounted.current = true;
     setValue(() => e.target.value);
   };
 
@@ -29,11 +31,21 @@ const SearchInput = ({ i18n }) => {
           onChange={handleChange}
           required
         />
-        <SearchButton value={value} i18n={i18n} setValue={setValue} />
+        <SearchButton
+          isActive={value.length < 2}
+          i18n={i18n}
+          setValue={setValue}
+        />
       </form>
-      <p>
-        {i18n.gettext(value.length >= 2 ? "" : "Escriba al menos 2 carácteres")}
-      </p>
+      {!isMounted.current ? (
+        ""
+      ) : value.length >= 2 ? (
+        ""
+      ) : (
+        <p aria-label={i18n.gettext("Escriba al menos 2 carácteres")}>
+          {i18n.gettext("Escriba al menos 2 carácteres")}
+        </p>
+      )}
     </>
   );
 };

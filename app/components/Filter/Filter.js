@@ -39,11 +39,13 @@ const Filter = ({ products, setProductsState, i18n }) => {
           type="number"
           placeholder={i18n.gettext("mínimo")}
           aria-label={i18n.gettext("Escriba el precio minimo")}
+          min="0"
         />
         <input
           type="number"
           placeholder={i18n.gettext("máximo")}
           aria-label={i18n.gettext("Escriba el precio maximo")}
+          min="0"
         />
         <input type="submit" value={i18n.gettext("Filtrar")} />
       </form>

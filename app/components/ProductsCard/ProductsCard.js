@@ -6,16 +6,18 @@ const ProductsCard = ({ product, i18n }) => {
 
   return (
     <>
-      <li key={id}>
+      <li key={id} role={i18n.gettext("presentation")}>
         <figure>
           <a href={`/product/${id}`}>
             <Image src={thumbnail} alt={i18n.gettext("producto")} />
           </a>
           <figcaption>{i18n.gettext(title)}</figcaption>
         </figure>
-        <p>${price}</p>
-        <p>{i18n.gettext(title)}</p>
-        <span>
+        <p aria-label={i18n.gettext("precio del producto")}>${price}</p>
+        <p aria-label={i18n.gettext("título del producto")}>
+          {i18n.gettext(title)}
+        </p>
+        <span aria-label={i18n.gettext("ubicación del producto")}>
           {i18n.gettext(
             address ? (address.state_name ? address.state_name : "") : ""
           )}
