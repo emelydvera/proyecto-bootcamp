@@ -2,13 +2,14 @@ const React = require("react");
 const Image = require("nordic/image");
 
 const ProductsCard = ({ product, i18n }) => {
-  const { id, title, price, address, thumbnail } = product;
+  const { id, title, price, address, thumbnail, installments } = product;
+  const { quantity, amount } = installments;
 
   return (
     <>
       <li key={id} role={i18n.gettext("presentation")}>
         <figure>
-          <a href={`/product/${id}`}>
+          <a href={`/product/${id}?quantity=${quantity}&amount=${amount}`}>
             <Image src={thumbnail} alt={i18n.gettext("producto")} />
           </a>
           <figcaption>{i18n.gettext(title)}</figcaption>
