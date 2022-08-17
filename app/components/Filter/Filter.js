@@ -58,8 +58,6 @@ const Filter = ({ products, setProductsState, i18n }) => {
   );
 };
 
-module.exports = Filter;
-
 ProductsList.proptypes = {
   products: PropTypes.arrayOf(PropTypes.object).isRequired,
   setProducts: PropTypes.func.isRequired,
@@ -67,3 +65,5 @@ ProductsList.proptypes = {
       gettext: PropTypes.func.isRequired,
     }).isRequired,
 }
+
+module.exports = Filter;

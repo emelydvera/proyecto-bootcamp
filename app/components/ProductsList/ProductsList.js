@@ -35,11 +35,12 @@ const ProductsList = (props) => {
   );
 };
 
-module.exports = ProductsList;
-
 ProductsList.proptypes = {
   products: PropTypes.arrayOf(PropTypes.object).isRequired,
   i18n: PropTypes.shape({
       gettext: PropTypes.func.isRequired,
     }).isRequired,
 }
+
+module.exports = ProductsList;
+
