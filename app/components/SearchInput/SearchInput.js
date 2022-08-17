@@ -30,6 +30,7 @@ const SearchInput = ({ i18n }) => {
           value={value}
           onChange={handleChange}
           required
+          tabIndex="11"
         />
         <SearchButton
           isActive={value.length < 2}
@@ -42,7 +43,10 @@ const SearchInput = ({ i18n }) => {
       ) : value.length >= 2 ? (
         ""
       ) : (
-        <p aria-label={i18n.gettext("Escriba al menos 2 carácteres")}>
+        <p
+          aria-label={i18n.gettext("Escriba al menos 2 carácteres")}
+          tabIndex="12"
+        >
           {i18n.gettext("Escriba al menos 2 carácteres")}
         </p>
       )}
