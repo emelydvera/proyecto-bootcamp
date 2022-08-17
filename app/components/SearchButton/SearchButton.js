@@ -1,4 +1,5 @@
 const React = require("react");
+const PropTypes = require('prop-types')
 
 const SearchButton = (props) => {
   const { isActive, i18n } = props;
@@ -15,5 +16,13 @@ const SearchButton = (props) => {
     </>
   );
 };
+
+SearchButton.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  i18n: PropTypes.shape({
+    gettext: PropTypes.func.isRequired
+  }).isRequired
+
+}
 
 module.exports = SearchButton;
