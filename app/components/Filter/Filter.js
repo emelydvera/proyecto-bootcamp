@@ -1,5 +1,6 @@
 const React = require("react");
 const { useState } = React;
+const PropTypes = require('prop-types');
 
 const Filter = ({ products, setProductsState, i18n }) => {
   const [error, setError] = useState("");
@@ -34,24 +35,35 @@ const Filter = ({ products, setProductsState, i18n }) => {
 
   return (
     <>
+      <p>Precio</p>
       <form onSubmit={handleFilterProducts}>
         <input
           type="number"
           placeholder={i18n.gettext("mínimo")}
-          aria-label={i18n.gettext("Escriba el precio minimo")}
+          aria-label={i18n.gettext("Escriba el precio")}
           min="0"
+          tabIndex="10"
         />
         <input
           type="number"
           placeholder={i18n.gettext("máximo")}
-          aria-label={i18n.gettext("Escriba el precio maximo")}
+          aria-label={i18n.gettext("Escriba el precio")}
           min="0"
+          tabIndex="11"
         />
-        <input type="submit" value={i18n.gettext("Filtrar")} />
+        <input type="submit" value={i18n.gettext("Filtrar")} tabIndex="12" />
       </form>
       <p>{error}</p>
     </>
   );
 };
+
+Filter.propTypes = {
+  products: PropTypes.arrayOf(PropTypes.object).isRequired,
+  setProducts: PropTypes.func,
+  i18n: PropTypes.shape({
+      gettext: PropTypes.func.isRequired,
+    }).isRequired,
+}
 
 module.exports = Filter;

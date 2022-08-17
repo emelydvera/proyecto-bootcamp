@@ -1,4 +1,5 @@
 const React = require("react");
+const PropTypes = require('prop-types');
 const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
@@ -32,5 +33,13 @@ function View(props) {
     </>
   );
 }
+
+View.propTypes = {
+  i18n: PropTypes.shape({
+    gettext: PropTypes.func.isRequired,
+  }).isRequired,
+  translations: PropTypes.shape({}),
+  products: PropTypes.array
+};
 
 module.exports = injectI18n(View);
