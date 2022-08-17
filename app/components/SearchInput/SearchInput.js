@@ -1,5 +1,8 @@
 const React = require("react");
+const PropTypes = require("prop-types");
+
 const SearchButton = require("../SearchButton");
+
 const { useState, useRef } = React;
 
 const SearchInput = ({ i18n }) => {
@@ -53,5 +56,11 @@ const SearchInput = ({ i18n }) => {
     </>
   );
 };
+
+SearchInput.propTypes = {
+  i18n: PropTypes.shape({
+    gettext: PropTypes.func.isRequired
+  }).isRequired
+}
 
 module.exports = SearchInput;
