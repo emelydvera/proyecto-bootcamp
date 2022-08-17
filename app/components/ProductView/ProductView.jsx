@@ -1,5 +1,6 @@
 const React = require("react");
 const Image = require("nordic/image");
+const PropTypes = require("prop-types");
 
 const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const { thumbnail, title, price, sold_quantity, condition, shipping } =
@@ -34,9 +35,26 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
       <p aria-label="descripcion producto">
         {i18n.gettext(`descripcion: ${description.plain_text}`)}
       </p>
-      <button aria-label="comprar producto">Comprar</button>
+      <button aria-label={i18n.gettext("comprar producto")}>
+        {i18n.gettext("Comprar")}
+      </button>
     </>
   );
+};
+
+ProductView.propTypes = {
+  i18n: PropTypes.shape({
+    gettext: PropTypes.func.isRequired,
+  }).isRequired,
+  product: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    thumbnail: PropTypes.string.isRequired,
+    installments: PropTypes.shape({}),
+    shipping: PropTypes.shape({}),
+    description: PropTypes.shape({}),
+  }).isRequired,
+  index: PropTypes.number,
 };
 
 module.exports = ProductView;

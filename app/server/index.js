@@ -41,6 +41,7 @@ router.use("/demo", demoRoute);
 router.use("/listado", productsRoute);
 router.use("/product", product);
 router.use("/error404", error404);
+router.use("/*", error404);
 
 /**
  * Expose router

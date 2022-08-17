@@ -7,10 +7,10 @@ const View = require("./view");
 exports.render = (req, res) => {
   const imagesPrefix = config.assets.prefix;
 
-  const Error404 = () => (
+  const Error404 = (props) => (
     <I18nProvider i18n={req.i18n}>
       <ImageProvider prefix={imagesPrefix}>
-        <View />
+        <View {...props} />
       </ImageProvider>
     </I18nProvider>
   );

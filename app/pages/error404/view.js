@@ -7,14 +7,12 @@ const Component404 = require("../../components/Component404");
 function View(props) {
   const { i18n, translations, imagesPrefix } = props;
   const preloadedState = {
-    i18n,
     translations,
     imagesPrefix,
   };
 
   return (
     <>
-      <Component404 />
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
@@ -24,6 +22,8 @@ function View(props) {
       </Script>
       <Script src="vendor.js" />
       <Script src="error404.js" />
+
+      <Component404 i18n={i18n} />
     </>
   );
 }

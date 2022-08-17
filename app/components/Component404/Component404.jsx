@@ -1,5 +1,5 @@
-const { i18nMiddleware } = require("nordic/i18n");
 const React = require("react");
+const PropTypes = require("prop-types");
 
 const Component404 = ({ i18n }) => {
   return (
@@ -14,6 +14,12 @@ const Component404 = ({ i18n }) => {
       </a>
     </>
   );
+};
+
+Component404.propTypes = {
+  i18n: PropTypes.shape({
+    gettext: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 module.exports = Component404;
