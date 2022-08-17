@@ -58,7 +58,7 @@ const Filter = ({ products, setProductsState, i18n }) => {
   );
 };
 
-ProductsList.proptypes = {
+Filter.propTypes = {
   products: PropTypes.arrayOf(PropTypes.object).isRequired,
   setProducts: PropTypes.func,
   i18n: PropTypes.shape({
