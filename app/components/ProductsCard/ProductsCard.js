@@ -48,7 +48,7 @@ ProductsCard.propTypes = {
     id: PropTypes.string.isRequired, 
     title: PropTypes.string.isRequired, 
     price: PropTypes.number.isRequired, 
-    address: PropTypes.string.isRequired, 
+    address: PropTypes.shape({}).isRequired,
     thumbnail: PropTypes.string.isRequired, 
     installments: PropTypes.shape({})
   }).isRequired,

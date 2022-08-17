@@ -60,7 +60,7 @@ const Filter = ({ products, setProductsState, i18n }) => {
 
 ProductsList.proptypes = {
   products: PropTypes.arrayOf(PropTypes.object).isRequired,
-  setProducts: PropTypes.func.isRequired,
+  setProducts: PropTypes.func,
   i18n: PropTypes.shape({
       gettext: PropTypes.func.isRequired,
     }).isRequired,
