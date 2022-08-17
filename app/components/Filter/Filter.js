@@ -1,5 +1,6 @@
 const React = require("react");
 const { useState } = React;
+const PropTypes = require('prop-types');
 
 const Filter = ({ products, setProductsState, i18n }) => {
   const [error, setError] = useState("");
@@ -55,3 +56,11 @@ const Filter = ({ products, setProductsState, i18n }) => {
 };
 
 module.exports = Filter;
+
+ProductsList.proptypes = {
+  products: PropTypes.arrayOf(PropTypes.object).isRequired,
+  setProducts: PropTypes.func.isRequired,
+  i18n: PropTypes.shape({
+      gettext: PropTypes.func.isRequired,
+    }).isRequired,
+}
