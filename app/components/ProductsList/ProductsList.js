@@ -17,9 +17,14 @@ const ProductsList = (props) => {
       />
       <ul>
         {productsState.length > 0 ? (
-          productsState.map((product) => {
+          productsState.map((product, index) => {
             return (
-              <ProductsCard key={product.id} product={product} i18n={i18n} />
+              <ProductsCard
+                key={product.id}
+                index={index}
+                product={product}
+                i18n={i18n}
+              />
             );
           })
         ) : (
