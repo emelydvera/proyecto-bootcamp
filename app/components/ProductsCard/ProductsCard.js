@@ -9,7 +9,9 @@ const ProductsCard = ({ product, i18n, index }) => {
     <>
       <li key={id} role="presentation">
         <figure>
-          <a href={`/producto/${id}`}>
+          <a
+            href={`/product/${id}?quantity=${installments?.quantity}&amount=${installments?.amount}`}
+          >
             <Image
               src={thumbnail}
               alt={i18n.gettext("imagen del producto")}

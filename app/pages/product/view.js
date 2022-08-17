@@ -11,6 +11,8 @@ function View(props) {
     i18n,
     translations,
     description,
+    quantity,
+    amount,
   };
 
   return (
