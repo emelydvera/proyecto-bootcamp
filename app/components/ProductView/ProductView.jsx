@@ -28,7 +28,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           : ""
       }`)}
       </p>
-      <p>{i18n.gettext(`cuotas: ${quantity} de ${amount} cada cuota`)}</p>
+      <p>{quantity != 'undefined' ? i18n.gettext(`cuotas: ${quantity} de ${amount} cada cuota`) : ''}</p>
       <p aria-label="unidades vendidas">
         {i18n.gettext(`unidades vendidas: ${sold_quantity}`)}
       </p>

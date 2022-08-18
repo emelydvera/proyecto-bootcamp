@@ -18,7 +18,6 @@ const ProductsCard = ({ product, i18n, index }) => {
               tabIndex={`${index + 1}4`}
             />
           </a>
-          <figcaption>{i18n.gettext(title)}</figcaption>
         </figure>
         <p
           aria-label={i18n.gettext(`precio del producto: $${price}`)}
