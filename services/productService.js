@@ -6,14 +6,15 @@ const restclient = require("nordic/restclient")({
 const normalizer = require("./transforms/normalizer");
 
 class ProductService {
-  static getProducts(sitedId, q) {
+  static getProducts(sitedId, params) {
     return restclient
       .get(`/sites/${sitedId}/search`, {
-        params: {
-          q,
-        },
+        params,
       })
-      .then((response) => normalizer(response.data.results))
+      .then((response) => ({
+        results: normalizer(response.data.results),
+        available_filters: response.data.available_filters,
+      }))
       .catch((error) => {
         console.error(error);
         return [];

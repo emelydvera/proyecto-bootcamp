@@ -6,12 +6,12 @@ const ImageProvider = require("nordic/image/provider");
 const View = require("./view");
 
 exports.fetchProducts = (req, res, next) => {
-  const { q } = req.query;
   const { siteId } = req.platform;
 
-  ProductService.getProducts(siteId, q)
+  ProductService.getProducts(siteId, req.query)
     .then((response) => {
-      res.locals.products = response;
+      res.locals.products = response.results;
+      res.locals.available_filters = response.available_filters
       next();
     })
     .catch((error) => {
@@ -34,8 +34,10 @@ exports.render = (req, res) => {
     ProductsView,
     {
       products: res.locals.products,
+      available_filters: res.locals.available_filters,
       imagesPrefix,
       translations: req.translations,
+      query: req.query
     },
     {
       navigationOptions: {

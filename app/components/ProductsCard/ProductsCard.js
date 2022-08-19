@@ -8,16 +8,27 @@ const ProductsCard = ({ product, i18n, index }) => {
   return (
     <>
       <li key={id} role="presentation">
-        <figure>
-          <a
-            href={`/product/${id}?quantity=${installments?.quantity}&amount=${installments?.amount}`}
-          >
-            <Image
-              src={thumbnail}
-              alt={i18n.gettext("imagen del producto")}
-              tabIndex={`${index + 1}4`}
-            />
-          </a>
+      <figure>
+          {!installments?.quantity || !installments?.amount ? (
+            <a href={`/product/${id}`}>
+              <Image
+                src={thumbnail}
+                alt={i18n.gettext("imagen del producto")}
+                tabIndex={`${index + 1}4`}
+              />
+            </a>
+          ) : (
+            <a
+              href={`/product/${id}?quantity=${installments.quantity}&amount=${installments.amount}`}
+            >
+              <Image
+                src={thumbnail}
+                alt={i18n.gettext("imagen del producto")}
+                tabIndex={`${index + 1}4`}
+              />
+            </a>
+          )}
+          <figcaption>{i18n.gettext(title)}</figcaption>
         </figure>
         <p
           aria-label={i18n.gettext(`precio del producto: $${price}`)}

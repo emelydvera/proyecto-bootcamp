@@ -1,66 +1,29 @@
 const React = require("react");
 const { useState } = React;
 const PropTypes = require('prop-types');
+const FilterService = require('../../../services/FilterService');
+const FilterItem = require("../FilterItem");
 
-const Filter = ({ products, setProductsState, i18n }) => {
-  const [error, setError] = useState("");
+const Filter = ({ query, available_filters }) => {
+  const filterService = new FilterService(query);
 
-  const handleFilterProducts = (e) => {
-    e.preventDefault();
-    const [min, max] = e.target;
-
-    if (!min.value && !max.value) {
-      setError(() => "Diligencie alguno de los campos");
-    } else if (min.value && max.value) {
-      setError(() => "");
-      setProductsState(() =>
-        products.filter(
-          (p) =>
-            p.price >= parseInt(min.value) && p.price <= parseInt(max.value)
-        )
-      );
-    } else if (min.value && !max.value) {
-      console.log(min.value);
-      setError(() => "");
-      setProductsState(() =>
-        products.filter((p) => p.price >= parseInt(min.value))
-      );
-    } else if (max.value && !min.value) {
-      setError(() => "");
-      setProductsState(() =>
-        products.filter((p) => p.price <= parseInt(max.value))
-      );
-    }
-  };
+  const handleNewUrl = (e) => {
+    window.location.href = `listado${filterService.getNewUrl()}`;
+  }
 
   return (
-    <>
-      <p>Precio</p>
-      <form onSubmit={handleFilterProducts}>
-        <input
-          type="number"
-          placeholder={i18n.gettext("mínimo")}
-          aria-label={i18n.gettext("Escriba el precio")}
-          min="0"
-          tabIndex="10"
-        />
-        <input
-          type="number"
-          placeholder={i18n.gettext("máximo")}
-          aria-label={i18n.gettext("Escriba el precio")}
-          min="0"
-          tabIndex="11"
-        />
-        <input type="submit" value={i18n.gettext("Filtrar")} tabIndex="12" />
-      </form>
-      <p>{error}</p>
-    </>
+    <aside>
+      <button onClick={handleNewUrl} >Filtrar</button>
+      {
+        available_filters.map( (filter, index) => (
+          <FilterItem filter={filter} key={index} filterService={filterService}/>
+        ))
+      }
+    </aside>
   );
 };
 
 Filter.propTypes = {
-  products: PropTypes.arrayOf(PropTypes.object).isRequired,
-  setProducts: PropTypes.func,
   i18n: PropTypes.shape({
       gettext: PropTypes.func.isRequired,
     }).isRequired,
