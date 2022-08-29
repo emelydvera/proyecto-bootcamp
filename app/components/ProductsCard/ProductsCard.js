@@ -5,6 +5,8 @@ const Image = require("nordic/image");
 const ProductsCard = ({ product, i18n, index }) => {
   const { id, title, price, address, thumbnail, installments } = product;
 
+  const hrefGenerator = () => {};
+
   return (
     <>
       <li key={id} role="presentation">
@@ -18,6 +20,7 @@ const ProductsCard = ({ product, i18n, index }) => {
               tabIndex={`${index + 1}4`}
             />
           </a>
+          {/* <figcaption>{i18n.gettext(title)}</figcaption> */}
         </figure>
         <p
           aria-label={i18n.gettext(`precio del producto: $${price}`)}
