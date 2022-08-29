@@ -13,6 +13,7 @@ class ProductService {
       })
       .then((response) => ({
         results: normalizer(response.data.results),
+        filters: response.data.filters,
         available_filters: response.data.available_filters,
       }))
       .catch((error) => {

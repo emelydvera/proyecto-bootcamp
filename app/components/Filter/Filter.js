@@ -1,19 +1,27 @@
 const React = require("react");
 const { useState } = React;
 const PropTypes = require('prop-types');
-const FilterService = require('../../../services/FilterService');
+const FilterService = require('../../utils/FilterService');
 const FilterItem = require("../FilterItem");
 
-const Filter = ({ query, available_filters }) => {
-  const filterService = new FilterService(query);
+const Filter = ({ baseUrl, query, filters, available_filters }) => {
 
-  const handleNewUrl = (e) => {
-    window.location.href = `listado${filterService.getNewUrl()}`;
-  }
+  const filterService = new FilterService(baseUrl, query, filters);
 
   return (
     <aside>
-      <button onClick={handleNewUrl} >Filtrar</button>
+      <ul>
+        {
+          filters.map(filter => (
+              <li
+                key={filter.id} 
+                onClick={() => filterService.removeFilter(filter.id)} 
+              >{filter.name}: {filter.values[0].name}</li>
+            )
+          )
+        }
+      </ul>
+
       {
         available_filters.map( (filter, index) => (
           <FilterItem filter={filter} key={index} filterService={filterService}/>

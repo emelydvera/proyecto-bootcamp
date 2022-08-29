@@ -9,12 +9,14 @@ const ProductsList = require("../../components/ProductsList");
 const Filter = require('../../components/Filter');
 
 function View(props) {
-  const { products, i18n, translations, query, available_filters } = props;
+  const { products, i18n, translations, baseUrl, query, filters, available_filters } = props;
   const preloadedState = {
     products,
     i18n,
     translations,
+    baseUrl,
     query,
+    filters,
     available_filters
   };
 
@@ -35,7 +37,9 @@ function View(props) {
         <>
           <Filter
             i18n={i18n}
+            baseUrl={baseUrl}
             query={query}
+            filters={filters}
             available_filters={available_filters}
           />
           <ProductsList 

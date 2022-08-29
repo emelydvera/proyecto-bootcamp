@@ -29,7 +29,7 @@ function View(props) {
   );
 }
 
-View.PropTypes = {
+View.propTypes = {
   i18n: PropTypes.shape({
     gettext: PropTypes.func.isRequired,
   }).isRequired,

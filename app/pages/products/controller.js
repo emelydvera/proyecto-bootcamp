@@ -11,7 +11,8 @@ exports.fetchProducts = (req, res, next) => {
   ProductService.getProducts(siteId, req.query)
     .then((response) => {
       res.locals.products = response.results;
-      res.locals.available_filters = response.available_filters
+      res.locals.filters = response.filters;
+      res.locals.available_filters = response.available_filters;
       next();
     })
     .catch((error) => {
@@ -34,9 +35,11 @@ exports.render = (req, res) => {
     ProductsView,
     {
       products: res.locals.products,
-      available_filters: res.locals.available_filters,
       imagesPrefix,
       translations: req.translations,
+      filters: res.locals.filters,
+      available_filters: res.locals.available_filters,
+      baseUrl: req.baseUrl,
       query: req.query
     },
     {
