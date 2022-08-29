@@ -15,7 +15,6 @@ require("../../mocks");
 /**
  * Routers
  */
-const demoRoute = require("../pages/demo");
 const homeRoute = require("../pages/home");
 const productsRoute = require("../pages/products");
 const product = require("../pages/product");
@@ -37,7 +36,6 @@ router.use(polyfillsMiddleware(config.polyfillLimits));
  * Mount routers
  */
 router.use("/", homeRoute);
-router.use("/demo", demoRoute);
 router.use("/listado", productsRoute);
 router.use("/product", product);
 router.use("/error404", error404);
