@@ -14,7 +14,6 @@ exports.fetchProducts = (req, res, next) => {
       next();
     })
     .catch((error) => {
-      console.log(error);
       res.redirect("/error404");
     });
 };
@@ -27,7 +26,6 @@ exports.productDescription = (req, res, next) => {
       next();
     })
     .catch((error) => {
-      console.log(error);
       res.redirect("/error404");
     });
 };
