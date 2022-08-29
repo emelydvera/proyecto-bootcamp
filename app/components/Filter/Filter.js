@@ -20,7 +20,6 @@ const Filter = ({ products, setProductsState, i18n }) => {
         )
       );
     } else if (min.value && !max.value) {
-      console.log(min.value);
       setError(() => "");
       setProductsState(() =>
         products.filter((p) => p.price >= parseInt(min.value))
@@ -64,6 +63,7 @@ Filter.propTypes = {
   i18n: PropTypes.shape({
       gettext: PropTypes.func.isRequired,
     }).isRequired,
+    setProductsState: PropTypes.func.isRequired
 }
 
 module.exports = Filter;

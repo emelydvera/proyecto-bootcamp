@@ -5,6 +5,10 @@ const Image = require("nordic/image");
 const ProductsCard = ({ product, i18n, index }) => {
   const { id, title, price, address, thumbnail, installments } = product;
 
+  const hrefGenerator = () => {
+    
+  }
+
   return (
     <>
       <li key={id} role="presentation">
