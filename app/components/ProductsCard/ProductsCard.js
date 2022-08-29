@@ -5,14 +5,16 @@ const Image = require("nordic/image");
 const ProductsCard = ({ product, i18n, index }) => {
   const { id, title, price, address, thumbnail, installments } = product;
 
-  const hrefGenerator = () => {};
-
   return (
     <>
       <li key={id} role="presentation">
         <figure>
           <a
-            href={`/product/${id}?quantity=${installments?.quantity}&amount=${installments?.amount}`}
+            href={
+              !installments?.quantity || !installments?.amount
+                ? `/product/${id}`
+                : `/product/${id}?quantity=${installments.quantity}&amount=${installments.amount}`
+            }
           >
             <Image
               src={thumbnail}
@@ -20,7 +22,7 @@ const ProductsCard = ({ product, i18n, index }) => {
               tabIndex={`${index + 1}4`}
             />
           </a>
-          {/* <figcaption>{i18n.gettext(title)}</figcaption> */}
+          <figcaption>{i18n.gettext(title)}</figcaption>
         </figure>
         <p
           aria-label={i18n.gettext(`precio del producto: $${price}`)}
@@ -52,9 +54,14 @@ ProductsCard.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    address: PropTypes.shape({}).isRequired,
+    address: PropTypes.shape({
+      state_name: PropTypes.string.isRequired,
+    }).isRequired,
     thumbnail: PropTypes.string.isRequired,
-    installments: PropTypes.shape({}),
+    installments: PropTypes.shape({
+      quantity: PropTypes.number,
+      amount: PropTypes.number,
+    }),
   }).isRequired,
   index: PropTypes.number,
 };
