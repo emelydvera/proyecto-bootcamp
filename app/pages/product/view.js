@@ -3,6 +3,7 @@ const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
 const ProductView = require("../../components/ProductView");
+const PropTypes = require('prop-types');
 
 function View(props) {
   const { product, i18n, translations, description, quantity, amount } = props;
@@ -26,7 +27,6 @@ function View(props) {
       </Script>
       <Script src="vendor.js" />
       <Script src="product.js" />
-
       <ProductView
         product={product}
         description={description}
@@ -36,6 +36,17 @@ function View(props) {
       />
     </>
   );
+}
+
+View.propTypes = {
+  i18n: PropTypes.shape({
+    gettext: PropTypes.func.isRequired,
+  }).isRequired,
+  translations: PropTypes.shape({}),
+  product: PropTypes.shape({}).isRequired,
+  description: PropTypes.shape({}).isRequired,
+  quantity: PropTypes.string,
+  amount: PropTypes.string
 }
 
 module.exports = injectI18n(View);

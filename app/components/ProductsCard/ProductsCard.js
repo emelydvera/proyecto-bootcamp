@@ -8,26 +8,20 @@ const ProductsCard = ({ product, i18n, index }) => {
   return (
     <>
       <li key={id} role="presentation">
-      <figure>
-          {!installments?.quantity || !installments?.amount ? (
-            <a href={`/product/${id}`}>
-              <Image
-                src={thumbnail}
-                alt={i18n.gettext("imagen del producto")}
-                tabIndex={`${index + 1}4`}
-              />
-            </a>
-          ) : (
-            <a
-              href={`/product/${id}?quantity=${installments.quantity}&amount=${installments.amount}`}
-            >
-              <Image
-                src={thumbnail}
-                alt={i18n.gettext("imagen del producto")}
-                tabIndex={`${index + 1}4`}
-              />
-            </a>
-          )}
+        <figure>
+          <a
+            href={
+              !installments?.quantity || !installments?.amount
+                ? `/product/${id}`
+                : `/product/${id}?quantity=${installments.quantity}&amount=${installments.amount}`
+            }
+          >
+            <Image
+              src={thumbnail}
+              alt={i18n.gettext("imagen del producto")}
+              tabIndex={`${index + 1}4`}
+            />
+          </a>
           <figcaption>{i18n.gettext(title)}</figcaption>
         </figure>
         <p
@@ -60,9 +54,14 @@ ProductsCard.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    address: PropTypes.shape({}).isRequired,
+    address: PropTypes.shape({
+      state_name: PropTypes.string.isRequired,
+    }).isRequired,
     thumbnail: PropTypes.string.isRequired,
-    installments: PropTypes.shape({}),
+    installments: PropTypes.shape({
+      quantity: PropTypes.number,
+      amount: PropTypes.number,
+    }),
   }).isRequired,
   index: PropTypes.number,
 };
