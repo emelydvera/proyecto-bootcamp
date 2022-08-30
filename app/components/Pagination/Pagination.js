@@ -1,10 +1,10 @@
 const React = require('react');
 const { useState, useEffect } = React;
+const PropTypes = require('prop-types')
 const restclient = require("nordic/restclient")({
     timeout: 5000,
     baseURL: "/api",
 });
-
 
 const Pagination = ({ totalProducts, urlGenerator, setData, productsInitial, i18n }) => {
 
@@ -55,6 +55,16 @@ const Pagination = ({ totalProducts, urlGenerator, setData, productsInitial, i18
 
         </>
     )
+}
+
+Pagination.propTypes = {
+    totalProducts: PropTypes.number.isRequired,
+    urlGenerator: PropTypes.object.isRequired,
+    setData: PropTypes.func.isRequired,
+    productsInitial: PropTypes.arrayOf(PropTypes.object).isRequired,
+    i18n: PropTypes.shape({
+        gettext: PropTypes.func.isRequired,
+    }).isRequired,
 }
 
 module.exports = Pagination;
