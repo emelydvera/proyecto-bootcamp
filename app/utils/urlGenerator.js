@@ -30,20 +30,6 @@ class UrlGenerator {
   getQueries() {
     return this.query
   }
-  // nextPage({totalProducts) {
-  //   if (totalProducts / this.query.offset > 1) {
-  //     this.query.offset += this.query.limit;
-  //     window.location.href = this.getNewUrl()
-  //   }
-  // }
-
-  // previousPage() {
-  //   if (this.query.offset > 0) {
-  //     this.query.offset -= this.query.limit;
-  //     window.location.href = this.getNewUrl()
-  //   }
-  // }
-
 
 }
 

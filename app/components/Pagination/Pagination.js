@@ -19,7 +19,9 @@ const Pagination = ({
   const [limit, setLimit] = useState(10);
 
   useEffect(() => {
-    if (offset > 0) {
+    if (offset === 0) {
+      setData(productsInitial);
+    } else {
       restclient
         .get("/getProducts", {
           params: {
@@ -28,7 +30,9 @@ const Pagination = ({
             offset,
           },
         })
-        .then((res) => setData(res.data.results))
+        .then((res) => {
+          setData(res.data.results);
+        })
         .catch((err) => setData([]));
     }
   }, [offset]);
