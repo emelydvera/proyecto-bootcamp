@@ -1,15 +1,14 @@
 const React = require("react");
 const ProductsCard = require("../ProductsCard");
-const PropTypes = require('prop-types');
+const PropTypes = require("prop-types");
 const Pagination = require("../Pagination/Pagination");
 
 const ProductsList = (props) => {
   const { products, i18n } = props;
 
   return (
-    <section>
+    <section className="list">
       {products.length > 0 ? (
-
         products.map((product, index) => {
           return (
             <ProductsCard
@@ -32,7 +31,6 @@ ProductsList.proptypes = {
   i18n: PropTypes.shape({
     gettext: PropTypes.func.isRequired,
   }).isRequired,
-}
+};
 
 module.exports = ProductsList;
-

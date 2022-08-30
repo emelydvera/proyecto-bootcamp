@@ -21,46 +21,56 @@ const SearchInput = ({ i18n }) => {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit} role={i18n.gettext("search")}>
-        <label htmlFor="searchInput">{i18n.gettext("Buscar")}</label>
-        <input
-          aria-label={i18n.gettext("Ingrese producto a buscar")}
-          id="searchInput"
-          type="text"
-          minLength="2"
-          placeholder={i18n.gettext("Ingresa tu busqueda...")}
-          value={value}
-          onChange={handleChange}
-          required
-          tabIndex="11"
-        />
-        <SearchButton
-          isActive={value.length < 2}
-          i18n={i18n}
-          setValue={setValue}
-        />
+    <div className="search">
+      <form
+        className="search__form"
+        onSubmit={handleSubmit}
+        role={i18n.gettext("search")}
+      >
+        <label className="search__label" htmlFor="searchInput">
+          {i18n.gettext("Buscar")}
+        </label>
+        <div className="search__container">
+          <input
+            className="search__input"
+            aria-label={i18n.gettext("Ingrese producto a buscar")}
+            id="searchInput"
+            type="text"
+            minLength="2"
+            placeholder={i18n.gettext("Ingresa tu busqueda...")}
+            value={value}
+            onChange={handleChange}
+            required
+            tabIndex="11"
+          />
+          <SearchButton
+            isActive={value.length < 2}
+            i18n={i18n}
+            setValue={setValue}
+          />
+        </div>
+        {!isMounted.current ? (
+          <p className="search__alert"> </p>
+        ) : value.length >= 2 ? (
+          <p className="search__alert"> </p>
+        ) : (
+          <p
+            className="search__alert"
+            aria-label={i18n.gettext("Escriba al menos 2 carácteres")}
+            tabIndex="12"
+          >
+            {i18n.gettext("* Escriba al menos 2 carácteres")}
+          </p>
+        )}
       </form>
-      {!isMounted.current ? (
-        ""
-      ) : value.length >= 2 ? (
-        ""
-      ) : (
-        <p
-          aria-label={i18n.gettext("Escriba al menos 2 carácteres")}
-          tabIndex="12"
-        >
-          {i18n.gettext("Escriba al menos 2 carácteres")}
-        </p>
-      )}
-    </>
+    </div>
   );
 };
 
 SearchInput.propTypes = {
   i18n: PropTypes.shape({
-    gettext: PropTypes.func.isRequired
-  }).isRequired
-}
+    gettext: PropTypes.func.isRequired,
+  }).isRequired,
+};
 
 module.exports = SearchInput;
