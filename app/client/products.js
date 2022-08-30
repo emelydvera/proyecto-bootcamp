@@ -7,14 +7,14 @@ const I18nProvider = require("nordic/i18n/I18nProvider");
 const ImageProvider = require("nordic/image/provider");
 const ProductsView = require("../pages/products/view");
 
-const { products, translations, imagesPrefix, baseUrl, query, filters, available_filters } = window.__PRELOADED_STATE__;
+const { products, translations, imagesPrefix, baseUrl, query, filters, available_filters, totalProducts } = window.__PRELOADED_STATE__;
 
 const i18n = new I18n({ translations });
 
 hydrate(
   <I18nProvider i18n={i18n}>
     <ImageProvider prefix={imagesPrefix}>
-      <ProductsView products={products} baseUrl={baseUrl} query={query} filters={filters} available_filters={available_filters}/>
+      <ProductsView products={products} baseUrl={baseUrl} query={query} filters={filters} available_filters={available_filters} totalProducts={totalProducts} />
     </ImageProvider>
   </I18nProvider>,
   document.getElementById("root-app")

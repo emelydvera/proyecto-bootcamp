@@ -2,7 +2,7 @@ const React = require('react');
 const { useState } = React;
 
 function FilterItem(props) {
-  const { filter, filterService} = props;
+  const { filter, urlGenerator} = props;
   const [show, setShow] = useState(false)
 
   return (
@@ -12,7 +12,7 @@ function FilterItem(props) {
         {
           show && filter.values.map(value => (
             <li key={filter.id + value.id}>
-              <a onClick={() => filterService.setFilter(filter.id, value.id)}>
+              <a onClick={() => urlGenerator.setFilter(filter.id, value.id)}>
               {value.name}
               </a>
             </li>

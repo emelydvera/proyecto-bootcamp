@@ -13,6 +13,7 @@ exports.fetchProducts = (req, res, next) => {
       res.locals.products = response.results;
       res.locals.filters = response.filters;
       res.locals.available_filters = response.available_filters;
+      res.locals.totalProducts= response.totalProducts
       next();
     })
     .catch((error) => {
@@ -40,7 +41,8 @@ exports.render = (req, res) => {
       filters: res.locals.filters,
       available_filters: res.locals.available_filters,
       baseUrl: req.baseUrl,
-      query: req.query
+      query: req.query,
+      totalProducts: res.locals.totalProducts
     },
     {
       navigationOptions: {

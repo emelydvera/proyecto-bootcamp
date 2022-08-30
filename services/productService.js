@@ -9,12 +9,16 @@ class ProductService {
   static getProducts(sitedId, params) {
     return restclient
       .get(`/sites/${sitedId}/search`, {
-        params,
+        params: {
+          limit: 10,
+          ...params
+        },
       })
       .then((response) => ({
         results: normalizer(response.data.results),
         filters: response.data.filters,
         available_filters: response.data.available_filters,
+        totalProducts: response.data.paging.total
       }))
       .catch((error) => {
         console.error(error);
