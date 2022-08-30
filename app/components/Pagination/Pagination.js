@@ -59,7 +59,7 @@ const Pagination = ({ totalProducts, urlGenerator, setData, productsInitial, i18
 
 Pagination.propTypes = {
     totalProducts: PropTypes.number.isRequired,
-    urlGenerator: PropTypes.object.isRequired,
+    urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
     setData: PropTypes.func.isRequired,
     productsInitial: PropTypes.arrayOf(PropTypes.object).isRequired,
     i18n: PropTypes.shape({
