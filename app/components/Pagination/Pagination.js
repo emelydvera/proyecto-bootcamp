@@ -1,6 +1,7 @@
 const React = require('react');
 const { useState, useEffect } = React;
-const PropTypes = require('prop-types')
+const PropTypes = require('prop-types');
+const UrlGenerator = require('../../utils/urlGenerator');
 const restclient = require("nordic/restclient")({
     timeout: 5000,
     baseURL: "/api",
