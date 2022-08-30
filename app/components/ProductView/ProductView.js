@@ -1,10 +1,27 @@
 const React = require("react");
+const { useState } = React;
 const Image = require("nordic/image");
 const PropTypes = require("prop-types");
+const InputQuantity = require("../InputQuantity");
 
 const ProductView = ({ product, i18n, description, quantity, amount }) => {
-  const { thumbnail, title, price, sold_quantity, condition, shipping } =
-    product;
+  const {
+    thumbnail,
+    title,
+    price,
+    sold_quantity,
+    condition,
+    shipping,
+    available_quantity,
+    id,
+  } = product;
+
+  const [error, setError] = useState("");
+  const [quantityToBuy, setQuantityToBuy] = useState(1);
+
+  const handleClick = (id, quantityToBuy) => {
+    window.location.href = `/comprar/productId=${id}&quantityToBuy=${quantityToBuy}`;
+  };
 
   return (
     <>
@@ -45,7 +62,19 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
       <p aria-label={i18n.gettext("descripcion producto")}>
         {i18n.gettext(`descripcion: ${description.plain_text}`)}
       </p>
-      <button aria-label={i18n.gettext("comprar producto")}>
+      <InputQuantity
+        availableQuantity={available_quantity}
+        setError={setError}
+        setQuantityToBuy={setQuantityToBuy}
+        quantityToBuy={quantityToBuy}
+      />
+      {error ? <span>{error}</span> : null}
+      <button
+        onClick={() => handleClick(id, quantityToBuy)}
+        type="submit"
+        disabled={error}
+        aria-label={i18n.gettext("comprar producto")}
+      >
         {i18n.gettext("Comprar")}
       </button>
     </>
