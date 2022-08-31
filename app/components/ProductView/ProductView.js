@@ -6,7 +6,7 @@ const InputQuantity = require("../InputQuantity");
 
 const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const {
-    thumbnail,
+    pictures,
     title,
     price,
     sold_quantity,
@@ -17,7 +17,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
   } = product;
 
   const [error, setError] = useState("");
-  const [quantityToBuy, setQuantityToBuy] = useState(1);
+  const [quantityToBuy, setQuantityToBuy] = useState("1");
 
   const handleClick = (id, quantityToBuy) => {
     window.location.href = `/comprar/productId=${id}&quantityToBuy=${quantityToBuy}`;
@@ -27,7 +27,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
     <>
       <Image
         aria-label={i18n.gettext("imagen del producto")}
-        src={thumbnail}
+        src={pictures[0].secure_url}
         alt={title}
       />
       <h2 aria-label={i18n.gettext("nombre del producto")}>
@@ -86,16 +86,24 @@ ProductView.propTypes = {
     gettext: PropTypes.func.isRequired,
   }).isRequired,
   product: PropTypes.shape({
+    pictures: PropTypes.arrayOf(
+      PropTypes.shape({
+        secure_url: PropTypes.string,
+      })
+    ).isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    thumbnail: PropTypes.string.isRequired,
-    installments: PropTypes.shape({}),
+    sold_quantity: PropTypes.number.isRequired,
+    condition: PropTypes.string.isRequired,
     shipping: PropTypes.shape({}),
+    available_quantity: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
   }).isRequired,
   description: PropTypes.shape({
     plain_text: PropTypes.string.isRequired,
   }),
-  index: PropTypes.number,
+  quantity: PropTypes.string,
+  amount: PropTypes.string,
 };
 
 module.exports = ProductView;

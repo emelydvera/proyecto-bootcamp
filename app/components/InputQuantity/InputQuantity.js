@@ -1,5 +1,5 @@
 const React = require("react");
-const { useState, useEffect } = React;
+const PropTypes = require("prop-types");
 
 const InputQuantity = ({
   availableQuantity,
@@ -32,6 +32,13 @@ const InputQuantity = ({
       />
     </>
   );
+};
+
+InputQuantity.propTypes = {
+  availableQuantity: PropTypes.number.isRequired,
+  setError: PropTypes.func.isRequired,
+  setQuantityToBuy: PropTypes.func.isRequired,
+  quantityToBuy: PropTypes.string.isRequired,
 };
 
 module.exports = InputQuantity;
