@@ -1,3 +1,4 @@
+require("../pages/home/styles.scss");
 const React = require("react");
 const hydrate = require("nordic/hydrate");
 const I18n = require("nordic/i18n");

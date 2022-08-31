@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: thin solid #eee;
+
+  &__image {
+    align-self: center;
+  }
+
+  &__description {
+    margin: 20px;
+
+    &__title {
+      font-weight: $font-weight-light;
+    }
+
+    &__price {
+      font-size: $font-size-m;
+      margin-bottom: 5px;
+    }
+  }
+}
