@@ -3,13 +3,15 @@
 @import "../../components/FilterItem/styles.scss";
 @import "../../components/Filter/styles.scss";
 @import "../../components/Pagination/styles.scss";
+@import "../../styles/variables";
+
 
 #products-page {
-  background-color: #ededed;
+  background-color: $gray-base;
   display: flex;
   justify-content: center;
 
-  .products{
+  .products {
     width: 100%;
   }
 

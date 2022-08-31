@@ -1,4 +1,5 @@
 const React = require("react");
+const Styles = require("nordic/style");
 const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
@@ -18,11 +19,12 @@ function View(props) {
 
   return (
     <>
+      <Styles href="product.css" />
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-            isJSON: true,
-          })};
+          isJSON: true,
+        })};
         `}
       </Script>
       <Script src="vendor.js" />
