@@ -21,7 +21,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const [mainImage, setMainImage] = useState(0);
 
   const handleClick = (id, quantityToBuy) => {
-    window.location.href = `/comprar/productId=${id}&quantityToBuy=${quantityToBuy}`;
+    window.location.href = `/comprar?productId=${id}&quantityToBuy=${quantityToBuy}`;
   };
 
   const handleOver = (i) => {
