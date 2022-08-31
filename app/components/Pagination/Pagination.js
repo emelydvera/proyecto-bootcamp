@@ -33,7 +33,6 @@ const Pagination = ({
         .then((res) => {
           setData(res.data.results);
         })
-
         .catch((err) => setData([]));
     }
   }, [offset]);

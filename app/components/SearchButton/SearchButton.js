@@ -1,5 +1,5 @@
 const React = require("react");
-const PropTypes = require('prop-types')
+const PropTypes = require("prop-types");
 
 const SearchButton = (props) => {
   const { isActive, i18n } = props;
@@ -7,6 +7,11 @@ const SearchButton = (props) => {
   return (
     <>
       <button
+        className={
+          isActive
+            ? "search__button search__button--disabled"
+            : "search__button search__button--enabled"
+        }
         aria-label={i18n.gettext("Boton buscar producto")}
         type="submit"
         disabled={isActive}
@@ -20,9 +25,8 @@ const SearchButton = (props) => {
 SearchButton.propTypes = {
   isActive: PropTypes.bool.isRequired,
   i18n: PropTypes.shape({
-    gettext: PropTypes.func.isRequired
-  }).isRequired
-
-}
+    gettext: PropTypes.func.isRequired,
+  }).isRequired,
+};
 
 module.exports = SearchButton;
