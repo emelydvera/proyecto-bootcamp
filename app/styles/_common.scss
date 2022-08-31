@@ -4,18 +4,15 @@
   border-radius: $border-radius-s;
   border: 0;
   cursor: pointer;
+  background-color: $blue-base;
+  color: rgb(245, 240, 240);
 
-  &:active{
+  &:active {
     transform: translateY(2px);
     transition: all 200ms;
   }
 
-  &--enabled {
-    background-color: $blue-base;
-    color: rgb(245, 240, 240);
-  }
-  
-  &--disabled {
+  &:disabled {
     background-color: $blue-300;
     color: auto;
   }
