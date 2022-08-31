@@ -10,7 +10,7 @@ const InputQuantity = ({
   const handleChange = (e) => {
     const { value } = e.target;
 
-    if (parseInt(value) <= 0) {
+    if (parseInt(value) <= 0 || value ==='') {
       setQuantityToBuy("1");
     } else {
       if (availableQuantity < parseInt(value)) {
