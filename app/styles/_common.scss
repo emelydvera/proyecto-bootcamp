@@ -1,0 +1,22 @@
+@mixin button {
+  width: auto;
+  padding: 10px;
+  border-radius: $border-radius-s;
+  border: 0;
+  cursor: pointer;
+
+  &:active{
+    transform: translateY(2px);
+    transition: all 200ms;
+  }
+
+  &--enabled {
+    background-color: $blue-base;
+    color: rgb(245, 240, 240);
+  }
+  
+  &--disabled {
+    background-color: $blue-300;
+    color: auto;
+  }
+}

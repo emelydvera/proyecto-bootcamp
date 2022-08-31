@@ -1,0 +1,25 @@
+@import "../../styles/common";
+
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 150px 50px 50px;
+  gap: 2rem;
+
+  
+  &__start{
+    margin-left: 50px;
+    position: relative;
+    top: 36px;
+  }
+}
+
+.button{
+  @include button
+}
+
+
+
