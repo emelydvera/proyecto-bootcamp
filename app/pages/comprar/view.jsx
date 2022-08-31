@@ -25,7 +25,9 @@ function View(props) {
       <Script src="vendor.js" />
       <Script src="comprar.js" />
 
-      <Checkout product={product} quantity={quantityToBuy} />
+      <div className="container">
+        <Checkout product={product} quantity={quantityToBuy} />
+      </div>
     </>
   );
 }

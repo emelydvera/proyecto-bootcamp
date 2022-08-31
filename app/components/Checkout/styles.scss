@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.checkout{
+
+  max-width: 80%;
+  padding: 30px 0px;
+
+  &__title{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__total{
+    text-align: right;
+  }
+  
+  &__product{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+    .image{
+      margin-right: 50px;
+    }
+
+    &__title{
+      gap: 5rem;
+      h2{
+        margin: 0px;
+      }
+    }
+
+    &__info{
+      display: flex;
+      justify-content: space-between;
+
+      .envio__gratis{
+        color: green;
+      }
+
+    }
+    &__input{
+      width: 80px;
+    }
+
+  }
+
+  &__alert{
+    color: $red-base
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}

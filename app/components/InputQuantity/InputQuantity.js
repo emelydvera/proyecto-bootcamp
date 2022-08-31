@@ -2,6 +2,7 @@ const React = require("react");
 const PropTypes = require("prop-types");
 
 const InputQuantity = ({
+  className,
   availableQuantity,
   setError,
   setQuantityToBuy,
@@ -25,6 +26,7 @@ const InputQuantity = ({
   return (
     <>
       <input
+        className={className}
         type="number"
         min="1"
         onChange={handleChange}
