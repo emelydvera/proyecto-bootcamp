@@ -5,18 +5,20 @@
   border: 0;
   cursor: pointer;
 
-  &:active{
-    transform: translateY(2px);
-    transition: all 200ms;
-  }
-
   &--enabled {
     background-color: $blue-base;
     color: rgb(245, 240, 240);
+
+    &:active{
+      transform: translateY(2px);
+      transition: all 200ms;
+    }
+
   }
   
   &--disabled {
     background-color: $blue-300;
-    color: auto;
+    color: rgba(0, 0, 0, 0.2);
+    cursor: auto;
   }
 }

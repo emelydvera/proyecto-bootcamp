@@ -9,6 +9,11 @@
 
   &__image {
     align-self: center;
+    min-width: 15rem;
+    max-width: 15rem;
+    &__img{
+      width: 100%;
+    }
   }
 
   &__description {
