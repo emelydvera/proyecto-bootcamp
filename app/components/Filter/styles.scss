@@ -1,6 +1,10 @@
 @import "../../styles/variables";
 
 .filters {
+
+  min-width: 250px;
+  max-width: 250px;
+
   h3 {
     margin-left: 20px;
   }
