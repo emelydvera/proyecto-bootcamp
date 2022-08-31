@@ -37,7 +37,7 @@ function View(props) {
   const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
 
   return (
-    <>
+    <div>
       <Styles href="products.css" />
       <Script>
         {`
@@ -50,7 +50,7 @@ function View(props) {
       <Script src="products.js" />
 
       {products.length > 0 ? (
-        <>
+        <div id="products-page">
           <Filter
             i18n={i18n}
             baseUrl={baseUrl}
@@ -59,7 +59,7 @@ function View(props) {
             available_filters={available_filters}
             urlGenerator={urlGenerator}
           />
-          <div>
+          <div className="products">
             <ProductsList products={data} i18n={i18n} query={query} />
             <Pagination
               totalProducts={totalProducts}
@@ -69,11 +69,11 @@ function View(props) {
               i18n={i18n}
             />
           </div>
-        </>
+        </div>
       ) : (
         <p>{i18n.gettext("No se encontraron productos")}</p>
       )}
-    </>
+    </div>
   );
 }
 
