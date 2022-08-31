@@ -6,7 +6,7 @@ $font-size-m: 20px;
 $font-weight-light: 300;
 // $font-weight-regular: 400;
 // $font-weight-semibold: 600;
-// $font-weight-bold: 700;
+$font-weight-bold: 700;
 
 //border
 $border-radius-s: 6px;
@@ -21,3 +21,4 @@ $blue-300: rgba($blue-base, 0.3);
 //gray
 $gray-base: #ededed; 
 $gray-letters: #8f8e8e; 
+$gray-error-link: #666;

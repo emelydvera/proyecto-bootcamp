@@ -45,7 +45,6 @@
 
                         .product__image {
                             max-height: 90%;
-
                         }
 
                     }
@@ -68,8 +67,8 @@
 
                     .product-img-main {
                         padding: 10px;
-                        flex: 0 0 auto;
                         max-height: 300px;
+                        min-height: 300px;
                     }
                 }
             }

@@ -1,9 +1,10 @@
 const React = require("react");
 const Script = require("nordic/script");
+const Style = require("nordic/style");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
 const Component404 = require("../../components/Component404");
-const PropTypes = require('prop-types');
+const PropTypes = require("prop-types");
 
 function View(props) {
   const { i18n, translations, imagesPrefix } = props;
@@ -14,6 +15,7 @@ function View(props) {
 
   return (
     <>
+      <Style href="error404.css" />
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
@@ -23,7 +25,6 @@ function View(props) {
       </Script>
       <Script src="vendor.js" />
       <Script src="error404.js" />
-
       <Component404 i18n={i18n} />
     </>
   );
@@ -35,6 +36,6 @@ View.propTypes = {
   }).isRequired,
   translations: PropTypes.shape({}),
   imagesPrefix: PropTypes.string,
-}
+};
 
 module.exports = injectI18n(View);
