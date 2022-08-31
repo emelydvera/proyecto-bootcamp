@@ -26,34 +26,36 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
 
   const handleOver = (i) => {
     setMainImage(i);
-  }
+  };
 
   return (
-
-    <section >
-
+    <section>
       <div className="product">
         <div className="product__img">
           <div className="product__img__carousel">
-            {
-              pictures.length > 0 &&
+            {pictures.length > 0 &&
               pictures.map((p, i) => {
                 return (
-
-                  i <= 6 &&
-                  <div className={`image__container ${mainImage === i ? 'active' : ""}`}>
-                    <Image
-                      className='product__image '
+                  i <= 6 && (
+                    <div
                       key={p.id}
-                      onMouseOver={() => { handleOver(i) }}
-                      aria-label={i18n.gettext("imagen del producto")}
-                      src={p.secure_url}
-                      alt={title}
-                    />
-                  </div>
-                )
-              })
-            }
+                      className={`image__container ${
+                        mainImage === i ? "active" : ""
+                      }`}
+                    >
+                      <Image
+                        className="product__image "
+                        onMouseOver={() => {
+                          handleOver(i);
+                        }}
+                        aria-label={i18n.gettext("imagen del producto")}
+                        src={p.secure_url}
+                        alt={title}
+                      />
+                    </div>
+                  )
+                );
+              })}
           </div>
 
           <figure tabIndex={9} aria-label={i18n.gettext(` imagen de ${title}`)}>
@@ -61,7 +63,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
               src={pictures[mainImage].secure_url}
               alt={i18n.gettext("producto")}
               lazyload={true}
-              className='product-img-main'
+              className="product-img-main"
             />
             <figcaption>{i18n.gettext(title)}</figcaption>
           </figure>
@@ -71,30 +73,55 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
       </div>
 
       <div className="info">
-
-        <span tabIndex={10} aria-label={`${condition}`}>{i18n.gettext(
-          condition === 'new'
-            ? 'Nuevo' :
-            condition === 'not_specified'
-              ? 'No Especifica' :
-              condition === 'used'
-                ? 'Usado' : ''
-        )}
+        <span tabIndex={10} aria-label={`${condition}`}>
+          {i18n.gettext(
+            condition === "new"
+              ? "Nuevo"
+              : condition === "not_specified"
+              ? "No Especifica"
+              : condition === "used"
+              ? "Usado"
+              : ""
+          )}
         </span>
-        <span tabIndex={11} aria-label={i18n.gettext(`${sold_quantity} productos vendidos`)}> {i18n.gettext(`| ${sold_quantity} vendidos`)}</span>
-        <h3 tabIndex={12} aria-label={i18n.gettext(`${title}`)}>{i18n.gettext(title)}</h3>
-        <h2 tabIndex={13} aria-label={i18n.gettext(`el producto tiene un precio de ${price}`)}>{i18n.gettext(`$ ${new Intl.NumberFormat().format(price)}`)}</h2>
+        <span
+          tabIndex={11}
+          aria-label={i18n.gettext(`${sold_quantity} productos vendidos`)}
+        >
+          {" "}
+          {i18n.gettext(`| ${sold_quantity} vendidos`)}
+        </span>
+        <h3 tabIndex={12} aria-label={i18n.gettext(`${title}`)}>
+          {i18n.gettext(title)}
+        </h3>
+        <h2
+          tabIndex={13}
+          aria-label={i18n.gettext(`el producto tiene un precio de ${price}`)}
+        >
+          {i18n.gettext(`$ ${new Intl.NumberFormat().format(price)}`)}
+        </h2>
 
         {!quantity || !amount ? null : (
-          <p tabIndex={14}>{i18n.gettext(` ${quantity} cuotas de $ ${new Intl.NumberFormat().format(amount)} cada una`)}</p>
+          <p tabIndex={14}>
+            {i18n.gettext(
+              ` ${quantity} cuotas de $ ${new Intl.NumberFormat().format(
+                amount
+              )} cada una`
+            )}
+          </p>
         )}
 
-
-        <p tabIndex={16} aria-label={i18n.gettext(`hay ${available_quantity} unidades disponibles`)}>{`Cantidad disponible: ${available_quantity}`}</p>
-        <p tabIndex={17} aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}>
-          {
-            shipping.free_shipping ? 'Envío gratis' : 'No envío gratis'
-          }
+        <p
+          tabIndex={16}
+          aria-label={i18n.gettext(
+            `hay ${available_quantity} unidades disponibles`
+          )}
+        >{`Cantidad disponible: ${available_quantity}`}</p>
+        <p
+          tabIndex={17}
+          aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}
+        >
+          {shipping.free_shipping ? "Envío gratis" : "No envío gratis"}
         </p>
 
         <div className="buy__container">
@@ -115,13 +142,9 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           >
             {i18n.gettext("Comprar")}
           </button>
-
         </div>
-
       </div>
-
     </section>
-
   );
 };
 
