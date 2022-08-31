@@ -20,7 +20,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const [quantityToBuy, setQuantityToBuy] = useState("1");
 
   const handleClick = (id, quantityToBuy) => {
-    window.location.href = `/comprar/productId=${id}&quantityToBuy=${quantityToBuy}`;
+    window.location.href = `/comprar?productId=${id}&quantityToBuy=${quantityToBuy}`;
   };
 
   return (

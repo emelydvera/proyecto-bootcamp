@@ -19,6 +19,7 @@ const homeRoute = require("../pages/home");
 const productsRoute = require("../pages/products");
 const product = require("../pages/product");
 const error404 = require("../pages/error404");
+const checkout = require("../pages/comprar");
 
 /**
  * Use global middlewares
@@ -39,6 +40,7 @@ router.use("/", homeRoute);
 router.use("/listado", productsRoute);
 router.use("/product", product);
 router.use("/error404", error404);
+router.use("/comprar", checkout);
 router.use("/*", error404);
 
 /**

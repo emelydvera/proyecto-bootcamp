@@ -21,6 +21,7 @@ const entrypoints = {
   products: "./app/client/products.js",
   product: "./app/client/product.js",
   error404: "./app/client/error404.js",
+  comprar: "./app/client/comprar.js",
 };
 
 const generateLegacyBundles = (entryPoints) =>
