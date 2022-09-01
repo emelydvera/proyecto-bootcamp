@@ -11,15 +11,38 @@ const InputQuantity = ({
   const handleChange = (e) => {
     const { value } = e.target;
 
-    if (parseInt(value) <= 0 || value ==='') {
+    if (parseInt(value) < 0 || parseInt(value) === -0) {
       setQuantityToBuy("1");
+      setError("");
+    } else if (availableQuantity < parseInt(value)) {
+      setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+      setQuantityToBuy(value);
+    } else if (value === "" || parseInt(value) === 0) {
+      setError(`Puedes comprar mínimo 1 unidad`);
+      setQuantityToBuy(value);
     } else {
-      if (availableQuantity < parseInt(value)) {
-        setError(`Puedes comprar hasta ${availableQuantity} unidades`);
-      } else {
+      setError("");
+      setQuantityToBuy(value);
+    }
+  };
+
+  const handleClick = (e) => {
+    const { name } = e.target;
+    let newQuantityToBuy = parseInt(quantityToBuy);
+    if (name === "+") {
+      if (quantityToBuy === "") {
+        newQuantityToBuy = 0;
         setError("");
       }
-      setQuantityToBuy(value);
+      newQuantityToBuy = newQuantityToBuy + 1;
+      setQuantityToBuy(newQuantityToBuy.toString());
+      if (availableQuantity < parseInt(newQuantityToBuy)) {
+        setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+      }
+    } else if (name === "-" && newQuantityToBuy > 1) {
+      newQuantityToBuy = newQuantityToBuy - 1;
+      setQuantityToBuy(newQuantityToBuy.toString());
+      setError("");
     }
   };
 
@@ -32,6 +55,12 @@ const InputQuantity = ({
         onChange={handleChange}
         value={quantityToBuy}
       />
+      <button name="-" onClick={handleClick}>
+        -
+      </button>
+      <button name="+" onClick={handleClick}>
+        +
+      </button>
     </>
   );
 };
