@@ -47,7 +47,7 @@ const InputQuantity = ({
   };
 
   return (
-    <>
+    <div className="input__quantity">
       <input
         className={className}
         type="number"
@@ -61,7 +61,7 @@ const InputQuantity = ({
       <button className="buy__button__add" name="+" onClick={handleClick}>
         +
       </button>
-    </>
+    </div>
   );
 };
 

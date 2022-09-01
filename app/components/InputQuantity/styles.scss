@@ -2,9 +2,10 @@
 @import '../../styles/common';
 
 
-.buy__container {
+.input__quantity {
+    position: relative;
 
-    .buy__input {
+    .buy__input, .checkout__product__input {
         text-align: center;
         border-style: hidden;
         outline: 1px #eee solid;
