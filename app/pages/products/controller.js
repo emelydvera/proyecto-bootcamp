@@ -17,6 +17,7 @@ exports.fetchProducts = (req, res, next) => {
       next();
     })
     .catch((error) => {
+      res.redirect("/error");
       next(error);
     });
 };

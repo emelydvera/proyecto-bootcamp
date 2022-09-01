@@ -15,7 +15,7 @@ exports.fetchProduct = function fetchProduct(req, res, next) {
       next();
     })
     .catch((error) => {
-      // res.redirect("/error404");
+      res.redirect("/error404");
       next();
     });
 };
