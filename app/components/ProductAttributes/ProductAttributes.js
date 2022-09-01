@@ -3,9 +3,14 @@ const PropTypes = require('prop-types');
 
 function ProductAttributes({ i18n, attributes }) {
   return (
-    <details>
-      <summary tabIndex={23}>{i18n.gettext('Características')}</summary>
-      <table>
+    <details className='attributes'>
+      <summary
+        className='attributes__title'
+        tabIndex={23}
+      >
+        {i18n.gettext('Características')}
+      </summary>
+      <table className='attributes__table'>
         <tbody>
           {
             attributes.map(({ id, name, value_name }) => (
