@@ -45,18 +45,24 @@ const Pagination = ({
     setOffset(offset + limit);
   };
 
+  const handleGoInitialPagination = () => {
+    setOffset(0);
+  };
+
   return (
     <>
       <button
         disabled={offset === 0}
         className="pagination__start button"
-      >Volver Inicio</button>
+        onClick={handleGoInitialPagination}
+      >
+        Volver Inicio
+      </button>
       <section className="pagination">
         <button
           className={
             offset === 0
-              ?
-              "pagination__back button button--disabled"
+              ? "pagination__back button button--disabled"
               : "pagination__back button button--enabled"
           }
           tabIndex="207"
@@ -68,9 +74,8 @@ const Pagination = ({
         </button>
         <button
           className={
-            (limit + offset >= totalProducts)
-              ?
-              "pagination__next button button--disabled"
+            limit + offset >= totalProducts
+              ? "pagination__next button button--disabled"
               : "pagination__next button button--enabled"
           }
           tabIndex="208"
