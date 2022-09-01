@@ -16,14 +16,14 @@ const InputQuantity = ({
   const handleChange = (e) => {
     const { value } = e.target;
 
-    if (parseInt(value) <= 0 || value ==='') {
-      
+    if (parseInt(value) <= 0 || value === '') {
+
       setQuantityToBuy("1");
 
     } else {
 
       if (availableQuantity < parseInt(value)) {
-        setError(i18n.gettext('Puedes comprar hasta {0} unidades', availableQuantity));
+        setError(i18n.ngettext('Puedes comprar hasta {0} unidad', 'Puedes comprar hasta {0} unidades', availableQuantity, [availableQuantity]));
       } else {
         setError("");
       }
