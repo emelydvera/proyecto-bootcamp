@@ -47,40 +47,45 @@ const Pagination = ({
 
   return (
     <>
-      <button
-        disabled={offset === 0}
-        className="pagination__start button"
-      >Volver Inicio</button>
-      <section className="pagination">
-        <button
-          className={
-            offset === 0
-              ?
-              "pagination__back button button--disabled"
-              : "pagination__back button button--enabled"
-          }
-          tabIndex="207"
-          aria-label={i18n.gettext("Página Anterior")}
-          onClick={handlePrevious}
-          disabled={offset === 0}
-        >
-          {i18n.gettext("Página Anterior")}
-        </button>
-        <button
-          className={
-            (limit + offset >= totalProducts)
-              ?
-              "pagination__next button button--disabled"
-              : "pagination__next button button--enabled"
-          }
-          tabIndex="208"
-          aria-label={i18n.gettext("Página Siguiente")}
-          onClick={handleNext}
-          disabled={limit + offset >= totalProducts}
-        >
-          {i18n.gettext("Página Siguiente")}
-        </button>
-      </section>
+
+      { totalProducts > limit &&
+        <nav>
+          <button
+            disabled={offset === 0}
+            className="pagination__start button"
+          >Volver Inicio</button>
+          <section className="pagination">
+            <button
+              className={
+                offset === 0
+                  ?
+                  "pagination__back button button--disabled"
+                  : "pagination__back button button--enabled"
+              }
+              tabIndex="207"
+              aria-label={i18n.gettext("Página Anterior")}
+              onClick={handlePrevious}
+              disabled={offset === 0}
+            >
+              {i18n.gettext("Página Anterior")}
+            </button>
+            <button
+              className={
+                (limit + offset >= totalProducts)
+                  ?
+                  "pagination__next button button--disabled"
+                  : "pagination__next button button--enabled"
+              }
+              tabIndex="208"
+              aria-label={i18n.gettext("Página Siguiente")}
+              onClick={handleNext}
+              disabled={limit + offset >= totalProducts}
+            >
+              {i18n.gettext("Página Siguiente")}
+            </button>
+          </section>
+        </nav>
+      }
     </>
   );
 };
