@@ -1,5 +1,7 @@
 const React = require("react");
 const { useState } = React;
+const PropTypes = require('prop-types');
+const UrlGenerator = require("../../utils/urlGenerator");
 
 function FilterItem(props) {
   const { filter, urlGenerator } = props;
@@ -26,5 +28,13 @@ function FilterItem(props) {
     </section>
   );
 }
+
+FilterItem.propTypes = {
+  filter: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }),
+  urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
+};
 
 module.exports = FilterItem;
