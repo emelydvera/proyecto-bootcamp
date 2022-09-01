@@ -59,9 +59,6 @@ function View(props) {
       {products.length > 0 ? (
         <div id="products-page">
           <Filter
-            i18n={i18n}
-            baseUrl={baseUrl}
-            query={query}
             filters={filters}
             available_filters={available_filters}
             urlGenerator={urlGenerator}

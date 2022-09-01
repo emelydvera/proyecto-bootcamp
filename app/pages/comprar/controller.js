@@ -21,12 +21,27 @@ exports.fetchProduct = function fetchProduct(req, res, next) {
 };
 
 exports.render = function render(req, res) {
-  const CheckoutView = (props) => {
-    return <View {...props} />;
-  };
+  const imagesPrefix = config.assets.prefix;
+  const CheckoutView = (props) => (
+    <I18nProvider i18n={req.i18n}>
+      <ImageProvider prefix={imagesPrefix}>
+        <View {...props} />
+      </ImageProvider>
+    </I18nProvider>
+  );
 
-  res.render(CheckoutView, {
-    product: res.locals.product,
-    quantityToBuy: res.locals.quantityToBuy,
-  });
+  res.render(
+    CheckoutView,
+    {
+      product: res.locals.product,
+      quantityToBuy: res.locals.quantityToBuy,
+      imagesPrefix,
+      translations: req.translations,
+    },
+    {
+      navigationOptions: {
+        type: "lite",
+      },
+    }
+  );
 };

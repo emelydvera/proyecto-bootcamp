@@ -1,5 +1,6 @@
 const React = require("react");
 const PropTypes = require("prop-types");
+const { useI18n } = require("nordic/i18n");
 
 const InputQuantity = ({
   className,
@@ -8,6 +9,8 @@ const InputQuantity = ({
   setQuantityToBuy,
   quantityToBuy,
 }) => {
+  const { i18n } = useI18n();
+
   const handleChange = (e) => {
     const { value } = e.target;
 
@@ -42,7 +45,10 @@ const InputQuantity = ({
     } else if (name === "-" && newQuantityToBuy > 1) {
       newQuantityToBuy = newQuantityToBuy - 1;
       setQuantityToBuy(newQuantityToBuy.toString());
-      setError("");
+      setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+      if (newQuantityToBuy <= availableQuantity) {
+        setError("");
+      }
     }
   };
 
