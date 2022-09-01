@@ -66,6 +66,7 @@ const InputQuantity = ({
 };
 
 InputQuantity.propTypes = {
+  className: PropTypes.string,
   availableQuantity: PropTypes.number.isRequired,
   setError: PropTypes.func.isRequired,
   setQuantityToBuy: PropTypes.func.isRequired,
