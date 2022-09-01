@@ -41,12 +41,12 @@ const InputQuantity = ({
       newQuantityToBuy = newQuantityToBuy + 1;
       setQuantityToBuy(newQuantityToBuy.toString());
       if (availableQuantity < parseInt(newQuantityToBuy)) {
-        setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+        setError(i18n.ngettext('Puedes comprar hasta {0} unidad', 'Puedes comprar hasta {0} unidades', availableQuantity, [availableQuantity]));
       }
     } else if (name === "-" && newQuantityToBuy > 1) {
       newQuantityToBuy = newQuantityToBuy - 1;
       setQuantityToBuy(newQuantityToBuy.toString());
-      setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+      setError(i18n.ngettext('Puedes comprar hasta {0} unidad', 'Puedes comprar hasta {0} unidades', availableQuantity, [availableQuantity]));
       if (newQuantityToBuy <= availableQuantity) {
         setError("");
       }
