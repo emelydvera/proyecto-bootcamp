@@ -7,7 +7,6 @@ const View = require("./view");
 
 exports.fetchProducts = (req, res, next) => {
   const { siteId } = req.platform;
-  console.log(req.query.limit);
 
   ProductService.getProducts(siteId, req.query)
     .then((response) => {
