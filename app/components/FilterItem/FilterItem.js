@@ -8,7 +8,6 @@ function FilterItem(props) {
   const { i18n } = useI18n();
   const { filter, urlGenerator } = props;
   const [show, setShow] = useState(false);
-  console.log("hellooo ");
 
   return (
     <section

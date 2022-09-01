@@ -1,5 +1,6 @@
 const React = require("react");
 const PropTypes = require("prop-types");
+const { useI18n } = require("nordic/i18n")
 
 const InputQuantity = ({
   className,
@@ -7,7 +8,10 @@ const InputQuantity = ({
   setError,
   setQuantityToBuy,
   quantityToBuy,
+  tabIndex,
 }) => {
+  const { i18n } = useI18n();
+
   const handleChange = (e) => {
     const { value } = e.target;
 
@@ -57,12 +61,25 @@ const InputQuantity = ({
         min="1"
         onChange={handleChange}
         value={quantityToBuy}
+        tabIndex={tabIndex}
       />
-      <button className="buy__button__substract" name="-" onClick={handleClick}>
-        -
-      </button>
-      <button className="buy__button__add" name="+" onClick={handleClick}>
+      <button
+        className="buy__button__add"
+        tabIndex={tabIndex}
+        name="+"
+        onClick={handleClick}
+        aria-label={i18n.gettext('Agregar producto')}
+      >
         +
+      </button>
+      <button
+        className="buy__button__substract"
+        tabIndex={tabIndex}
+        name="-"
+        onClick={handleClick}
+        aria-label={i18n.gettext('Eliminar producto')}
+      >
+        -
       </button>
     </div>
   );

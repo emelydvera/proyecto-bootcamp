@@ -3,6 +3,7 @@ const { useState, useEffect } = React;
 const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const InputQuantity = require("../InputQuantity");
+const ProductAttributes = require("../ProductAttributes");
 
 const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const {
@@ -13,6 +14,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
     condition,
     shipping,
     available_quantity,
+    attributes,
     id,
   } = product;
 
@@ -39,9 +41,8 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
                   i <= 6 && (
                     <div
                       key={p.id}
-                      className={`image__container ${
-                        mainImage === i ? "active" : ""
-                      }`}
+                      className={`image__container ${mainImage === i ? "active" : ""
+                        }`}
                     >
                       <Image
                         className="product__image "
@@ -69,7 +70,8 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           </figure>
         </div>
 
-        <p tabIndex={18}>{i18n.gettext(description.plain_text)}</p>
+        <p tabIndex={19} className="description">{i18n.gettext(description.plain_text)}</p>
+        <ProductAttributes i18n={i18n} attributes={attributes} />
       </div>
 
       <div className="info">
@@ -78,10 +80,10 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             condition === "new"
               ? "Nuevo"
               : condition === "not_specified"
-              ? "No Especifica"
-              : condition === "used"
-              ? "Usado"
-              : ""
+                ? "No Especifica"
+                : condition === "used"
+                  ? "Usado"
+                  : ""
           )}
         </span>
         <span
@@ -127,16 +129,16 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
         <div className="buy__container">
           <InputQuantity
             className="buy__input"
-            tabIndex={19}
+            tabIndex={18}
             availableQuantity={available_quantity}
             setError={setError}
             setQuantityToBuy={setQuantityToBuy}
             quantityToBuy={quantityToBuy}
           />
-          {<span className="error">{error && error}</span>}
+          {<span className="error">{error && i18n.gettext(error)}</span>}
           <button
             className="buy__button"
-            tabIndex={20}
+            tabIndex={18}
             onClick={() => handleClick(id, quantityToBuy)}
             type="submit"
             disabled={error}
