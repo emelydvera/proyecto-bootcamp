@@ -55,10 +55,10 @@ const InputQuantity = ({
         onChange={handleChange}
         value={quantityToBuy}
       />
-      <button name="-" onClick={handleClick}>
+      <button className="buy__button__substract" name="-" onClick={handleClick}>
         -
       </button>
-      <button name="+" onClick={handleClick}>
+      <button className="buy__button__add" name="+" onClick={handleClick}>
         +
       </button>
     </>
