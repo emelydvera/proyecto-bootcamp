@@ -11,7 +11,6 @@ function View(props) {
     product,
     quantityToBuy,
   };
-  console.log(product);
   return (
     <>
       <Styles href="comprar.css" />
