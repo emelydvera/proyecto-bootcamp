@@ -34,7 +34,7 @@ function View(props) {
   };
 
   const [data, setData] = useState(products);
-  const [limit, setLimit] = useState(query.limit || 10);
+  const [limit, setLimit] = useState(parseInt(query.limit) || 10);
 
   const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
 

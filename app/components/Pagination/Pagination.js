@@ -10,6 +10,9 @@ const restclient = require("nordic/restclient")({
 const Pagination = ({ totalProducts, urlGenerator, setData, i18n, limit }) => {
   const [offset, setOffset] = useState(0);
 
+  console.log("totalPro", totalProducts);
+  console.log(limit + offset);
+
   useEffect(() => {
     console.log();
     restclient
@@ -64,8 +67,8 @@ const Pagination = ({ totalProducts, urlGenerator, setData, i18n, limit }) => {
         <button
           className={
             limit + offset >= totalProducts
-              ? "pagination__next button button--disabled"
-              : "pagination__next button button--enabled"
+              ? "pagination__next button button--enabled"
+              : "pagination__next button button--disabled"
           }
           tabIndex="208"
           aria-label={i18n.gettext("Página Siguiente")}
