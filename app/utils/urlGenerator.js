@@ -34,11 +34,6 @@ class UrlGenerator {
   getQueries() {
     return this.query;
   }
-
-  setQuery(query, queryValue) {
-    console.log("inside class", query, queryValue);
-    this.query[query] = queryValue;
-  }
 }
 
 module.exports = UrlGenerator;
