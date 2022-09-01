@@ -116,8 +116,11 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           aria-label={i18n.gettext(
             `hay ${available_quantity} unidades disponibles`
           )}
-        >{`Cantidad disponible: ${available_quantity}`}</p>
+        >
+          <strong>Cantidad disponible:</strong> {`${available_quantity}`}
+        </p>
         <p
+          className="free__shipping"
           tabIndex={17}
           aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}
         >
