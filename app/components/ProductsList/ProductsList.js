@@ -1,7 +1,6 @@
 const React = require("react");
 const ProductsCard = require("../ProductsCard");
 const PropTypes = require("prop-types");
-const Pagination = require("../Pagination/Pagination");
 
 const ProductsList = (props) => {
   const { products, i18n } = props;
