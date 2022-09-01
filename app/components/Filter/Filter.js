@@ -10,7 +10,11 @@ const Filter = ({ filters, available_filters, urlGenerator, limit }) => {
   return (
     <aside className="filters">
       {filters.length > 0 && (
-        <h3 className="filters__availables">
+        <h3
+          aria-label={i18n.gettext("filtrando por")}
+          tabIndex={210}
+          className="filters__availables"
+        >
           {i18n.gettext("Filtrando por:")}
         </h3>
       )}
@@ -19,6 +23,8 @@ const Filter = ({ filters, available_filters, urlGenerator, limit }) => {
           <li
             className="filters__list__item"
             key={id}
+            aria-label={i18n.gettext("{0}", name)}
+            tabIndex={211}
             onClick={() => urlGenerator.removeFilter(id)}
           >
             {`ⓧ ${name}`}: {values[0].name}
@@ -26,7 +32,9 @@ const Filter = ({ filters, available_filters, urlGenerator, limit }) => {
         ))}
       </ul>
 
-      <h3>{i18n.gettext("Filtros:")}</h3>
+      <h3 aria-label={i18n.gettext("Filtros")} tabIndex={212}>
+        {i18n.gettext("Filtros:")}
+      </h3>
 
       {available_filters.map((filter, index) => (
         <FilterItem
@@ -54,6 +62,7 @@ Filter.propTypes = {
     }).isRequired
   ).isRequired,
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
+  limit: PropTypes.number.isRequired,
 };
 
 module.exports = Filter;
