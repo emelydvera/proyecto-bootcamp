@@ -1,8 +1,39 @@
 .products__per-page {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
     margin-top: 20px;
     margin-right: 16%;
-    width: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    span {
+        font-size: 10px;
+    }
+
+
+    &__select{
+        appearance: none;
+        // Additional resets for further consistency
+        background-color: transparent;
+        outline: 1px solid $gray-base;
+        border-radius: $border-radius-s;
+        padding: 0 40px;
+        // margin: 0;
+        text-align: center;
+        max-width: 100%;
+        height: 20px;
+    }
+
+    // &__dropdown{
+    //     position: absolute;
+    //     background-color: $blue-base;
+    //     color: green;
+    //     width: 20px;
+    //     height: 20px;
+    // }
 }

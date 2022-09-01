@@ -6,6 +6,9 @@
 @import "../../components//SelectProductsPerPage/styles.scss";
 @import "../../styles/variables";
 
+#root-app {
+  background-color: $gray-base;
+}
 
 #products-page {
   background-color: $gray-base;
