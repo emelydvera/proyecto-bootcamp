@@ -7,7 +7,11 @@ const SelectProductsPerPage = ({ setLimit, limit }) => {
     setLimit(parseInt(e.target.value));
   };
   return (
-    <select onChange={handleChange} defaultValue={limit.toString()}>
+    <select
+      className="products__per-page"
+      onChange={handleChange}
+      defaultValue={limit.toString()}
+    >
       {options.map((option) => (
         <option key={option.value} value={option.value}>
           {option.value}
