@@ -26,7 +26,7 @@ function FilterItem(props) {
           {filter.values.map((value) => (
             <li
               className="filter_section__list__item"
-              aria-label={i18n.gettext("{0}", value)}
+              aria-label={i18n.gettext("{0}", value.name)}
               tabIndex={214}
               key={filter.id + value.id}
             >
