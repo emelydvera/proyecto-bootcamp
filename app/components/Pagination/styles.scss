@@ -9,17 +9,14 @@
   margin: 0px 150px 50px 50px;
   gap: 2rem;
 
-  
-  &__start{
-    margin-left: 50px;
-    position: relative;
-    top: 36px;
+  position: relative;
+
+  &__start {
+    position: absolute;
+    left: 0px;
   }
 }
 
-.button{
+.button {
   @include button
 }
-
-
-

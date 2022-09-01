@@ -48,15 +48,21 @@ const Pagination = ({
       .then((res) => {
         setData(res.data.results);
       })
-      .catch((err) => setData([]));
+      .catch(() => setData([]));
   }, [limit]);
 
   const handlePrevious = () => {
-    setOffset(offset - limit);
+    if (offset - limit <= 0) {
+      return setOffset(0);
+    }
+    return setOffset(offset - limit);
   };
 
   const handleNext = () => {
-    setOffset(offset + limit);
+    if (offset + limit > 1000) {
+      return setOffset(1000);
+    }
+    return setOffset(offset + limit);
   };
 
   const handleGoInitialPagination = () => {
@@ -66,7 +72,7 @@ const Pagination = ({
   return (
     <>
       {totalProducts > limit && (
-        <nav>
+        <section className="pagination">
           <button
             disabled={offset === 0}
             className="pagination__start button"
@@ -74,27 +80,25 @@ const Pagination = ({
           >
             Volver Inicio
           </button>
-          <section className="pagination">
-            <button
-              className="pagination__back button"
-              tabIndex="207"
-              aria-label={i18n.gettext("Página Anterior")}
-              onClick={handlePrevious}
-              disabled={offset === 0}
-            >
-              {i18n.gettext("Página Anterior")}
-            </button>
-            <button
-              className="pagination__next button"
-              tabIndex="208"
-              aria-label={i18n.gettext("Página Siguiente")}
-              onClick={handleNext}
-              disabled={limit + offset >= totalProducts}
-            >
-              {i18n.gettext("Página Siguiente")}
-            </button>
-          </section>
-        </nav>
+          <button
+            className="pagination__back button"
+            tabIndex="207"
+            aria-label={i18n.gettext("Página Anterior")}
+            onClick={handlePrevious}
+            disabled={offset === 0}
+          >
+            {i18n.gettext("Página Anterior")}
+          </button>
+          <button
+            className="pagination__next button"
+            tabIndex="208"
+            aria-label={i18n.gettext("Página Siguiente")}
+            onClick={handleNext}
+            disabled={limit + offset >= totalProducts}
+          >
+            {i18n.gettext("Página Siguiente")}
+          </button>
+        </section>
       )}
     </>
   );
