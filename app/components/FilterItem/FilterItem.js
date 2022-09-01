@@ -2,8 +2,13 @@ const React = require("react");
 const { useState } = React;
 
 function FilterItem(props) {
-  const { filter, urlGenerator } = props;
+  const { filter, urlGenerator, limit } = props;
   const [show, setShow] = useState(false);
+
+  const handleClick = (filterId, valueId) => {
+    urlGenerator.setQuery("limit", limit);
+    urlGenerator.setFilter(filterId, valueId);
+  };
 
   return (
     <section className="filter_section" key={filter.id}>
@@ -17,7 +22,7 @@ function FilterItem(props) {
               className="filter_section__list__item"
               key={filter.id + value.id}
             >
-              <a onClick={() => urlGenerator.setFilter(filter.id, value.id)}>
+              <a onClick={() => handleClick(filter.id, value.id)}>
                 {value.name}
               </a>
             </li>

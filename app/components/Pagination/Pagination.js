@@ -7,35 +7,24 @@ const restclient = require("nordic/restclient")({
   baseURL: "/api",
 });
 
-const Pagination = ({
-  totalProducts,
-  urlGenerator,
-  setData,
-  productsInitial,
-  i18n,
-}) => {
+const Pagination = ({ totalProducts, urlGenerator, setData, i18n, limit }) => {
   const [offset, setOffset] = useState(0);
 
-  const [limit, setLimit] = useState(10);
-
   useEffect(() => {
-    if (offset === 0) {
-      setData(productsInitial);
-    } else {
-      restclient
-        .get("/getProducts", {
-          params: {
-            ...urlGenerator.getQueries(),
-            limit,
-            offset,
-          },
-        })
-        .then((res) => {
-          setData(res.data.results);
-        })
-        .catch((err) => setData([]));
-    }
-  }, [offset]);
+    console.log();
+    restclient
+      .get("/getProducts", {
+        params: {
+          ...urlGenerator.getQueries(),
+          limit,
+          offset,
+        },
+      })
+      .then((res) => {
+        setData(res.data.results);
+      })
+      .catch((err) => setData([]));
+  }, [offset, limit]);
 
   const handlePrevious = () => {
     setOffset(offset - limit);

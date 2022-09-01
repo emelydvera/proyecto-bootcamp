@@ -7,13 +7,14 @@ const View = require("./view");
 
 exports.fetchProducts = (req, res, next) => {
   const { siteId } = req.platform;
+  console.log(req.query.limit);
 
   ProductService.getProducts(siteId, req.query)
     .then((response) => {
       res.locals.products = response.results;
       res.locals.filters = response.filters;
       res.locals.available_filters = response.available_filters;
-      res.locals.totalProducts= response.totalProducts
+      res.locals.totalProducts = response.totalProducts;
       next();
     })
     .catch((error) => {
@@ -42,7 +43,7 @@ exports.render = (req, res) => {
       available_filters: res.locals.available_filters,
       baseUrl: req.baseUrl,
       query: req.query,
-      totalProducts: res.locals.totalProducts
+      totalProducts: res.locals.totalProducts,
     },
     {
       navigationOptions: {

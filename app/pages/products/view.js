@@ -9,6 +9,7 @@ const ProductsList = require("../../components/ProductsList");
 const Filter = require("../../components/Filter");
 const Pagination = require("../../components/Pagination/Pagination");
 const UrlGenerator = require("../../utils/urlGenerator");
+const SelectProductsPerPage = require("../../components/SelectProductsPerPage/SelectProductPerPage");
 
 function View(props) {
   const {
@@ -33,6 +34,7 @@ function View(props) {
   };
 
   const [data, setData] = useState(products);
+  const [limit, setLimit] = useState(query.limit || 10);
 
   const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
 
@@ -58,15 +60,19 @@ function View(props) {
             filters={filters}
             available_filters={available_filters}
             urlGenerator={urlGenerator}
+            limit={limit}
           />
           <div className="products">
+            <SelectProductsPerPage setLimit={setLimit} limit={limit} />
             <ProductsList products={data} i18n={i18n} query={query} />
             <Pagination
+              // key={limit}
               totalProducts={totalProducts}
               urlGenerator={urlGenerator}
               setData={setData}
               productsInitial={products}
               i18n={i18n}
+              limit={limit}
             />
           </div>
         </div>

@@ -1,9 +1,13 @@
 const React = require("react");
-const { useState } = React;
 const PropTypes = require("prop-types");
 const FilterItem = require("../FilterItem");
 
-const Filter = ({ filters, available_filters, urlGenerator }) => {
+const Filter = ({ filters, available_filters, urlGenerator, limit }) => {
+  const handleClick = (filterId) => {
+    urlGenerator.setQuery("limit", limit);
+    urlGenerator.removeFilter(filterId);
+  };
+
   return (
     <aside className="filters">
       {filters.length > 0 && (
@@ -14,7 +18,7 @@ const Filter = ({ filters, available_filters, urlGenerator }) => {
           <li
             className="filters__list__item"
             key={filter.id}
-            onClick={() => urlGenerator.removeFilter(filter.id)}
+            onClick={() => handleClick(filter.id)}
           >
             {`ⓧ ${filter.name}`}: {filter.values[0].name}
           </li>
@@ -22,7 +26,12 @@ const Filter = ({ filters, available_filters, urlGenerator }) => {
       </ul>
       <h3>Filtros:</h3>
       {available_filters.map((filter, index) => (
-        <FilterItem filter={filter} key={index} urlGenerator={urlGenerator} />
+        <FilterItem
+          filter={filter}
+          key={index}
+          urlGenerator={urlGenerator}
+          limit={limit}
+        />
       ))}
     </aside>
   );
