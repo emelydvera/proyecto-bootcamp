@@ -1,17 +1,6 @@
-@import "../../styles/variables";
+@import "../../styles/common";
 
 .search__button {
-  width: 100px;
+  @include button;
   margin-left: 10px;
-  border-radius: $border-radius-s;
-  border: 0;
-
-  &--enabled {
-    background-color: $blue-base;
-    color: rgb(245, 240, 240);
-  }
-
-  &--disabled {
-    background-color: $blue-300;
-  }
 }

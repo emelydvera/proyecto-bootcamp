@@ -7,11 +7,7 @@ const SearchButton = (props) => {
   return (
     <>
       <button
-        className={
-          isActive
-            ? "search__button search__button--disabled"
-            : "search__button search__button--enabled"
-        }
+        className="search__button"
         aria-label={i18n.gettext("Boton buscar producto")}
         type="submit"
         disabled={isActive}
