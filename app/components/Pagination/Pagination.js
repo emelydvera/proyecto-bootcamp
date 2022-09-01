@@ -56,12 +56,7 @@ const Pagination = ({
           >Volver Inicio</button>
           <section className="pagination">
             <button
-              className={
-                offset === 0
-                  ?
-                  "pagination__back button button--disabled"
-                  : "pagination__back button button--enabled"
-              }
+              className="pagination__back button"
               tabIndex="207"
               aria-label={i18n.gettext("Página Anterior")}
               onClick={handlePrevious}
@@ -70,12 +65,7 @@ const Pagination = ({
               {i18n.gettext("Página Anterior")}
             </button>
             <button
-              className={
-                (limit + offset >= totalProducts)
-                  ?
-                  "pagination__next button button--disabled"
-                  : "pagination__next button button--enabled"
-              }
+              className="pagination__next button"
               tabIndex="208"
               aria-label={i18n.gettext("Página Siguiente")}
               onClick={handleNext}
