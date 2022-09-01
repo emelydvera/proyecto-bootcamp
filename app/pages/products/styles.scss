@@ -3,8 +3,12 @@
 @import "../../components/FilterItem/styles.scss";
 @import "../../components/Filter/styles.scss";
 @import "../../components/Pagination/styles.scss";
+@import "../../components//SelectProductsPerPage/styles.scss";
 @import "../../styles/variables";
 
+#root-app {
+  background-color: $gray-base;
+}
 
 #products-page {
   background-color: $gray-base;
@@ -12,6 +16,8 @@
   justify-content: center;
 
   .products {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 

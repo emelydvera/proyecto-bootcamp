@@ -126,6 +126,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
 
         <div className="buy__container">
           <InputQuantity
+            className="buy__input"
             tabIndex={19}
             availableQuantity={available_quantity}
             setError={setError}
@@ -134,6 +135,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           />
           {<span className="error">{error && error}</span>}
           <button
+            className="buy__button"
             tabIndex={20}
             onClick={() => handleClick(id, quantityToBuy)}
             type="submit"

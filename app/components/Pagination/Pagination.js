@@ -11,15 +11,14 @@ const Pagination = ({
   totalProducts,
   urlGenerator,
   setData,
-  productsInitial,
   i18n,
+  limit,
+  productsInitial,
 }) => {
   const [offset, setOffset] = useState(0);
 
-  const [limit, setLimit] = useState(10);
-
   useEffect(() => {
-    if (offset === 0) {
+    if (offset === 0 && limit === 10) {
       setData(productsInitial);
     } else {
       restclient
@@ -37,6 +36,21 @@ const Pagination = ({
     }
   }, [offset]);
 
+  useEffect(() => {
+    restclient
+      .get("/getProducts", {
+        params: {
+          ...urlGenerator.getQueries(),
+          limit,
+          offset,
+        },
+      })
+      .then((res) => {
+        setData(res.data.results);
+      })
+      .catch((err) => setData([]));
+  }, [limit]);
+
   const handlePrevious = () => {
     setOffset(offset - limit);
   };
@@ -45,15 +59,21 @@ const Pagination = ({
     setOffset(offset + limit);
   };
 
+  const handleGoInitialPagination = () => {
+    setOffset(0);
+  };
+
   return (
     <>
-
-      { totalProducts > limit &&
+      {totalProducts > limit && (
         <nav>
           <button
             disabled={offset === 0}
             className="pagination__start button"
-          >Volver Inicio</button>
+            onClick={handleGoInitialPagination}
+          >
+            Volver Inicio
+          </button>
           <section className="pagination">
             <button
               className="pagination__back button"
@@ -75,7 +95,7 @@ const Pagination = ({
             </button>
           </section>
         </nav>
-      }
+      )}
     </>
   );
 };

@@ -1,22 +1,34 @@
 const React = require("react");
 const { useState } = React;
-const PropTypes = require('prop-types');
+const PropTypes = require("prop-types");
 const UrlGenerator = require("../../utils/urlGenerator");
+const { useI18n } = require("nordic/i18n");
 
 function FilterItem(props) {
+  const { i18n } = useI18n();
   const { filter, urlGenerator } = props;
   const [show, setShow] = useState(false);
+  console.log("hellooo ");
 
   return (
-    <section className="filter_section" key={filter.id}>
-      <h4 className="filter_section__name" onClick={() => setShow(!show)}>
-        {` ${show ? "▲ " : "▼ "}${filter.name}`}
-      </h4>
-      <ul className="filter_section__list">
-        {show &&
-          filter.values.map((value) => (
+    <section
+      className="filter_section"
+      aria-label={i18n.gettext("Filtros de {0}", filter.name)}
+      key={filter.id}
+    >
+      <details open={show}>
+        <summary
+          aria-label={i18n.gettext("{0}", filter.name)}
+          className="filter_section__name"
+        >
+          {filter.name}
+        </summary>
+        <ul className="filter_section__list">
+          {filter.values.map((value) => (
             <li
               className="filter_section__list__item"
+              aria-label={i18n.gettext("{0}", value)}
+              tabIndex={214}
               key={filter.id + value.id}
             >
               <a onClick={() => urlGenerator.setFilter(filter.id, value.id)}>
@@ -24,7 +36,8 @@ function FilterItem(props) {
               </a>
             </li>
           ))}
-      </ul>
+        </ul>
+      </details>
     </section>
   );
 }

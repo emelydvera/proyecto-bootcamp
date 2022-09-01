@@ -1,7 +1,5 @@
 const React = require("react");
 const PropTypes = require("prop-types");
-const { useI18n } = require('nordic/i18n');
-
 
 const InputQuantity = ({
   className,
@@ -10,29 +8,49 @@ const InputQuantity = ({
   setQuantityToBuy,
   quantityToBuy,
 }) => {
-
-  const { i18n } = useI18n();
-
   const handleChange = (e) => {
     const { value } = e.target;
 
-    if (parseInt(value) <= 0 || value === '') {
-
+    if (parseInt(value) < 0 || parseInt(value) === -0) {
       setQuantityToBuy("1");
-
+      setError("");
+    } else if (availableQuantity < parseInt(value)) {
+      setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+      setQuantityToBuy(value);
+    } else if (value === "" || parseInt(value) === 0) {
+      setError(`Puedes comprar mínimo 1 unidad`);
+      setQuantityToBuy(value);
     } else {
-
-      if (availableQuantity < parseInt(value)) {
-        setError(i18n.ngettext('Puedes comprar hasta {0} unidad', 'Puedes comprar hasta {0} unidades', availableQuantity, [availableQuantity]));
-      } else {
-        setError("");
-      }
+      setError("");
       setQuantityToBuy(value);
     }
   };
 
+  const handleClick = (e) => {
+    const { name } = e.target;
+    let newQuantityToBuy = parseInt(quantityToBuy);
+    if (name === "+") {
+      if (quantityToBuy === "") {
+        newQuantityToBuy = 0;
+        setError("");
+      }
+      newQuantityToBuy = newQuantityToBuy + 1;
+      setQuantityToBuy(newQuantityToBuy.toString());
+      if (availableQuantity < parseInt(newQuantityToBuy)) {
+        setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+      }
+    } else if (name === "-" && newQuantityToBuy > 1) {
+      newQuantityToBuy = newQuantityToBuy - 1;
+      setQuantityToBuy(newQuantityToBuy.toString());
+      setError(`Puedes comprar hasta ${availableQuantity} unidades`);
+      if (newQuantityToBuy <= availableQuantity) {
+        setError("");
+      }
+    }
+  };
+
   return (
-    <>
+    <div className="input__quantity">
       <input
         className={className}
         type="number"
@@ -40,7 +58,13 @@ const InputQuantity = ({
         onChange={handleChange}
         value={quantityToBuy}
       />
-    </>
+      <button className="buy__button__substract" name="-" onClick={handleClick}>
+        -
+      </button>
+      <button className="buy__button__add" name="+" onClick={handleClick}>
+        +
+      </button>
+    </div>
   );
 };
 

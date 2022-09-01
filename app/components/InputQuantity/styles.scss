@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+@import '../../styles/common';
+
+
+.input__quantity {
+    position: relative;
+
+    .buy__input, .checkout__product__input {
+        text-align: center;
+        border-style: hidden;
+        outline: 1px #eee solid;
+        border-radius: $border-radius-s;
+        padding: 8px 0;
+        width: 100%;
+
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+        /* Firefox */
+        &[type=number] {
+                -moz-appearance: textfield;
+        }
+
+        &:focus,
+        textarea:focus {
+            border-style: hidden;
+            border-radius: $border-radius-s;
+        }
+    }
+
+    .buy__button__substract, .buy__button__add {
+        position: absolute;
+        background: none;
+        border: none;
+        color: $blue-base;
+        padding: 0;
+        font-size: $font-size-m;
+        font-weight: $font-weight-light;
+        height: fit-content;
+        width: fit-content;
+        top: 4px;
+        cursor: pointer;
+    }
+
+    .buy__button__substract {
+        left: 8px;
+    }
+    
+    .buy__button__add {
+        right: 18px
+    }
+}
+
+
