@@ -14,8 +14,9 @@ const Pagination = ({
   i18n,
   limit,
   productsInitial,
+  setOffset,
+  offset
 }) => {
-  const [offset, setOffset] = useState(0);
 
   useEffect(() => {
     if (offset === 0 && limit === 10) {

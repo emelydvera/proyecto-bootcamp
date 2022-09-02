@@ -3,8 +3,9 @@ const Image = require("nordic/image");
 
 const options = [{ value: 5 }, { value: 10 }, { value: 15 }, { value: 20 }];
 
-const SelectProductsPerPage = ({ setLimit, limit }) => {
+const SelectProductsPerPage = ({ setLimit, limit, setOffset }) => {
   const handleChange = (e) => {
+    setOffset(0)
     setLimit(parseInt(e.target.value));
   };
   return (
