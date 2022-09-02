@@ -5,6 +5,7 @@ const { useI18n } = require("nordic/i18n");
 const options = [{ value: 5 }, { value: 10 }, { value: 15 }, { value: 20 }];
 
 const SelectProductsPerPage = ({ setLimit, limit, setOffset }) => {
+  const { i18n } = useI18n();
   const handleChange = (e) => {
     setOffset(0)
     setLimit(parseInt(e.target.value));
@@ -42,6 +43,7 @@ const SelectProductsPerPage = ({ setLimit, limit, setOffset }) => {
 SelectProductsPerPage.propTypes = {
   setLimit: PropTypes.func.isRequired,
   limit: PropTypes.number.isRequired,
+  setOffset: PropTypes.func.isRequired,
 };
 
 module.exports = SelectProductsPerPage;

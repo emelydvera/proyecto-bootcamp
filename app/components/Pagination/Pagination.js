@@ -113,6 +113,8 @@ Pagination.propTypes = {
   i18n: PropTypes.shape({
     gettext: PropTypes.func.isRequired,
   }).isRequired,
+  setOffset: PropTypes.func.isRequired,
+  offset: PropTypes.number.isRequired,
 };
 
 module.exports = Pagination;
