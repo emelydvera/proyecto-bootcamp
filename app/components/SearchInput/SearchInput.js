@@ -44,14 +44,14 @@ const SearchInput = ({ i18n }) => {
             tabIndex="11"
           />
           <SearchButton
-            isActive={value.length < 2}
+            isActive={value.trim().length < 2}
             i18n={i18n}
             setValue={setValue}
           />
         </div>
         {!isMounted.current ? (
           <p className="search__alert"> </p>
-        ) : value.length >= 2 ? (
+        ) : value.trim().length >= 2 ? (
           <p className="search__alert"> </p>
         ) : (
           <p
