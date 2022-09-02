@@ -7,7 +7,6 @@ const { useI18n } = require("nordic/i18n");
 function FilterItem(props) {
   const { i18n } = useI18n();
   const { filter, urlGenerator } = props;
-  const [show, setShow] = useState(false);
 
   return (
     <section
@@ -15,7 +14,7 @@ function FilterItem(props) {
       aria-label={i18n.gettext("Filtros de {0}", filter.name)}
       key={filter.id}
     >
-      <details open={show}>
+      <details>
         <summary
           aria-label={i18n.gettext("{0}", filter.name)}
           className="filter_section__name"
@@ -26,7 +25,7 @@ function FilterItem(props) {
           {filter.values.map((value) => (
             <li
               className="filter_section__list__item"
-              aria-label={i18n.gettext("{0}", value)}
+              aria-label={i18n.gettext("{0}", value.name)}
               tabIndex={214}
               key={filter.id + value.id}
             >

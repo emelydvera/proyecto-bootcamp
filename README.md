@@ -1,16 +1,22 @@
 # Ecommerce Team 5 Bootcamp / Wave5
 
-> Brief project description
+> BRIEF PROJECT DESCRIPTION
 
 ## Description
 
-- Feature/Search Bar: Esta funcionalidad le permite al usuario realizar una busqueda y mostrar productos coincidentes con la palabra pedida.
+- Feature/Search Bar: This feature allows users to perform a search in the search bar and shows them products that match with their search.
 
-- Feature/Product Details: Aqui se permite ver mas detalles del producto luego de que se haga click en su imagen.
+- Feature/Product Details: This feature allows users to get more information about a specific product when they click on an image.
 
-- Feature/Product Filter: Se filtran los productos del listado a corde a la peticion del usuario y su precio.
+- Feature/Product Filter: This feature allows users to limit their search by different filters so they can easily get what they are looking for.
 
-- Feature/Error Page: Se redirige al usuario a una pagina de error cuando se busca un producto con un ID no valido.
+- Feature/Error Page: This feature was developed to allow users land in an friendly error page when there is an error in page by a server response error or an user request error or even some other errors that comes up during the interaction of the user with the page.
+
+- Feature/Pagination: This feature allows users to better navigate among products; go to next page, go back to previous page, go to the first page or even hide buttons where there is only one page to show.
+
+- Feature/Prepare Purchasing Process: This feature allows users to initiate a purchasing process by choosing the product quantity of the selected product) they want to buy; when users are ready they can press the purchase button and they will be taken to the checkout page.
+
+- Feature/Checkout: This feature allows users to get a summary of their purchase and allows them to modify if needed. The summary allow users to see the name of the product, the image of the product, the quantity they are going, the price per unit and the total price.
 
 ## Environment setup
 
@@ -72,14 +78,14 @@ _Alternatively you may use the watcher for automatic assets rebuilding: `npm run
 npm run debug
 ```
 
-## Colaboradores:
+## Team:
 
-- Ivan Batista Ochoa
-- Gabriela Pacheco Abarcia
 - Enrique Chacon Mena
 - Emely Vera Villamizar
 - Susan Ortiz Muñoz
 - Nahuel Occhipinti
+- Gabriela Pacheco Abarcia
+- Ivan Batista Ochoa
 
 ## License
 

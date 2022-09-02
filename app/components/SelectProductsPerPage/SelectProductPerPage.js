@@ -1,5 +1,6 @@
 const React = require("react");
-const Image = require("nordic/image");
+const PropTypes = require("prop-types");
+const { useI18n } = require("nordic/i18n");
 
 const options = [{ value: 5 }, { value: 10 }, { value: 15 }, { value: 20 }];
 
@@ -10,8 +11,20 @@ const SelectProductsPerPage = ({ setLimit, limit, setOffset }) => {
   };
   return (
     <div className="products__per-page">
-      <span>Productos por página</span>
+      <label
+        aria-label={i18n.gettext(
+          "Está página está mostrando {0} productos",
+          limit
+        )}
+        tabIndex={9}
+      >
+        Productos por página
+      </label>
       <select
+        aria-label={i18n.gettext(
+          "Cambia el número de productos mostrados por la página"
+        )}
+        tabIndex={9}
         className="products__per-page__select"
         onChange={handleChange}
         defaultValue={limit.toString()}
@@ -22,13 +35,13 @@ const SelectProductsPerPage = ({ setLimit, limit, setOffset }) => {
           </option>
         ))}
       </select>
-      {/* <Image
-        src="dropdown-image.svg"
-        // lazyload="off"
-        className="products__per-page__dropdown"
-      ></Image> */}
     </div>
   );
+};
+
+SelectProductsPerPage.propTypes = {
+  setLimit: PropTypes.func.isRequired,
+  limit: PropTypes.number.isRequired,
 };
 
 module.exports = SelectProductsPerPage;
