@@ -1,18 +1,17 @@
 const React = require("react");
 
-const PaginationComponent = require('@andes/pagination');
+const PaginationComponent = require("@andes/pagination");
 
 const PropTypes = require("prop-types");
 const UrlGenerator = require("../../utils/urlGenerator");
 
-const Pagination = ({
-  totalProducts,
-  urlGenerator,
-}) => {
-
-  const limit = urlGenerator.getQueryByName('limit');
-  const totalPages = totalProducts > 1000 ? Math.ceil(1000 / limit) : Math.ceil(totalProducts / limit);
-  const currentPage = parseInt(urlGenerator.getQueryByName('page'));
+const Pagination = ({ totalProducts, urlGenerator }) => {
+  const limit = urlGenerator.getQueryByName("limit");
+  const totalPages =
+    totalProducts > 1000
+      ? Math.ceil(1000 / limit)
+      : Math.ceil(totalProducts / limit);
+  const currentPage = parseInt(urlGenerator.getQueryByName("page"));
 
   return (
     <>
