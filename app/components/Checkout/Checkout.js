@@ -3,6 +3,7 @@ const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const { useState } = React;
 const InputQuantity = require("../InputQuantity");
+const FastShipping24 = require("@andes/icons/FastShipping24");
 
 const Checkout = ({ i18n, product, quantity }) => {
   const {
@@ -34,9 +35,7 @@ const Checkout = ({ i18n, product, quantity }) => {
         />
         <div className="column">
           <div className="row checkout__product__title">
-            <h2
-              tabIndex={11}
-            >
+            <h2 tabIndex={11}>
               {i18n.gettext(
                 title.length > 70 ? title.slice(0, 70 - 3) + "..." : title
               )}
@@ -49,10 +48,7 @@ const Checkout = ({ i18n, product, quantity }) => {
               availableQuantity={available_quantity}
               setError={setError}
             />
-            <p
-              aria-label={i18n.gettext("precio producto")}
-              tabIndex={13}
-            >
+            <p aria-label={i18n.gettext("precio producto")} tabIndex={13}>
               {i18n.gettext(`Precio unitario: $${price}`)}
             </p>
           </div>
@@ -61,22 +57,22 @@ const Checkout = ({ i18n, product, quantity }) => {
             aria-label={i18n.gettext("Costo de envío")}
             className="row checkout__product__info"
           >
+            <div className="fastshipping">
+              <FastShipping24 color="green" />
+            </div>
             {shipping.free_shipping ? (
-              <p
-                className="envio__gratis"
-                tabIndex={14}
-              >
+              <p className="envio__gratis" tabIndex={14}>
                 {i18n.gettext(
-                  `Envío gratis ${seller_address && "desde: " + seller_address.city.name
+                  `Envío gratis ${
+                    seller_address && "desde: " + seller_address.city.name
                   }`
                 )}
               </p>
             ) : (
-              <p
-                tabIndex={14}
-              >
+              <p tabIndex={14}>
                 {i18n.gettext(
-                  `Envío con costo a determinar ${seller_address && "desde: " + seller_address.city.name
+                  `Envío con costo a determinar ${
+                    seller_address && "desde: " + seller_address.city.name
                   }`
                 )}
               </p>
