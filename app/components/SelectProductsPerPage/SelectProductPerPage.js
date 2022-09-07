@@ -46,7 +46,7 @@ const SelectProductsPerPage = ({ urlGenerator }) => {
 };
 
 SelectProductsPerPage.propTypes = {
-
+  urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
 };
 
 module.exports = SelectProductsPerPage;
