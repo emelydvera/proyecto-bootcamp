@@ -3,6 +3,8 @@ const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const { useState } = React;
 const InputQuantity = require("../InputQuantity");
+const FastShipping20 = require('@andes/icons/FastShipping20');
+
 
 const Checkout = ({ i18n, product, quantity }) => {
   const {
@@ -19,12 +21,13 @@ const Checkout = ({ i18n, product, quantity }) => {
   return (
     <div className="checkout" id="checkout">
       <h2
-        aria-label={i18n.gettext("Carrito de compras")}
+        aria-label={i18n.gettext("Resumen de compra")}
         tabIndex={9}
         className="checkout__title"
       >
-        {i18n.gettext(`Carrito de compras (${quantityToBuy})`)}
+        {i18n.gettext(`Resumen de compra (${quantityToBuy})`)}
       </h2>
+      <p>{i18n.gettext('Producto')}</p>
       <div className="checkout__product">
         <Image
           className="image"
@@ -57,41 +60,44 @@ const Checkout = ({ i18n, product, quantity }) => {
             </p>
           </div>
 
-          <div
-            aria-label={i18n.gettext("Costo de envío")}
-            className="row checkout__product__info"
-          >
-            {shipping.free_shipping ? (
-              <p
-                className="envio__gratis"
-                tabIndex={14}
-              >
-                {i18n.gettext(
-                  `Envío gratis ${seller_address && "desde: " + seller_address.city.name
-                  }`
-                )}
-              </p>
-            ) : (
-              <p
-                tabIndex={14}
-              >
-                {i18n.gettext(
-                  `Envío con costo a determinar ${seller_address && "desde: " + seller_address.city.name
-                  }`
-                )}
-              </p>
-            )}
-            <p className="checkout__alert">{i18n.gettext(error)}</p>
-          </div>
         </div>
       </div>
-      <p
+      <p>{i18n.gettext('Envío')}</p>
+      <div
+        aria-label={i18n.gettext("Costo de envío")}
+        className="row checkout__product__info"
+      >
+        {shipping.free_shipping ? (
+          <p
+            className="envio__gratis"
+            tabIndex={14}
+          >
+            <FastShipping20 color='green' />
+            {i18n.gettext(
+              `Envío gratis ${seller_address && "desde: " + seller_address.city.name
+              }`
+            )}
+          </p>
+        ) : (
+          <p
+            tabIndex={14}
+          >
+            {i18n.gettext(
+              `Envío con costo a determinar ${seller_address && "desde: " + seller_address.city.name
+              }`
+            )}
+          </p>
+        )}
+        <p className="checkout__alert">{i18n.gettext(error)}</p>
+      </div>
+      <div
         tabIndex={15}
         aria-label={i18n.gettext("Precio total")}
         className="checkout__total"
       >
-        {i18n.gettext(`Total: ${price * quantityToBuy}`)}
-      </p>
+        <p>{i18n.gettext('Total')}</p>
+        <p>{i18n.gettext(`${price * quantityToBuy}`)}</p>
+      </div>
     </div>
   );
 };
