@@ -3,7 +3,7 @@ const PropTypes = require("prop-types");
 const Image = require("nordic/image");
 
 const ProductsCard = ({ product, i18n, index }) => {
-  const { id, title, price, address, thumbnail, installments } = product;
+  const { id, title, name, price, address, thumbnail, installments } = product;
 
   return (
     <>
@@ -28,7 +28,7 @@ const ProductsCard = ({ product, i18n, index }) => {
         </div>
         <div className="card__description">
           <h2 className="card__description__title" tabIndex={`${index + 1}3`}>
-            {i18n.gettext(title)}
+            {title || name}
           </h2>
           <p
             className="card__description__price"
@@ -39,9 +39,8 @@ const ProductsCard = ({ product, i18n, index }) => {
           </p>
           <span
             className="card__description__ubication"
-            aria-label={`ubicación del producto ${
-              address ? (address.state_name ? address.state_name : "") : ""
-            }`}
+            aria-label={`ubicación del producto ${address ? (address.state_name ? address.state_name : "") : ""
+              }`}
             tabIndex={`${index + 1}6`}
           >
             {i18n.gettext(

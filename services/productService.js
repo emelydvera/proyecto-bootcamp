@@ -1,28 +1,39 @@
 const restclient = require("nordic/restclient")({
   timeout: 5000,
-  baseURL: "https://api.mercadolibre.com",
 });
 
 const normalizer = require("./transforms/normalizer");
 
 class ProductService {
   static getProducts(sitedId, params) {
+
+    const { page = 1, limit = 10 } = params;
+
     return restclient
       .get(`/sites/${sitedId}/search`, {
         params: {
           limit: 10,
-          ...params
+          page: 1,
+          ...params,
+          offset: page * limit
         },
       })
-      .then((response) => ({
-        results: normalizer(response.data.results),
-        filters: response.data.filters,
-        available_filters: response.data.available_filters,
-        totalProducts: response.data.paging.total
-      }))
+      .then((response) => {
+        return {
+          results: normalizer(response.data.results),
+          filters: response.data.filters,
+          available_filters: response.data.available_filters,
+          totalProducts: response.data.paging.total
+        }
+      })
       .catch((error) => {
         console.error(error);
-        return [];
+        return ({
+          results: [],
+          filters: [],
+          available_filters: [],
+          totalProducts: 0
+        });
       });
   }
 
@@ -31,7 +42,6 @@ class ProductService {
       .get(`/items/${id}`)
       .then((response) => response.data)
       .catch((error) => {
-        console.log(error);
         throw new Error(error);
       });
   }
@@ -41,7 +51,6 @@ class ProductService {
       .get(`/items/${id}/description`)
       .then((response) => response.data)
       .catch((error) => {
-        console.log(error);
         throw new Error(error);
       });
   }

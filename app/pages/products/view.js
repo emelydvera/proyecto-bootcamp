@@ -57,37 +57,32 @@ function View(props) {
       <Script src="vendor.js" />
       <Script src="products.js" />
 
-      {products.length > 0 ? (
-        <div id="products-page">
-          <Filter
-            filters={filters}
-            available_filters={available_filters}
-            urlGenerator={urlGenerator}
+      <div id="products-page">
+        <Filter
+          filters={filters}
+          available_filters={available_filters}
+          urlGenerator={urlGenerator}
+          limit={parseInt(urlGenerator.getQueries().limit)}
+        />
+        <div className="products">
+          <SelectProductsPerPage
+            setLimit={setLimit}
             limit={parseInt(urlGenerator.getQueries().limit)}
+            setOffset={setOffset}
           />
-          <div className="products">
-            <SelectProductsPerPage
-              setLimit={setLimit}
-              limit={parseInt(urlGenerator.getQueries().limit)}
-              setOffset={setOffset}
-            />
-            <ProductsList products={data} i18n={i18n} query={query} />
-            <Pagination
-              // key={limit}
-              totalProducts={totalProducts}
-              urlGenerator={urlGenerator}
-              setData={setData}
-              productsInitial={products}
-              i18n={i18n}
-              limit={parseInt(urlGenerator.getQueries().limit)}
-              setOffset={setOffset}
-              offset={offset}
-            />
-          </div>
+          <ProductsList products={data} i18n={i18n} query={query} />
+          <Pagination
+            totalProducts={totalProducts}
+            urlGenerator={urlGenerator}
+            setData={setData}
+            productsInitial={products}
+            i18n={i18n}
+            limit={parseInt(urlGenerator.getQueries().limit)}
+            setOffset={setOffset}
+            offset={offset}
+          />
         </div>
-      ) : (
-        <p>{i18n.gettext("No se encontraron productos")}</p>
-      )}
+      </div>
     </div>
   );
 }

@@ -19,7 +19,7 @@ const ProductsList = (props) => {
           );
         })
       ) : (
-        <p>{i18n.gettext("No se encontraron productos")}</p>
+        <p className="list__empty">{i18n.gettext("No se encontraron productos")}</p>
       )}
     </section>
   );

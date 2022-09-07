@@ -4,31 +4,42 @@ class UrlGenerator {
 
   constructor(baseUrl, query) {
     this.baseUrl = baseUrl;
-    this.query = { ...query };
+    this.query = { page: 1, ...query };
+  }
+
+
+  setQuery(filterId, filterValue) {
+    this.query[filterId] = filterValue;
   }
 
   setFilter(filterId, filterValue) {
-    this.query[filterId] = filterValue;
+    this.setQuery(filterId, filterValue);
+    this.setQuery('page', 1);
     window.location.href = this.getNewUrl();
   }
 
   removeFilter(queryId) {
     delete this.query[queryId];
+    this.setQuery('page', 1);
     window.location.href = this.getNewUrl();
   }
 
   getNewUrl() {
     return (
-      this.baseUrl +
-      Object.entries(this.query)
-        .map(([key, value], index) => {
-          if (index == 0) {
-            return `?${key}=${value}&`;
-          }
-          return `${key}=${value}&`;
-        })
-        .join("")
+      this.baseUrl + '?' + this.getQueryString()
     );
+  }
+
+  getQueryString() {
+    return Object.entries(this.query)
+      .map(([key, value], index) => {
+        return `${key}=${value}&`;
+      })
+      .join("")
+  }
+
+  getQueryByName(name) {
+    return this.query[name]
   }
 
   getQueries() {

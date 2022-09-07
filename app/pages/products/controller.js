@@ -7,6 +7,7 @@ const View = require("./view");
 
 exports.fetchProducts = (req, res, next) => {
   const { siteId } = req.platform;
+  const { page } = req.query;
 
   ProductService.getProducts(siteId, req.query)
     .then((response) => {
@@ -16,9 +17,8 @@ exports.fetchProducts = (req, res, next) => {
       res.locals.totalProducts = response.totalProducts;
       next();
     })
-    .catch((error) => {
-      res.redirect("/error");
-      next(error);
+    .catch(() => {
+      return res.redirect("/error");
     });
 };
 
