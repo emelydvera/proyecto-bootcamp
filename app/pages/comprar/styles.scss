@@ -1,7 +1,12 @@
 @import "../../components/Checkout/styles.scss";
 @import "../../components/InputQuantity/styles.scss";
+@import "../../styles/variables";
 
-.container{
+#root-app {
+  background-color: $background;
+}
+
+.container {
   display: flex;
   align-items: center;
   justify-content: center;

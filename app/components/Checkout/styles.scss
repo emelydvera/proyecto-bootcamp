@@ -6,18 +6,20 @@
 
   &__title {
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   &__total {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    // text-align: right;
   }
 
   &__product {
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $andes-white;
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     .image {
       margin-right: 50px;
@@ -33,6 +35,8 @@
     &__info {
       display: flex;
       justify-content: space-between;
+      // margin-top: 30px;
+      background-color: $andes-white;
 
       .envio__gratis {
         color: green;
@@ -47,12 +51,8 @@
     color: $red-base;
   }
 
-  .fastshipping {
-    position: absolute;
-    left: 3.12%;
-    right: 2.92%;
-    top: 15.62%;
-    bottom: 15.62%;
+  &__alert {
+    color: $red-base;
   }
 }
 
