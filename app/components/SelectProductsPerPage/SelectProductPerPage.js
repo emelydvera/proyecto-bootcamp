@@ -3,6 +3,7 @@ const PropTypes = require("prop-types");
 const { useI18n } = require("nordic/i18n");
 
 const Dropdown = require('@andes/dropdown');
+const UrlGenerator = require("../../utils/urlGenerator");
 const { DropdownItem } = Dropdown;
 
 
