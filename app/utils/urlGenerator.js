@@ -4,7 +4,11 @@ class UrlGenerator {
 
   constructor(baseUrl, query) {
     this.baseUrl = baseUrl;
-    this.query = { page: 1, ...query };
+    this.query = {
+      page: 1,
+      limit: 10,
+      ...query
+    };
   }
 
 
@@ -30,10 +34,15 @@ class UrlGenerator {
     );
   }
 
-  getQueryString() {
+  getQueryString(withPage = true) {
     return Object.entries(this.query)
-      .map(([key, value], index) => {
-        return `${key}=${value}&`;
+      .map(([key, value],) => {
+
+        if (withPage) {
+          return `${key}=${value}&`;
+        }
+
+        return key !== 'page' ? `${key}=${value}&` : ''
       })
       .join("")
   }

@@ -9,22 +9,11 @@ const UrlGenerator = require("../../utils/urlGenerator");
 const Pagination = ({
   totalProducts,
   urlGenerator,
-  setData,
-  i18n,
-  limit,
-  productsInitial,
-  setOffset,
-  offset
 }) => {
 
+  const limit = urlGenerator.getQueryByName('limit');
   const totalPages = totalProducts > 1000 ? Math.ceil(1000 / limit) - 1 : Math.ceil(totalProducts / limit) - 1;
   const currentPage = parseInt(urlGenerator.getQueryByName('page'));
-
-  const formatUrl = (href, page) => {
-    urlGenerator.setQuery('page', page)
-    return `${href}?${urlGenerator.getQueryString()}`;
-  };
-
 
   return (
     <>
@@ -34,8 +23,7 @@ const Pagination = ({
             boundary={2}
             pageSelected={currentPage}
             pageQuantity={totalPages}
-            href="/listado"
-            formatUrl={formatUrl}
+            href={`/listado?page=$page&${urlGenerator.getQueryString(false)}`}
           />
         </section>
       )}

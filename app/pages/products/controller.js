@@ -7,8 +7,6 @@ const View = require("./view");
 
 exports.fetchProducts = (req, res, next) => {
   const { siteId } = req.platform;
-  const { page } = req.query;
-
   ProductService.getProducts(siteId, req.query)
     .then((response) => {
       res.locals.products = response.results;

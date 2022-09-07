@@ -34,12 +34,10 @@ function View(props) {
   };
 
   const [data, setData] = useState(products);
-  const [limit, setLimit] = useState(parseInt(query.limit) || 10);
-  const [offset, setOffset] = useState(0);
 
   const urlGenerator = new UrlGenerator(
     baseUrl,
-    { ...query, limit },
+    query,
     filters,
     totalProducts
   );
@@ -62,13 +60,10 @@ function View(props) {
           filters={filters}
           available_filters={available_filters}
           urlGenerator={urlGenerator}
-          limit={parseInt(urlGenerator.getQueries().limit)}
         />
         <div className="products">
           <SelectProductsPerPage
-            setLimit={setLimit}
-            limit={parseInt(urlGenerator.getQueries().limit)}
-            setOffset={setOffset}
+            urlGenerator={urlGenerator}
           />
           <ProductsList products={data} i18n={i18n} query={query} />
           <Pagination
@@ -77,9 +72,6 @@ function View(props) {
             setData={setData}
             productsInitial={products}
             i18n={i18n}
-            limit={parseInt(urlGenerator.getQueries().limit)}
-            setOffset={setOffset}
-            offset={offset}
           />
         </div>
       </div>
