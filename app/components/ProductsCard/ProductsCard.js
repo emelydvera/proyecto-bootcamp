@@ -19,7 +19,7 @@ const ProductsCard = ({ product, i18n, index }) => {
             >
               <Image
                 className="card__image__img"
-                src={thumbnail}
+                src={thumbnail.replace('http', 'https')}
                 alt={i18n.gettext("imagen del producto")}
                 tabIndex={`${index + 1}4`}
               />
