@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 @import "~@andes/money-amount/index";
 
+
 .checkout {
   max-width: 80%;
   padding: 30px 0px;
@@ -31,26 +32,24 @@
     align-items: center;
     padding: 20px 0px;
     background-color: $andes-white;
+    padding: 60px;
 
     // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__unityprice {
       display: flex;
-      margin-block-start: 0px;
-      margin-block-end: 0px;
       font-size: 14px;
-      align-items: center;
+      align-items: baseline;
       color: rgba(0, 0, 0, 0.55);
-    }
-    .image {
-      margin-right: 50px;
+      gap: 5px;
     }
 
-    &__title {
-      gap: 5rem;
-      h2 {
-        margin: 0px;
-      }
+    .image {
+      margin-right: 50px;
     }
 
     &__info {
@@ -64,35 +63,45 @@
 
       .envio__gratis {
         display: flex;
+        gap: 8.7px;
 
-        &__p {
+        &--true {
           color: green;
           margin-block-start: 0;
           margin-block-end: 0;
-          margin-left: 8.7px;
+        }
+
+        &__city {
+          margin-block-start: 0;
+          margin-block-end: 0;
         }
       }
+
+      &__input {
+        width: 80px;
+      }
     }
-    &__input {
-      width: 80px;
+
+    &__alert {
+      color: $red-base;
+    }
+
+    &__alert {
+      color: $red-base;
     }
   }
 
-  &__alert {
-    color: $red-base;
+  .row {
+    display: flex;
+    align-items: center;
   }
 
-  &__alert {
-    color: $red-base;
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-right: 40%;
+    }
   }
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  align-items: center;
 }

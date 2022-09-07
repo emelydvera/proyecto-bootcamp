@@ -25,7 +25,7 @@ const Checkout = ({ i18n, product, quantity }) => {
         tabIndex={9}
         className="checkout__title"
       >
-        {i18n.gettext(`Resumen de compra (${quantityToBuy})`)}
+        {i18n.gettext('Resumen de compra')}
       </h2>
       <p className="checkout__subtitle">{i18n.gettext("Producto")}</p>
       <div className="checkout__product">
@@ -36,12 +36,20 @@ const Checkout = ({ i18n, product, quantity }) => {
           alt={i18n.gettext(title)}
         />
         <div className="column">
-          <div className="row checkout__product__title">
-            <h2 tabIndex={11}>
-              {i18n.gettext(
-                title.length > 70 ? title.slice(0, 70 - 3) + "..." : title
-              )}
-            </h2>
+          <h2 tabIndex={11}>
+            {i18n.gettext(
+              title.length > 70 ? title.slice(0, 70 - 3) + "..." : title
+            )}
+          </h2>
+          <div className="checkout__product__container">
+            <span
+              className="checkout__product__unityprice"
+              aria-label={i18n.gettext("precio producto")}
+              tabIndex={13}
+            >
+              {i18n.gettext(`${quantityToBuy}x`)}
+              <MoneyAmount amount={{ fraction: price }} size="14" />
+            </span>
             <InputQuantity
               className="checkout__product__input"
               tabIndex={12}
@@ -50,14 +58,6 @@ const Checkout = ({ i18n, product, quantity }) => {
               availableQuantity={available_quantity}
               setError={setError}
             />
-            <p
-              className="checkout__product__unityprice"
-              aria-label={i18n.gettext("precio producto")}
-              tabIndex={13}
-            >
-              {i18n.gettext(`${quantityToBuy}x\n`)}
-              <MoneyAmount amount={{ fraction: price }} size="14" />
-            </p>
           </div>
         </div>
       </div>
@@ -69,19 +69,19 @@ const Checkout = ({ i18n, product, quantity }) => {
         {shipping.free_shipping ? (
           <div className="envio__gratis">
             <FastShipping24 color="green" />
-            <p className="envio__gratis__p" tabIndex={14}>
-              {i18n.gettext(
-                `Envío gratis ${
-                  seller_address && "desde: " + seller_address.city.name
-                }`
-              )}
+            <p className="envio__gratis--true" tabIndex={14}>
+              {i18n.gettext('Envío gratis')}
             </p>
+            {seller_address &&
+              <p className="envio__gratis__city " tabIndex={14}>
+                {i18n.gettext('desde {0}', seller_address.city.name)}
+              </p>
+            }
           </div>
         ) : (
           <p tabIndex={14}>
             {i18n.gettext(
-              `Envío con costo a determinar ${
-                seller_address && "desde: " + seller_address.city.name
+              `Envío con costo a determinar ${seller_address && "desde: " + seller_address.city.name
               }`
             )}
           </p>
