@@ -1,6 +1,10 @@
 const React = require("react");
 const PropTypes = require("prop-types");
-const { useI18n } = require("nordic/i18n")
+const { useI18n } = require("nordic/i18n");
+const Dropdown = require('@andes/dropdown');
+const { DropdownItem } = Dropdown;
+const TextField = require('@andes/textfield');
+const { CodeInput } = require('@andes/textfield');
 
 const InputQuantity = ({
   className,
@@ -55,6 +59,13 @@ const InputQuantity = ({
 
   return (
     <div className="input__quantity">
+
+      {/* <TextField 
+      label="Cantidad" 
+      type='number'
+      min="1"
+      /> */}
+
       <input
         className={className}
         type="number"

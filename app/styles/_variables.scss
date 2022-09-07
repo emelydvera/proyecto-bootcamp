@@ -4,8 +4,8 @@ $font-size-m: 20px;
 
 // Font weights
 $font-weight-light: 300;
-// $font-weight-regular: 400;
-// $font-weight-semibold: 600;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 //border
@@ -19,8 +19,8 @@ $red-base: #f23d4f;
 $blue-base: rgb(65, 137, 230);
 $blue-300: rgba($blue-base, 0.3);
 //gray
-$gray-base: #ededed; 
-$gray-letters: #8f8e8e; 
+$gray-base: #ededed;
+$gray-letters: #8f8e8e;
 $gray-error-link: #666;
 //green
-$green-base: green;
+$andes-green-500: #00A650 !default;

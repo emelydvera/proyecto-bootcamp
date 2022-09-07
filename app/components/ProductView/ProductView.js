@@ -1,7 +1,10 @@
 const React = require("react");
-const { useState, useEffect } = React;
+const { useState } = React;
 const Image = require("nordic/image");
 const PropTypes = require("prop-types");
+const Button = require('@andes/button');
+const MoneyAmount = require('@andes/money-amount');
+const Shipping24 = require('@andes/icons/Shipping24');
 const InputQuantity = require("../InputQuantity");
 const ProductAttributes = require("../ProductAttributes");
 
@@ -16,6 +19,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
     available_quantity,
     attributes,
     id,
+    currency_id
   } = product;
 
   const [error, setError] = useState("");
@@ -69,13 +73,15 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             <figcaption>{i18n.gettext(title)}</figcaption>
           </figure>
         </div>
-
-        <p tabIndex={19} className="description">{i18n.gettext(description.plain_text)}</p>
+        <h2>
+          {i18n.gettext('Descripción del producto')}
+        </h2>
+        <p tabIndex={19} >{i18n.gettext(description.plain_text)}</p>
         <ProductAttributes i18n={i18n} attributes={attributes} />
       </div>
 
       <div className="info">
-        <span tabIndex={10} aria-label={`${condition}`}>
+        <span className="info__use" tabIndex={10} aria-label={`${condition}`}>
           {i18n.gettext(
             condition === "new"
               ? "Nuevo"
@@ -87,44 +93,80 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           )}
         </span>
         <span
+          className="info__use"
           tabIndex={11}
           aria-label={i18n.gettext(`${sold_quantity} productos vendidos`)}
         >
           {" "}
-          {i18n.gettext(`| ${sold_quantity} vendidos`)}
+          {i18n.gettext(`- ${sold_quantity} vendidos`)}
         </span>
-        <h3 tabIndex={12} aria-label={i18n.gettext(`${title}`)}>
+
+        <h2 tabIndex={12} aria-label={i18n.gettext(`${title}`)}>
           {i18n.gettext(title)}
-        </h3>
-        <h2
-          tabIndex={13}
-          aria-label={i18n.gettext(`el producto tiene un precio de ${price}`)}
-        >
-          {i18n.gettext(`$ ${new Intl.NumberFormat().format(price)}`)}
         </h2>
 
+        <MoneyAmount
+          className="info__price"
+          tabIndex={13}
+          aria-label={i18n.gettext(`el producto tiene un precio de ${price}`)}
+          amount={{
+            cents: '00',
+            currencyId: currency_id,
+            fraction: i18n.gettext(`${price.toLocaleString('de-DE')}`),
+            symbol: '$'
+          }}
+          centsType="superscript"
+          size={48}
+
+        />
+
         {!quantity || !amount ? null : (
-          <p tabIndex={14}>
-            {i18n.gettext(
-              ` ${quantity} cuotas de $ ${new Intl.NumberFormat().format(
-                amount
-              )} cada una`
-            )}
+          <p
+            className="info__quantity-amount"
+            tabIndex={14}
+            aria-label={i18n.gettext(
+              `Pagalo en ${quantity} cuotas, cada una de  ${amount}`)}
+          >
+            {quantity} cuotas de {' '}
+            {<MoneyAmount
+              className="info__amount"
+              amount={{
+                currencyId: currency_id,
+                fraction: i18n.gettext(`${amount.toLocaleString('de-DE')}`),
+                symbol: '$'
+              }}
+              size={16}
+
+            />
+            } cada una
+
+
           </p>
         )}
 
         <p
+        className="info__available"
           tabIndex={16}
           aria-label={i18n.gettext(
             `hay ${available_quantity} unidades disponibles`
           )}
         >{`Cantidad disponible: ${available_quantity}`}</p>
-        <p
-          tabIndex={17}
-          aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}
-        >
-          {shipping.free_shipping ? "Envío gratis" : "No envío gratis"}
-        </p>
+
+        {
+          shipping.free_shipping ?
+            <div className="info__shipping">
+              <Shipping24
+                color=' #00A650'
+              />
+              <p
+                tabIndex={17}
+                aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}
+              >
+                {i18n.gettext('Envío gratis')}
+              </p>
+            </div> :
+            ''
+        }
 
         <div className="buy__container">
           <InputQuantity
@@ -136,16 +178,18 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             quantityToBuy={quantityToBuy}
           />
           {<span className="error">{error && i18n.gettext(error)}</span>}
-          <button
+
+          <Button
             className="buy__button"
             tabIndex={18}
             onClick={() => handleClick(id, quantityToBuy)}
             type="submit"
             disabled={error}
+            fullWidth={true}
             aria-label={i18n.gettext("botón para comprar producto")}
           >
             {i18n.gettext("Comprar")}
-          </button>
+          </Button>
         </div>
       </div>
     </section>

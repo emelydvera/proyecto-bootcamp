@@ -5,7 +5,8 @@
 .input__quantity {
     position: relative;
 
-    .buy__input, .checkout__product__input {
+    .buy__input,
+    .checkout__product__input {
         text-align: center;
         border-style: hidden;
         outline: 1px #eee solid;
@@ -16,13 +17,13 @@
         /* Chrome, Safari, Edge, Opera */
         &::-webkit-outer-spin-button,
         &::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
+            -webkit-appearance: none;
+            margin: 0;
+        }
 
         /* Firefox */
         &[type=number] {
-                -moz-appearance: textfield;
+            -moz-appearance: textfield;
         }
 
         &:focus,
@@ -32,7 +33,8 @@
         }
     }
 
-    .buy__button__substract, .buy__button__add {
+    .buy__button__substract,
+    .buy__button__add {
         position: absolute;
         background: none;
         border: none;
@@ -49,10 +51,8 @@
     .buy__button__substract {
         left: 8px;
     }
-    
+
     .buy__button__add {
         right: 18px
     }
 }
-
-
