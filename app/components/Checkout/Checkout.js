@@ -3,7 +3,8 @@ const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const { useState } = React;
 const InputQuantity = require("../InputQuantity");
-const FastShipping20 = require("@andes/icons/FastShipping20");
+const FastShipping24 = require("@andes/icons/FastShipping24");
+const MoneyAmount = require("@andes/money-amount");
 
 const Checkout = ({ i18n, product, quantity }) => {
   const {
@@ -26,7 +27,7 @@ const Checkout = ({ i18n, product, quantity }) => {
       >
         {i18n.gettext(`Resumen de compra (${quantityToBuy})`)}
       </h2>
-      <p>{i18n.gettext("Producto")}</p>
+      <p className="checkout__subtitle">{i18n.gettext("Producto")}</p>
       <div className="checkout__product">
         <Image
           className="image"
@@ -49,26 +50,33 @@ const Checkout = ({ i18n, product, quantity }) => {
               availableQuantity={available_quantity}
               setError={setError}
             />
-            <p aria-label={i18n.gettext("precio producto")} tabIndex={13}>
-              {i18n.gettext(`Precio unitario: $${price}`)}
+            <p
+              className="checkout__product__unityprice"
+              aria-label={i18n.gettext("precio producto")}
+              tabIndex={13}
+            >
+              {i18n.gettext(`${quantityToBuy}x\n`)}
+              <MoneyAmount amount={{ fraction: price }} size="14" />
             </p>
           </div>
         </div>
       </div>
-      <p>{i18n.gettext("Envío")}</p>
+      <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
       <div
         aria-label={i18n.gettext("Costo de envío")}
         className="row checkout__product__info"
       >
         {shipping.free_shipping ? (
-          <p className="envio__gratis" tabIndex={14}>
-            <FastShipping20 color="green" />
-            {i18n.gettext(
-              `Envío gratis ${
-                seller_address && "desde: " + seller_address.city.name
-              }`
-            )}
-          </p>
+          <div className="envio__gratis">
+            <FastShipping24 color="green" />
+            <p className="envio__gratis__p" tabIndex={14}>
+              {i18n.gettext(
+                `Envío gratis ${
+                  seller_address && "desde: " + seller_address.city.name
+                }`
+              )}
+            </p>
+          </div>
         ) : (
           <p tabIndex={14}>
             {i18n.gettext(
@@ -85,8 +93,8 @@ const Checkout = ({ i18n, product, quantity }) => {
         aria-label={i18n.gettext("Precio total")}
         className="checkout__total"
       >
-        <p>{i18n.gettext("Total")}</p>
-        <p>{i18n.gettext(`${price * quantityToBuy}`)}</p>
+        <p className="checkout__total__price">{i18n.gettext("Total")}</p>
+        <MoneyAmount amount={{ fraction: price * quantityToBuy }} size={28} />
       </div>
     </div>
   );
