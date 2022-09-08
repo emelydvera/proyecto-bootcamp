@@ -25,7 +25,7 @@ const Checkout = ({ i18n, product, quantity }) => {
         tabIndex={9}
         className="checkout__title"
       >
-        {i18n.gettext('Resumen de compra')}
+        {i18n.gettext("Resumen de compra")}
       </h2>
       <p className="checkout__subtitle">{i18n.gettext("Producto")}</p>
       <div className="checkout__product">
@@ -48,7 +48,12 @@ const Checkout = ({ i18n, product, quantity }) => {
               tabIndex={13}
             >
               {i18n.gettext(`${quantityToBuy}x`)}
-              <MoneyAmount amount={{ fraction: price }} size="14" />
+              <MoneyAmount
+                amount={{
+                  fraction: i18n.gettext("{0}", price.toLocaleString("de-DE")),
+                }}
+                size="14"
+              />
             </span>
             <InputQuantity
               className="checkout__product__input"
@@ -59,6 +64,7 @@ const Checkout = ({ i18n, product, quantity }) => {
               setError={setError}
             />
           </div>
+          <p className="checkout__alert">{i18n.gettext(error)}</p>
         </div>
       </div>
       <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
@@ -70,23 +76,23 @@ const Checkout = ({ i18n, product, quantity }) => {
           <div className="envio__gratis">
             <FastShipping24 color="green" />
             <p className="envio__gratis--true" tabIndex={14}>
-              {i18n.gettext('Envío gratis')}
+              {i18n.gettext("Envío gratis")}
             </p>
-            {seller_address &&
+            {seller_address && (
               <p className="envio__gratis__city " tabIndex={14}>
-                {i18n.gettext('desde {0}', seller_address.city.name)}
+                {i18n.gettext("desde {0}", seller_address.city.name)}
               </p>
-            }
+            )}
           </div>
         ) : (
           <p tabIndex={14}>
             {i18n.gettext(
-              `Envío con costo a determinar ${seller_address && "desde: " + seller_address.city.name
+              `Envío con costo a determinar ${
+                seller_address && "desde: " + seller_address.city.name
               }`
             )}
           </p>
         )}
-        <p className="checkout__alert">{i18n.gettext(error)}</p>
       </div>
       <div
         tabIndex={15}
@@ -94,7 +100,15 @@ const Checkout = ({ i18n, product, quantity }) => {
         className="checkout__total"
       >
         <p className="checkout__total__price">{i18n.gettext("Total")}</p>
-        <MoneyAmount amount={{ fraction: price * quantityToBuy }} size={28} />
+        <MoneyAmount
+          amount={{
+            fraction: i18n.gettext(
+              "{0}",
+              (price * quantityToBuy).toLocaleString("de-DE")
+            ),
+          }}
+          size={28}
+        />
       </div>
     </div>
   );
