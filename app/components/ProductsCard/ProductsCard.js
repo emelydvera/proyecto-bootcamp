@@ -4,6 +4,7 @@ const Image = require("nordic/image");
 const Card = require("@andes/card");
 const { CardContent } = require("@andes/card");
 const MoneyAmount = require("@andes/money-amount");
+const priceFormater = require("../../utils/priceFormater");
 
 const ProductsCard = ({ product, i18n, index }) => {
   const {
@@ -16,6 +17,8 @@ const ProductsCard = ({ product, i18n, index }) => {
     currency_id,
     shipping: { free_shipping },
   } = product;
+
+  const { fraction, cents } = priceFormater(price);
 
   return (
     <>
@@ -54,10 +57,12 @@ const ProductsCard = ({ product, i18n, index }) => {
                   className="price"
                   amount={{
                     currencyId: currency_id,
-                    fraction: `${price.toLocaleString().replace(/,/g, ".")}`,
+                    fraction,
+                    cents,
                     symbol: "$",
                   }}
                   size={24}
+                  centsType="superscript"
                 ></MoneyAmount>
 
                 {free_shipping ? (
