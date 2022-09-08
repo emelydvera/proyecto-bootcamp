@@ -13,16 +13,24 @@ const Filter = ({ filters, available_filters, urlGenerator, totalProducts }) => 
 
   return (
     <aside className="filters">
+
       <Typography component="p" type="title" size="l">
         {urlGenerator.getQueryByName('q')}
       </Typography>
+
       <Typography component="p" size="l" color="secondary"  >
         {i18n.ngettext("{0} resultado", "{0} resultados", totalProducts, [totalProducts])}
       </Typography>
 
-      <FiltersApplied filters={filters} urlGenerator={urlGenerator} />
+      <FiltersApplied
+        filters={filters}
+        urlGenerator={urlGenerator}
+      />
 
-      <FiltersAvailables available_filters={available_filters} urlGenerator={urlGenerator} />
+      <FiltersAvailables
+        available_filters={available_filters}
+        urlGenerator={urlGenerator}
+      />
     </aside>
   );
 };
@@ -37,7 +45,7 @@ Filter.propTypes = {
   ).isRequired,
   available_filters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.string,
       name: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,

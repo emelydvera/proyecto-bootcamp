@@ -3,6 +3,7 @@ const restclient = require("nordic/restclient")({
 });
 
 const normalizer = require("./transforms/normalizer");
+const normalizerFilters = require("./transforms/normalizerFilters");
 
 class ProductService {
   static getProducts(sitedId, params) {
@@ -24,7 +25,7 @@ class ProductService {
         return {
           results: normalizer(response.data.results),
           filters: response.data.filters,
-          available_filters: response.data.available_filters,
+          available_filters: normalizerFilters(response.data.available_filters),
           totalProducts: response.data.paging.total
         }
       })

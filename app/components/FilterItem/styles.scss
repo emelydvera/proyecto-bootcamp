@@ -1,5 +1,5 @@
-@import '~@andes/modal/index';
 @import "../../styles/variables";
+@import "../FilterModal/styles.scss";
 
 
 .filter__section {
@@ -17,17 +17,5 @@
     .results {
       color: #999;
     }
-  }
-
-  &__modal {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    grid-auto-rows: minmax(auto, auto);
-
-    &__show {
-      cursor: pointer;
-    }
-
   }
 }
