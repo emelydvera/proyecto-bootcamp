@@ -1,11 +1,11 @@
-require("../pages/comprar/styles.scss");
+require("../pages/buy/styles.scss");
 
 const React = require("react");
 const hydrate = require("nordic/hydrate");
 const I18n = require("nordic/i18n");
 const I18nProvider = require("nordic/i18n/I18nProvider");
 const ImageProvider = require("nordic/image/provider");
-const CheckoutView = require("../pages/comprar/view");
+const CheckoutView = require("../pages/buy/view");
 
 const { product, quantityToBuy, imagesPrefix, translations } =
   window.__PRELOADED_STATE__;

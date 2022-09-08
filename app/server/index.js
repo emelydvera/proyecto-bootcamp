@@ -19,7 +19,7 @@ const homeRoute = require("../pages/home");
 const productsRoute = require("../pages/products");
 const product = require("../pages/product");
 const error404 = require("../pages/error404");
-const checkout = require("../pages/comprar");
+const checkout = require("../pages/buy");
 
 /**
  * Use global middlewares

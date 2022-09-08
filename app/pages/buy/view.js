@@ -16,7 +16,7 @@ function View(props) {
   };
   return (
     <>
-      <Styles href="comprar.css" />
+      <Styles href="buy.css" />
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
@@ -25,7 +25,7 @@ function View(props) {
         `}
       </Script>
       <Script src="vendor.js" />
-      <Script src="comprar.js" />
+      <Script src="buy.js" />
 
       <div className="container">
         <Checkout i18n={i18n} product={product} quantity={quantityToBuy} />
