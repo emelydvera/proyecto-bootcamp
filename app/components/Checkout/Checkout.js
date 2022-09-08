@@ -38,11 +38,11 @@ const Checkout = ({ i18n, product, quantity }) => {
           className="image"
           tabIndex={10}
           src={thumbnail}
-          alt={i18n.gettext("{0}", title)}
+          alt={i18n.gettext(title)}
         />
         <div className="column">
           <h2 tabIndex={11}>
-            {title.length > 70 ? i18n.gettext('{0}...', title.slice(0, 70 - 3)) : i18n.gettext('{0}', title)}
+            {title.length > 70 ? i18n.gettext('{0}...', title.slice(0, 70 - 3)) : i18n.gettext(title)}
           </h2>
           <div className="checkout__product__container">
             <span
@@ -53,9 +53,9 @@ const Checkout = ({ i18n, product, quantity }) => {
               {i18n.gettext("{0}x", quantityToBuy)}
               <MoneyAmount
                 amount={{
-                  fraction: i18n.gettext("{0}", priceCents[0]),
+                  fraction: i18n.gettext(priceCents[0]),
                   currencyId: currency_id,
-                  cents: priceCents[1] ? i18n.gettext("{0}", priceCents[1]) : i18n.gettext('00')
+                  cents: priceCents[1] ? i18n.gettext(priceCents[1]) : i18n.gettext('00')
                 }}
                 centsType="superscript"
                 size={16}
@@ -70,7 +70,7 @@ const Checkout = ({ i18n, product, quantity }) => {
               setError={setError}
             />
           </div>
-          <p className="checkout__alert">{i18n.gettext("{0}", error)}</p>
+          <p className="checkout__alert">{i18n.gettext(error)}</p>
         </div>
       </div>
       <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
@@ -108,8 +108,8 @@ const Checkout = ({ i18n, product, quantity }) => {
         <p className="checkout__total__price">{i18n.gettext("Total")}</p>
         <MoneyAmount
           amount={{
-            fraction: i18n.gettext("{0}", totalPriceCents[0]),
-            cents: totalPriceCents[1] ? i18n.gettext("{0}", totalPriceCents[1]) : i18n.gettext('00')
+            fraction: i18n.gettext(totalPriceCents[0]),
+            cents: totalPriceCents[1] ? i18n.gettext(totalPriceCents[1]) : i18n.gettext('00')
           }}
           centsType="superscript"
           size={28}
