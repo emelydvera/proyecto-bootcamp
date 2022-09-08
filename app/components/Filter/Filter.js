@@ -1,54 +1,42 @@
 const React = require("react");
 const PropTypes = require("prop-types");
-const FilterItem = require("../FilterItem");
-const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
+const Typography = require('@andes/typography');
+const UrlGenerator = require("../../utils/urlGenerator");
+const FiltersApplied = require("../FiltersApplied");
+const FiltersAvailables = require("../FiltersAvailables");
 
-const Filter = ({ filters, available_filters, urlGenerator, limit }) => {
+const Filter = ({ filters, available_filters, urlGenerator, totalProducts }) => {
   const { i18n } = useI18n();
+
+  const searchString = urlGenerator.getQueryByName('q');
 
   return (
     <aside className="filters">
-      {filters.length > 0 && (
-        <h3
-          aria-label={i18n.gettext("filtrando por")}
-          tabIndex={210}
-          className="filters__availables"
-        >
-          {i18n.gettext("Filtrando por:")}
-        </h3>
-      )}
-      <ul className="filters__list">
-        {filters.map(({ id, name, values }) => (
-          <li
-            className="filters__list__item"
-            key={id}
-            aria-label={i18n.gettext("{0}", name)}
-            tabIndex={211}
-            onClick={() => urlGenerator.removeFilter(id)}
-          >
-            {`ⓧ ${name}`}: {values[0].name}
-          </li>
-        ))}
-      </ul>
 
-      <h3 aria-label={i18n.gettext("Filtros")} tabIndex={212}>
-        {i18n.gettext("Filtros:")}
-      </h3>
+      <Typography component="p" type="title" size="l">
+        {searchString.charAt(0).toUpperCase() + searchString.slice(1)}
+      </Typography>
 
-      {available_filters.map((filter, index) => (
-        <FilterItem
-          filter={filter}
-          key={index}
-          urlGenerator={urlGenerator}
-          limit={limit}
-        />
-      ))}
+      <Typography component="p" size="l" color="secondary"  >
+        {i18n.ngettext("{0} resultado", "{0} resultados", totalProducts, [totalProducts])}
+      </Typography>
+
+      <FiltersApplied
+        filters={filters}
+        urlGenerator={urlGenerator}
+      />
+
+      <FiltersAvailables
+        available_filters={available_filters}
+        urlGenerator={urlGenerator}
+      />
     </aside>
   );
 };
 
 Filter.propTypes = {
+  totalProducts: PropTypes.number.isRequired,
   filters: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -57,12 +45,11 @@ Filter.propTypes = {
   ).isRequired,
   available_filters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.string,
       name: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
-  limit: PropTypes.number.isRequired,
 };
 
 module.exports = Filter;

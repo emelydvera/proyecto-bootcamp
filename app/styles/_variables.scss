@@ -10,13 +10,19 @@ $font-weight-bold: 700;
 
 //border
 $border-radius-s: 6px;
+$border-radius-50: 50%;
 
 //colors
 
+<<<<<<< HEAD
 //Basic colors
 $background: #ebebeb;
 $andes-white: #fff;
 
+=======
+//white
+$white-base: #FFFFFF;
+>>>>>>> 8072d078e0967ba4e796bb524f29a04752128f45
 //red
 $red-base: #f23d4f;
 //blue
@@ -27,4 +33,8 @@ $gray-base: #ededed;
 $gray-letters: #8f8e8e;
 $gray-error-link: #666;
 //green
+<<<<<<< HEAD
 $andes-green-500: #00A650 !default;
+=======
+$green-base: #00A650;
+>>>>>>> 8072d078e0967ba4e796bb524f29a04752128f45

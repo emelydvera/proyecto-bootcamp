@@ -1,31 +1,68 @@
 @import "../../styles/variables";
+@import '~@andes/card/index';
+@import '~@andes/money-amount/index';
 
 .card {
   display: flex;
-  width: 100%;
+  min-width: fit-content;
   flex-direction: row;
   background-color: white;
   border-bottom: thin solid #eee;
+  border-radius: 0px !important;
+
 
   &__image {
     align-self: center;
     min-width: 15rem;
     max-width: 15rem;
-    &__img{
+    border-radius: $border-radius-s;
+
+    &__img {
       width: 100%;
     }
   }
 
   &__description {
-    margin: 20px;
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    margin: 20px 0 20px 20px;
 
-    &__title {
-      font-weight: $font-weight-light;
+    &__main-info {
+      max-width: 80%;
+      min-width: 80%;
+
+      .title {
+        font-weight: $font-weight-light;
+      }
+
+      .money__and__shipping {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .price {
+          font-size: $font-size-m;
+          margin-top: 0;
+          min-width: 16%;
+        }
+
+        .shipping {
+          display: block;
+          background-color: $green-base;
+          color: $white-base;
+          padding: 0.4rem 0.8rem;
+          margin-left: 1.2rem;
+          border-radius: 14px;
+
+        }
+      }
+
     }
 
-    &__price {
-      font-size: $font-size-m;
-      margin-bottom: 5px;
+    &__location {
+      width: 15%;
+      margin-top: 40px;
     }
   }
 }

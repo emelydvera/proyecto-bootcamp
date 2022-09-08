@@ -34,15 +34,8 @@ function View(props) {
   };
 
   const [data, setData] = useState(products);
-  const [limit, setLimit] = useState(parseInt(query.limit) || 10);
-  const [offset, setOffset] = useState(0);
 
-  const urlGenerator = new UrlGenerator(
-    baseUrl,
-    { ...query, limit },
-    filters,
-    totalProducts
-  );
+  const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
 
   return (
     <div>
@@ -50,44 +43,32 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-          isJSON: true,
-        })};
+            isJSON: true,
+          })};
         `}
       </Script>
       <Script src="vendor.js" />
       <Script src="products.js" />
 
-      {products.length > 0 ? (
-        <div id="products-page">
-          <Filter
-            filters={filters}
-            available_filters={available_filters}
+      <div id="products-page">
+        <Filter
+          totalProducts={totalProducts}
+          filters={filters}
+          available_filters={available_filters}
+          urlGenerator={urlGenerator}
+        />
+        <div className="products">
+          <SelectProductsPerPage urlGenerator={urlGenerator} />
+          <ProductsList products={data} i18n={i18n} query={query} />
+          <Pagination
+            totalProducts={totalProducts}
             urlGenerator={urlGenerator}
-            limit={parseInt(urlGenerator.getQueries().limit)}
+            setData={setData}
+            productsInitial={products}
+            i18n={i18n}
           />
-          <div className="products">
-            <SelectProductsPerPage
-              setLimit={setLimit}
-              limit={parseInt(urlGenerator.getQueries().limit)}
-              setOffset={setOffset}
-            />
-            <ProductsList products={data} i18n={i18n} query={query} />
-            <Pagination
-              // key={limit}
-              totalProducts={totalProducts}
-              urlGenerator={urlGenerator}
-              setData={setData}
-              productsInitial={products}
-              i18n={i18n}
-              limit={parseInt(urlGenerator.getQueries().limit)}
-              setOffset={setOffset}
-              offset={offset}
-            />
-          </div>
         </div>
-      ) : (
-        <p>{i18n.gettext("No se encontraron productos")}</p>
-      )}
+      </div>
     </div>
   );
 }
@@ -97,6 +78,7 @@ View.propTypes = {
     gettext: PropTypes.func.isRequired,
   }).isRequired,
   translations: PropTypes.shape({}),
+<<<<<<< HEAD
   products: PropTypes.array,
   baseUrl: PropTypes.string,
   query: PropTypes.object,
@@ -113,6 +95,9 @@ View.propTypes = {
     }).isRequired
   ).isRequired,
   totalProducts: PropTypes.number.isRequired
+=======
+  products: PropTypes.arrayOf(PropTypes.object).isRequired,
+>>>>>>> 8072d078e0967ba4e796bb524f29a04752128f45
 };
 
 module.exports = injectI18n(View);

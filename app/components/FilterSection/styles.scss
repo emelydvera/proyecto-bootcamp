@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../FilterModal/styles.scss";
+@import "../FilterValue/styles.scss";
+
+
+.filter__section {
+  &__name {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}

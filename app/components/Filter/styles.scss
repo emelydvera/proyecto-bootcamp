@@ -1,24 +1,6 @@
-@import "../../styles/variables";
+@import '~@andes/typography/index';
 
 .filters {
-
-  min-width: 250px;
-  max-width: 250px;
-
-  h3 {
-    margin-left: 20px;
-  }
-
-  &__availables {
-    margin-top: 50px;
-  }
-  &__list {
-    &__item {
-      list-style: none;
-      cursor: pointer;
-      &:hover {
-        color: $red-base;
-      }
-    }
-  }
+  max-width: 300px;
+  padding-left: 40px;
 }

@@ -1,49 +1,45 @@
 const React = require("react");
 const PropTypes = require("prop-types");
 const { useI18n } = require("nordic/i18n");
+const UrlGenerator = require("../../utils/urlGenerator");
 
-const options = [{ value: 5 }, { value: 10 }, { value: 15 }, { value: 20 }];
+const Dropdown = require("@andes/dropdown");
+const { DropdownItem } = Dropdown;
 
-const SelectProductsPerPage = ({ setLimit, limit, setOffset }) => {
+const options = ["5", "10", "15", "20"];
+
+const SelectProductsPerPage = ({ urlGenerator }) => {
   const { i18n } = useI18n();
-  const handleChange = (e) => {
-    setOffset(0)
-    setLimit(parseInt(e.target.value));
+  const initialLimit = urlGenerator.getQueryByName("limit");
+  const handleChange = (e, value) => {
+    urlGenerator.setQuery("limit", parseInt(value));
+    window.location.href = `/listado?${urlGenerator.getQueryString()}`;
   };
+
   return (
     <div className="products__per-page">
-      <label
-        aria-label={i18n.gettext(
-          "Está página está mostrando {0} productos",
-          limit
-        )}
-        tabIndex={9}
-      >
-        Productos por página
-      </label>
-      <select
-        aria-label={i18n.gettext(
-          "Cambia el número de productos mostrados por la página"
-        )}
-        tabIndex={9}
-        className="products__per-page__select"
+      <Dropdown
+        className="products__dropdown"
+        label="Ordenar por"
+        value={"" + initialLimit}
+        position={false}
+        size="compact"
         onChange={handleChange}
-        defaultValue={limit.toString()}
       >
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.value}
-          </option>
+        {options.map((value) => (
+          <DropdownItem
+            key={value}
+            value={"" + value}
+            primary={i18n.gettext("{0} resultados por pagina", value)}
+          />
         ))}
-      </select>
+      </Dropdown>
     </div>
   );
 };
 
 SelectProductsPerPage.propTypes = {
-  setLimit: PropTypes.func.isRequired,
-  limit: PropTypes.number.isRequired,
-  setOffset: PropTypes.func.isRequired,
+  urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
 };
 
 module.exports = SelectProductsPerPage;

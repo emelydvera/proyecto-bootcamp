@@ -25,6 +25,7 @@
     "i18n:download": "i18n download"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@andes/button": "7.20.1",
     "@andes/dropdown": "7.20.1",
     "@andes/form": "7.20.1",
@@ -32,6 +33,17 @@
     "@andes/textfield": "7.20.1",
     "@andes/icons": "7.20.1",
     "@andes/money-amount": "7.20.1",
+=======
+    "@andes/card": "7.20.1",
+    "@andes/dropdown": "7.20.1",
+    "@andes/form": "7.20.1",
+    "@andes/list": "7.20.1",
+    "@andes/money-amount": "7.20.1",
+    "@andes/modal": "7.20.1",
+    "@andes/pagination": "7.20.1",
+    "@andes/tag": "7.20.1",
+    "@andes/typography": "7.20.1",
+>>>>>>> 8072d078e0967ba4e796bb524f29a04752128f45
     "nordic": "^7.12.1"
   },
   "devDependencies": {
