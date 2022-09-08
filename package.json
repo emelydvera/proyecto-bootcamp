@@ -25,6 +25,7 @@
     "i18n:download": "i18n download"
   },
   "dependencies": {
+    "@andes/card": "7.20.1",
     "@andes/dropdown": "7.20.1",
     "@andes/form": "7.20.1",
     "@andes/list": "7.20.1",
