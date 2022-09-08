@@ -13,6 +13,7 @@ const ProductsCard = ({ product, i18n, index }) => {
     address,
     thumbnail,
     installments,
+    currency_id,
     shipping: { free_shipping },
   } = product;
 
@@ -52,7 +53,7 @@ const ProductsCard = ({ product, i18n, index }) => {
                 <MoneyAmount
                   className="price"
                   amount={{
-                    currencyId: undefined,
+                    currencyId: currency_id,
                     fraction: `${price.toLocaleString().replace(/,/g, ".")}`,
                     symbol: "$",
                   }}
@@ -113,6 +114,7 @@ ProductsCard.propTypes = {
     shipping: PropTypes.shape({
       free_shipping: PropTypes.bool,
     }),
+    currency_id: PropTypes.string,
   }).isRequired,
   index: PropTypes.number,
 };
