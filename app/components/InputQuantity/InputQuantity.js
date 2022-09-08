@@ -57,16 +57,24 @@ const InputQuantity = ({
     }
   };
 
+  const getItemn =(param)=>{
+for (let index = 0; index < param; index++) {
+  const element = array[index];
+  
+}
+  }
+
   return (
     <div className="input__quantity">
 
-      {/* <TextField 
+      <TextField 
+      className="input"
       label="Cantidad" 
       type='number'
       min="1"
-      /> */}
+      />
 
-      <input
+      {/* <input
         className={className}
         type="number"
         min="1"
@@ -91,7 +99,7 @@ const InputQuantity = ({
         aria-label={i18n.gettext('Eliminar producto')}
       >
         -
-      </button>
+      </button> */}
     </div>
   );
 };

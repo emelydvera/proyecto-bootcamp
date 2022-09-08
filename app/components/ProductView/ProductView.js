@@ -145,7 +145,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
         )}
 
         <p
-        className="info__available"
+          className="info__available"
           tabIndex={16}
           aria-label={i18n.gettext(
             `hay ${available_quantity} unidades disponibles`
