@@ -33,18 +33,24 @@ const ProductsCard = ({ product, i18n, index }) => {
                   className="card__image__img"
                   src={thumbnail}
                   alt={i18n.gettext("imagen del producto")}
-                  tabIndex={`${index + 1}4`}
+                  tabIndex={`${index + 1}5`}
                 />
               </a>
             </figure>
           </div>
           <div className="card__description">
             <div className="card__description__main-info">
-              <div class="money__and__shipping">
+              <div
+                class="money__and__shipping"
+                aria-label={i18n.gettext(
+                  `precio del producto: $${price} ${
+                    free_shipping ? "Envío gratis" : ""
+                  }`
+                )}
+                tabIndex={`${index + 1}4`}
+              >
                 <MoneyAmount
                   className="price"
-                  aria-label={i18n.gettext(`precio del producto: $${price}`)}
-                  tabIndex={`${index + 1}5`}
                   amount={{
                     currencyId: undefined,
                     fraction: `${price.toLocaleString().replace(/,/g, ".")}`,
@@ -68,11 +74,13 @@ const ProductsCard = ({ product, i18n, index }) => {
               aria-label={`ubicación del producto ${
                 address ? (address.state_name ? address.state_name : "") : ""
               }`}
-              tabIndex={`${index + 1}6`}
+              tabIndex={`${index + 1}4`}
             >
-              {i18n.gettext(
-                address ? (address.state_name ? address.state_name : "") : ""
-              )}
+              {address &&
+                i18n.gettext(
+                  "{0}",
+                  address.state_name ? address.state_name : ""
+                )}
             </span>
           </div>
         </CardContent>
@@ -96,6 +104,9 @@ ProductsCard.propTypes = {
     installments: PropTypes.shape({
       quantity: PropTypes.number,
       amount: PropTypes.number,
+    }),
+    shipping: PropTypes.shape({
+      free_shipping: PropTypes.bool,
     }),
   }).isRequired,
   index: PropTypes.number,
