@@ -4,6 +4,7 @@ const PropTypes = require("prop-types");
 const { useState } = React;
 const InputQuantity = require("../InputQuantity");
 const FastShipping24 = require("@andes/icons/FastShipping24");
+const Shipping24 = require("@andes/icons/Shipping24");
 const MoneyAmount = require("@andes/money-amount");
 
 const Checkout = ({ i18n, product, quantity }) => {
@@ -14,9 +15,13 @@ const Checkout = ({ i18n, product, quantity }) => {
     available_quantity,
     thumbnail,
     title,
+    currency_id
   } = product;
   const [quantityToBuy, setQuantityToBuy] = useState(quantity);
   const [error, setError] = useState("");
+
+  const totalPriceCents = (price * quantity).toLocaleString('de-DE').split(',')
+  const priceCents = price.toLocaleString('de-DE').split(',')
 
   return (
     <div className="checkout" id="checkout">
@@ -50,9 +55,12 @@ const Checkout = ({ i18n, product, quantity }) => {
               {i18n.gettext(`${quantityToBuy}x`)}
               <MoneyAmount
                 amount={{
-                  fraction: i18n.gettext("{0}", price.toLocaleString("de-DE")),
+                  fraction: i18n.gettext("{0}", priceCents[0]),
+                  currencyId: currency_id,
+                  cents: priceCents[1] ? i18n.gettext("{0}", priceCents[1]) : i18n.gettext('00')
                 }}
-                size="14"
+                centsType="superscript"
+                size={16}
               />
             </span>
             <InputQuantity
@@ -70,7 +78,7 @@ const Checkout = ({ i18n, product, quantity }) => {
       <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
       <div
         aria-label={i18n.gettext("Costo de envío")}
-        className="row checkout__product__info"
+        className="row checkout__product__info envio"
       >
         {shipping.free_shipping ? (
           <div className="envio__gratis">
@@ -85,13 +93,13 @@ const Checkout = ({ i18n, product, quantity }) => {
             )}
           </div>
         ) : (
-          <p tabIndex={14}>
-            {i18n.gettext(
-              `Envío con costo a determinar ${
-                seller_address && "desde: " + seller_address.city.name
-              }`
-            )}
-          </p>
+          <div className="envio__costo">
+            <Shipping24 />
+            <p className='envio__costo--false' tabIndex={14}>
+              {i18n.gettext("Envío con costo a determinar")}
+            </p>
+            {seller_address && (<p className='envio__costo__city' >{i18n.gettext("desde: {0}", seller_address.city.name)}</p>)}
+          </div>
         )}
       </div>
       <div
@@ -102,11 +110,10 @@ const Checkout = ({ i18n, product, quantity }) => {
         <p className="checkout__total__price">{i18n.gettext("Total")}</p>
         <MoneyAmount
           amount={{
-            fraction: i18n.gettext(
-              "{0}",
-              (price * quantityToBuy).toLocaleString("de-DE")
-            ),
+            fraction: i18n.gettext("{0}", totalPriceCents[0]),
+            cents: totalPriceCents[1] ? i18n.gettext("{0}", totalPriceCents[1]) : i18n.gettext('00')
           }}
+          centsType="superscript"
           size={28}
         />
       </div>

@@ -41,7 +41,7 @@
 
     &__unityprice {
       display: flex;
-      font-size: 14px;
+      font-size: 16px;
       align-items: baseline;
       color: rgba(0, 0, 0, 0.55);
       gap: 5px;
@@ -60,19 +60,34 @@
       padding: 20px;
       font-size: 18px;
 
-      .envio__gratis {
-        display: flex;
-        gap: 8.7px;
+      .envio {
 
-        &--true {
-          color: green;
-          margin-block-start: 0;
-          margin-block-end: 0;
+        &__gratis {
+          display: flex;
+          gap: 8.7px;
+
+          &--true {
+            color: green;
+            margin-block-start: 0;
+            margin-block-end: 0;
+          }
+
+          &__city {
+            margin-block-start: 0;
+            margin-block-end: 0;
+          }
+
         }
 
-        &__city {
-          margin-block-start: 0;
-          margin-block-end: 0;
+        &__costo {
+          display: flex;
+          gap: 8.7px;
+
+          &--false,
+          &__city {
+            margin-block-start: 0;
+            margin-block-end: 0;
+          }
         }
       }
 
