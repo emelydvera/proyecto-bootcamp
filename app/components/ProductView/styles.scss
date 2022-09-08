@@ -11,7 +11,7 @@
     display: flex;
     max-width: 70%;
     margin: 5rem 0 5rem;
-    background-color: white;
+    background-color: $white-base;
     border-radius: $border-radius-s;
 
     h2 {
@@ -104,7 +104,7 @@
       }
 
       &__shipping {
-        color: $andes-green-500;
+        color: $green-base;
         display: flex;
         align-items: center;
 
@@ -135,7 +135,7 @@
 
         .buy__button {
           text-align: center;
-          color: white;
+          color: $white-base;
         }
       }
     }

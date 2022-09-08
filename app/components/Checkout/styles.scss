@@ -18,7 +18,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 28px;
-    // text-align: right;
 
     &__price {
       margin-block-start: 0;
@@ -30,10 +29,9 @@
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    background-color: $andes-white;
+    background-color: $white-base;
     padding: 40px;
 
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     &__container {
       display: flex;
       justify-content: space-between;
@@ -55,7 +53,7 @@
       display: flex;
       justify-content: space-between;
       // margin-top: 30px;
-      background-color: $andes-white;
+      background-color: $white-base;
       margin-bottom: 30px;
       padding: 20px;
       font-size: 18px;
@@ -67,7 +65,7 @@
           gap: 8.7px;
 
           &--true {
-            color: green;
+            color: $green-base;
             margin-block-start: 0;
             margin-block-end: 0;
           }
