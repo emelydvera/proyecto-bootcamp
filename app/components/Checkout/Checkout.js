@@ -38,13 +38,11 @@ const Checkout = ({ i18n, product, quantity }) => {
           className="image"
           tabIndex={10}
           src={thumbnail}
-          alt={i18n.gettext(title)}
+          alt={i18n.gettext("{0}", title)}
         />
         <div className="column">
           <h2 tabIndex={11}>
-            {i18n.gettext(
-              title.length > 70 ? title.slice(0, 70 - 3) + "..." : title
-            )}
+            {title.length > 70 ? i18n.gettext('{0}...', title.slice(0, 70 - 3)) : i18n.gettext('{0}', title)}
           </h2>
           <div className="checkout__product__container">
             <span
@@ -52,7 +50,7 @@ const Checkout = ({ i18n, product, quantity }) => {
               aria-label={i18n.gettext("precio producto")}
               tabIndex={13}
             >
-              {i18n.gettext(`${quantityToBuy}x`)}
+              {i18n.gettext("{0}x", quantityToBuy)}
               <MoneyAmount
                 amount={{
                   fraction: i18n.gettext("{0}", priceCents[0]),
@@ -72,7 +70,7 @@ const Checkout = ({ i18n, product, quantity }) => {
               setError={setError}
             />
           </div>
-          <p className="checkout__alert">{i18n.gettext(error)}</p>
+          <p className="checkout__alert">{i18n.gettext("{0}", error)}</p>
         </div>
       </div>
       <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
