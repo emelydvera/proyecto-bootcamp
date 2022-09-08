@@ -18,17 +18,19 @@ const InputQuantity = ({
     const { value } = e.target;
 
     if (parseInt(value) < 0 || parseInt(value) === -0) {
-      setQuantityToBuy(1);
+      setQuantityToBuy('1');
       setError("");
     } else if (availableQuantity < parseInt(value)) {
       setError(`Puedes comprar hasta ${availableQuantity} unidades`);
-      setQuantityToBuy(parseInt(value));
-    } else if (value === "" || parseInt(value) === 0) {
+      setQuantityToBuy(value);
+    } 
+    else if (value === "" || parseInt(value) === 0) {
       setError(`Puedes comprar mínimo 1 unidad`);
-      setQuantityToBuy(parseInt(value));
-    } else {
+      setQuantityToBuy('');
+    }
+     else {
       setError("");
-      setQuantityToBuy(parseInt(value));
+      setQuantityToBuy(value);
     }
   };
 
@@ -38,7 +40,6 @@ const InputQuantity = ({
         aria-label={i18n.gettext('Ingrese la cantidad de productos a comprar')}
         label={i18n.gettext("Cantidad")}
         type="number"
-        min="1"
         message={error ? i18n.gettext(error) : ""}
         modifier={error ? "error" : "default"}
         centered={true}
@@ -57,7 +58,7 @@ InputQuantity.propTypes = {
   availableQuantity: PropTypes.number.isRequired,
   setError: PropTypes.func.isRequired,
   setQuantityToBuy: PropTypes.func.isRequired,
-  quantityToBuy: PropTypes.number.isRequired,
+  quantityToBuy: PropTypes.string.isRequired,
   tabIndex: PropTypes.number.isRequired
 };
 

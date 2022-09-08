@@ -17,10 +17,11 @@ const Checkout = ({ i18n, product, quantity }) => {
     title,
     currency_id
   } = product;
+
   const [quantityToBuy, setQuantityToBuy] = useState(quantity);
   const [error, setError] = useState("");
 
-  const totalPriceCents = (price * quantity).toLocaleString('de-DE').split(',')
+  const totalPriceCents = (price * quantityToBuy).toLocaleString('de-DE').split(',')
   const priceCents = price.toLocaleString('de-DE').split(',')
 
   return (
@@ -64,13 +65,14 @@ const Checkout = ({ i18n, product, quantity }) => {
             <InputQuantity
               className="checkout__product__input"
               tabIndex={12}
+              error={error}
               quantityToBuy={quantityToBuy}
               setQuantityToBuy={setQuantityToBuy}
               availableQuantity={available_quantity}
               setError={setError}
             />
           </div>
-          <p className="checkout__alert">{i18n.gettext(error)}</p>
+
         </div>
       </div>
       <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
@@ -96,7 +98,7 @@ const Checkout = ({ i18n, product, quantity }) => {
             <p className='envio__costo--false' tabIndex={14}>
               {i18n.gettext("Envío con costo a determinar")}
             </p>
-            {seller_address && (<p className='envio__costo__city' >{i18n.gettext("desde: {0}", seller_address.city.name)}</p>)}
+            {seller_address && (<p className='envio__costo__city' tabIndex={14} >{i18n.gettext("desde: {0}", seller_address.city.name)}</p>)}
           </div>
         )}
       </div>
@@ -120,7 +122,16 @@ const Checkout = ({ i18n, product, quantity }) => {
 };
 
 Checkout.propTypes = {
-  product: PropTypes.shape({}).isRequired,
+  product: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    shipping: PropTypes.shape({}),
+    available_quantity: PropTypes.number.isRequired,
+    currency_id: PropTypes.string.isRequired,
+    seller_address: PropTypes.shape({}).isRequired,
+    thumbnail: PropTypes.string.isRequired,
+
+  }).isRequired,
   quantity: PropTypes.string.isRequired,
   i18n: PropTypes.shape({
     gettext: PropTypes.func.isRequired,

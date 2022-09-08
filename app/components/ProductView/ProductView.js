@@ -23,7 +23,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
   } = product;
 
   const [error, setError] = useState("");
-  const [quantityToBuy, setQuantityToBuy] = useState(1);
+  const [quantityToBuy, setQuantityToBuy] = useState('1');
   const [mainImage, setMainImage] = useState(0);
 
   const amountCents = amount?.toString().split(".");

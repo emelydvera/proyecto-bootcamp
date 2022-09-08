@@ -20,8 +20,8 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-            isJSON: true,
-          })};
+          isJSON: true,
+        })};
         `}
       </Script>
       <Script src="vendor.js" />
