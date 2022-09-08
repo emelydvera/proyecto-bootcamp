@@ -3,39 +3,81 @@ const { useState } = React;
 const PropTypes = require("prop-types");
 const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
+const Typography = require('@andes/typography');
+const Modal = require('@andes/modal');
+
 
 function FilterItem(props) {
   const { i18n } = useI18n();
   const { filter, urlGenerator } = props;
+  const [showMore, setShowMore] = useState(false)
 
   return (
-    <section
-      className="filter_section"
-      aria-label={i18n.gettext("Filtros de {0}", filter.name)}
-      key={filter.id}
-    >
-      <details>
-        <summary
-          aria-label={i18n.gettext("{0}", filter.name)}
-          className="filter_section__name"
+
+    <section className="filter__section">
+
+      <Typography
+        className="filter__section__name"
+        component="p"
+        type="title"
+        size="xs"
+        color="primary"
+      >
+        {filter.name}
+      </Typography>
+
+
+      {filter.values.slice(0, 4).map((value) => (
+
+        <Typography
+          className="filter__section__value"
+          onClick={() => urlGenerator.setFilter(filter.id, value.id)}
+          component="p"
+          size="m"
+          color="secondary"
         >
-          {filter.name}
-        </summary>
-        <ul className="filter_section__list">
+          {`${value.name}  `}
+          <span className="results">({value.results})</span>
+        </Typography>
+      ))}
+
+      {
+        filter.values.length > 4 &&
+        <Typography
+          className="filter__section__modal__show"
+          component="p"
+          size="m"
+          color="link"
+          onClick={() => setShowMore(true)}
+        >
+          {i18n.gettext("Mostrar más")}
+        </Typography>
+      }
+
+      <Modal
+        isOpen={showMore}
+        onClose={() => { setShowMore(false) }}
+        title={filter.name}
+        type="card"
+      >
+        <div
+          className="filter__section__modal"
+        >
           {filter.values.map((value) => (
-            <li
-              className="filter_section__list__item"
-              aria-label={i18n.gettext("{0}", value.name)}
-              tabIndex={214}
-              key={filter.id + value.id}
+            <Typography
+              className="filter__section__value"
+              onClick={() => urlGenerator.setFilter(filter.id, value.id)}
+              component="p"
+              size="m"
+              color="secondary"
             >
-              <a onClick={() => urlGenerator.setFilter(filter.id, value.id)}>
-                {value.name}
-              </a>
-            </li>
+              {`${value.name}  `}
+              <span className="results">({value.results})</span>
+            </Typography>
           ))}
-        </ul>
-      </details>
+        </div>
+      </Modal>
+
     </section>
   );
 }

@@ -28,6 +28,7 @@
     "@andes/dropdown": "7.20.1",
     "@andes/form": "7.20.1",
     "@andes/list": "7.20.1",
+    "@andes/modal": "7.20.1",
     "@andes/pagination": "7.20.1",
     "@andes/tag": "7.20.1",
     "@andes/typography": "7.20.1",
