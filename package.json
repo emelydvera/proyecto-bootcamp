@@ -29,6 +29,7 @@
     "@andes/dropdown": "7.20.1",
     "@andes/form": "7.20.1",
     "@andes/list": "7.20.1",
+    "@andes/money-amount": "7.20.1",
     "@andes/pagination": "7.20.1",
     "nordic": "^7.12.1"
   },

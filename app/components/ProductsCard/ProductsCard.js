@@ -3,9 +3,18 @@ const PropTypes = require("prop-types");
 const Image = require("nordic/image");
 const Card = require("@andes/card");
 const { CardContent } = require("@andes/card");
+const MoneyAmount = require("@andes/money-amount");
 
 const ProductsCard = ({ product, i18n, index }) => {
-  const { id, title, price, address, thumbnail, installments } = product;
+  const {
+    id,
+    title,
+    price,
+    address,
+    thumbnail,
+    installments,
+    shipping: { free_shipping },
+  } = product;
 
   return (
     <>
@@ -31,13 +40,25 @@ const ProductsCard = ({ product, i18n, index }) => {
           </div>
           <div className="card__description">
             <div className="card__description__main-info">
-              <p
-                className="price"
-                aria-label={i18n.gettext(`precio del producto: $${price}`)}
-                tabIndex={`${index + 1}5`}
-              >
-                ${price}
-              </p>
+              <div class="money__and__shipping">
+                <MoneyAmount
+                  className="price"
+                  aria-label={i18n.gettext(`precio del producto: $${price}`)}
+                  tabIndex={`${index + 1}5`}
+                  amount={{
+                    currencyId: undefined,
+                    fraction: `${price.toLocaleString().replace(/,/g, ".")}`,
+                    symbol: "$",
+                  }}
+                  size={24}
+                ></MoneyAmount>
+
+                {free_shipping ? (
+                  <span className="shipping">{i18n.gettext("Envío")}</span>
+                ) : (
+                  ""
+                )}
+              </div>
               <h2 className="title" tabIndex={`${index + 1}3`}>
                 {title}
               </h2>
