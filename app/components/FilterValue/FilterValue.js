@@ -26,7 +26,7 @@ function FilterValue(props) {
 FilterValue.propTypes = {
   id: PropTypes.string,
   value: PropTypes.shape({
-    id: PropTypes.string,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }),
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,

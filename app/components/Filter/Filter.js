@@ -1,21 +1,21 @@
 const React = require("react");
 const PropTypes = require("prop-types");
-
-const Typography = require('@andes/typography');
-
-const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
+const Typography = require('@andes/typography');
+const UrlGenerator = require("../../utils/urlGenerator");
 const FiltersApplied = require("../FiltersApplied");
 const FiltersAvailables = require("../FiltersAvailables");
 
 const Filter = ({ filters, available_filters, urlGenerator, totalProducts }) => {
   const { i18n } = useI18n();
 
+  const searchString = urlGenerator.getQueryByName('q');
+
   return (
     <aside className="filters">
 
       <Typography component="p" type="title" size="l">
-        {urlGenerator.getQueryByName('q')}
+        {searchString.charAt(0).toUpperCase() + searchString.slice(1)}
       </Typography>
 
       <Typography component="p" size="l" color="secondary"  >

@@ -1,7 +1,7 @@
 const React = require("react");
 const PropTypes = require("prop-types");
-const UrlGenerator = require("../../utils/urlGenerator");
 const Typography = require('@andes/typography');
+const UrlGenerator = require("../../utils/urlGenerator");
 const FilterModal = require("../FilterModal");
 const FilterValue = require("../FilterValue");
 
@@ -27,7 +27,7 @@ function FilterSection(props) {
 
         <FilterValue
           key={index}
-          id={filter.id}
+          id={filter.id || value.query}
           value={value}
           urlGenerator={urlGenerator}
         />

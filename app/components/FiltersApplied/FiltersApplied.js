@@ -1,16 +1,16 @@
 const React = require("react");
 const PropTypes = require("prop-types");
+const Tag = require('@andes/tag');
 const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
 
-const Tag = require('@andes/tag');
 
 function FiltersApplied(props) {
   const { i18n } = useI18n();
   const { filters, urlGenerator } = props;
 
   return (
-    <div className="filters__list">
+    <div>
       {filters.map(({ id, name, values }, index) => (
         <Tag
           key={index}

@@ -1,10 +1,10 @@
 const React = require("react");
 const { useState } = React;
 const PropTypes = require("prop-types");
-const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
 const Typography = require('@andes/typography');
 const Modal = require('@andes/modal');
+const UrlGenerator = require("../../utils/urlGenerator");
 const FilterValue = require("../FilterValue");
 
 

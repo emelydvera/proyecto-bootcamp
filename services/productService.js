@@ -26,7 +26,7 @@ class ProductService {
           results: normalizer(response.data.results),
           filters: response.data.filters,
           available_filters: normalizerFilters(response.data.available_filters),
-          totalProducts: response.data.paging.total
+          totalProducts: response.data.paging.primary_results,
         }
       })
       .catch((error) => {
