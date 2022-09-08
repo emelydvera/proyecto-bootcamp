@@ -28,7 +28,6 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
 
   const amountCents = amount?.toString().split(".");
   const priceCents = price.toLocaleString("de-DE").split(",");
-  console.log(amountCents);
 
   const handleClick = (id, quantityToBuy) => {
     window.location.href = `/comprar?productId=${id}&quantityToBuy=${quantityToBuy}`;
