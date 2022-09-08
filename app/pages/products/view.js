@@ -57,6 +57,7 @@ function View(props) {
 
       <div id="products-page">
         <Filter
+          totalProducts={totalProducts}
           filters={filters}
           available_filters={available_filters}
           urlGenerator={urlGenerator}

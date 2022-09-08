@@ -11,7 +11,7 @@ const Pagination = ({
 }) => {
 
   const limit = urlGenerator.getQueryByName('limit');
-  const totalPages = totalProducts > 1000 ? Math.ceil(1000 / limit) - 1 : Math.ceil(totalProducts / limit) - 1;
+  const totalPages = totalProducts > 1000 ? Math.ceil(1000 / limit) : Math.ceil(totalProducts / limit);
   const currentPage = parseInt(urlGenerator.getQueryByName('page'));
 
   return (

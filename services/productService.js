@@ -7,7 +7,9 @@ const normalizer = require("./transforms/normalizer");
 class ProductService {
   static getProducts(sitedId, params) {
 
-    const { page = 1, limit = 10 } = params;
+    let { page = 1, limit = 10 } = params;
+
+    page--;
 
     return restclient
       .get(`/sites/${sitedId}/search`, {

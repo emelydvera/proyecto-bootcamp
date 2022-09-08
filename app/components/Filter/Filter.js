@@ -1,53 +1,34 @@
 const React = require("react");
 const PropTypes = require("prop-types");
-const FilterItem = require("../FilterItem");
+
+const Typography = require('@andes/typography');
+
 const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
+const FiltersApplied = require("../FiltersApplied");
+const FiltersAvailables = require("../FiltersAvailables");
 
-const Filter = ({ filters, available_filters, urlGenerator }) => {
+const Filter = ({ filters, available_filters, urlGenerator, totalProducts }) => {
   const { i18n } = useI18n();
 
   return (
     <aside className="filters">
-      {filters.length > 0 && (
-        <h3
-          aria-label={i18n.gettext("filtrando por")}
-          tabIndex={210}
-          className="filters__availables"
-        >
-          {i18n.gettext("Filtrando por:")}
-        </h3>
-      )}
-      <ul className="filters__list">
-        {filters.map(({ id, name, values }) => (
-          <li
-            className="filters__list__item"
-            key={id}
-            aria-label={i18n.gettext("{0}", name)}
-            tabIndex={211}
-            onClick={() => urlGenerator.removeFilter(id)}
-          >
-            {`ⓧ ${name}`}: {values[0].name}
-          </li>
-        ))}
-      </ul>
+      <Typography component="p" type="title" size="l">
+        {urlGenerator.getQueryByName('q')}
+      </Typography>
+      <Typography component="p" size="l" color="secondary"  >
+        {i18n.ngettext("{0} resultado", "{0} resultados", totalProducts, [totalProducts])}
+      </Typography>
 
-      <h3 aria-label={i18n.gettext("Filtros")} tabIndex={212}>
-        {i18n.gettext("Filtros:")}
-      </h3>
+      <FiltersApplied filters={filters} urlGenerator={urlGenerator} />
 
-      {available_filters.map((filter, index) => (
-        <FilterItem
-          filter={filter}
-          key={index}
-          urlGenerator={urlGenerator}
-        />
-      ))}
+      <FiltersAvailables available_filters={available_filters} urlGenerator={urlGenerator} />
     </aside>
   );
 };
 
 Filter.propTypes = {
+  totalProducts: PropTypes.number.isRequired,
   filters: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

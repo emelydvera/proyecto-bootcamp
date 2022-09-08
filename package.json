@@ -29,6 +29,8 @@
     "@andes/form": "7.20.1",
     "@andes/list": "7.20.1",
     "@andes/pagination": "7.20.1",
+    "@andes/tag": "7.20.1",
+    "@andes/typography": "7.20.1",
     "nordic": "^7.12.1"
   },
   "devDependencies": {
