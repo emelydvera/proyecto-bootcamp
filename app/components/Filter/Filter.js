@@ -4,7 +4,7 @@ const FilterItem = require("../FilterItem");
 const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
 
-const Filter = ({ filters, available_filters, urlGenerator, limit }) => {
+const Filter = ({ filters, available_filters, urlGenerator }) => {
   const { i18n } = useI18n();
 
   return (
@@ -37,12 +37,7 @@ const Filter = ({ filters, available_filters, urlGenerator, limit }) => {
       </h3>
 
       {available_filters.map((filter, index) => (
-        <FilterItem
-          filter={filter}
-          key={index}
-          urlGenerator={urlGenerator}
-          limit={limit}
-        />
+        <FilterItem filter={filter} key={index} urlGenerator={urlGenerator} />
       ))}
     </aside>
   );
@@ -62,7 +57,6 @@ Filter.propTypes = {
     }).isRequired
   ).isRequired,
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
-  limit: PropTypes.number.isRequired,
 };
 
 module.exports = Filter;

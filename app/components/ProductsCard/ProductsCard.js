@@ -71,9 +71,14 @@ const ProductsCard = ({ product, i18n, index }) => {
             </div>
             <span
               className="card__description__ubication"
-              aria-label={`ubicación del producto ${
-                address ? (address.state_name ? address.state_name : "") : ""
-              }`}
+              aria-label={
+                ("ubicación del producto ${0}",
+                address &&
+                  i18n.gettext(
+                    "{0}",
+                    address.state_name ? address.state_name : ""
+                  ))
+              }
               tabIndex={`${index + 1}4`}
             >
               {address &&
