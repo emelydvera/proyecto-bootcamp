@@ -5,6 +5,7 @@ const UrlGenerator = require("../../utils/urlGenerator");
 const { useI18n } = require("nordic/i18n");
 const Typography = require('@andes/typography');
 const Modal = require('@andes/modal');
+const FilterValue = require("../FilterValue");
 
 
 function FilterModal(props) {
@@ -38,17 +39,14 @@ function FilterModal(props) {
         >
 
           {filter.values.map((value, index) => (
-            <Typography
+
+            <FilterValue
               key={index}
-              className="filter__modal__value"
-              onClick={() => urlGenerator.setFilter(filter.id || value.query, value.id)}
-              component="p"
-              size="m"
-              color="secondary"
-            >
-              {`${value.name}  `}
-              <span className="filter__modal__results">({value.results})</span>
-            </Typography>
+              id={filter.id || value.query}
+              value={value}
+              urlGenerator={urlGenerator}
+            />
+
           ))}
 
         </div>

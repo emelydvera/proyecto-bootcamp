@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+
+.filter__section__value {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  width: fit-content;
+
+  &__results {
+    color: #999;
+  }
+}

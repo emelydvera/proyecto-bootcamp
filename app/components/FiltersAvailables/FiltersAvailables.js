@@ -2,7 +2,7 @@ const React = require("react");
 const PropTypes = require("prop-types");
 
 const UrlGenerator = require("../../utils/urlGenerator");
-const FilterItem = require("../FilterItem");
+const FilterSection = require("../FilterSection");
 
 function FiltersAvailables(props) {
   const { available_filters, urlGenerator } = props;
@@ -10,7 +10,7 @@ function FiltersAvailables(props) {
   return (
     <div>
       {available_filters.map((filter, index) => (
-        <FilterItem
+        <FilterSection
           filter={filter}
           key={index}
           urlGenerator={urlGenerator}

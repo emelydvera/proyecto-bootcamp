@@ -3,9 +3,10 @@ const PropTypes = require("prop-types");
 const UrlGenerator = require("../../utils/urlGenerator");
 const Typography = require('@andes/typography');
 const FilterModal = require("../FilterModal");
+const FilterValue = require("../FilterValue");
 
 
-function FilterItem(props) {
+function FilterSection(props) {
   const { filter, urlGenerator } = props;
 
   return (
@@ -22,20 +23,9 @@ function FilterItem(props) {
         {filter.name}
       </Typography>
 
-
       {filter.values.slice(0, 4).map((value, index) => (
 
-        <Typography
-          key={index}
-          className="filter__section__value"
-          onClick={() => urlGenerator.setFilter(filter.id, value.id)}
-          component="p"
-          size="m"
-          color="secondary"
-        >
-          {value.name}
-          <span className="results">({value.results})</span>
-        </Typography>
+        <FilterValue key={index} id={filter.id} value={value} urlGenerator={urlGenerator} />
       ))}
 
       {
@@ -43,13 +33,11 @@ function FilterItem(props) {
         <FilterModal filter={filter} urlGenerator={urlGenerator} />
       }
 
-
-
     </section>
   );
 }
 
-FilterItem.propTypes = {
+FilterSection.propTypes = {
   filter: PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string.isRequired,
@@ -57,4 +45,4 @@ FilterItem.propTypes = {
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
 };
 
-module.exports = FilterItem;
+module.exports = FilterSection;
