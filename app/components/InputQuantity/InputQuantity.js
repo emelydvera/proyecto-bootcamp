@@ -1,9 +1,7 @@
 const React = require("react");
 const PropTypes = require("prop-types");
 const { useI18n } = require("nordic/i18n");
-const Button = require("@andes/button");
 const TextField = require("@andes/textfield");
-const { useRef, useState } = React;
 
 const InputQuantity = ({
   className,
@@ -34,16 +32,10 @@ const InputQuantity = ({
     }
   };
 
-  const getItemn =(param)=>{
-for (let index = 0; index < param; index++) {
-  const element = array[index];
-  
-}
-  }
-
   return (
     <div className="input__quantity">
       <TextField
+        aria-label={i18n.gettext('Ingrese la cantidad de productos a comprar')}
         label={i18n.gettext("Cantidad")}
         type="number"
         min="1"
@@ -61,10 +53,12 @@ for (let index = 0; index < param; index++) {
 
 InputQuantity.propTypes = {
   className: PropTypes.string,
+  error: PropTypes.string.isRequired,
   availableQuantity: PropTypes.number.isRequired,
   setError: PropTypes.func.isRequired,
   setQuantityToBuy: PropTypes.func.isRequired,
-  quantityToBuy: PropTypes.string.isRequired,
+  quantityToBuy: PropTypes.number.isRequired,
+  tabIndex: PropTypes.number.isRequired
 };
 
 module.exports = InputQuantity;

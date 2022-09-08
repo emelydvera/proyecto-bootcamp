@@ -16,8 +16,8 @@ function ProductAttributes({ i18n, attributes }) {
             attributes.map(({ id, name, value_name }) => (
               value_name &&
               <tr key={id} tabIndex={23}>
-                <td>{name}</td>
-                <td>{value_name}</td>
+                <td>{i18n.gettext(name)}</td>
+                <td>{i18n.gettext(value_name)}</td>
               </tr>
             ))
           }

@@ -1,5 +1,5 @@
 const React = require("react");
-const { useState, useEffect } = React;
+const { useState } = React;
 const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const Button = require("@andes/button");
@@ -26,7 +26,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const [quantityToBuy, setQuantityToBuy] = useState(1);
   const [mainImage, setMainImage] = useState(0);
 
-  const amountCents = amount.toString().split(".");
+  const amountCents = amount?.toString().split(".");
   const priceCents = price.toLocaleString("de-DE").split(",");
   console.log(amountCents);
 
@@ -49,9 +49,8 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
                   i <= 6 && (
                     <div
                       key={p.id}
-                      className={`image__container ${
-                        mainImage === i ? "active" : ""
-                      }`}
+                      className={`image__container ${mainImage === i ? "active" : ""
+                        }`}
                     >
                       <Image
                         className="product__image "
@@ -68,7 +67,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
               })}
           </div>
 
-          <figure tabIndex={9} aria-label={i18n.gettext(` imagen de ${title}`)}>
+          <figure tabIndex={9} aria-label={i18n.gettext('Imagen de {0}', title)}>
             <Image
               src={pictures[mainImage].secure_url}
               alt={i18n.gettext("producto")}
@@ -84,51 +83,61 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
       </div>
 
       <div className="info">
-        <span className="info__use" tabIndex={10} aria-label={`${condition}`}>
+        <span className="info__use" tabIndex={10} aria-label={i18n.gettext(
+          condition === "new"
+            ? "Nuevo"
+            : condition === "not_specified"
+              ? "No Especifica"
+              : condition === "used"
+                ? "Usado"
+                : ""
+        )}>
           {i18n.gettext(
             condition === "new"
               ? "Nuevo"
               : condition === "not_specified"
-              ? "No Especifica"
-              : condition === "used"
-              ? "Usado"
-              : ""
+                ? "No Especifica"
+                : condition === "used"
+                  ? "Usado"
+                  : ""
           )}
         </span>
         <span
           className="info__use"
           tabIndex={11}
-          aria-label={i18n.gettext(`${sold_quantity} productos vendidos`)}
+          aria-label={i18n.gettext('{0} productos vendidos', sold_quantity)}
         >
           {" "}
-          {i18n.gettext(`- ${sold_quantity} vendidos`)}
+          {i18n.gettext('- ${0} vendidos', sold_quantity)}
         </span>
 
-        <h2 tabIndex={12} aria-label={i18n.gettext(`${title}`)}>
+        <h2 tabIndex={12} aria-label={i18n.gettext(title)}>
           {i18n.gettext(title)}
         </h2>
 
-        <MoneyAmount
-          className="info__price"
-          tabIndex={13}
-          aria-label={i18n.gettext(`el producto tiene un precio de ${price}`)}
-          amount={{
-            fraction: i18n.gettext("{0}", priceCents[0]),
-            currencyId: currency_id,
-            cents: priceCents[1]
-              ? i18n.gettext("{0}", priceCents[1])
-              : i18n.gettext("00"),
-          }}
-          centsType="superscript"
-          size={48}
-        />
+        <div
+          tabIndex={13}>
+          <MoneyAmount
+            className="info__price"
+            aria-label={i18n.gettext('el producto tiene un precio de ${0}', price)}
+            amount={{
+              fraction: i18n.gettext(priceCents[0]),
+              currencyId: currency_id,
+              cents: priceCents[1]
+                ? i18n.gettext(priceCents[1])
+                : i18n.gettext("00"),
+            }}
+            centsType="superscript"
+            size={48}
+          />
+        </div>
 
         {!quantity || !amount ? null : (
           <div
             className="info__quantity-amount"
             tabIndex={14}
             aria-label={i18n.gettext(
-              `Pagalo en ${quantity} cuotas, cada una de  ${amount}`
+              'Pagalo en ${0} cuotas, cada una de  ${1}', quantity, amount
             )}
           >
             {quantity} cuotas de{" "}
@@ -138,12 +147,11 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
                 amount={{
                   currencyId: currency_id,
                   fraction: i18n.gettext(
-                    "{0}",
                     parseInt(amountCents[0]).toLocaleString("de-DE")
                   ),
                   symbol: "$",
                   cents: amountCents[1]
-                    ? i18n.gettext("{0}", amountCents[1])
+                    ? i18n.gettext(amountCents[1])
                     : i18n.gettext("00"),
                 }}
                 centsType="superscript"
@@ -157,10 +165,10 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           className="info__available"
           tabIndex={16}
           aria-label={i18n.gettext(
-            `hay ${available_quantity} unidades disponibles`
+            'hay ${0} unidades disponibles', available_quantity
           )}
         >
-          {`Cantidad disponible: ${available_quantity}`}
+          {i18n.gettext('Cantidad disponible: {0}', available_quantity)}
         </p>
 
         {shipping.free_shipping ? (
@@ -168,7 +176,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             <Shipping24 color=" #00A650" />
             <p
               tabIndex={17}
-              aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}
+              aria-label={i18n.gettext(`el envio es gratis`)}
             >
               {i18n.gettext("Envío gratis")}
             </p>
@@ -220,6 +228,7 @@ ProductView.propTypes = {
     shipping: PropTypes.shape({}),
     available_quantity: PropTypes.number.isRequired,
     id: PropTypes.string.isRequired,
+    currency_id: PropTypes.string.isRequired,
   }).isRequired,
   description: PropTypes.shape({
     plain_text: PropTypes.string.isRequired,
