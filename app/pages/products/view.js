@@ -98,6 +98,21 @@ View.propTypes = {
   }).isRequired,
   translations: PropTypes.shape({}),
   products: PropTypes.array,
+  baseUrl: PropTypes.string,
+  query: PropTypes.object,
+  filters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  available_filters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  totalProducts: PropTypes.number.isRequired
 };
 
 module.exports = injectI18n(View);
