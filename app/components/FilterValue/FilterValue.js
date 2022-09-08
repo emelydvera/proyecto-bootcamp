@@ -5,12 +5,11 @@ const UrlGenerator = require("../../utils/urlGenerator");
 
 
 function FilterValue(props) {
-  const { key, id, value, urlGenerator } = props;
+  const { id, value, urlGenerator } = props;
 
   return (
 
     <Typography
-      key={key}
       className="filter__section__value"
       onClick={() => urlGenerator.setFilter(id, value.id)}
       component="p"
@@ -25,8 +24,7 @@ function FilterValue(props) {
 }
 
 FilterValue.propTypes = {
-  key: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   value: PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string.isRequired,

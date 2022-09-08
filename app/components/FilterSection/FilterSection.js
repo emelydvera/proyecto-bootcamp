@@ -25,7 +25,12 @@ function FilterSection(props) {
 
       {filter.values.slice(0, 4).map((value, index) => (
 
-        <FilterValue key={index} id={filter.id} value={value} urlGenerator={urlGenerator} />
+        <FilterValue
+          key={index}
+          id={filter.id}
+          value={value}
+          urlGenerator={urlGenerator}
+        />
       ))}
 
       {
