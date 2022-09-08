@@ -35,12 +35,7 @@ function View(props) {
 
   const [data, setData] = useState(products);
 
-  const urlGenerator = new UrlGenerator(
-    baseUrl,
-    query,
-    filters,
-    totalProducts
-  );
+  const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
 
   return (
     <div>
@@ -48,8 +43,8 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-          isJSON: true,
-        })};
+            isJSON: true,
+          })};
         `}
       </Script>
       <Script src="vendor.js" />
@@ -62,9 +57,7 @@ function View(props) {
           urlGenerator={urlGenerator}
         />
         <div className="products">
-          <SelectProductsPerPage
-            urlGenerator={urlGenerator}
-          />
+          <SelectProductsPerPage urlGenerator={urlGenerator} />
           <ProductsList products={data} i18n={i18n} query={query} />
           <Pagination
             totalProducts={totalProducts}
@@ -84,7 +77,7 @@ View.propTypes = {
     gettext: PropTypes.func.isRequired,
   }).isRequired,
   translations: PropTypes.shape({}),
-  products: PropTypes.array,
+  products: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 module.exports = injectI18n(View);
