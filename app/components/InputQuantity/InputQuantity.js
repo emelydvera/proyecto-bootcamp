@@ -1,13 +1,13 @@
 const React = require("react");
 const PropTypes = require("prop-types");
 const { useI18n } = require("nordic/i18n");
-const Dropdown = require('@andes/dropdown');
-const { DropdownItem } = Dropdown;
-const TextField = require('@andes/textfield');
-const { CodeInput } = require('@andes/textfield');
+const Button = require("@andes/button");
+const TextField = require("@andes/textfield");
+const { useRef, useState } = React;
 
 const InputQuantity = ({
   className,
+  error,
   availableQuantity,
   setError,
   setQuantityToBuy,
@@ -20,40 +20,17 @@ const InputQuantity = ({
     const { value } = e.target;
 
     if (parseInt(value) < 0 || parseInt(value) === -0) {
-      setQuantityToBuy("1");
+      setQuantityToBuy(1);
       setError("");
     } else if (availableQuantity < parseInt(value)) {
       setError(`Puedes comprar hasta ${availableQuantity} unidades`);
-      setQuantityToBuy(value);
+      setQuantityToBuy(parseInt(value));
     } else if (value === "" || parseInt(value) === 0) {
       setError(`Puedes comprar mínimo 1 unidad`);
-      setQuantityToBuy(value);
+      setQuantityToBuy(parseInt(value));
     } else {
       setError("");
-      setQuantityToBuy(value);
-    }
-  };
-
-  const handleClick = (e) => {
-    const { name } = e.target;
-    let newQuantityToBuy = parseInt(quantityToBuy);
-    if (name === "+") {
-      if (quantityToBuy === "") {
-        newQuantityToBuy = 0;
-        setError("");
-      }
-      newQuantityToBuy = newQuantityToBuy + 1;
-      setQuantityToBuy(newQuantityToBuy.toString());
-      if (availableQuantity < parseInt(newQuantityToBuy)) {
-        setError(i18n.ngettext('Puedes comprar hasta {0} unidad', 'Puedes comprar hasta {0} unidades', availableQuantity, [availableQuantity]));
-      }
-    } else if (name === "-" && newQuantityToBuy > 1) {
-      newQuantityToBuy = newQuantityToBuy - 1;
-      setQuantityToBuy(newQuantityToBuy.toString());
-      setError(i18n.ngettext('Puedes comprar hasta {0} unidad', 'Puedes comprar hasta {0} unidades', availableQuantity, [availableQuantity]));
-      if (newQuantityToBuy <= availableQuantity) {
-        setError("");
-      }
+      setQuantityToBuy(parseInt(value));
     }
   };
 
@@ -66,40 +43,18 @@ for (let index = 0; index < param; index++) {
 
   return (
     <div className="input__quantity">
-
-      <TextField 
-      className="input"
-      label="Cantidad" 
-      type='number'
-      min="1"
-      />
-
-      {/* <input
-        className={className}
+      <TextField
+        label={i18n.gettext("Cantidad")}
         type="number"
         min="1"
+        message={error ? i18n.gettext(error) : ""}
+        modifier={error ? "error" : "default"}
+        centered={true}
+        className={className}
         onChange={handleChange}
         value={quantityToBuy}
         tabIndex={tabIndex}
       />
-      <button
-        className="buy__button__add"
-        tabIndex={tabIndex}
-        name="+"
-        onClick={handleClick}
-        aria-label={i18n.gettext('Agregar producto')}
-      >
-        +
-      </button>
-      <button
-        className="buy__button__substract"
-        tabIndex={tabIndex}
-        name="-"
-        onClick={handleClick}
-        aria-label={i18n.gettext('Eliminar producto')}
-      >
-        -
-      </button> */}
     </div>
   );
 };
