@@ -77,15 +77,8 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             <figcaption>{i18n.gettext(title)}</figcaption>
           </figure>
         </div>
-<<<<<<< HEAD
         <h2>{i18n.gettext("Descripción del producto")}</h2>
         <p tabIndex={19}>{i18n.gettext(description.plain_text)}</p>
-=======
-
-        <p tabIndex={19} className="description">
-          {i18n.gettext(description.plain_text)}
-        </p>
->>>>>>> 8072d078e0967ba4e796bb524f29a04752128f45
         <ProductAttributes i18n={i18n} attributes={attributes} />
       </div>
 

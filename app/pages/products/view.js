@@ -78,7 +78,6 @@ View.propTypes = {
     gettext: PropTypes.func.isRequired,
   }).isRequired,
   translations: PropTypes.shape({}),
-<<<<<<< HEAD
   products: PropTypes.array,
   baseUrl: PropTypes.string,
   query: PropTypes.object,
@@ -95,9 +94,6 @@ View.propTypes = {
     }).isRequired
   ).isRequired,
   totalProducts: PropTypes.number.isRequired
-=======
-  products: PropTypes.arrayOf(PropTypes.object).isRequired,
->>>>>>> 8072d078e0967ba4e796bb524f29a04752128f45
 };
 
 module.exports = injectI18n(View);
