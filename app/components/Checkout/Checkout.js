@@ -3,6 +3,9 @@ const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const { useState } = React;
 const InputQuantity = require("../InputQuantity");
+const FastShipping24 = require("@andes/icons/FastShipping24");
+const Shipping24 = require("@andes/icons/Shipping24");
+const MoneyAmount = require("@andes/money-amount");
 
 const Checkout = ({ i18n, product, quantity }) => {
   const {
@@ -12,19 +15,24 @@ const Checkout = ({ i18n, product, quantity }) => {
     available_quantity,
     thumbnail,
     title,
+    currency_id
   } = product;
   const [quantityToBuy, setQuantityToBuy] = useState(quantity);
   const [error, setError] = useState("");
 
+  const totalPriceCents = (price * quantity).toLocaleString('de-DE').split(',')
+  const priceCents = price.toLocaleString('de-DE').split(',')
+
   return (
     <div className="checkout" id="checkout">
       <h2
-        aria-label={i18n.gettext("Carrito de compras")}
+        aria-label={i18n.gettext("Resumen de compra")}
         tabIndex={9}
         className="checkout__title"
       >
-        {i18n.gettext(`Carrito de compras (${quantityToBuy})`)}
+        {i18n.gettext("Resumen de compra")}
       </h2>
+      <p className="checkout__subtitle">{i18n.gettext("Producto")}</p>
       <div className="checkout__product">
         <Image
           className="image"
@@ -33,14 +41,26 @@ const Checkout = ({ i18n, product, quantity }) => {
           alt={i18n.gettext(title)}
         />
         <div className="column">
-          <div className="row checkout__product__title">
-            <h2
-              tabIndex={11}
+          <h2 tabIndex={11}>
+            {title.length > 70 ? i18n.gettext('{0}...', title.slice(0, 70 - 3)) : i18n.gettext(title)}
+          </h2>
+          <div className="checkout__product__container">
+            <span
+              className="checkout__product__unityprice"
+              aria-label={i18n.gettext("precio producto")}
+              tabIndex={13}
             >
-              {i18n.gettext(
-                title.length > 70 ? title.slice(0, 70 - 3) + "..." : title
-              )}
-            </h2>
+              {i18n.gettext("{0}x", quantityToBuy)}
+              <MoneyAmount
+                amount={{
+                  fraction: i18n.gettext(priceCents[0]),
+                  currencyId: currency_id,
+                  cents: priceCents[1] ? i18n.gettext(priceCents[1]) : i18n.gettext('00')
+                }}
+                centsType="superscript"
+                size={16}
+              />
+            </span>
             <InputQuantity
               className="checkout__product__input"
               tabIndex={12}
@@ -49,49 +69,52 @@ const Checkout = ({ i18n, product, quantity }) => {
               availableQuantity={available_quantity}
               setError={setError}
             />
-            <p
-              aria-label={i18n.gettext("precio producto")}
-              tabIndex={13}
-            >
-              {i18n.gettext(`Precio unitario: $${price}`)}
-            </p>
           </div>
-
-          <div
-            aria-label={i18n.gettext("Costo de envío")}
-            className="row checkout__product__info"
-          >
-            {shipping.free_shipping ? (
-              <p
-                className="envio__gratis"
-                tabIndex={14}
-              >
-                {i18n.gettext(
-                  `Envío gratis ${seller_address && "desde: " + seller_address.city.name
-                  }`
-                )}
-              </p>
-            ) : (
-              <p
-                tabIndex={14}
-              >
-                {i18n.gettext(
-                  `Envío con costo a determinar ${seller_address && "desde: " + seller_address.city.name
-                  }`
-                )}
-              </p>
-            )}
-            <p className="checkout__alert">{i18n.gettext(error)}</p>
-          </div>
+          <p className="checkout__alert">{i18n.gettext(error)}</p>
         </div>
       </div>
-      <p
+      <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
+      <div
+        aria-label={i18n.gettext("Costo de envío")}
+        className="row checkout__product__info envio"
+      >
+        {shipping.free_shipping ? (
+          <div className="envio__gratis">
+            <FastShipping24 color="green" />
+            <p className="envio__gratis--true" tabIndex={14}>
+              {i18n.gettext("Envío gratis")}
+            </p>
+            {seller_address && (
+              <p className="envio__gratis__city " tabIndex={14}>
+                {i18n.gettext("desde {0}", seller_address.city.name)}
+              </p>
+            )}
+          </div>
+        ) : (
+          <div className="envio__costo">
+            <Shipping24 />
+            <p className='envio__costo--false' tabIndex={14}>
+              {i18n.gettext("Envío con costo a determinar")}
+            </p>
+            {seller_address && (<p className='envio__costo__city' >{i18n.gettext("desde: {0}", seller_address.city.name)}</p>)}
+          </div>
+        )}
+      </div>
+      <div
         tabIndex={15}
         aria-label={i18n.gettext("Precio total")}
         className="checkout__total"
       >
-        {i18n.gettext(`Total: ${price * quantityToBuy}`)}
-      </p>
+        <p className="checkout__total__price">{i18n.gettext("Total")}</p>
+        <MoneyAmount
+          amount={{
+            fraction: i18n.gettext(totalPriceCents[0]),
+            cents: totalPriceCents[1] ? i18n.gettext(totalPriceCents[1]) : i18n.gettext('00')
+          }}
+          centsType="superscript"
+          size={28}
+        />
+      </div>
     </div>
   );
 };
