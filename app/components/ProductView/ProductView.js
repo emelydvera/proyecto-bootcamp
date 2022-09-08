@@ -1,10 +1,10 @@
 const React = require("react");
-const { useState } = React;
+const { useState, useEffect } = React;
 const Image = require("nordic/image");
 const PropTypes = require("prop-types");
-const Button = require('@andes/button');
-const MoneyAmount = require('@andes/money-amount');
-const Shipping24 = require('@andes/icons/Shipping24');
+const Button = require("@andes/button");
+const MoneyAmount = require("@andes/money-amount");
+const Shipping24 = require("@andes/icons/Shipping24");
 const InputQuantity = require("../InputQuantity");
 const ProductAttributes = require("../ProductAttributes");
 
@@ -19,12 +19,16 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
     available_quantity,
     attributes,
     id,
-    currency_id
+    currency_id,
   } = product;
 
   const [error, setError] = useState("");
-  const [quantityToBuy, setQuantityToBuy] = useState("1");
+  const [quantityToBuy, setQuantityToBuy] = useState(1);
   const [mainImage, setMainImage] = useState(0);
+
+  const amountCents = amount.toString().split(".");
+  const priceCents = price.toLocaleString("de-DE").split(",");
+  console.log(amountCents);
 
   const handleClick = (id, quantityToBuy) => {
     window.location.href = `/comprar?productId=${id}&quantityToBuy=${quantityToBuy}`;
@@ -45,8 +49,9 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
                   i <= 6 && (
                     <div
                       key={p.id}
-                      className={`image__container ${mainImage === i ? "active" : ""
-                        }`}
+                      className={`image__container ${
+                        mainImage === i ? "active" : ""
+                      }`}
                     >
                       <Image
                         className="product__image "
@@ -73,10 +78,8 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             <figcaption>{i18n.gettext(title)}</figcaption>
           </figure>
         </div>
-        <h2>
-          {i18n.gettext('Descripción del producto')}
-        </h2>
-        <p tabIndex={19} >{i18n.gettext(description.plain_text)}</p>
+        <h2>{i18n.gettext("Descripción del producto")}</h2>
+        <p tabIndex={19}>{i18n.gettext(description.plain_text)}</p>
         <ProductAttributes i18n={i18n} attributes={attributes} />
       </div>
 
@@ -86,10 +89,10 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             condition === "new"
               ? "Nuevo"
               : condition === "not_specified"
-                ? "No Especifica"
-                : condition === "used"
-                  ? "Usado"
-                  : ""
+              ? "No Especifica"
+              : condition === "used"
+              ? "Usado"
+              : ""
           )}
         </span>
         <span
@@ -110,81 +113,85 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           tabIndex={13}
           aria-label={i18n.gettext(`el producto tiene un precio de ${price}`)}
           amount={{
-            cents: '00',
+            fraction: i18n.gettext("{0}", priceCents[0]),
             currencyId: currency_id,
-            fraction: i18n.gettext(`${price.toLocaleString('de-DE')}`),
-            symbol: '$'
+            cents: priceCents[1]
+              ? i18n.gettext("{0}", priceCents[1])
+              : i18n.gettext("00"),
           }}
           centsType="superscript"
           size={48}
-
         />
 
         {!quantity || !amount ? null : (
-          <p
+          <div
             className="info__quantity-amount"
             tabIndex={14}
             aria-label={i18n.gettext(
-              `Pagalo en ${quantity} cuotas, cada una de  ${amount}`)}
+              `Pagalo en ${quantity} cuotas, cada una de  ${amount}`
+            )}
           >
-            {quantity} cuotas de {' '}
-            {<MoneyAmount
-              className="info__amount"
-              amount={{
-                currencyId: currency_id,
-                fraction: i18n.gettext(`${amount.toLocaleString('de-DE')}`),
-                symbol: '$'
-              }}
-              size={16}
-
-            />
-            } cada una
-
-
-          </p>
+            {quantity} cuotas de{" "}
+            {
+              <MoneyAmount
+                className="info__amount"
+                amount={{
+                  currencyId: currency_id,
+                  fraction: i18n.gettext(
+                    "{0}",
+                    parseInt(amountCents[0]).toLocaleString("de-DE")
+                  ),
+                  symbol: "$",
+                  cents: amountCents[1]
+                    ? i18n.gettext("{0}", amountCents[1])
+                    : i18n.gettext("00"),
+                }}
+                centsType="superscript"
+                size={16}
+              />
+            }{" "}
+            cada una
+          </div>
         )}
-
         <p
-        className="info__available"
+          className="info__available"
           tabIndex={16}
           aria-label={i18n.gettext(
             `hay ${available_quantity} unidades disponibles`
           )}
-        >{`Cantidad disponible: ${available_quantity}`}</p>
+        >
+          {`Cantidad disponible: ${available_quantity}`}
+        </p>
 
-        {
-          shipping.free_shipping ?
-            <div className="info__shipping">
-              <Shipping24
-                color=' #00A650'
-              />
-              <p
-                tabIndex={17}
-                aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}
-              >
-                {i18n.gettext('Envío gratis')}
-              </p>
-            </div> :
-            ''
-        }
-
+        {shipping.free_shipping ? (
+          <div className="info__shipping">
+            <Shipping24 color=" #00A650" />
+            <p
+              tabIndex={17}
+              aria-label={i18n.gettext(`el envio es ${shipping.free_shipping}`)}
+            >
+              {i18n.gettext("Envío gratis")}
+            </p>
+          </div>
+        ) : (
+          ""
+        )}
         <div className="buy__container">
           <InputQuantity
             className="buy__input"
             tabIndex={18}
             availableQuantity={available_quantity}
+            error={error}
             setError={setError}
             setQuantityToBuy={setQuantityToBuy}
             quantityToBuy={quantityToBuy}
           />
-          {<span className="error">{error && i18n.gettext(error)}</span>}
-
           <Button
             className="buy__button"
             tabIndex={18}
             onClick={() => handleClick(id, quantityToBuy)}
             type="submit"
-            disabled={error}
+            disabled={error ? true : false}
             fullWidth={true}
             aria-label={i18n.gettext("botón para comprar producto")}
           >

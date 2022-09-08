@@ -1,161 +1,151 @@
-@import '../../styles/variables';
-@import '../../styles/common';
-
+@import "../../styles/variables";
+@import "../../styles/common";
 
 #root-app {
+  display: flex;
+  justify-content: center;
+  background-color: $gray-base;
+  font-family: "Proxima Nova";
 
+  section {
     display: flex;
-    justify-content: center;
-    background-color: $gray-base;
-    font-family: 'Proxima Nova';
+    max-width: 70%;
+    margin: 5rem 0 5rem;
+    background-color: white;
+    border-radius: $border-radius-s;
 
-    section {
-
-        display: flex;
-        max-width: 60%;
-        margin: 5rem 0 5rem;
-        background-color: white;
-        border-radius: $border-radius-s;
-
-        h2 {
-            font-weight: $font-weight-semibold;
-        }
-
-        p,
-        .info__shipping,
-        .info__quantity-amount,
-        .info__available {
-            font-size: 16px;
-        }
-
-        .product {
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-
-            &__img {
-                display: flex;
-
-                &__carousel {
-                    height: 100%;
-                    max-width: 5%;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 10px;
-
-                    .image__container {
-                        margin-top: 10px;
-                        height: 44px;
-                        width: 44px;
-                        overflow: hidden;
-                        border: 1px solid $gray-base;
-                        border-radius: $border-radius-s;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        .product__image {
-                            max-height: 90%;
-                        }
-
-                    }
-
-                    .active {
-                        border: 2px solid $blue-base;
-                        border-radius: $border-radius-s;
-                    }
-
-
-                }
-
-                figure {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    width: 500px;
-                    overflow: hidden;
-
-                    .product-img-main {
-                        padding: 10px;
-                        max-height: 300px;
-                        min-height: 300px;
-                    }
-                }
-            }
-
-            h2 {
-                font-size: 28px;
-                padding-left: 20px;
-            }
-
-            p {
-                text-align: justify;
-                padding: 20px 0 20px 20px;
-                white-space: pre-wrap;
-            }
-        }
-
-        .info {
-
-            padding-top: 20px;
-
-
-            &__use {
-                font-weight: $font-weight-light;
-                color: $gray-letters;
-
-            }
-
-            h2 {
-                font-size: 24px;
-                width: 60%;
-
-            }
-
-            &__shipping {
-
-                color: $andes-green-500;
-                display: flex;
-                align-items: center;
-
-                p {
-                    margin-left: 3px;
-                }
-            }
-
-            &__price {
-                font-weight: $font-weight-regular;
-            }
-
-            &__amount {
-                display: inline;
-            }
-
-            .buy__container {
-                display: flex;
-                flex-direction: column;
-                width: 90%;
-                justify-content: center;
-
-                .error {
-                    display: block;
-                    height: 10px;
-                    padding-top: 5px;
-                    color: $red-base;
-                    width: 100%;
-                }
-
-                .buy__button {
-                    margin-top: 30px;
-                    text-align: center;
-                    color: white;
-                }
-            }
-
-
-        }
-
-
+    h2 {
+      font-weight: $font-weight-semibold;
     }
+
+    p,
+    .info__shipping,
+    .info__quantity-amount,
+    .info__available {
+      font-size: 16px;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      &__img {
+        display: flex;
+
+        &__carousel {
+          height: 100%;
+          max-width: 5%;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+
+          .image__container {
+            margin-top: 10px;
+            height: 44px;
+            width: 44px;
+            overflow: hidden;
+            border: 1px solid $gray-base;
+            border-radius: $border-radius-s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .product__image {
+              max-height: 90%;
+            }
+          }
+
+          .active {
+            border: 2px solid $blue-base;
+            border-radius: $border-radius-s;
+          }
+        }
+
+        figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 500px;
+          overflow: hidden;
+
+          .product-img-main {
+            padding: 10px;
+            max-height: 300px;
+            min-height: 300px;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 28px;
+        padding-left: 20px;
+      }
+
+      p {
+        text-align: justify;
+        padding: 20px;
+        white-space: pre-wrap;
+      }
+    }
+
+    .info {
+      padding-top: 20px;
+
+      &__use {
+        font-weight: $font-weight-light;
+        color: $gray-letters;
+      }
+
+      h2 {
+        font-size: 24px;
+        width: 90%;
+      }
+
+      &__shipping {
+        color: $andes-green-500;
+        display: flex;
+        align-items: center;
+
+        p {
+          margin-left: 3px;
+        }
+      }
+
+      &__price {
+        font-weight: $font-weight-regular;
+      }
+
+      &__amount {
+        align-self: center;
+      }
+
+      &__quantity-amount {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+      }
+
+      .buy__container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+
+        .error {
+          display: block;
+          height: 10px;
+          padding-top: 5px;
+          color: $red-base;
+          width: 100%;
+        }
+
+        .buy__button {
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
 }
