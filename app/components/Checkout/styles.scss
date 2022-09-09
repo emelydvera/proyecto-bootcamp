@@ -38,10 +38,9 @@
       flex-direction: column;
       gap: 15px;
       align-content: flex-end;
-      flex-grow: 1;
+      max-width: 62%;
 
       h2 {
-        margin-right: 10%;
         margin-block-end: 0;
       }
     }
@@ -99,6 +98,14 @@
           }
         }
       }
+    }
+  }
+
+  &__input {
+    width: 95%;
+
+    &__container {
+      width: 35%;
     }
   }
 

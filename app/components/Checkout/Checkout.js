@@ -72,14 +72,17 @@ const Checkout = ({ i18n, product, quantity }) => {
             </span>
 
           </div>
-          <InputQuantity
-            tabIndex={12}
-            error={error}
-            quantityToBuy={quantityToBuy}
-            setQuantityToBuy={setQuantityToBuy}
-            availableQuantity={available_quantity}
-            setError={setError}
-          />
+          <div className="checkout__input__container">
+            <InputQuantity
+              className='checkout__input'
+              tabIndex={12}
+              error={error}
+              quantityToBuy={quantityToBuy}
+              setQuantityToBuy={setQuantityToBuy}
+              availableQuantity={available_quantity}
+              setError={setError}
+            />
+          </div>
         </div>
       </div>
       <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
