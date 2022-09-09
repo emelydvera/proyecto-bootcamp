@@ -2,3 +2,11 @@
 @import '../../components/InputQuantity/styles.scss';
 @import '../../components/ProductAttributes/styles.scss';
 @import '~@andes/breadcrumb/index';
+
+.breadcrumb_container{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 70%;
+    min-width: 70%;
+    margin-top: 25px;
+}

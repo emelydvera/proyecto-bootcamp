@@ -31,7 +31,9 @@ function View(props) {
       <Script src="vendor.js" />
       <Script src="product.js" />
       {product.path.length > 0 && (
-        <BreadCrumb path={product.path} productTitle={product.title} />
+        <div className={"breadcrumb_container"}>
+          <BreadCrumb path={product.path} productTitle={product.title} />
+        </div>
       )}
       <ProductView
         product={product}
@@ -53,6 +55,12 @@ View.propTypes = {
   description: PropTypes.shape({}).isRequired,
   quantity: PropTypes.string,
   amount: PropTypes.string,
+  path: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 module.exports = injectI18n(View);
