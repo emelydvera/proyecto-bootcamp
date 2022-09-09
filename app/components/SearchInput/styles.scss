@@ -1,7 +1,5 @@
 @import "../../styles/variables";
-@import "~@andes/button/index";
-@import "~@andes/form/index";
-@import "~@andes/textfield/index";
+@import '../../styles/common';
 
 .search {
   &__container {

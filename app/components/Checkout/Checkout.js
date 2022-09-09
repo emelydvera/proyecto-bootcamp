@@ -140,7 +140,7 @@ Checkout.propTypes = {
     available_quantity: PropTypes.number.isRequired,
     currency_id: PropTypes.string.isRequired,
     seller_address: PropTypes.shape({}).isRequired,
-    pictures: PropTypes.shape({ id: PropTypes.string.isRequired })
+    pictures: PropTypes.array.isRequired
 
   }).isRequired,
   quantity: PropTypes.string.isRequired,

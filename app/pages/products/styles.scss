@@ -3,7 +3,7 @@
 @import "../../components/FilterSection/styles.scss";
 @import "../../components/Filter/styles.scss";
 @import "../../components/Pagination/styles.scss";
-@import "../../components//SelectProductsPerPage/styles.scss";
+@import "../../components/SelectProductsPerPage/styles.scss";
 @import "../../styles/variables";
 @import "../../components/BreadCrumb/styles.scss";
 
@@ -25,7 +25,7 @@
     &__info {
       margin: 0px 150px 0px 50px;
       display: flex;
-      align-items: baseline;
+      align-items: flex-end;
       justify-content: space-between;
       width: 100%;
     }
