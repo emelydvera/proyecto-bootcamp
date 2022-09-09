@@ -6,6 +6,7 @@ const InputQuantity = require("../InputQuantity");
 const FastShipping24 = require("@andes/icons/FastShipping24");
 const Shipping24 = require("@andes/icons/Shipping24");
 const MoneyAmount = require("@andes/money-amount");
+const amountFormater = require('../../utils/priceFormater')
 
 const Checkout = ({ i18n, product, quantity }) => {
   const {
@@ -22,11 +23,11 @@ const Checkout = ({ i18n, product, quantity }) => {
   const [quantityToBuy, setQuantityToBuy] = useState(quantity);
   const [error, setError] = useState("");
 
+  const priceCents = amountFormater(price)
   const totalPriceCents = (quantityToBuy > available_quantity ?
-    (available_quantity * price) :
-    (quantityToBuy * price)
-  ).toLocaleString('de-DE').split(',')
-  const priceCents = price.toLocaleString('de-DE').split(',')
+    amountFormater(available_quantity * price) :
+    amountFormater(quantityToBuy * price)
+  )
 
   return (
     <div className="checkout" id="checkout">
@@ -62,9 +63,9 @@ const Checkout = ({ i18n, product, quantity }) => {
 
               <MoneyAmount
                 amount={{
-                  fraction: i18n.gettext(priceCents[0]),
+                  fraction: i18n.gettext(priceCents.fraction),
                   currencyId: currency_id,
-                  cents: priceCents[1] ? i18n.gettext(priceCents[1]) : i18n.gettext('00')
+                  cents: i18n.gettext(priceCents.cents)
                 }}
                 centsType="superscript"
                 size={16}
@@ -120,8 +121,8 @@ const Checkout = ({ i18n, product, quantity }) => {
         <p className="checkout__total__price">{i18n.gettext("Total")}</p>
         <MoneyAmount
           amount={{
-            fraction: i18n.gettext(totalPriceCents[0]),
-            cents: totalPriceCents[1] ? i18n.gettext(totalPriceCents[1]) : i18n.gettext('00')
+            fraction: i18n.gettext(totalPriceCents.fraction),
+            cents: i18n.gettext(totalPriceCents.cents)
           }}
           centsType="superscript"
           size={28}
