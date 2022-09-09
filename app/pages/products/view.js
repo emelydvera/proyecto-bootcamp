@@ -36,7 +36,9 @@ function View(props) {
 
   const [data, setData] = useState(products);
   const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
-  const path = filters.filter(filter => filter.id === 'category');
+  // const path = filters.filter(filter => filter.id === 'category');
+  const path = filters.find(filter => filter.id === 'category')
+    ?.values.find(value => value.path_from_root)?.path_from_root;
 
   return (
     <div>
@@ -59,8 +61,8 @@ function View(props) {
           urlGenerator={urlGenerator}
         />
         <div className="products">
-          <div className="products__info">
-            <BreadCrumb path={path[0].values[0].path_from_root} />
+          <div className={path ? "products__info" : "products__select"}>
+            {path && <BreadCrumb path={path} />}
             <SelectProductsPerPage urlGenerator={urlGenerator} />
           </div>
           <ProductsList products={data} i18n={i18n} query={query} />
