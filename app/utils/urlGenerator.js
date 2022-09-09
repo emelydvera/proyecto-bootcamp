@@ -7,10 +7,9 @@ class UrlGenerator {
     this.query = {
       page: 1,
       limit: 10,
-      ...query
+      ...query,
     };
   }
-
 
   setQuery(filterId, filterValue) {
     this.query[filterId] = filterValue;
@@ -18,37 +17,36 @@ class UrlGenerator {
 
   setFilter(filterId, filterValue) {
     this.setQuery(filterId, filterValue);
-    this.setQuery('page', 1);
+    this.setQuery("page", 1);
     window.location.href = this.getNewUrl();
   }
 
   removeFilter(queryId) {
-    delete this.query[queryId];
-    this.setQuery('page', 1);
-    window.location.href = this.getNewUrl();
+    if (!this.query.q || !(queryId !== "category")) {
+      delete this.query[queryId];
+      this.setQuery("page", 1);
+      window.location.href = this.getNewUrl();
+    }
   }
 
   getNewUrl() {
-    return (
-      this.baseUrl + '?' + this.getQueryString()
-    );
+    return this.baseUrl + "?" + this.getQueryString();
   }
 
   getQueryString(withPage = true) {
     return Object.entries(this.query)
-      .map(([key, value],) => {
-
+      .map(([key, value]) => {
         if (withPage) {
           return `${key}=${value}&`;
         }
 
-        return key !== 'page' ? `${key}=${value}&` : ''
+        return key !== "page" ? `${key}=${value}&` : "";
       })
-      .join("")
+      .join("");
   }
 
   getQueryByName(name) {
-    return this.query[name]
+    return this.query[name];
   }
 
   getQueries() {
