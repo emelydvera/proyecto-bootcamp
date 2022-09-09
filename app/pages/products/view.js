@@ -65,11 +65,7 @@ function View(props) {
             {path && <BreadCrumb path={path} />}
             <SelectProductsPerPage urlGenerator={urlGenerator} />
           </div>
-          <ProductsList
-            products={data.length > 0 ? data : products}
-            i18n={i18n}
-            query={query}
-          />
+          <ProductsList products={data} i18n={i18n} query={query} />
           <Pagination
             totalProducts={totalProducts}
             urlGenerator={urlGenerator}

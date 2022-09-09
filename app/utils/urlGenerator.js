@@ -22,11 +22,14 @@ class UrlGenerator {
   }
 
   removeFilter(queryId) {
-    if (!this.query.q || !(queryId !== "category")) {
-      delete this.query[queryId];
-      this.setQuery("page", 1);
-      window.location.href = this.getNewUrl();
-    }
+    // if (!this.query.q || !(queryId !== "category")) {
+    //   delete this.query[queryId];
+    //   this.setQuery("page", 1);
+    //   window.location.href = this.getNewUrl();
+    // }
+    delete this.query[queryId];
+    this.setQuery("page", 1);
+    window.history.back();
   }
 
   getNewUrl() {
