@@ -8,24 +8,35 @@ function FiltersApplied(props) {
   const { i18n } = useI18n();
   const { filters, urlGenerator } = props;
 
+  const handleOnClose = (values, id) => {
+    if (id === "category" && !urlGenerator.getQueryByName("q")) {
+      if (values[0].path_from_root.length > 1) {
+        urlGenerator.setFilter(
+          id,
+          values[0].path_from_root[values[0].path_from_root.length - 2].id
+        );
+      }
+    } else {
+      urlGenerator.removeFilter(id);
+    }
+  };
+
   return (
     <div>
-      {filters
-        .filter((filter, index) => index !== 0)
-        .map(({ id, name, values }, index) => (
-          <Tag
-            key={index}
-            label={values[0]?.name}
-            closeButtonLabel={i18n.gettext(
-              "Eliminar filtro: {0}: {1}",
-              name,
-              values[0]?.name
-            )}
-            onClose={() => urlGenerator.removeFilter(id)}
-            size="small"
-            tabIndex={211}
-          />
-        ))}
+      {filters.map(({ id, name, values }, index) => (
+        <Tag
+          key={index}
+          label={values[0]?.name}
+          closeButtonLabel={i18n.gettext(
+            "Eliminar filtro: {0}: {1}",
+            name,
+            values[0]?.name
+          )}
+          onClose={() => handleOnClose(values, id)}
+          size="small"
+          tabIndex={211}
+        />
+      ))}
     </div>
   );
 }

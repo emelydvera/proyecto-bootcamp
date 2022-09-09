@@ -30,13 +30,7 @@ class ProductService {
         };
       })
       .catch((error) => {
-        console.error(error);
-        return {
-          results: [],
-          filters: [],
-          available_filters: [],
-          totalProducts: 0,
-        };
+        throw new Error(error);
       });
   }
 

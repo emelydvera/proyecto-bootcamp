@@ -7,6 +7,11 @@ const View = require("./view");
 
 exports.fetchProducts = (req, res, next) => {
   const { siteId } = req.platform;
+
+  if (!req.query.q && !req.query.category) {
+    res.redirect("/error");
+  }
+
   ProductService.getProducts(siteId, req.query)
     .then((response) => {
       res.locals.products = response.results;
