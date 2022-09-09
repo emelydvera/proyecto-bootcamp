@@ -4,7 +4,8 @@ const Script = require("nordic/script");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
 const ProductView = require("../../components/ProductView");
-const PropTypes = require('prop-types');
+const BreadCrumb = require("../../components/BreadCrumb");
+const PropTypes = require("prop-types");
 
 function View(props) {
   const { product, i18n, translations, description, quantity, amount } = props;
@@ -23,12 +24,15 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-          isJSON: true,
-        })};
+            isJSON: true,
+          })};
         `}
       </Script>
       <Script src="vendor.js" />
       <Script src="product.js" />
+      {product.path.length > 0 && (
+        <BreadCrumb path={product.path} productTitle={product.title} />
+      )}
       <ProductView
         product={product}
         description={description}
@@ -48,7 +52,7 @@ View.propTypes = {
   product: PropTypes.shape({}).isRequired,
   description: PropTypes.shape({}).isRequired,
   quantity: PropTypes.string,
-  amount: PropTypes.string
-}
+  amount: PropTypes.string,
+};
 
 module.exports = injectI18n(View);
