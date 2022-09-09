@@ -10,6 +10,7 @@ const Filter = require("../../components/Filter");
 const Pagination = require("../../components/Pagination/Pagination");
 const UrlGenerator = require("../../utils/urlGenerator");
 const SelectProductsPerPage = require("../../components/SelectProductsPerPage/SelectProductPerPage");
+const BreadCrumb = require('../../components/BreadCrumb')
 
 function View(props) {
   const {
@@ -34,8 +35,8 @@ function View(props) {
   };
 
   const [data, setData] = useState(products);
-
   const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
+  const path = filters.filter(filter => filter.id === 'category');
 
   return (
     <div>
@@ -58,7 +59,10 @@ function View(props) {
           urlGenerator={urlGenerator}
         />
         <div className="products">
-          <SelectProductsPerPage urlGenerator={urlGenerator} />
+          <div className="products__info">
+            <BreadCrumb path={path[0].values[0].path_from_root} />
+            <SelectProductsPerPage urlGenerator={urlGenerator} />
+          </div>
           <ProductsList products={data} i18n={i18n} query={query} />
           <Pagination
             totalProducts={totalProducts}

@@ -9,7 +9,7 @@ const FiltersAvailables = require("../FiltersAvailables");
 const Filter = ({ filters, available_filters, urlGenerator, totalProducts }) => {
   const { i18n } = useI18n();
 
-  const searchString = urlGenerator.getQueryByName('q');
+  const searchString = urlGenerator.getQueryByName('q') || '';
 
   return (
     <aside className="filters">
