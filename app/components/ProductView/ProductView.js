@@ -23,7 +23,7 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
   } = product;
 
   const [error, setError] = useState("");
-  const [quantityToBuy, setQuantityToBuy] = useState('1');
+  const [quantityToBuy, setQuantityToBuy] = useState("1");
   const [mainImage, setMainImage] = useState(0);
 
   const amountCents = amount?.toString().split(".");
@@ -66,8 +66,10 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
                 );
               })}
           </div>
-
-          <figure tabIndex={9} aria-label={i18n.gettext('Imagen de {0}', title)}>
+          <figure
+            tabIndex={9}
+            aria-label={i18n.gettext("Imagen de {0}", title)}
+          >
             <Image
               src={pictures[mainImage].secure_url}
               alt={i18n.gettext("producto")}
@@ -81,17 +83,20 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
         <p tabIndex={19}>{i18n.gettext(description.plain_text)}</p>
         <ProductAttributes i18n={i18n} attributes={attributes} />
       </div>
-
       <div className="info">
-        <span className="info__use" tabIndex={10} aria-label={i18n.gettext(
-          condition === "new"
-            ? "Nuevo"
-            : condition === "not_specified"
+        <span
+          className="info__use"
+          tabIndex={10}
+          aria-label={i18n.gettext(
+            condition === "new"
+              ? "Nuevo"
+              : condition === "not_specified"
               ? "No Especifica"
               : condition === "used"
-                ? "Usado"
-                : ""
-        )}>
+              ? "Usado"
+              : ""
+          )}
+        >
           {i18n.gettext(
             condition === "new"
               ? "Nuevo"
@@ -105,21 +110,23 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
         <span
           className="info__use"
           tabIndex={11}
-          aria-label={i18n.gettext('{0} productos vendidos', sold_quantity)}
+          aria-label={i18n.gettext("{0} productos vendidos", sold_quantity)}
         >
           {" "}
-          {i18n.gettext('- ${0} vendidos', sold_quantity)}
+          {i18n.gettext("- {0} vendidos", sold_quantity)}
         </span>
 
         <h2 tabIndex={12} aria-label={i18n.gettext(title)}>
           {i18n.gettext(title)}
         </h2>
 
-        <div
-          tabIndex={13}>
+        <div tabIndex={13}>
           <MoneyAmount
             className="info__price"
-            aria-label={i18n.gettext('el producto tiene un precio de ${0}', price)}
+            aria-label={i18n.gettext(
+              "el producto tiene un precio de ${0}",
+              price
+            )}
             amount={{
               fraction: i18n.gettext(priceCents[0]),
               currencyId: currency_id,
@@ -137,7 +144,9 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             className="info__quantity-amount"
             tabIndex={14}
             aria-label={i18n.gettext(
-              'Pagalo en ${0} cuotas, cada una de  ${1}', quantity, amount
+              "Pagalo en ${0} cuotas, cada una de  ${1}",
+              quantity,
+              amount
             )}
           >
             {quantity} cuotas de{" "}
@@ -165,19 +174,17 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           className="info__available"
           tabIndex={16}
           aria-label={i18n.gettext(
-            'hay ${0} unidades disponibles', available_quantity
+            "hay ${0} unidades disponibles",
+            available_quantity
           )}
         >
-          {i18n.gettext('Cantidad disponible: {0}', available_quantity)}
+          {i18n.gettext("Cantidad disponible: {0}", available_quantity)}
         </p>
 
         {shipping.free_shipping ? (
           <div className="info__shipping">
             <Shipping24 color=" #00A650" />
-            <p
-              tabIndex={17}
-              aria-label={i18n.gettext(`el envio es gratis`)}
-            >
+            <p tabIndex={17} aria-label={i18n.gettext(`el envio es gratis`)}>
               {i18n.gettext("Envío gratis")}
             </p>
           </div>
