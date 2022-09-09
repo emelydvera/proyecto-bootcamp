@@ -1,14 +1,14 @@
 const React = require("react");
 const PropTypes = require("prop-types");
-const Typography = require('@andes/typography');
+const Typography = require("@andes/typography");
 const UrlGenerator = require("../../utils/urlGenerator");
-
+const { useI18n } = require("nordic/i18n");
 
 function FilterValue(props) {
   const { id, value, urlGenerator } = props;
+  const { i18n } = useI18n();
 
   return (
-
     <Typography
       className="filter__section__value"
       onClick={() => urlGenerator.setFilter(id, value.id)}
@@ -16,10 +16,9 @@ function FilterValue(props) {
       size="m"
       color="secondary"
     >
-      {value.name + "  "}
+      {i18n.gettext(value.name + "  ")}
       <span className="filter__section__value__results">({value.results})</span>
     </Typography>
-
   );
 }
 

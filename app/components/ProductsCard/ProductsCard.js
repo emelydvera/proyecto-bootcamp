@@ -20,7 +20,7 @@ const ProductsCard = ({ product, i18n, index }) => {
 
   const { fraction, cents } = priceFormater(price);
 
-  const shippingString = free_shipping ? i18n.gettext("Envío gratis") : ""
+  const shippingString = free_shipping ? i18n.gettext("Envío gratis") : "";
 
   return (
     <>
@@ -37,7 +37,7 @@ const ProductsCard = ({ product, i18n, index }) => {
               >
                 <Image
                   className="card__image__img"
-                  src={thumbnail.replace('http', 'https')}
+                  src={thumbnail.replace("http", "https")}
                   alt={i18n.gettext("imagen del producto")}
                   tabIndex={`${index + 1}5`}
                 />
@@ -49,7 +49,9 @@ const ProductsCard = ({ product, i18n, index }) => {
               <div
                 className="money__and__shipping"
                 aria-label={i18n.gettext(
-                  "precio del producto: ${0}, {1}", price, shippingString
+                  "precio del producto: ${0}, {1}",
+                  price,
+                  shippingString
                 )}
                 tabIndex={`${index + 1}4`}
               >
@@ -64,12 +66,9 @@ const ProductsCard = ({ product, i18n, index }) => {
                   size={24}
                   centsType="superscript"
                 ></MoneyAmount>
-
-                {
-                  free_shipping &&
+                {free_shipping && (
                   <span className="shipping">{i18n.gettext("Envío")}</span>
-                }
-
+                )}
               </div>
               <h2 className="title" tabIndex={`${index + 1}3`}>
                 {title}
@@ -78,13 +77,16 @@ const ProductsCard = ({ product, i18n, index }) => {
             <span
               className="card__description__location"
               aria-label={
-                address.state_name ?
-                  i18n.gettext("Ubicación del producto: {0}", address.state_name)
+                address.state_name
+                  ? i18n.gettext(
+                      "Ubicación del producto: {0}",
+                      address.state_name
+                    )
                   : i18n.gettext("Sin ubicación")
               }
               tabIndex={`${index + 1}4`}
             >
-              {address?.state_name}
+              {i18n.gettext(address?.state_name)}
             </span>
           </div>
         </CardContent>

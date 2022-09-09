@@ -115,11 +115,9 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
           {" "}
           {i18n.gettext("- {0} vendidos", sold_quantity)}
         </span>
-
         <h2 tabIndex={12} aria-label={i18n.gettext(title)}>
           {i18n.gettext(title)}
         </h2>
-
         <div tabIndex={13}>
           <MoneyAmount
             className="info__price"
@@ -138,7 +136,6 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             size={48}
           />
         </div>
-
         {!quantity || !amount ? null : (
           <div
             className="info__quantity-amount"
@@ -180,7 +177,6 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
         >
           {i18n.gettext("Cantidad disponible: {0}", available_quantity)}
         </p>
-
         {shipping.free_shipping ? (
           <div className="info__shipping">
             <Shipping24 color=" #00A650" />
