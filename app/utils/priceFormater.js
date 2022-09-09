@@ -5,7 +5,8 @@ function amountFormater(amount) {
 
   return {
     fraction: price,
-    cents: cents || "00",
+    cents: cents?.length === 1 && cents + '0' || cents?.slice(0, 2) || "00",
   };
 }
+
 module.exports = amountFormater;

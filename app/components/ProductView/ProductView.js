@@ -7,6 +7,7 @@ const MoneyAmount = require("@andes/money-amount");
 const Shipping24 = require("@andes/icons/Shipping24");
 const InputQuantity = require("../InputQuantity");
 const ProductAttributes = require("../ProductAttributes");
+const amountFormater = require("../../utils/priceFormater");
 
 const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const {
@@ -26,8 +27,9 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
   const [quantityToBuy, setQuantityToBuy] = useState("1");
   const [mainImage, setMainImage] = useState(0);
 
-  const amountCents = amount?.toString().split(".");
-  const priceCents = price.toLocaleString("de-DE").split(",");
+  const { fraction, cents } = amountFormater(price);
+
+  const amountCents = amountFormater(amount);
 
   const handleClick = (id, quantityToBuy) => {
     window.location.href = `/comprar?productId=${id}&quantityToBuy=${quantityToBuy}`;
@@ -48,9 +50,8 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
                   i <= 6 && (
                     <div
                       key={p.id}
-                      className={`image__container ${
-                        mainImage === i ? "active" : ""
-                      }`}
+                      className={`image__container ${mainImage === i ? "active" : ""
+                        }`}
                     >
                       <Image
                         className="product__image "
@@ -91,20 +92,20 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
             condition === "new"
               ? "Nuevo"
               : condition === "not_specified"
-              ? "No Especifica"
-              : condition === "used"
-              ? "Usado"
-              : ""
+                ? "No Especifica"
+                : condition === "used"
+                  ? "Usado"
+                  : ""
           )}
         >
           {i18n.gettext(
             condition === "new"
               ? "Nuevo"
               : condition === "not_specified"
-              ? "No Especifica"
-              : condition === "used"
-              ? "Usado"
-              : ""
+                ? "No Especifica"
+                : condition === "used"
+                  ? "Usado"
+                  : ""
           )}
         </span>
         <span
@@ -126,11 +127,9 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
               price
             )}
             amount={{
-              fraction: i18n.gettext(priceCents[0]),
+              fraction: i18n.gettext(fraction),
               currencyId: currency_id,
-              cents: priceCents[1]
-                ? i18n.gettext(priceCents[1])
-                : i18n.gettext("00"),
+              cents: cents
             }}
             centsType="superscript"
             size={48}
@@ -152,13 +151,9 @@ const ProductView = ({ product, i18n, description, quantity, amount }) => {
                 className="info__amount"
                 amount={{
                   currencyId: currency_id,
-                  fraction: i18n.gettext(
-                    parseInt(amountCents[0]).toLocaleString("de-DE")
-                  ),
+                  fraction: i18n.gettext(amountCents.fraction),
                   symbol: "$",
-                  cents: amountCents[1]
-                    ? i18n.gettext(amountCents[1])
-                    : i18n.gettext("00"),
+                  cents: i18n.gettext(amountCents.cents),
                 }}
                 centsType="superscript"
                 size={16}
