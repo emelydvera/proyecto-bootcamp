@@ -26,8 +26,9 @@ const SearchInput = ({ i18n }) => {
   };
 
   return (
-    <Form className="search__form" onSubmit={handleSubmit}>
-      {/* <form
+    <div className="search__container">
+      <Form className="search__form" onSubmit={handleSubmit}>
+        {/* <form
           className="search__form"
           onSubmit={handleSubmit}
           role={i18n.gettext("search")}
@@ -35,8 +36,7 @@ const SearchInput = ({ i18n }) => {
           <label className="search__label" htmlFor="searchInput">
             {i18n.gettext("Buscar")}
           </label> */}
-      {/* <div className="search__container"> */}
-      {/* <input
+        {/* <input
             className="search__input"
             aria-label={i18n.gettext("Ingrese producto a buscar")}
             id="searchInput"
@@ -48,40 +48,42 @@ const SearchInput = ({ i18n }) => {
             required
             tabIndex="11"
           /> */}
-      <TextField
-        className="search__form__input"
-        aria-label={i18n.gettext("Ingrese producto a buscar")}
-        id="searchInput"
-        type="text"
-        minLength="2"
-        placeholder={i18n.gettext("Buscar productos, marcas y más...")}
-        value={value}
-        onChange={handleChange}
-        required
-        tabIndex="11"
-      />
-      <Button
-        className="search__button"
-        disabled={value.trim().length < 2}
-        type="submit"
-      >
-        <ButtonText>{i18n.gettext("Buscar")}</ButtonText>
-      </Button>
-      {/* </div> */}
-      {/* {!isMounted.current ? (
-          <p className="search__alert"> </p>
+        <TextField
+          className="search__form__input"
+          aria-label={i18n.gettext("Ingrese producto a buscar")}
+          type="text"
+          // minLength="2"
+          placeholder={i18n.gettext("Buscar productos, marcas y más...")}
+          value={value}
+          onChange={handleChange}
+          // required
+          tabIndex="11"
+          message={value.trim().length === 1 ? i18n.gettext("Escriba al menos 2 carácteres") : ""}
+          modifier={value.trim().length === 1 ? 'error' : 'default'}
+        />
+        <Button
+          className="search__form__button"
+          disabled={value.trim().length < 2}
+          spinnerLabel="Cargando"
+          type="submit"
+        >
+          <ButtonText>{i18n.gettext("Buscar")}</ButtonText>
+        </Button>
+        {/* {!isMounted.current ? (
+        <p className="search__alert"> </p>
         ) : value.trim().length >= 2 ? (
           <p className="search__alert"> </p>
-        ) : (
-          <p
+          ) : (
+            <p
             className="search__alert"
             aria-label={i18n.gettext("Escriba al menos 2 carácteres")}
             tabIndex="12"
-          >
+            >
             {i18n.gettext("* Escriba al menos 2 carácteres")}
-          </p> 
-        )}*/}
-    </Form>
+            </p> 
+          )}*/}
+      </Form >
+    </div>
   );
 };
 
