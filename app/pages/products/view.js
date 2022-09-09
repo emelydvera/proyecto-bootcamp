@@ -10,7 +10,7 @@ const Filter = require("../../components/Filter");
 const Pagination = require("../../components/Pagination/Pagination");
 const UrlGenerator = require("../../utils/urlGenerator");
 const SelectProductsPerPage = require("../../components/SelectProductsPerPage/SelectProductPerPage");
-const BreadCrumb = require('../../components/BreadCrumb')
+const BreadCrumb = require("../../components/BreadCrumb");
 
 function View(props) {
   const {
@@ -36,7 +36,9 @@ function View(props) {
 
   const [data, setData] = useState(products);
   const urlGenerator = new UrlGenerator(baseUrl, query, filters, totalProducts);
-  const path = filters.filter(filter => filter.id === 'category');
+  const path = filters
+    .find((filter) => filter.id === "category")
+    ?.values.find((value) => value.path_from_root)?.path_from_root;
 
   return (
     <div>
@@ -44,8 +46,8 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-          isJSON: true,
-        })};
+            isJSON: true,
+          })};
         `}
       </Script>
       <Script src="vendor.js" />
@@ -59,8 +61,8 @@ function View(props) {
           urlGenerator={urlGenerator}
         />
         <div className="products">
-          <div className="products__info">
-            <BreadCrumb path={path[0].values[0].path_from_root} />
+          <div className={path ? "products__info" : "products__select"}>
+            {path && <BreadCrumb path={path} />}
             <SelectProductsPerPage urlGenerator={urlGenerator} />
           </div>
           <ProductsList products={data} i18n={i18n} query={query} />
@@ -97,7 +99,7 @@ View.propTypes = {
       name: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
-  totalProducts: PropTypes.number.isRequired
+  totalProducts: PropTypes.number.isRequired,
 };
 
 module.exports = injectI18n(View);
