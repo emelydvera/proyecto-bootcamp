@@ -19,7 +19,8 @@ const normalizerFilters = (filters = []) => {
   });
 
   if (others.values.length >= 1) {
-    available.push(others)
+    others.values.sort((a, b) => a.results - b.results).reverse();
+    available.push(others);
   }
 
   return available
