@@ -13,15 +13,19 @@ const Checkout = ({ i18n, product, quantity }) => {
     shipping,
     seller_address,
     available_quantity,
-    thumbnail,
     title,
-    currency_id
+    currency_id,
+    pictures
   } = product;
+
 
   const [quantityToBuy, setQuantityToBuy] = useState(quantity);
   const [error, setError] = useState("");
 
-  const totalPriceCents = (price * quantityToBuy).toLocaleString('de-DE').split(',')
+  const totalPriceCents = (quantityToBuy > available_quantity ?
+    (available_quantity * price) :
+    (quantityToBuy * price)
+  ).toLocaleString('de-DE').split(',')
   const priceCents = price.toLocaleString('de-DE').split(',')
 
   return (
@@ -38,20 +42,24 @@ const Checkout = ({ i18n, product, quantity }) => {
         <Image
           className="image"
           tabIndex={10}
-          src={thumbnail}
+          src={pictures[0].url}
           alt={i18n.gettext(title)}
         />
         <div className="column">
-          <h2 tabIndex={11}>
-            {title.length > 70 ? i18n.gettext('{0}...', title.slice(0, 70 - 3)) : i18n.gettext(title)}
-          </h2>
           <div className="checkout__product__container">
+            <h2 tabIndex={11}>
+              {title.length > 70 ? i18n.gettext('{0}...', title.slice(0, 70 - 3)) : i18n.gettext(title)}
+            </h2>
             <span
               className="checkout__product__unityprice"
               aria-label={i18n.gettext("precio producto")}
               tabIndex={13}
             >
-              {i18n.gettext("{0}x", quantityToBuy)}
+              {quantityToBuy > available_quantity ?
+                i18n.gettext("{0}x", available_quantity)
+                :
+                i18n.gettext("{0}x", quantityToBuy)}
+
               <MoneyAmount
                 amount={{
                   fraction: i18n.gettext(priceCents[0]),
@@ -62,17 +70,16 @@ const Checkout = ({ i18n, product, quantity }) => {
                 size={16}
               />
             </span>
-            <InputQuantity
-              className="checkout__product__input"
-              tabIndex={12}
-              error={error}
-              quantityToBuy={quantityToBuy}
-              setQuantityToBuy={setQuantityToBuy}
-              availableQuantity={available_quantity}
-              setError={setError}
-            />
-          </div>
 
+          </div>
+          <InputQuantity
+            tabIndex={12}
+            error={error}
+            quantityToBuy={quantityToBuy}
+            setQuantityToBuy={setQuantityToBuy}
+            availableQuantity={available_quantity}
+            setError={setError}
+          />
         </div>
       </div>
       <p className="checkout__subtitle">{i18n.gettext("Envío")}</p>
@@ -129,7 +136,7 @@ Checkout.propTypes = {
     available_quantity: PropTypes.number.isRequired,
     currency_id: PropTypes.string.isRequired,
     seller_address: PropTypes.shape({}).isRequired,
-    thumbnail: PropTypes.string.isRequired,
+    pictures: PropTypes.shape({ id: PropTypes.string.isRequired })
 
   }).isRequired,
   quantity: PropTypes.string.isRequired,

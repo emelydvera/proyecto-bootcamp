@@ -43,8 +43,8 @@ function View(props) {
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-            isJSON: true,
-          })};
+          isJSON: true,
+        })};
         `}
       </Script>
       <Script src="vendor.js" />
@@ -89,7 +89,7 @@ View.propTypes = {
   ).isRequired,
   available_filters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.string,
       name: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,

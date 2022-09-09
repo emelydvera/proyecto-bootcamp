@@ -17,7 +17,11 @@ const normalizerFilters = (filters = []) => {
     }
 
   });
-  available.push(others)
+
+  if (others.values.length >= 1) {
+    available.push(others)
+  }
+
   return available
 };
 

@@ -1,42 +1,24 @@
 @import "../../styles/variables";
+@import "~@andes/button/index";
+@import "~@andes/form/index";
+@import "~@andes/textfield/index";
 
 .search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20vh;
-
-  &__form {
-    height: 10rem;
-    width: 35rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
   &__container {
     display: flex;
-    width: 100%;
+    justify-content: space-around;
+
   }
 
-  &__label {
-    font-size: $font-size-s;
-    align-self: start;
-    margin-bottom: 5px;
-  }
+  &__form {
+    gap: 12px;
+    width: 40%;
+    display: flex;
+    margin-top: 20vh;
 
-  &__input {
-    padding: 10px;
-    flex-grow: 1;
-    border-radius: $border-radius-s;
-    border: 1px solid rgba(62, 61, 61, 0.572);
-  }
-
-  &__alert {
-    margin-top: 5px;
-    height: 20px;
-    color: $red-base;
-    align-self: start;
+    &__input {
+      padding: 0;
+      flex-grow: 2;
+    }
   }
 }
