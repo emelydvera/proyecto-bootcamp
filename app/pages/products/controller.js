@@ -9,7 +9,7 @@ exports.fetchProducts = (req, res, next) => {
   const { siteId } = req.platform;
 
   if (!req.query.q && !req.query.category) {
-    res.redirect("/error");
+    return res.redirect("/error");
   }
 
   ProductService.getProducts(siteId, req.query)
