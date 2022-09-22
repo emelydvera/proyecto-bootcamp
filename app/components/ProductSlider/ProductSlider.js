@@ -4,12 +4,13 @@ const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const { useI18n } = require("nordic/i18n");
 
-const Slider = ({ product }) => {
+const ProductSlider = ({ product }) => {
 
     const { pictures, title } = product
     const { i18n } = useI18n();
 
     const [mainImage, setMainImage] = useState(0);
+
     const handleOver = (i) => {
         setMainImage(i);
     };
@@ -23,6 +24,7 @@ const Slider = ({ product }) => {
                         return (
                             i <= 6 && (
                                 <div
+
                                     key={p.id}
                                     className={`image__container ${mainImage === i ? "active" : ""
                                         }`}
@@ -58,7 +60,7 @@ const Slider = ({ product }) => {
     )
 }
 
-Slider.proptypes = {
+ProductSlider.proptypes = {
     product: PropTypes.shape({
         pictures: PropTypes.arrayOf(
             PropTypes.shape({
@@ -69,4 +71,4 @@ Slider.proptypes = {
     })
 }
 
-module.exports = Slider
+module.exports = ProductSlider
