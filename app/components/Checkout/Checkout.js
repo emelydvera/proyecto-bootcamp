@@ -2,13 +2,14 @@ const React = require("react");
 const Image = require("nordic/image");
 const PropTypes = require("prop-types");
 const { useState } = React;
+const { useI18n } = require("nordic/i18n");
 const InputQuantity = require("../InputQuantity");
 const FastShipping24 = require("@andes/icons/FastShipping24");
 const Shipping24 = require("@andes/icons/Shipping24");
 const MoneyAmount = require("@andes/money-amount");
 const amountFormater = require('../../utils/priceFormater')
 
-const Checkout = ({ i18n, product, quantity }) => {
+const Checkout = ({ product, quantity }) => {
   const {
     price,
     shipping,
@@ -19,7 +20,7 @@ const Checkout = ({ i18n, product, quantity }) => {
     pictures
   } = product;
 
-
+  const { i18n } = useI18n();
   const [quantityToBuy, setQuantityToBuy] = useState(quantity);
   const [error, setError] = useState("");
 
@@ -32,7 +33,7 @@ const Checkout = ({ i18n, product, quantity }) => {
   return (
     <div className="checkout" id="checkout">
       <h2
-        aria-label={i18n.gettext("Resumen de compra")}
+        // aria-label={i18n.gettext("Resumen de compra")}
         tabIndex={9}
         className="checkout__title"
       >
@@ -144,9 +145,6 @@ Checkout.propTypes = {
 
   }).isRequired,
   quantity: PropTypes.string.isRequired,
-  i18n: PropTypes.shape({
-    gettext: PropTypes.func.isRequired,
-  }).isRequired,
 };
 
 module.exports = Checkout;
