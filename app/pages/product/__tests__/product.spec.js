@@ -1,8 +1,7 @@
 const React = require("react");
 const View = require("../view");
 const { render, screen } = require("@testing-library/react");
-const { within } = require("@testing-library/dom");
-const { getByLabelText, queryByLabelText } = screen;
+const { getByLabelText, getByText, queryByLabelText, getByRole } = screen;
 const productItem = require("../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json");
 const description = require("../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845/description.json");
 const I18nProvider = require("nordic/i18n/I18nProvider");
@@ -55,16 +54,14 @@ describe("Product page view", () => {
     );
 
     const breadCrumb = getByLabelText("lista de páginas");
-
-    const section = document.querySelector("section");
-    const availableQuantity = within(section).getByText(/Cantidad disponible/);
-    const productDescriptionTitle = within(section).getByText(
-      "Descripción del producto"
-    );
+    const availableQuantity = getByText(/Cantidad disponible/);
+    const productDescriptionTitle = getByText("Descripción del producto");
+    const button = getByRole("button");
 
     expect(breadCrumb).toBeInTheDocument();
     expect(availableQuantity).toBeInTheDocument();
     expect(productDescriptionTitle).toBeInTheDocument();
+    expect(button).toHaveTextContent("Comprar");
   });
 
   it("should render component without Breadcrumb component and with ProductView component", () => {
@@ -83,14 +80,13 @@ describe("Product page view", () => {
     );
 
     const breadCrumb = queryByLabelText("lista de páginas");
-    const section = document.querySelector("section");
-    const availableQuantity = within(section).getByText(/Cantidad disponible/);
-    const productDescriptionTitle = within(section).getByText(
-      "Descripción del producto"
-    );
+    const availableQuantity = getByText(/Cantidad disponible/);
+    const productDescriptionTitle = getByText("Descripción del producto");
+    const button = getByRole("button");
 
     expect(breadCrumb).toBeNull();
     expect(availableQuantity).toBeInTheDocument();
     expect(productDescriptionTitle).toBeInTheDocument();
+    expect(button).toHaveTextContent("Comprar");
   });
 });
