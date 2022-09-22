@@ -33,7 +33,7 @@ describe("Product page view", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("should render component with Breadcrumb and ProductView components", () => {
+  it("should render component with Breadcrumb and ProductView components when property path in product is not an empty array", () => {
     const propsWithPath = {
       ...props,
       product: {
@@ -64,18 +64,10 @@ describe("Product page view", () => {
     expect(button).toHaveTextContent("Comprar");
   });
 
-  it("should render component without Breadcrumb component and with ProductView component", () => {
-    const propsWithoutPath = {
-      ...props,
-      product: {
-        ...mockProduct.data,
-        path: [],
-      },
-    };
-
+  it("should render component without Breadcrumb component and with ProductView component when property path in product is an empty array", () => {
     render(
       <I18nProvider i18n={i18n}>
-        <View {...propsWithoutPath} />
+        <View {...props} />
       </I18nProvider>
     );
 
