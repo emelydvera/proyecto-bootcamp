@@ -54,13 +54,13 @@ describe("Product page view", () => {
     );
 
     const breadCrumb = getByLabelText("lista de páginas");
-    const availableQuantity = getByText(/Cantidad disponible/);
     const productDescriptionTitle = getByText("Descripción del producto");
+    const availableQuantity = getByText(/Cantidad disponible/);
     const button = getByRole("button");
 
     expect(breadCrumb).toBeInTheDocument();
-    expect(availableQuantity).toBeInTheDocument();
     expect(productDescriptionTitle).toBeInTheDocument();
+    expect(availableQuantity).toBeInTheDocument();
     expect(button).toHaveTextContent("Comprar");
   });
 
@@ -80,13 +80,13 @@ describe("Product page view", () => {
     );
 
     const breadCrumb = queryByLabelText("lista de páginas");
-    const availableQuantity = getByText(/Cantidad disponible/);
     const productDescriptionTitle = getByText("Descripción del producto");
+    const availableQuantity = getByText(/Cantidad disponible/);
     const button = getByRole("button");
 
     expect(breadCrumb).toBeNull();
-    expect(availableQuantity).toBeInTheDocument();
     expect(productDescriptionTitle).toBeInTheDocument();
+    expect(availableQuantity).toBeInTheDocument();
     expect(button).toHaveTextContent("Comprar");
   });
 });
