@@ -12,7 +12,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
         <p
           class="andes-typography andes-typography--type-title andes-typography--size-l andes-typography--color-primary"
         >
-          Macbook
+          Tablet
         </p>
         <p
           class="andes-typography andes-typography--type-body andes-typography--size-l andes-typography--color-secondary"
@@ -2253,7 +2253,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
               >
                 <a
                   class="andes-pagination__link"
-                  href="/listado?page=0&limit=10&q=Macbook&"
+                  href="/listado?page=0&limit=10&q=tablet&"
                   title="Anterior"
                 >
                   <span
@@ -2274,7 +2274,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                   aria-disabled="true"
                   aria-label="Ir a la página 1"
                   class="andes-pagination__link"
-                  href="/listado?page=1&limit=10&q=Macbook&"
+                  href="/listado?page=1&limit=10&q=tablet&"
                 >
                   1
                 </a>
@@ -2285,7 +2285,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 2"
                   class="andes-pagination__link"
-                  href="/listado?page=2&limit=10&q=Macbook&"
+                  href="/listado?page=2&limit=10&q=tablet&"
                 >
                   2
                 </a>
@@ -2296,7 +2296,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 3"
                   class="andes-pagination__link"
-                  href="/listado?page=3&limit=10&q=Macbook&"
+                  href="/listado?page=3&limit=10&q=tablet&"
                 >
                   3
                 </a>
@@ -2307,7 +2307,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 4"
                   class="andes-pagination__link"
-                  href="/listado?page=4&limit=10&q=Macbook&"
+                  href="/listado?page=4&limit=10&q=tablet&"
                 >
                   4
                 </a>
@@ -2318,7 +2318,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 5"
                   class="andes-pagination__link"
-                  href="/listado?page=5&limit=10&q=Macbook&"
+                  href="/listado?page=5&limit=10&q=tablet&"
                 >
                   5
                 </a>
@@ -2329,7 +2329,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 6"
                   class="andes-pagination__link"
-                  href="/listado?page=6&limit=10&q=Macbook&"
+                  href="/listado?page=6&limit=10&q=tablet&"
                 >
                   6
                 </a>
@@ -2340,7 +2340,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 7"
                   class="andes-pagination__link"
-                  href="/listado?page=7&limit=10&q=Macbook&"
+                  href="/listado?page=7&limit=10&q=tablet&"
                 >
                   7
                 </a>
@@ -2351,7 +2351,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 8"
                   class="andes-pagination__link"
-                  href="/listado?page=8&limit=10&q=Macbook&"
+                  href="/listado?page=8&limit=10&q=tablet&"
                 >
                   8
                 </a>
@@ -2362,7 +2362,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 9"
                   class="andes-pagination__link"
-                  href="/listado?page=9&limit=10&q=Macbook&"
+                  href="/listado?page=9&limit=10&q=tablet&"
                 >
                   9
                 </a>
@@ -2387,7 +2387,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
                 <a
                   aria-label="Ir a la página 100"
                   class="andes-pagination__link"
-                  href="/listado?page=100&limit=10&q=Macbook&"
+                  href="/listado?page=100&limit=10&q=tablet&"
                 >
                   100
                 </a>
@@ -2397,7 +2397,7 @@ exports[`Products View Tests Should render the view correctly 1`] = `
               >
                 <a
                   class="andes-pagination__link"
-                  href="/listado?page=2&limit=10&q=Macbook&"
+                  href="/listado?page=2&limit=10&q=tablet&"
                   title="Siguiente"
                 >
                   <span

@@ -18,19 +18,43 @@ describe('Products View Tests', () => {
     i18n,
     translations: {},
     baseUrl: '/listado',
-    query: { q: 'Macbook' },
+    query: { q: 'tablet' },
     filters: data.filters,
     available_filters: data.available_filters,
     totalProducts: data.paging.primary_results,
   }
 
   it('Should render the view correctly', () => {
+
     const { asFragment } = render(
       <I18nProvider i18n={i18n}>
         <View {...props} />
       </I18nProvider>
     );
     expect(asFragment()).toMatchSnapshot();
+  })
+
+  it('Should show the breadcrumb if there is a path', () => {
+
+    render(
+      <I18nProvider i18n={i18n}>
+        <View {...props} />
+      </I18nProvider>
+    );
+
+    const breadcrumb = screen.queryByLabelText(/lista de páginas/i)
+    expect(breadcrumb).not.toBe(null);
+  })
+
+  it('Should not show the breadcrumb if there is not a path', () => {
+
+    render(
+      <I18nProvider i18n={i18n}>
+        <View {...props} filters={[]} />
+      </I18nProvider>
+    );
+    const breadcrumb = screen.queryByLabelText(/lista de páginas/i)
+    expect(breadcrumb).toBe(null);
   })
 
 })
