@@ -21,7 +21,7 @@ function FiltersAvailables(props) {
 }
 
 FiltersAvailables.propTypes = {
-  filter: PropTypes.shape({
+  filters: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }),

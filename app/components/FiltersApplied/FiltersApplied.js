@@ -42,10 +42,13 @@ function FiltersApplied(props) {
 }
 
 FiltersApplied.propTypes = {
-  filter: PropTypes.shape({
+  filters: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }),
+  i18n: PropTypes.shape({
+    gettext: PropTypes.func.isRequired,
+  }).isRequired,
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
 };
 

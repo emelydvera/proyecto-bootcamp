@@ -27,7 +27,7 @@ const ProductsList = (props) => {
   );
 };
 
-ProductsList.proptypes = {
+ProductsList.propTypes = {
   products: PropTypes.arrayOf(PropTypes.object).isRequired,
   i18n: PropTypes.shape({
     gettext: PropTypes.func.isRequired,

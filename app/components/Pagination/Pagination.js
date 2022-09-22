@@ -32,11 +32,6 @@ const Pagination = ({ totalProducts, urlGenerator }) => {
 Pagination.propTypes = {
   totalProducts: PropTypes.number.isRequired,
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
-  setData: PropTypes.func.isRequired,
-  productsInitial: PropTypes.arrayOf(PropTypes.object).isRequired,
-  i18n: PropTypes.shape({
-    gettext: PropTypes.func.isRequired,
-  }).isRequired,
 };
 
 module.exports = Pagination;
