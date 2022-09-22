@@ -2,7 +2,7 @@ const React = require("react");
 const View = require("../view");
 const { render, screen } = require("@testing-library/react");
 const { getByLabelText, getByText, queryByLabelText, getByRole } = screen;
-const productItem = require("../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json");
+const mockProduct = require("../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json");
 const description = require("../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845/description.json");
 const I18nProvider = require("nordic/i18n/I18nProvider");
 
@@ -13,7 +13,7 @@ describe("Product page view", () => {
   beforeEach(() => {
     props = {
       product: {
-        ...productItem.data,
+        ...mockProduct.data,
         path: [],
       },
       description: description.data,
@@ -37,7 +37,7 @@ describe("Product page view", () => {
     const modifiedProps = {
       ...props,
       product: {
-        ...productItem.data,
+        ...mockProduct.data,
         path: [
           {
             id: "MCO1648",
@@ -68,7 +68,7 @@ describe("Product page view", () => {
     const modifiedProps = {
       ...props,
       product: {
-        ...productItem.data,
+        ...mockProduct.data,
         path: [],
       },
     };
