@@ -34,7 +34,7 @@ describe("Product page view", () => {
   });
 
   it("should render component with Breadcrumb and ProductView components", () => {
-    const modifiedProps = {
+    const propsWithPath = {
       ...props,
       product: {
         ...mockProduct.data,
@@ -49,7 +49,7 @@ describe("Product page view", () => {
 
     render(
       <I18nProvider i18n={i18n}>
-        <View {...modifiedProps} />
+        <View {...propsWithPath} />
       </I18nProvider>
     );
 
@@ -65,7 +65,7 @@ describe("Product page view", () => {
   });
 
   it("should render component without Breadcrumb component and with ProductView component", () => {
-    const modifiedProps = {
+    const propsWithoutPath = {
       ...props,
       product: {
         ...mockProduct.data,
@@ -75,7 +75,7 @@ describe("Product page view", () => {
 
     render(
       <I18nProvider i18n={i18n}>
-        <View {...modifiedProps} />
+        <View {...propsWithoutPath} />
       </I18nProvider>
     );
 
