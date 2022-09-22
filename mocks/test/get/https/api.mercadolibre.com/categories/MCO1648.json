@@ -1,0 +1,220 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "date": "Thu, 22 Sep 2022 16:58:42 GMT",
+    "cache-control": "max-age=600,stale-while-revalidate=300, stale-if-error=1200",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "955f1e42-33cd-4577-b54d-fb4dee637362",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Miss from cloudfront",
+    "via": "1.1 bab918d4b27bc252683dafa737d07e68.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "YUL62-C1",
+    "x-amz-cf-id": "nYXGKXUMH8pCLTAW7x0DSfGN1pP6HOw0XCtO3xswKS16I9FnpdatCQ=="
+  },
+  "data": {
+    "id": "MCO1648",
+    "name": "Computación",
+    "picture": "https://http2.mlstatic.com/storage/categories-api/images/f96f9ecc-dfe6-4cf9-a270-4c0cee23f868.png",
+    "permalink": "https://www.mercadolibre.com.co/c/computacion",
+    "total_items_in_this_category": 1017105,
+    "path_from_root": [
+      {
+        "id": "MCO1648",
+        "name": "Computación"
+      }
+    ],
+    "children_categories": [
+      {
+        "id": "MCO416199",
+        "name": "Accesorios de Antiestática",
+        "total_items_in_this_category": 2284
+      },
+      {
+        "id": "MCO447778",
+        "name": "Accesorios para PC Gaming",
+        "total_items_in_this_category": 44465
+      },
+      {
+        "id": "MCO430598",
+        "name": "Almacenamiento",
+        "total_items_in_this_category": 48934
+      },
+      {
+        "id": "MCO430918",
+        "name": "Cables y Hubs USB",
+        "total_items_in_this_category": 60283
+      },
+      {
+        "id": "MCO441358",
+        "name": "Componentes de PC",
+        "total_items_in_this_category": 69680
+      },
+      {
+        "id": "MCO1700",
+        "name": "Conectividad y Redes",
+        "total_items_in_this_category": 94504
+      },
+      {
+        "id": "MCO441535",
+        "name": "Estabilizadores y UPS",
+        "total_items_in_this_category": 8653
+      },
+      {
+        "id": "MCO420641",
+        "name": "Impresión",
+        "total_items_in_this_category": 90384
+      },
+      {
+        "id": "MCO441377",
+        "name": "Lectores y Scanners",
+        "total_items_in_this_category": 9833
+      },
+      {
+        "id": "MCO441584",
+        "name": "Limpieza y Cuidado de PCs",
+        "total_items_in_this_category": 7370
+      },
+      {
+        "id": "MCO441350",
+        "name": "Monitores y Accesorios",
+        "total_items_in_this_category": 15819
+      },
+      {
+        "id": "MCO1651",
+        "name": "Palms, Agendas y Accesorios",
+        "total_items_in_this_category": 7564
+      },
+      {
+        "id": "MCO430637",
+        "name": "PC de Escritorio",
+        "total_items_in_this_category": 16027
+      },
+      {
+        "id": "MCO454379",
+        "name": "Periféricos de PC",
+        "total_items_in_this_category": 123645
+      },
+      {
+        "id": "MCO430687",
+        "name": "Portátiles y Accesorios",
+        "total_items_in_this_category": 233420
+      },
+      {
+        "id": "MCO1723",
+        "name": "Software",
+        "total_items_in_this_category": 8927
+      },
+      {
+        "id": "MCO432947",
+        "name": "Tablets y Accesorios",
+        "total_items_in_this_category": 169234
+      },
+      {
+        "id": "MCO441791",
+        "name": "Video Beams y Pantallas",
+        "total_items_in_this_category": 1147
+      },
+      {
+        "id": "MCO1912",
+        "name": "Otros",
+        "total_items_in_this_category": 2287
+      }
+    ],
+    "attribute_types": "attributes",
+    "settings": {
+      "adult_content": false,
+      "buying_allowed": true,
+      "buying_modes": [
+        "auction",
+        "buy_it_now"
+      ],
+      "catalog_domain": "MCO-COMPUTER_EQUIPMENT_AND_SPARE_PARTS",
+      "coverage_areas": "not_allowed",
+      "currencies": [
+        "COP"
+      ],
+      "fragile": false,
+      "immediate_payment": "required",
+      "item_conditions": [
+        "new",
+        "used",
+        "not_specified"
+      ],
+      "items_reviews_allowed": false,
+      "listing_allowed": false,
+      "max_description_length": 50000,
+      "max_pictures_per_item": 12,
+      "max_pictures_per_item_var": 10,
+      "max_sub_title_length": 70,
+      "max_title_length": 60,
+      "max_variations_allowed": 500,
+      "maximum_price": null,
+      "maximum_price_currency": "COP",
+      "minimum_price": 2900,
+      "minimum_price_currency": "COP",
+      "mirror_category": null,
+      "mirror_master_category": null,
+      "mirror_slave_categories": [],
+      "price": "required",
+      "reservation_allowed": "not_allowed",
+      "restrictions": [],
+      "rounded_address": false,
+      "seller_contact": "not_allowed",
+      "shipping_options": [
+        "carrier",
+        "custom"
+      ],
+      "shipping_profile": "optional",
+      "show_contact_information": false,
+      "simple_shipping": "optional",
+      "stock": "required",
+      "sub_vertical": null,
+      "subscribable": false,
+      "tags": [],
+      "vertical": null,
+      "vip_subdomain": "articulo",
+      "buyer_protection_programs": [
+        "delivered",
+        "undelivered"
+      ],
+      "status": "enabled"
+    },
+    "channels_settings": [
+      {
+        "channel": "mshops",
+        "settings": {
+          "minimum_price": 0
+        }
+      },
+      {
+        "channel": "proximity",
+        "settings": {
+          "status": "disabled"
+        }
+      },
+      {
+        "channel": "mp-merchants",
+        "settings": {
+          "buying_modes": [
+            "buy_it_now"
+          ],
+          "immediate_payment": "required",
+          "minimum_price": 1,
+          "status": "enabled"
+        }
+      }
+    ],
+    "meta_categ_id": null,
+    "attributable": false,
+    "date_created": "2018-04-25T08:12:56.000Z"
+  }
+}

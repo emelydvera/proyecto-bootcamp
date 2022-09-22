@@ -1,0 +1,5073 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json;charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "date": "Thu, 22 Sep 2022 16:33:50 GMT",
+    "cache-control": "max-age=300, stale-while-revalidate=150, stale-if-error=600",
+    "vary": "Accept,Accept-Encoding",
+    "etag": "8c061118f9c0f90661e87712125ff662",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "4a0ff1cb-db00-4797-bd87-6ee8e77fea2a",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Miss from cloudfront",
+    "via": "1.1 7ba3a61255419c2e0d9e131796899e10.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD89-C3",
+    "x-amz-cf-id": "NHkj3SRPNW4_MHM2kR8EDUeU7hJjdFkJIsPO-79U_mrsCD1YrVK1kg=="
+  },
+  "data": {
+    "site_id": "MCO",
+    "country_default_time_zone": "GMT-05:00",
+    "query": "tablet",
+    "paging": {
+      "total": 5817,
+      "primary_results": 1000,
+      "offset": 0,
+      "limit": 10
+    },
+    "results": [
+      {
+        "id": "MCO803537014",
+        "site_id": "MCO",
+        "title": "Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  32gb Gris Y 3gb De Memoria Ram",
+        "seller": {
+          "id": 244067605,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 547403,
+        "prices": {
+          "id": "MCO803537014",
+          "prices": [
+            {
+              "id": "28",
+              "type": "standard",
+              "amount": 547403,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-16T16:35:28Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "24",
+              "type": "standard",
+              "amount": 529900,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-15T16:13:43Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_mshops"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "17",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 487302,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-05-05T12:38:55Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 1,
+        "sold_quantity": 20,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2041-08-29T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/tablet-samsung-galaxy-tab-a7-lite-sm-t220-87-32gb-gris-y-3gb-de-memoria-ram/p/MCO18367186",
+        "thumbnail": "http://http2.mlstatic.com/D_927966-MLA47146625521_082021-I.jpg",
+        "thumbnail_id": "927966-MLA47146625521_082021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 15205.64,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-ANT",
+          "state_name": "Antioquia",
+          "city_id": "TUNPQ0JFTDg0Y2E",
+          "city_name": "Bello"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "xd_drop_off",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-ANT",
+            "name": "Antioquia"
+          },
+          "city": {
+            "id": "TUNPQ0JFTDg0Y2E",
+            "name": "Bello"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "name": "Modelo alfanumérico",
+            "attribute_group_name": "Otros",
+            "id": "ALPHANUMERIC_MODEL",
+            "value_name": "SM-T220",
+            "value_struct": null,
+            "values": [
+              {
+                "struct": null,
+                "source": 1,
+                "id": "10827993",
+                "name": "SM-T220"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 1,
+            "value_id": "10827993"
+          },
+          {
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "source": 1,
+            "id": "BRAND",
+            "value_id": "206",
+            "value_name": "Samsung",
+            "values": [
+              {
+                "struct": null,
+                "source": 1,
+                "id": "206",
+                "name": "Samsung"
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "name": "Marca"
+          },
+          {
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "values": [
+              {
+                "struct": null,
+                "source": 6808261514773724,
+                "id": "2230284",
+                "name": "Nuevo"
+              }
+            ],
+            "id": "ITEM_CONDITION",
+            "value_struct": null,
+            "source": 6808261514773724
+          },
+          {
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "LINE",
+            "value_name": "Galaxy",
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "name": "Línea",
+            "value_id": "43675",
+            "values": [
+              {
+                "id": "43675",
+                "name": "Galaxy",
+                "struct": null,
+                "source": 1
+              }
+            ]
+          },
+          {
+            "id": "MODEL",
+            "value_id": "10969774",
+            "values": [
+              {
+                "id": "10969774",
+                "name": "Tab A7 Lite",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "name": "Modelo",
+            "value_name": "Tab A7 Lite",
+            "value_struct": null
+          },
+          {
+            "value_name": "366 g",
+            "value_struct": {
+              "number": 366,
+              "unit": "g"
+            },
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "id": "WEIGHT",
+            "name": "Peso",
+            "value_id": "7203405",
+            "values": [
+              {
+                "id": "7203405",
+                "name": "366 g",
+                "struct": {
+                  "number": 366,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ],
+            "source": 1
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO18367186",
+        "tags": [
+          "good_quality_picture",
+          "loyalty_discount_eligible",
+          "standard_price_by_channel",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 1
+      },
+      {
+        "id": "MCO889004547",
+        "site_id": "MCO",
+        "title": "Tablet  Samsung Galaxy Tab S6 Lite Sm-p610 10.4  64gb Oxford Gray Y 4gb De Memoria Ram",
+        "seller": {
+          "id": 134165426,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 1389000,
+        "prices": {
+          "id": "MCO889004547",
+          "prices": [
+            {
+              "id": "41",
+              "type": "standard",
+              "amount": 1389000,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-21T17:58:12Z",
+              "conditions": {
+                "context_restrictions": [],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "32",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 1345635,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-08-12T01:17:34Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 2,
+        "sold_quantity": 22,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2042-04-28T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/tablet-samsung-galaxy-tab-s6-lite-sm-p610-104-64gb-oxford-gray-y-4gb-de-memoria-ram/p/MCO15782668",
+        "thumbnail": "http://http2.mlstatic.com/D_836540-MLA45259560435_032021-I.jpg",
+        "thumbnail_id": "836540-MLA45259560435_032021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 38583.33,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-DC",
+          "state_name": "Bogotá D.C.",
+          "city_id": "TUNPQ0NIQTk2OTI1",
+          "city_name": "Chapinero"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "self_service_in",
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "xd_drop_off",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ0NIQTk2OTI1",
+            "name": "Chapinero"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "value_id": "8645579",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "8645579",
+                "name": "SM-P610",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 1,
+            "name": "Modelo alfanumérico",
+            "value_name": "SM-P610",
+            "attribute_group_name": "Otros",
+            "id": "ALPHANUMERIC_MODEL"
+          },
+          {
+            "value_struct": null,
+            "attribute_group_name": "Otros",
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": "206",
+            "source": 1,
+            "value_name": "Samsung",
+            "values": [
+              {
+                "id": "206",
+                "name": "Samsung",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "value_struct": null,
+            "values": [
+              {
+                "struct": null,
+                "source": 6808261514773724,
+                "id": "2230284",
+                "name": "Nuevo"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 6808261514773724,
+            "value_id": "2230284",
+            "name": "Condición del ítem",
+            "value_name": "Nuevo",
+            "attribute_group_name": "Otros",
+            "id": "ITEM_CONDITION"
+          },
+          {
+            "value_struct": null,
+            "values": [
+              {
+                "id": "43675",
+                "name": "Galaxy",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "id": "LINE",
+            "name": "Línea",
+            "value_id": "43675",
+            "value_name": "Galaxy",
+            "attribute_group_name": "Otros",
+            "source": 1
+          },
+          {
+            "id": "MODEL",
+            "value_name": "Tab S6 Lite",
+            "value_struct": null,
+            "source": 1,
+            "name": "Modelo",
+            "value_id": "9878043",
+            "values": [
+              {
+                "id": "9878043",
+                "name": "Tab S6 Lite",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "values": [
+              {
+                "id": "1151162",
+                "name": "465 g",
+                "struct": {
+                  "number": 465,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ],
+            "value_id": "1151162",
+            "value_name": "465 g",
+            "value_struct": {
+              "number": 465,
+              "unit": "g"
+            },
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "WEIGHT",
+            "name": "Peso",
+            "attribute_group_id": "OTHERS"
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO15782668",
+        "tags": [
+          "good_quality_picture",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate",
+          "meli_choice_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 2
+      },
+      {
+        "id": "MCO869909174",
+        "site_id": "MCO",
+        "title": "Apple iPad (9ª Generación) 10.2  Wi-fi 64gb - Color Plata",
+        "seller": {
+          "id": 353486933,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 1723000,
+        "prices": {
+          "id": "MCO869909174",
+          "prices": [
+            {
+              "id": "19",
+              "type": "standard",
+              "amount": 1723000,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-21T22:14:03Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "16",
+              "type": "standard",
+              "amount": 1829000,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-07-31T06:03:38Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_mshops"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "21",
+              "type": "promotion",
+              "amount": 1646100,
+              "regular_amount": 1829000,
+              "currency_id": "COP",
+              "last_updated": "2022-09-21T22:14:04Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_mshops"
+                ],
+                "start_time": "2022-07-30T18:00:15Z",
+                "end_time": "2023-01-01T04:59:59Z",
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {
+                "promotion_id": "INDIVIDUAL-MCO869909174-20220730140015015:MCO869909174",
+                "promotion_type": "custom"
+              }
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "20",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 1723000,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-09-21T22:14:04Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 1,
+        "sold_quantity": 11,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2042-03-08T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/apple-ipad-9-generacion-102-wi-fi-64gb-color-plata/p/MCO18498454",
+        "thumbnail": "http://http2.mlstatic.com/D_600562-MLA48203611250_112021-I.jpg",
+        "thumbnail_id": "600562-MLA48203611250_112021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 47861.11,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-DC",
+          "state_name": "Bogotá D.C.",
+          "city_id": "TUNPQ0NIQTk2OTI1",
+          "city_name": "Chapinero"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "self_service_in",
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "xd_drop_off",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ0NIQTk2OTI1",
+            "name": "Chapinero"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "values": [
+              {
+                "id": "11156108",
+                "name": "A2602",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "name": "Modelo alfanumérico",
+            "value_id": "11156108",
+            "value_struct": null,
+            "source": 1,
+            "id": "ALPHANUMERIC_MODEL",
+            "value_name": "A2602",
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "name": "Marca",
+            "value_id": "9344",
+            "values": [
+              {
+                "name": "Apple",
+                "struct": null,
+                "source": 1,
+                "id": "9344"
+              }
+            ],
+            "id": "BRAND",
+            "value_name": "Apple"
+          },
+          {
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_name": "Nuevo",
+            "values": [
+              {
+                "source": 3045741222775799,
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "source": 3045741222775799,
+            "value_id": "2230284",
+            "value_struct": null,
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "value_name": "iPad",
+            "values": [
+              {
+                "id": "107662",
+                "name": "iPad",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "value_id": "107662",
+            "name": "Línea",
+            "value_struct": null,
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "LINE"
+          },
+          {
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "id": "MODEL",
+            "value_id": "11152831",
+            "value_name": "9th generation",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "11152831",
+                "name": "9th generation",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "name": "Modelo",
+            "source": 1
+          },
+          {
+            "id": "WEIGHT",
+            "value_name": "487 g",
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "name": "Peso",
+            "value_id": "11156107",
+            "value_struct": {
+              "unit": "g",
+              "number": 487
+            },
+            "values": [
+              {
+                "source": 1,
+                "id": "11156107",
+                "name": "487 g",
+                "struct": {
+                  "number": 487,
+                  "unit": "g"
+                }
+              }
+            ]
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO18498454",
+        "tags": [
+          "good_quality_picture",
+          "standard_price_by_channel",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 3
+      },
+      {
+        "id": "MCO847990208",
+        "site_id": "MCO",
+        "title": "Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  64gb Gris Y 4gb De Memoria Ram",
+        "seller": {
+          "id": 244067605,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 688781,
+        "prices": {
+          "id": "MCO847990208",
+          "prices": [
+            {
+              "id": "8",
+              "type": "standard",
+              "amount": 688781,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-13T02:01:50Z",
+              "conditions": {
+                "context_restrictions": [],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "6",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 659900,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-06-07T16:48:50Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 3,
+        "sold_quantity": 5,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2042-01-01T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/tablet-samsung-galaxy-tab-a7-lite-sm-t220-87-64gb-gris-y-4gb-de-memoria-ram/p/MCO18368753",
+        "thumbnail": "http://http2.mlstatic.com/D_620927-MLA47146625536_082021-I.jpg",
+        "thumbnail_id": "620927-MLA47146625536_082021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 19132.81,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-ANT",
+          "state_name": "Antioquia",
+          "city_id": "TUNPQ0JFTDg0Y2E",
+          "city_name": "Bello"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "xd_drop_off",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-ANT",
+            "name": "Antioquia"
+          },
+          "city": {
+            "id": "TUNPQ0JFTDg0Y2E",
+            "name": "Bello"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "value_struct": null,
+            "values": [
+              {
+                "id": "10827993",
+                "name": "SM-T220",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "ALPHANUMERIC_MODEL",
+            "name": "Modelo alfanumérico",
+            "value_id": "10827993",
+            "value_name": "SM-T220",
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "value_name": "Samsung",
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": "206",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "206",
+                "name": "Samsung",
+                "struct": null,
+                "source": 1
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null,
+                "source": 6808261514773724
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 6808261514773724,
+            "id": "ITEM_CONDITION",
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "name": "Condición del ítem",
+            "value_id": "2230284"
+          },
+          {
+            "name": "Línea",
+            "value_name": "Galaxy",
+            "values": [
+              {
+                "name": "Galaxy",
+                "struct": null,
+                "source": 1,
+                "id": "43675"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "LINE",
+            "value_id": "43675",
+            "value_struct": null
+          },
+          {
+            "value_name": "Tab A7 Lite",
+            "value_struct": null,
+            "source": 1,
+            "name": "Modelo",
+            "value_id": "10969774",
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "id": "MODEL",
+            "values": [
+              {
+                "id": "10969774",
+                "name": "Tab A7 Lite",
+                "struct": null,
+                "source": 1
+              }
+            ]
+          },
+          {
+            "id": "WEIGHT",
+            "name": "Peso",
+            "value_id": "7203405",
+            "value_name": "366 g",
+            "value_struct": {
+              "number": 366,
+              "unit": "g"
+            },
+            "values": [
+              {
+                "id": "7203405",
+                "name": "366 g",
+                "struct": {
+                  "number": 366,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO18368753",
+        "tags": [
+          "good_quality_picture",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 4
+      },
+      {
+        "id": "MCO848559323",
+        "site_id": "MCO",
+        "title": "Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  64gb Plateada Y 4gb De Memoria Ram",
+        "seller": {
+          "id": 244067605,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 689900,
+        "prices": {
+          "id": "MCO848559323",
+          "prices": [
+            {
+              "id": "8",
+              "type": "standard",
+              "amount": 689900,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-07-19T18:13:50Z",
+              "conditions": {
+                "context_restrictions": [],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "7",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 669900,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-06-07T16:37:09Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 3,
+        "sold_quantity": 9,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2042-01-04T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/tablet-samsung-galaxy-tab-a7-lite-sm-t220-87-64gb-plateada-y-4gb-de-memoria-ram/p/MCO18368754",
+        "thumbnail": "http://http2.mlstatic.com/D_608839-MLA47146625545_082021-I.jpg",
+        "thumbnail_id": "608839-MLA47146625545_082021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 19163.89,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-ANT",
+          "state_name": "Antioquia",
+          "city_id": "TUNPQ0JFTDg0Y2E",
+          "city_name": "Bello"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "xd_drop_off",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-ANT",
+            "name": "Antioquia"
+          },
+          "city": {
+            "id": "TUNPQ0JFTDg0Y2E",
+            "name": "Bello"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "values": [
+              {
+                "id": "10827993",
+                "name": "SM-T220",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "ALPHANUMERIC_MODEL",
+            "name": "Modelo alfanumérico",
+            "value_name": "SM-T220",
+            "value_id": "10827993",
+            "value_struct": null,
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "id": "BRAND",
+            "value_name": "Samsung",
+            "values": [
+              {
+                "id": "206",
+                "name": "Samsung",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "source": 1,
+            "name": "Marca",
+            "value_id": "206",
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null,
+                "source": 6808261514773724
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 6808261514773724,
+            "id": "ITEM_CONDITION",
+            "value_name": "Nuevo",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "name": "Línea",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "43675",
+                "name": "Galaxy",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "LINE",
+            "value_id": "43675",
+            "value_name": "Galaxy",
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "values": [
+              {
+                "source": 1,
+                "id": "10969774",
+                "name": "Tab A7 Lite",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "id": "MODEL",
+            "name": "Modelo",
+            "value_name": "Tab A7 Lite",
+            "value_struct": null,
+            "value_id": "10969774",
+            "attribute_group_name": "Otros",
+            "source": 1
+          },
+          {
+            "source": 1,
+            "id": "WEIGHT",
+            "value_id": "7203405",
+            "value_name": "366 g",
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "name": "Peso",
+            "value_struct": {
+              "number": 366,
+              "unit": "g"
+            },
+            "values": [
+              {
+                "id": "7203405",
+                "name": "366 g",
+                "struct": {
+                  "number": 366,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ]
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO18368754",
+        "tags": [
+          "good_quality_picture",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 5
+      },
+      {
+        "id": "MCO861388138",
+        "site_id": "MCO",
+        "title": "Apple iPad Pro De 12.9  Wi-fi  256gb Gris Espacial (5ª Generación)",
+        "seller": {
+          "id": 406781619,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 5640000,
+        "prices": {
+          "id": "MCO861388138",
+          "prices": [
+            {
+              "id": "33",
+              "type": "standard",
+              "amount": 5640000,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-15T23:59:33Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "13",
+              "type": "standard",
+              "amount": 5260000,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-04-20T18:17:16Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_mshops"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "15",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 5260000,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-05-13T17:18:30Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 2,
+        "sold_quantity": 9,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2042-02-12T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/apple-ipad-pro-de-129-wi-fi-256gb-gris-espacial-5-generacion/p/MCO18061743",
+        "thumbnail": "http://http2.mlstatic.com/D_830380-MLA46975173279_082021-I.jpg",
+        "thumbnail_id": "830380-MLA46975173279_082021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 156666.67,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-DC",
+          "state_name": "Bogotá D.C.",
+          "city_id": "TUNPQ0NIQTk2OTI1",
+          "city_name": "Chapinero"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "self_service_in",
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "xd_drop_off",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ0NIQTk2OTI1",
+            "name": "Chapinero"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "attribute_group_id": "OTHERS",
+            "id": "ALPHANUMERIC_MODEL",
+            "name": "Modelo alfanumérico",
+            "value_id": "10593949",
+            "value_name": "A2378",
+            "value_struct": null,
+            "values": [
+              {
+                "source": 1,
+                "id": "10593949",
+                "name": "A2378",
+                "struct": null
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "source": 1
+          },
+          {
+            "value_name": "Apple",
+            "id": "BRAND",
+            "value_id": "9344",
+            "values": [
+              {
+                "id": "9344",
+                "name": "Apple",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "name": "Marca",
+            "value_struct": null
+          },
+          {
+            "id": "ITEM_CONDITION",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null,
+                "source": 6808261514773724
+              }
+            ],
+            "source": 6808261514773724,
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "source": 1,
+            "id": "LINE",
+            "value_name": "iPad Pro",
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "name": "Línea",
+            "value_id": "7172641",
+            "values": [
+              {
+                "id": "7172641",
+                "name": "iPad Pro",
+                "struct": null,
+                "source": 1
+              }
+            ]
+          },
+          {
+            "value_name": "5th generation",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "MODEL",
+            "name": "Modelo",
+            "values": [
+              {
+                "name": "5th generation",
+                "struct": null,
+                "source": 1,
+                "id": "10348338"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "value_id": "10348338",
+            "value_struct": null
+          },
+          {
+            "attribute_group_id": "OTHERS",
+            "source": 1,
+            "id": "WEIGHT",
+            "value_id": "10593948",
+            "values": [
+              {
+                "id": "10593948",
+                "name": "682 g",
+                "struct": {
+                  "number": 682,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "name": "Peso",
+            "value_name": "682 g",
+            "value_struct": {
+              "number": 682,
+              "unit": "g"
+            }
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO18061743",
+        "tags": [
+          "good_quality_picture",
+          "loyalty_discount_eligible",
+          "standard_price_by_channel",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate",
+          "meli_choice_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 6
+      },
+      {
+        "id": "MCO835799416",
+        "site_id": "MCO",
+        "title": "Tablet  Samsung Galaxy Tab S7 Fe With S Pen Sm-t733 12.4  128gb Mystic Black Y 6gb De Memoria Ram",
+        "seller": {
+          "id": 50557397,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 2648547,
+        "prices": {
+          "id": "MCO835799416",
+          "prices": [
+            {
+              "id": "578",
+              "type": "standard",
+              "amount": 2847900,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-08-17T17:12:42Z",
+              "conditions": {
+                "context_restrictions": [],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "599",
+              "type": "promotion",
+              "amount": 2563110,
+              "regular_amount": 2847900,
+              "currency_id": "COP",
+              "last_updated": "2022-09-16T05:08:23Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": "2022-09-01T05:00:00Z",
+                "end_time": "2022-10-01T04:00:00Z",
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {
+                "campaign_id": "P-MCO7456003",
+                "promotion_id": "OFFER-MCO835799416-380039671",
+                "promotion_type": "marketplace_campaign",
+                "discount_meli_amount": 85437,
+                "campaign_discount_percentage": 10,
+                "campaign_end_date": "2022-10-01T04:00:00Z",
+                "order_item_price": 2648547,
+                "funding_mode": "coupon"
+              }
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "198",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 2847900,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-07-31T16:04:39Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 4,
+        "sold_quantity": 32,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2041-11-19T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/tablet-samsung-galaxy-tab-s7-fe-with-s-pen-sm-t733-124-128gb-mystic-black-y-6gb-de-memoria-ram/p/MCO18521907",
+        "thumbnail": "http://http2.mlstatic.com/D_911599-MLA48108843044_112021-I.jpg",
+        "thumbnail_id": "911599-MLA48108843044_112021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 73570.75,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-DC",
+          "state_name": "Bogotá D.C.",
+          "city_id": "TUNPQ0NIQTk2OTI1",
+          "city_name": "Chapinero"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "fulfillment",
+            "self_service_out",
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "fulfillment",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ0NIQTk2OTI1",
+            "name": "Chapinero"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "value_id": "11196490",
+            "value_name": "SM-T733",
+            "value_struct": null,
+            "source": 1,
+            "id": "ALPHANUMERIC_MODEL",
+            "name": "Modelo alfanumérico",
+            "values": [
+              {
+                "source": 1,
+                "id": "11196490",
+                "name": "SM-T733",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+          },
+          {
+            "source": 1,
+            "name": "Marca",
+            "value_id": "206",
+            "value_name": "Samsung",
+            "value_struct": null,
+            "values": [
+              {
+                "source": 1,
+                "id": "206",
+                "name": "Samsung",
+                "struct": null
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "id": "BRAND",
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "value_id": "2230284",
+            "value_struct": null,
+            "id": "ITEM_CONDITION",
+            "value_name": "Nuevo",
+            "values": [
+              {
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null,
+                "source": 3045741222775799
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 3045741222775799,
+            "name": "Condición del ítem"
+          },
+          {
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "id": "LINE",
+            "name": "Línea",
+            "value_id": "43675",
+            "values": [
+              {
+                "id": "43675",
+                "name": "Galaxy",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "value_name": "Galaxy",
+            "value_struct": null,
+            "source": 1
+          },
+          {
+            "value_id": "11770198",
+            "value_name": "Tab S7 FE with S Pen",
+            "value_struct": null,
+            "values": [
+              {
+                "source": 4709228965570453,
+                "id": "11770198",
+                "name": "Tab S7 FE with S Pen",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "id": "MODEL",
+            "name": "Modelo",
+            "source": 4709228965570453
+          },
+          {
+            "value_struct": {
+              "number": 30.8,
+              "unit": "cm"
+            },
+            "values": [
+              {
+                "source": 4333789534002961,
+                "id": null,
+                "name": "30.8 cm",
+                "struct": {
+                  "number": 30.8,
+                  "unit": "cm"
+                }
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "value_name": "30.8 cm",
+            "name": "Largo del paquete",
+            "value_id": null,
+            "source": 4333789534002961,
+            "id": "PACKAGE_LENGTH"
+          },
+          {
+            "value_name": "1340 g",
+            "attribute_group_name": "Otros",
+            "value_id": null,
+            "name": "Peso del paquete",
+            "value_struct": {
+              "number": 1340,
+              "unit": "g"
+            },
+            "values": [
+              {
+                "struct": {
+                  "number": 1340,
+                  "unit": "g"
+                },
+                "source": 4333789534002961,
+                "id": null,
+                "name": "1340 g"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 4333789534002961,
+            "id": "PACKAGE_WEIGHT"
+          },
+          {
+            "name": "Peso",
+            "values": [
+              {
+                "id": "8222",
+                "name": "610 g",
+                "struct": {
+                  "number": 610,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "WEIGHT",
+            "value_id": "8222",
+            "value_name": "610 g",
+            "value_struct": {
+              "number": 610,
+              "unit": "g"
+            }
+          }
+        ],
+        "original_price": 2648547,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO18521907",
+        "tags": [
+          "good_quality_picture",
+          "loyalty_discount_eligible",
+          "immediate_payment",
+          "cart_eligible",
+          "shipping_guaranteed",
+          "best_seller_candidate",
+          "meli_choice_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 7
+      },
+      {
+        "id": "MCO846320123",
+        "site_id": "MCO",
+        "title": "Tablet  Amazon Fire Hd 8 2020 Kfonwi 8  32gb Twilight Blue Y 2gb De Memoria Ram",
+        "seller": {
+          "id": 4988079,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 293900,
+        "prices": {
+          "id": "MCO846320123",
+          "prices": [
+            {
+              "id": "22",
+              "type": "standard",
+              "amount": 293900,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-07-11T21:40:56Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "21",
+              "type": "standard",
+              "amount": 289900,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-07-11T21:40:56Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_mshops"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "23",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 293900,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-07-11T21:40:59Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 5,
+        "sold_quantity": 43,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2041-12-25T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/tablet-amazon-fire-hd-8-2020-kfonwi-8-32gb-twilight-blue-y-2gb-de-memoria-ram/p/MCO16064584",
+        "thumbnail": "http://http2.mlstatic.com/D_810115-MLA45264846885_032021-I.jpg",
+        "thumbnail_id": "810115-MLA45264846885_032021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 8163.89,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-ANT",
+          "state_name": "Antioquia",
+          "city_id": "TUNPQ1JJTzNmYmVk",
+          "city_name": "Rionegro"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "self_service_in",
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "cross_docking",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-ANT",
+            "name": "Antioquia"
+          },
+          "city": {
+            "id": "TUNPQ1JJTzNmYmVk",
+            "name": "Rionegro"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "id": "ALPHANUMERIC_MODEL",
+            "value_struct": null,
+            "values": [
+              {
+                "id": "9931514",
+                "name": "KFONWI",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "name": "Modelo alfanumérico",
+            "value_id": "9931514",
+            "value_name": "KFONWI",
+            "attribute_group_id": "OTHERS",
+            "source": 1
+          },
+          {
+            "value_struct": null,
+            "value_name": "Amazon",
+            "values": [
+              {
+                "source": 1,
+                "id": "27216",
+                "name": "Amazon",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": "27216"
+          },
+          {
+            "value_struct": null,
+            "values": [
+              {
+                "source": 6808261514773724,
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 6808261514773724,
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "attribute_group_name": "Otros",
+            "id": "ITEM_CONDITION"
+          },
+          {
+            "value_name": "Fire HD 8",
+            "values": [
+              {
+                "source": 1,
+                "id": "7625651",
+                "name": "Fire HD 8",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "id": "MODEL",
+            "name": "Modelo",
+            "source": 1,
+            "value_id": "7625651",
+            "value_struct": null
+          },
+          {
+            "name": "Largo del paquete",
+            "value_struct": {
+              "unit": "cm",
+              "number": 23.4
+            },
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 4333789534002961,
+            "id": "PACKAGE_LENGTH",
+            "value_id": null,
+            "value_name": "23.4 cm",
+            "values": [
+              {
+                "struct": {
+                  "number": 23.4,
+                  "unit": "cm"
+                },
+                "source": 4333789534002961,
+                "id": null,
+                "name": "23.4 cm"
+              }
+            ]
+          },
+          {
+            "id": "PACKAGE_WEIGHT",
+            "value_id": null,
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 4333789534002961,
+            "name": "Peso del paquete",
+            "value_name": "480 g",
+            "value_struct": {
+              "unit": "g",
+              "number": 480
+            },
+            "values": [
+              {
+                "id": null,
+                "name": "480 g",
+                "struct": {
+                  "number": 480,
+                  "unit": "g"
+                },
+                "source": 4333789534002961
+              }
+            ]
+          },
+          {
+            "value_name": "355 g",
+            "attribute_group_name": "Otros",
+            "id": "WEIGHT",
+            "name": "Peso",
+            "values": [
+              {
+                "name": "355 g",
+                "struct": {
+                  "unit": "g",
+                  "number": 355
+                },
+                "source": 1,
+                "id": "3411233"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 1,
+            "value_id": "3411233",
+            "value_struct": {
+              "number": 355,
+              "unit": "g"
+            }
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO16064584",
+        "tags": [
+          "good_quality_picture",
+          "loyalty_discount_eligible",
+          "standard_price_by_channel",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 8
+      },
+      {
+        "id": "MCO862279865",
+        "site_id": "MCO",
+        "title": "Apple iPad Pro De 11  Wi-fi  256gb Gris Espacial (3ª Generación)",
+        "seller": {
+          "id": 353486933,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 4700000,
+        "prices": {
+          "id": "MCO862279865",
+          "prices": [
+            {
+              "id": "21",
+              "type": "standard",
+              "amount": 4700000,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-21T22:12:32Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "20",
+              "type": "standard",
+              "amount": 4600000,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-09-21T22:12:31Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_mshops"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            },
+            {
+              "id": "12",
+              "type": "promotion",
+              "amount": 4178100,
+              "regular_amount": 4398000,
+              "currency_id": "COP",
+              "last_updated": "2022-04-20T05:32:17Z",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": "2022-04-20T05:00:00Z",
+                "end_time": "2022-04-27T04:59:59Z",
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {
+                "promotion_id": "2100826-MCO862279865",
+                "promotion_type": "custom"
+              }
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "16",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 4050000,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-05-10T14:44:19Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 1,
+        "sold_quantity": 5,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2042-02-14T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/apple-ipad-pro-de-11-wi-fi-256gb-gris-espacial-3-generacion/p/MCO18093811",
+        "thumbnail": "http://http2.mlstatic.com/D_761571-MLA46975166071_082021-I.jpg",
+        "thumbnail_id": "761571-MLA46975166071_082021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 130555.56,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-DC",
+          "state_name": "Bogotá D.C.",
+          "city_id": "TUNPQ0NIQTk2OTI1",
+          "city_name": "Chapinero"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "self_service_in",
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "xd_drop_off",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ0NIQTk2OTI1",
+            "name": "Chapinero"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "values": [
+              {
+                "id": "10633931",
+                "name": "A2377",
+                "struct": null,
+                "source": 1
+              }
+            ],
+            "id": "ALPHANUMERIC_MODEL",
+            "name": "Modelo alfanumérico",
+            "value_name": "A2377",
+            "value_struct": null,
+            "value_id": "10633931",
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1
+          },
+          {
+            "value_id": "9344",
+            "value_struct": null,
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "attribute_group_id": "OTHERS",
+            "id": "BRAND",
+            "name": "Marca",
+            "value_name": "Apple",
+            "values": [
+              {
+                "id": "9344",
+                "name": "Apple",
+                "struct": null,
+                "source": 1
+              }
+            ]
+          },
+          {
+            "attribute_group_name": "Otros",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "values": [
+              {
+                "struct": null,
+                "source": 3045741222775799,
+                "id": "2230284",
+                "name": "Nuevo"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 3045741222775799,
+            "id": "ITEM_CONDITION"
+          },
+          {
+            "source": 1,
+            "id": "LINE",
+            "value_id": "7172641",
+            "value_name": "iPad Pro",
+            "value_struct": null,
+            "values": [
+              {
+                "name": "iPad Pro",
+                "struct": null,
+                "source": 1,
+                "id": "7172641"
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "name": "Línea",
+            "attribute_group_id": "OTHERS"
+          },
+          {
+            "name": "Modelo",
+            "values": [
+              {
+                "source": 1,
+                "id": "10351337",
+                "name": "3rd generation",
+                "struct": null
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "value_struct": null,
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "MODEL",
+            "value_id": "10351337",
+            "value_name": "3rd generation"
+          },
+          {
+            "value_id": "7226321",
+            "value_name": "466 g",
+            "values": [
+              {
+                "id": "7226321",
+                "name": "466 g",
+                "struct": {
+                  "number": 466,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ],
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "WEIGHT",
+            "name": "Peso",
+            "value_struct": {
+              "number": 466,
+              "unit": "g"
+            },
+            "attribute_group_id": "OTHERS"
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO18093811",
+        "tags": [
+          "good_quality_picture",
+          "standard_price_by_channel",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate",
+          "meli_choice_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 9
+      },
+      {
+        "id": "MCO839630257",
+        "site_id": "MCO",
+        "title": "Tablet  Amazon Fire Hd 8 2020 Kfonwi 8  32gb Plum Y 2gb De Memoria Ram",
+        "seller": {
+          "id": 76085013,
+          "permalink": null,
+          "registration_date": null,
+          "car_dealer": false,
+          "real_estate_agency": false,
+          "tags": null
+        },
+        "price": 294574,
+        "prices": {
+          "id": "MCO839630257",
+          "prices": [
+            {
+              "id": "30",
+              "type": "standard",
+              "amount": 294574,
+              "regular_amount": null,
+              "currency_id": "COP",
+              "last_updated": "2022-07-06T17:14:48Z",
+              "conditions": {
+                "context_restrictions": [],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "exchange_rate_context": "DEFAULT",
+              "metadata": {}
+            }
+          ],
+          "presentation": {
+            "display_currency": "COP"
+          },
+          "payment_method_prices": [],
+          "reference_prices": [
+            {
+              "id": "31",
+              "type": "min_standard",
+              "conditions": {
+                "context_restrictions": [
+                  "channel_marketplace"
+                ],
+                "start_time": null,
+                "end_time": null,
+                "eligible": true
+              },
+              "amount": 294574,
+              "currency_id": "COP",
+              "exchange_rate_context": "DEFAULT",
+              "tags": [],
+              "last_updated": "2022-07-06T19:52:40Z"
+            }
+          ],
+          "purchase_discounts": []
+        },
+        "sale_price": null,
+        "currency_id": "COP",
+        "available_quantity": 36,
+        "sold_quantity": 100,
+        "buying_mode": "buy_it_now",
+        "listing_type_id": "gold_special",
+        "stop_time": "2041-12-02T04:00:00.000Z",
+        "condition": "new",
+        "permalink": "https://www.mercadolibre.com.co/tablet-amazon-fire-hd-8-2020-kfonwi-8-32gb-plum-y-2gb-de-memoria-ram/p/MCO16064583",
+        "thumbnail": "http://http2.mlstatic.com/D_677812-MLA45264860034_032021-I.jpg",
+        "thumbnail_id": "677812-MLA45264860034_032021",
+        "accepts_mercadopago": true,
+        "installments": {
+          "quantity": 36,
+          "amount": 8182.61,
+          "rate": 0,
+          "currency_id": "COP"
+        },
+        "address": {
+          "state_id": "CO-DC",
+          "state_name": "Bogotá D.C.",
+          "city_id": "TUNPQ01BUjU5NzU1",
+          "city_name": "Martires"
+        },
+        "promotions": null,
+        "shipping": {
+          "free_shipping": true,
+          "mode": "me2",
+          "tags": [
+            "self_service_in",
+            "mandatory_free_shipping"
+          ],
+          "logistic_type": "cross_docking",
+          "store_pick_up": false
+        },
+        "seller_address": {
+          "id": "",
+          "comment": "",
+          "address_line": "",
+          "zip_code": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ01BUjU5NzU1",
+            "name": "Martires"
+          },
+          "latitude": "",
+          "longitude": ""
+        },
+        "attributes": [
+          {
+            "attribute_group_name": "Otros",
+            "id": "ALPHANUMERIC_MODEL",
+            "name": "Modelo alfanumérico",
+            "value_struct": null,
+            "values": [
+              {
+                "struct": null,
+                "source": 1,
+                "id": "9931514",
+                "name": "KFONWI"
+              }
+            ],
+            "attribute_group_id": "OTHERS",
+            "source": 1,
+            "value_id": "9931514",
+            "value_name": "KFONWI"
+          },
+          {
+            "values": [
+              {
+                "struct": null,
+                "source": 1,
+                "id": "27216",
+                "name": "Amazon"
+              }
+            ],
+            "value_struct": null,
+            "name": "Marca",
+            "value_id": "27216",
+            "value_name": "Amazon",
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "id": "BRAND"
+          },
+          {
+            "value_name": "Nuevo",
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_id": "2230284",
+            "values": [
+              {
+                "source": 6808261514773724,
+                "id": "2230284",
+                "name": "Nuevo",
+                "struct": null
+              }
+            ],
+            "source": 6808261514773724
+          },
+          {
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "source": 1000427007642219,
+            "name": "Línea",
+            "value_name": "Kids Edition",
+            "values": [
+              {
+                "name": "Kids Edition",
+                "struct": null,
+                "source": 1000427007642219,
+                "id": "7133327"
+              }
+            ],
+            "id": "LINE",
+            "value_id": "7133327"
+          },
+          {
+            "source": 1,
+            "id": "MODEL",
+            "value_name": "Fire HD 8",
+            "value_struct": null,
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros",
+            "name": "Modelo",
+            "value_id": "7625651",
+            "values": [
+              {
+                "name": "Fire HD 8",
+                "struct": null,
+                "source": 1,
+                "id": "7625651"
+              }
+            ]
+          },
+          {
+            "id": "WEIGHT",
+            "value_id": "3411233",
+            "attribute_group_name": "Otros",
+            "source": 1,
+            "name": "Peso",
+            "value_name": "355 g",
+            "value_struct": {
+              "number": 355,
+              "unit": "g"
+            },
+            "values": [
+              {
+                "id": "3411233",
+                "name": "355 g",
+                "struct": {
+                  "number": 355,
+                  "unit": "g"
+                },
+                "source": 1
+              }
+            ],
+            "attribute_group_id": "OTHERS"
+          }
+        ],
+        "original_price": null,
+        "category_id": "MCO82067",
+        "official_store_id": null,
+        "domain_id": "MCO-TABLETS",
+        "catalog_product_id": "MCO16064583",
+        "tags": [
+          "good_quality_picture",
+          "loyalty_discount_eligible",
+          "immediate_payment",
+          "cart_eligible",
+          "best_seller_candidate",
+          "meli_choice_candidate"
+        ],
+        "catalog_listing": true,
+        "use_thumbnail_id": true,
+        "offer_score": null,
+        "offer_share": null,
+        "match_score": null,
+        "winner_item_id": null,
+        "melicoin": null,
+        "discounts": null,
+        "order_backend": 10
+      }
+    ],
+    "sort": {
+      "id": "relevance",
+      "name": "Más relevantes"
+    },
+    "available_sorts": [
+      {
+        "id": "price_asc",
+        "name": "Menor precio"
+      },
+      {
+        "id": "price_desc",
+        "name": "Mayor precio"
+      }
+    ],
+    "filters": [
+      {
+        "id": "category",
+        "name": "Categorías",
+        "type": "text",
+        "values": [
+          {
+            "id": "MCO82067",
+            "name": "Tablets",
+            "path_from_root": [
+              {
+                "id": "MCO1648",
+                "name": "Computación"
+              },
+              {
+                "id": "MCO432947",
+                "name": "Tablets y Accesorios"
+              },
+              {
+                "id": "MCO82067",
+                "name": "Tablets"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "available_filters": [
+      {
+        "id": "official_store",
+        "name": "Tiendas oficiales",
+        "type": "text",
+        "values": [
+          {
+            "id": "all",
+            "name": "Todas las tiendas oficiales",
+            "results": 66
+          },
+          {
+            "id": "72",
+            "name": "Lenovo",
+            "results": 18
+          },
+          {
+            "id": "153",
+            "name": "Samsung",
+            "results": 8
+          },
+          {
+            "id": "207",
+            "name": "Huawei",
+            "results": 3
+          },
+          {
+            "id": "1555",
+            "name": "Ultra Gamer",
+            "results": 9
+          },
+          {
+            "id": "957",
+            "name": "Smart Buy",
+            "results": 3
+          }
+        ]
+      },
+      {
+        "id": "discount",
+        "name": "Descuentos",
+        "type": "number",
+        "values": [
+          {
+            "id": "5-100",
+            "name": "Desde 5% OFF",
+            "results": 158
+          },
+          {
+            "id": "10-100",
+            "name": "Desde 10% OFF",
+            "results": 106
+          },
+          {
+            "id": "15-100",
+            "name": "Desde 15% OFF",
+            "results": 63
+          },
+          {
+            "id": "20-100",
+            "name": "Desde 20% OFF",
+            "results": 51
+          },
+          {
+            "id": "25-100",
+            "name": "Desde 25% OFF",
+            "results": 38
+          },
+          {
+            "id": "30-100",
+            "name": "Desde 30% OFF",
+            "results": 34
+          },
+          {
+            "id": "40-100",
+            "name": "Desde 40% OFF",
+            "results": 12
+          },
+          {
+            "id": "50-100",
+            "name": "Desde 50% OFF",
+            "results": 6
+          },
+          {
+            "id": "60-100",
+            "name": "Desde 60% OFF",
+            "results": 1
+          }
+        ]
+      },
+      {
+        "id": "state",
+        "name": "Ubicación",
+        "type": "text",
+        "values": [
+          {
+            "id": "CO-DC",
+            "name": "Bogotá D.C.",
+            "results": 3089
+          },
+          {
+            "id": "CO-ANT",
+            "name": "Antioquia",
+            "results": 775
+          },
+          {
+            "id": "CO-CUN",
+            "name": "Cundinamarca",
+            "results": 389
+          },
+          {
+            "id": "CO-VAC",
+            "name": "Valle Del Cauca",
+            "results": 298
+          },
+          {
+            "id": "CO-CES",
+            "name": "Cesar",
+            "results": 214
+          },
+          {
+            "id": "CO-ATL",
+            "name": "Atlantico",
+            "results": 147
+          },
+          {
+            "id": "CO-SAN",
+            "name": "Santander",
+            "results": 105
+          },
+          {
+            "id": "CO-MET",
+            "name": "Meta",
+            "results": 83
+          },
+          {
+            "id": "CO-RIS",
+            "name": "Risaralda",
+            "results": 44
+          },
+          {
+            "id": "CO-BOL",
+            "name": "Bolivar",
+            "results": 36
+          },
+          {
+            "id": "CO-NSA",
+            "name": "Norte De Santander",
+            "results": 32
+          },
+          {
+            "id": "CO-CAL",
+            "name": "Caldas",
+            "results": 28
+          },
+          {
+            "id": "CO-BOY",
+            "name": "Boyaca",
+            "results": 24
+          },
+          {
+            "id": "CO-TOL",
+            "name": "Tolima",
+            "results": 24
+          },
+          {
+            "id": "CO-HUI",
+            "name": "Huila",
+            "results": 18
+          },
+          {
+            "id": "CO-NAR",
+            "name": "Nariño",
+            "results": 17
+          },
+          {
+            "id": "CO-COR",
+            "name": "Córdoba",
+            "results": 11
+          },
+          {
+            "id": "CO-MAG",
+            "name": "Magdalena",
+            "results": 11
+          },
+          {
+            "id": "CO-CAU",
+            "name": "Cauca",
+            "results": 9
+          },
+          {
+            "id": "CO-QUI",
+            "name": "Quindio",
+            "results": 8
+          },
+          {
+            "id": "CO-SUC",
+            "name": "Sucre",
+            "results": 7
+          },
+          {
+            "id": "CO-LAG",
+            "name": "Guajira",
+            "results": 6
+          },
+          {
+            "id": "CO-CAS",
+            "name": "Casanare",
+            "results": 5
+          },
+          {
+            "id": "CO-PUT",
+            "name": "Putumayo",
+            "results": 4
+          },
+          {
+            "id": "CO-ARA",
+            "name": "Arauca",
+            "results": 2
+          },
+          {
+            "id": "CO-CAQ",
+            "name": "Caqueta",
+            "results": 1
+          },
+          {
+            "id": "CO-GUA",
+            "name": "Guainía",
+            "results": 1
+          },
+          {
+            "id": "CO-VID",
+            "name": "Vichada",
+            "results": 1
+          }
+        ]
+      },
+      {
+        "id": "price",
+        "name": "Precio",
+        "type": "range",
+        "values": [
+          {
+            "id": "*-450000.0",
+            "name": "Hasta $450.000",
+            "results": 1808
+          },
+          {
+            "id": "450000.0-1000000.0",
+            "name": "$450.000 a $1.000.000",
+            "results": 1821
+          },
+          {
+            "id": "1000000.0-*",
+            "name": "Más de $1.000.000",
+            "results": 2188
+          }
+        ]
+      },
+      {
+        "id": "accepts_mercadopago",
+        "name": "Filtro por MercadoPago",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "yes",
+            "name": "Con MercadoPago",
+            "results": 5817
+          }
+        ]
+      },
+      {
+        "id": "installments",
+        "name": "Pago",
+        "type": "text",
+        "values": [
+          {
+            "id": "yes",
+            "name": "En cuotas",
+            "results": 5817
+          },
+          {
+            "id": "no_interest",
+            "name": "Cuotas sin interés",
+            "results": 1350
+          }
+        ]
+      },
+      {
+        "id": "shipping",
+        "name": "Envío",
+        "type": "text",
+        "values": [
+          {
+            "id": "mercadoenvios",
+            "name": "Mercado Envíos",
+            "results": 5817
+          },
+          {
+            "id": "fulfillment",
+            "name": "Full",
+            "results": 54
+          }
+        ]
+      },
+      {
+        "id": "power_seller",
+        "name": "Filtro por calidad de vendedores",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "yes",
+            "name": "Mejores vendedores",
+            "results": 1801
+          }
+        ]
+      },
+      {
+        "id": "since",
+        "name": "Filtro por fecha de comienzo",
+        "type": "text",
+        "values": [
+          {
+            "id": "today",
+            "name": "Publicados hoy",
+            "results": 17
+          }
+        ]
+      },
+      {
+        "id": "until",
+        "name": "Filtro por fecha de finalización",
+        "type": "text",
+        "values": [
+          {
+            "id": "today",
+            "name": "Finalizan hoy",
+            "results": 9
+          }
+        ]
+      },
+      {
+        "id": "has_video",
+        "name": "Filtro por publicaciones con video",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "yes",
+            "name": "Publicaciones con video",
+            "results": 706
+          }
+        ]
+      },
+      {
+        "id": "has_pictures",
+        "name": "Filtro por publicaciones con imágenes",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "yes",
+            "name": "Con fotos",
+            "results": 5815
+          }
+        ]
+      },
+      {
+        "id": "all_payment_methods_discount",
+        "name": "Descuentos para todos los medios de pago",
+        "type": "number",
+        "values": [
+          {
+            "id": "10-100",
+            "name": "Desde 10% OFF",
+            "results": 29
+          },
+          {
+            "id": "20-100",
+            "name": "Desde 20% OFF",
+            "results": 6
+          },
+          {
+            "id": "30-100",
+            "name": "Desde 30% OFF",
+            "results": 2
+          }
+        ]
+      },
+      {
+        "id": "price_campaign_id",
+        "name": "Campaña",
+        "type": "number",
+        "values": [
+          {
+            "id": "P-MCO7309001",
+            "name": "P-MCO7309001",
+            "results": 6
+          },
+          {
+            "id": "P-MCO7456003",
+            "name": "P-MCO7456003",
+            "results": 6
+          },
+          {
+            "id": "MCO2298",
+            "name": "MCO2298",
+            "results": 4
+          },
+          {
+            "id": "MCO4996",
+            "name": "MCO4996",
+            "results": 2
+          },
+          {
+            "id": "MCO6413",
+            "name": "MCO6413",
+            "results": 2
+          },
+          {
+            "id": "P-MCO7452005",
+            "name": "P-MCO7452005",
+            "results": 1
+          }
+        ]
+      },
+      {
+        "id": "promotion_type",
+        "name": "Tipo de promoción",
+        "type": "text",
+        "values": [
+          {
+            "id": "deal_of_the_day",
+            "name": "Oferta del día",
+            "results": 3
+          }
+        ]
+      },
+      {
+        "id": "shipping_cost",
+        "name": "Costo de envío",
+        "type": "text",
+        "values": [
+          {
+            "id": "free",
+            "name": "Gratis",
+            "results": 5206
+          }
+        ]
+      },
+      {
+        "id": "BRAND",
+        "name": "Marca",
+        "type": "STRING",
+        "values": [
+          {
+            "id": "8216",
+            "name": "Dell",
+            "results": 3
+          }
+        ]
+      },
+      {
+        "id": "CAPACITY",
+        "name": "Capacidad",
+        "type": "range",
+        "values": [
+          {
+            "id": "(*-32GB)",
+            "name": "Menos de 32 GB",
+            "results": 1252
+          },
+          {
+            "id": "[32GB-64GB)",
+            "name": "32 a 63 GB",
+            "results": 1167
+          },
+          {
+            "id": "[64GB-128GB)",
+            "name": "64 a 127 GB",
+            "results": 665
+          },
+          {
+            "id": "[128GB-256GB)",
+            "name": "128 a 255 GB",
+            "results": 572
+          },
+          {
+            "id": "[256GB-512GB)",
+            "name": "256 a 511 GB",
+            "results": 355
+          },
+          {
+            "id": "[512GB-*)",
+            "name": "512 GB o más",
+            "results": 249
+          }
+        ]
+      },
+      {
+        "id": "DISPLAY_SIZE",
+        "name": "Tamaño de la pantalla",
+        "type": "range",
+        "values": [
+          {
+            "id": "(*-7.9\"]",
+            "name": "7,9 \" o menos",
+            "results": 966
+          },
+          {
+            "id": "[7.9\"-9.7\"]",
+            "name": "7,9 a 9,7 \"",
+            "results": 995
+          },
+          {
+            "id": "[9.7\"-10.1\"]",
+            "name": "9,7 a 10,1 \"",
+            "results": 1537
+          },
+          {
+            "id": "[10.1\"-10.5\"]",
+            "name": "10,1 a 10,5 \"",
+            "results": 1088
+          },
+          {
+            "id": "[10.5\"-*)",
+            "name": "10,5 \" o más",
+            "results": 1159
+          }
+        ]
+      },
+      {
+        "id": "IS_MULTI_TOUCH",
+        "name": "Otras características",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "242085",
+            "name": "Es multi-touch",
+            "results": 2410
+          }
+        ]
+      },
+      {
+        "id": "ITEM_CONDITION",
+        "name": "Condición",
+        "type": "STRING",
+        "values": [
+          {
+            "id": "2230284",
+            "name": "Nuevo",
+            "results": 4415
+          },
+          {
+            "id": "2230581",
+            "name": "Usado",
+            "results": 1379
+          },
+          {
+            "id": "2230582",
+            "name": "Reacondicionado",
+            "results": 23
+          }
+        ]
+      },
+      {
+        "id": "LINE",
+        "name": "Línea",
+        "type": "STRING",
+        "values": [
+          {
+            "id": "7172641",
+            "name": "iPad Pro",
+            "results": 532
+          },
+          {
+            "id": "43675",
+            "name": "Galaxy",
+            "results": 427
+          },
+          {
+            "id": "107662",
+            "name": "iPad",
+            "results": 409
+          },
+          {
+            "id": "451081",
+            "name": "Tab",
+            "results": 242
+          },
+          {
+            "id": "7237730",
+            "name": "iPad Air",
+            "results": 215
+          },
+          {
+            "id": "7133327",
+            "name": "Kids Edition",
+            "results": 155
+          },
+          {
+            "id": "56549",
+            "name": "Surface",
+            "results": 153
+          },
+          {
+            "id": "11166900",
+            "name": "iPad mini",
+            "results": 148
+          },
+          {
+            "id": "27188",
+            "name": "Galaxy Tab",
+            "results": 115
+          },
+          {
+            "id": "52988",
+            "name": "MediaPad",
+            "results": 80
+          },
+          {
+            "id": "8260090",
+            "name": "MatePad",
+            "results": 60
+          },
+          {
+            "id": "10365039",
+            "name": "1T",
+            "results": 57
+          },
+          {
+            "id": "478628",
+            "name": "Yoga",
+            "results": 52
+          },
+          {
+            "id": "9502612",
+            "name": "Smart Tab",
+            "results": 40
+          },
+          {
+            "id": "7179024",
+            "name": "iPad Mini",
+            "results": 30
+          },
+          {
+            "id": "5391",
+            "name": "1",
+            "results": 17
+          },
+          {
+            "id": "354534",
+            "name": "Kids",
+            "results": 16
+          },
+          {
+            "id": "27192",
+            "name": "Iconia",
+            "results": 12
+          },
+          {
+            "id": "11170713",
+            "name": "MatePad Pro",
+            "results": 11
+          },
+          {
+            "id": "2798656",
+            "name": "Pad",
+            "results": 9
+          },
+          {
+            "id": "12275264",
+            "name": "Tab S8",
+            "results": 9
+          },
+          {
+            "id": "119024",
+            "name": "MeMO Pad",
+            "results": 9
+          },
+          {
+            "id": "449827",
+            "name": "G Pad",
+            "results": 7
+          },
+          {
+            "id": "2796841",
+            "name": "IdeaTab",
+            "results": 7
+          },
+          {
+            "id": "11372500",
+            "name": "MatrixPad",
+            "results": 7
+          },
+          {
+            "id": "59222",
+            "name": "Nexus",
+            "results": 6
+          },
+          {
+            "id": "351142",
+            "name": "Pixi",
+            "results": 6
+          },
+          {
+            "id": "11216204",
+            "name": "HyTab Plus",
+            "results": 6
+          },
+          {
+            "id": "44553",
+            "name": "Essential",
+            "results": 5
+          },
+          {
+            "id": "41105",
+            "name": "Voyager",
+            "results": 4
+          },
+          {
+            "id": "9613112",
+            "name": "Tab3",
+            "results": 3
+          },
+          {
+            "id": "9031661",
+            "name": "Tab4",
+            "results": 3
+          },
+          {
+            "id": "50062",
+            "name": "Latitude",
+            "results": 3
+          },
+          {
+            "id": "1141910",
+            "name": "Shield",
+            "results": 3
+          },
+          {
+            "id": "102430",
+            "name": "Ultra",
+            "results": 3
+          },
+          {
+            "id": "8352020",
+            "name": "Koral",
+            "results": 2
+          },
+          {
+            "id": "27211",
+            "name": "IdeaPad",
+            "results": 2
+          },
+          {
+            "id": "2352303",
+            "name": "Tab 2",
+            "results": 2
+          },
+          {
+            "id": "16105",
+            "name": "Pro",
+            "results": 2
+          },
+          {
+            "id": "1067704",
+            "name": "Cambio",
+            "results": 2
+          },
+          {
+            "id": "9691263",
+            "name": "HyTab",
+            "results": 1
+          },
+          {
+            "id": "8748251",
+            "name": "Elite x2",
+            "results": 1
+          },
+          {
+            "id": "56476",
+            "name": "One Touch",
+            "results": 1
+          },
+          {
+            "id": "52263",
+            "name": "Toughpad",
+            "results": 1
+          },
+          {
+            "id": "478626",
+            "name": "Encore",
+            "results": 1
+          },
+          {
+            "id": "3087774",
+            "name": "One Touch Pixi",
+            "results": 1
+          },
+          {
+            "id": "3083768",
+            "name": "Tab 4",
+            "results": 1
+          },
+          {
+            "id": "27219",
+            "name": "G2",
+            "results": 1
+          },
+          {
+            "id": "2436585",
+            "name": "Dreamtab",
+            "results": 1
+          },
+          {
+            "id": "2352301",
+            "name": "SupraPad",
+            "results": 1
+          },
+          {
+            "id": "1372",
+            "name": "Xperia",
+            "results": 1
+          },
+          {
+            "id": "1141927",
+            "name": "Ilium",
+            "results": 1
+          }
+        ]
+      },
+      {
+        "id": "MAIN_COLOR",
+        "name": "Color principal",
+        "type": "list",
+        "values": [
+          {
+            "id": "2450295",
+            "name": "Negro",
+            "results": 876
+          },
+          {
+            "id": "2450294",
+            "name": "Gris",
+            "results": 790
+          },
+          {
+            "id": "2450303",
+            "name": "Plateado",
+            "results": 596
+          },
+          {
+            "id": "2450293",
+            "name": "Azul",
+            "results": 312
+          },
+          {
+            "id": "2450299",
+            "name": "Gris oscuro",
+            "results": 254
+          },
+          {
+            "id": "2450308",
+            "name": "Blanco",
+            "results": 207
+          },
+          {
+            "id": "2450289",
+            "name": "Dorado",
+            "results": 163
+          },
+          {
+            "id": "2450312",
+            "name": "Rosa",
+            "results": 149
+          },
+          {
+            "id": "2450314",
+            "name": "Verde",
+            "results": 118
+          },
+          {
+            "id": "2450307",
+            "name": "Rojo",
+            "results": 55
+          },
+          {
+            "id": "2450311",
+            "name": "Violeta",
+            "results": 40
+          },
+          {
+            "id": "2450327",
+            "name": "Naranja",
+            "results": 35
+          },
+          {
+            "id": "2450283",
+            "name": "Agua",
+            "results": 32
+          },
+          {
+            "id": "2450298",
+            "name": "Azul claro",
+            "results": 8
+          },
+          {
+            "id": "2450284",
+            "name": "Rosa chicle",
+            "results": 7
+          },
+          {
+            "id": "2450278",
+            "name": "Celeste",
+            "results": 7
+          },
+          {
+            "id": "11282035",
+            "name": "Gris claro",
+            "results": 7
+          },
+          {
+            "id": "2450326",
+            "name": "Fucsia",
+            "results": 6
+          },
+          {
+            "id": "2450325",
+            "name": "Azul marino",
+            "results": 4
+          },
+          {
+            "id": "2450305",
+            "name": "Verde limón",
+            "results": 4
+          },
+          {
+            "id": "2450296",
+            "name": "Amarillo",
+            "results": 4
+          },
+          {
+            "id": "2450280",
+            "name": "Rosa claro",
+            "results": 4
+          },
+          {
+            "id": "2450313",
+            "name": "Coral claro",
+            "results": 3
+          },
+          {
+            "id": "2450306",
+            "name": "Azul oscuro",
+            "results": 3
+          },
+          {
+            "id": "2450291",
+            "name": "Marrón",
+            "results": 3
+          },
+          {
+            "id": "11282033",
+            "name": "Dorado claro",
+            "results": 3
+          },
+          {
+            "id": "2450323",
+            "name": "Naranja claro",
+            "results": 2
+          },
+          {
+            "id": "2450322",
+            "name": "Bordó",
+            "results": 2
+          },
+          {
+            "id": "2450309",
+            "name": "Dorado oscuro",
+            "results": 2
+          },
+          {
+            "id": "2450302",
+            "name": "Azul acero",
+            "results": 2
+          },
+          {
+            "id": "2450324",
+            "name": "Verde oscuro",
+            "results": 1
+          },
+          {
+            "id": "2450319",
+            "name": "Verde claro",
+            "results": 1
+          },
+          {
+            "id": "2450316",
+            "name": "Lavanda",
+            "results": 1
+          },
+          {
+            "id": "2450292",
+            "name": "Marrón claro",
+            "results": 1
+          },
+          {
+            "id": "2450290",
+            "name": "Violeta oscuro",
+            "results": 1
+          },
+          {
+            "id": "2450279",
+            "name": "Índigo",
+            "results": 1
+          }
+        ]
+      },
+      {
+        "id": "MAX_SCREEN_RESOLUTION",
+        "name": "Máxima resolución de pantalla",
+        "type": "STRING",
+        "values": [
+          {
+            "id": "1151117",
+            "name": "2048 px x 1536 px",
+            "results": 303
+          },
+          {
+            "id": "902392",
+            "name": "1280 px x 800 px",
+            "results": 284
+          },
+          {
+            "id": "902364",
+            "name": "1920 px x 1200 px",
+            "results": 227
+          },
+          {
+            "id": "902323",
+            "name": "1024 px x 600 px",
+            "results": 174
+          },
+          {
+            "id": "7599853",
+            "name": "2732 px x 2048 px",
+            "results": 167
+          },
+          {
+            "id": "2192462",
+            "name": "2560 px x 1600 px",
+            "results": 150
+          },
+          {
+            "id": "2241354",
+            "name": "1024 px x 768 px",
+            "results": 148
+          },
+          {
+            "id": "8609382",
+            "name": "2160 px x 1620 px",
+            "results": 144
+          },
+          {
+            "id": "7599866",
+            "name": "2388 px x 1668 px",
+            "results": 139
+          },
+          {
+            "id": "8645580",
+            "name": "2000 px x 1200 px",
+            "results": 99
+          },
+          {
+            "id": "9206764",
+            "name": "2360 px x 1640 px",
+            "results": 95
+          },
+          {
+            "id": "902519",
+            "name": "2736 px x 1824 px",
+            "results": 49
+          },
+          {
+            "id": "10827994",
+            "name": "1340 px x 800 px",
+            "results": 40
+          },
+          {
+            "id": "7210637",
+            "name": "2224 px x 1668 px",
+            "results": 39
+          },
+          {
+            "id": "11155791",
+            "name": "2266 px x 1488 px",
+            "results": 33
+          },
+          {
+            "id": "9143403",
+            "name": "2800 px x 1752 px",
+            "results": 29
+          },
+          {
+            "id": "9993208",
+            "name": "2880 px x 1920 px",
+            "results": 25
+          },
+          {
+            "id": "9916806",
+            "name": "1800 px x 1200 px",
+            "results": 18
+          },
+          {
+            "id": "12275261",
+            "name": "2960 px x 1848 px",
+            "results": 8
+          },
+          {
+            "id": "7827691",
+            "name": "1920 px x 1280 px",
+            "results": 4
+          },
+          {
+            "id": "902498",
+            "name": "2160 px x 1440 px",
+            "results": 2
+          },
+          {
+            "id": "7241288",
+            "name": "3200 px x 1200 px",
+            "results": 2
+          },
+          {
+            "id": "11282709",
+            "name": "2160 px x 1350 px",
+            "results": 2
+          },
+          {
+            "id": "902511",
+            "name": "1366 px x 768 px",
+            "results": 1
+          },
+          {
+            "id": "8664201",
+            "name": "1280 px x 720 px",
+            "results": 1
+          },
+          {
+            "id": "7840633",
+            "name": "2500 px x 1600 px",
+            "results": 1
+          },
+          {
+            "id": "11509154",
+            "name": "2048 px x 1537 px",
+            "results": 1
+          }
+        ]
+      },
+      {
+        "id": "MODEL",
+        "name": "Modelo",
+        "type": "STRING",
+        "values": [
+          {
+            "id": "10348230",
+            "name": "2nd generation",
+            "results": 247
+          },
+          {
+            "id": "10348107",
+            "name": "4th generation",
+            "results": 190
+          },
+          {
+            "id": "10348338",
+            "name": "5th generation",
+            "results": 164
+          },
+          {
+            "id": "10351337",
+            "name": "3rd generation",
+            "results": 151
+          },
+          {
+            "id": "10351338",
+            "name": "1st generation",
+            "results": 146
+          },
+          {
+            "id": "174780",
+            "name": "Tab A",
+            "results": 87
+          },
+          {
+            "id": "7757441",
+            "name": "Fire 7",
+            "results": 74
+          },
+          {
+            "id": "7625651",
+            "name": "Fire HD 8",
+            "results": 64
+          },
+          {
+            "id": "10351421",
+            "name": "6th generation",
+            "results": 63
+          },
+          {
+            "id": "27251",
+            "name": "7",
+            "results": 53
+          },
+          {
+            "id": "12007761",
+            "name": "Tab A8",
+            "results": 52
+          },
+          {
+            "id": "11152831",
+            "name": "9th generation",
+            "results": 50
+          },
+          {
+            "id": "10351422",
+            "name": "7th generation",
+            "results": 48
+          },
+          {
+            "id": "7748408",
+            "name": "Fire HD 10",
+            "results": 47
+          },
+          {
+            "id": "9878043",
+            "name": "Tab S6 Lite",
+            "results": 39
+          },
+          {
+            "id": "10351426",
+            "name": "8th generation",
+            "results": 38
+          },
+          {
+            "id": "9943627",
+            "name": "M10 HD 2nd Gen",
+            "results": 37
+          },
+          {
+            "id": "9267",
+            "name": "10",
+            "results": 35
+          },
+          {
+            "id": "11770198",
+            "name": "Tab S7 FE with S Pen",
+            "results": 34
+          },
+          {
+            "id": "10969774",
+            "name": "Tab A7 Lite",
+            "results": 32
+          },
+          {
+            "id": "48510",
+            "name": "Pro 8",
+            "results": 31
+          },
+          {
+            "id": "4680",
+            "name": "M10",
+            "results": 27
+          },
+          {
+            "id": "9702686",
+            "name": "M10 FHD Plus 2nd Gen",
+            "results": 25
+          },
+          {
+            "id": "5168842",
+            "name": "Pro 7",
+            "results": 24
+          },
+          {
+            "id": "2436981",
+            "name": "T3 10",
+            "results": 24
+          },
+          {
+            "id": "99897",
+            "name": "Tab",
+            "results": 23
+          },
+          {
+            "id": "9878066",
+            "name": "Net Max",
+            "results": 22
+          },
+          {
+            "id": "9156223",
+            "name": "M8 HD 2nd Gen",
+            "results": 22
+          },
+          {
+            "id": "9143405",
+            "name": "Tab S7+",
+            "results": 22
+          },
+          {
+            "id": "45327",
+            "name": "11",
+            "results": 21
+          },
+          {
+            "id": "9008822",
+            "name": "Tab S7",
+            "results": 20
+          },
+          {
+            "id": "11137512",
+            "name": "A7 Lite",
+            "results": 19
+          },
+          {
+            "id": "11144539",
+            "name": "Pad 5",
+            "results": 18
+          },
+          {
+            "id": "99857",
+            "name": "Tab 4",
+            "results": 15
+          },
+          {
+            "id": "9841977",
+            "name": "Fire HD 8 Plus",
+            "results": 15
+          },
+          {
+            "id": "9229419",
+            "name": "Tab A7",
+            "results": 15
+          },
+          {
+            "id": "9223212",
+            "name": "10.4",
+            "results": 15
+          },
+          {
+            "id": "9222039",
+            "name": "Smart Tab",
+            "results": 15
+          },
+          {
+            "id": "11770230",
+            "name": "M8 with Smart Charging Station",
+            "results": 15
+          },
+          {
+            "id": "99919",
+            "name": "Tab 3",
+            "results": 14
+          },
+          {
+            "id": "9156214",
+            "name": "M7 2nd Gen",
+            "results": 12
+          },
+          {
+            "id": "9103137",
+            "name": "T 10s",
+            "results": 12
+          },
+          {
+            "id": "8724455",
+            "name": "Tab S5e",
+            "results": 12
+          },
+          {
+            "id": "10362052",
+            "name": "P11 with Keyboard Pack and Precision Pen 2",
+            "results": 12
+          },
+          {
+            "id": "49506",
+            "name": "3",
+            "results": 11
+          },
+          {
+            "id": "107671",
+            "name": "Tab S",
+            "results": 11
+          },
+          {
+            "id": "43730",
+            "name": "Go",
+            "results": 10
+          },
+          {
+            "id": "8609405",
+            "name": "Tab S6",
+            "results": 9
+          },
+          {
+            "id": "60043",
+            "name": "Note",
+            "results": 9
+          },
+          {
+            "id": "59481",
+            "name": "2",
+            "results": 9
+          },
+          {
+            "id": "176568",
+            "name": "Pro 4",
+            "results": 9
+          },
+          {
+            "id": "175136",
+            "name": "Kids",
+            "results": 9
+          },
+          {
+            "id": "12275268",
+            "name": "S8 Ultra",
+            "results": 9
+          },
+          {
+            "id": "10893562",
+            "name": "Fire HD 8 Pro",
+            "results": 9
+          },
+          {
+            "id": "49612",
+            "name": "Prestige 7",
+            "results": 8
+          },
+          {
+            "id": "174783",
+            "name": "Tab E",
+            "results": 8
+          },
+          {
+            "id": "10893325",
+            "name": "M10 FHD Plus 2nd Gen with Smart Charging Station",
+            "results": 8
+          },
+          {
+            "id": "99923",
+            "name": "Tab 2",
+            "results": 7
+          },
+          {
+            "id": "43726",
+            "name": "T5",
+            "results": 7
+          },
+          {
+            "id": "3067365",
+            "name": "T3 7",
+            "results": 7
+          },
+          {
+            "id": "220545",
+            "name": "P11",
+            "results": 7
+          },
+          {
+            "id": "119253",
+            "name": "P8",
+            "results": 7
+          },
+          {
+            "id": "11311449",
+            "name": "Tab 11",
+            "results": 7
+          },
+          {
+            "id": "10971",
+            "name": "4",
+            "results": 7
+          },
+          {
+            "id": "107718",
+            "name": "One 7",
+            "results": 7
+          },
+          {
+            "id": "9542060",
+            "name": "M5 Lite",
+            "results": 6
+          },
+          {
+            "id": "9272423",
+            "name": "T 10",
+            "results": 6
+          },
+          {
+            "id": "389614",
+            "name": "T8",
+            "results": 6
+          },
+          {
+            "id": "32040",
+            "name": "E8",
+            "results": 6
+          },
+          {
+            "id": "2545152",
+            "name": "Tab 7",
+            "results": 6
+          },
+          {
+            "id": "12087236",
+            "name": "Tab S8+",
+            "results": 6
+          },
+          {
+            "id": "48492",
+            "name": "Pro 6",
+            "results": 5
+          },
+          {
+            "id": "2574791",
+            "name": "Pro X",
+            "results": 5
+          },
+          {
+            "id": "175152",
+            "name": "Tab S2",
+            "results": 5
+          },
+          {
+            "id": "11770207",
+            "name": "10.8 with Teclado inteligente",
+            "results": 5
+          },
+          {
+            "id": "11143440",
+            "name": "Tab 1",
+            "results": 5
+          },
+          {
+            "id": "11043",
+            "name": "8",
+            "results": 5
+          },
+          {
+            "id": "1064976",
+            "name": "Tab S3",
+            "results": 5
+          },
+          {
+            "id": "99895",
+            "name": "Tab 3 Lite",
+            "results": 4
+          },
+          {
+            "id": "9895270",
+            "name": "Network 7031",
+            "results": 4
+          },
+          {
+            "id": "8260105",
+            "name": "Tab E Lite",
+            "results": 4
+          },
+          {
+            "id": "49426",
+            "name": "9",
+            "results": 4
+          },
+          {
+            "id": "44122",
+            "name": "V7",
+            "results": 4
+          },
+          {
+            "id": "33598",
+            "name": "E100",
+            "results": 4
+          },
+          {
+            "id": "3005001",
+            "name": "Galileo",
+            "results": 4
+          },
+          {
+            "id": "256745",
+            "name": "S7",
+            "results": 4
+          },
+          {
+            "id": "1508",
+            "name": "L10",
+            "results": 4
+          },
+          {
+            "id": "11770228",
+            "name": "S6 Lite with Book Cover",
+            "results": 4
+          },
+          {
+            "id": "11770223",
+            "name": "Tab S7 with Keyboard Cover and S Pen",
+            "results": 4
+          },
+          {
+            "id": "11496626",
+            "name": "8LAB1",
+            "results": 4
+          },
+          {
+            "id": "7787348",
+            "name": "Mi Pad 4 WiFi+LTE Edition",
+            "results": 3
+          },
+          {
+            "id": "7327",
+            "name": "T10",
+            "results": 3
+          },
+          {
+            "id": "517314",
+            "name": "Book",
+            "results": 3
+          },
+          {
+            "id": "47642",
+            "name": "Black",
+            "results": 3
+          },
+          {
+            "id": "36240",
+            "name": "M7",
+            "results": 3
+          },
+          {
+            "id": "35235",
+            "name": "E10",
+            "results": 3
+          },
+          {
+            "id": "2168757",
+            "name": "Pro 5",
+            "results": 3
+          },
+          {
+            "id": "1596",
+            "name": "T3",
+            "results": 3
+          },
+          {
+            "id": "12233150",
+            "name": "Tab S8",
+            "results": 3
+          },
+          {
+            "id": "11933540",
+            "name": "Active 3 with S Pen",
+            "results": 3
+          },
+          {
+            "id": "11933539",
+            "name": "Tab A8 with S Pen",
+            "results": 3
+          },
+          {
+            "id": "11770227",
+            "name": "S7+ with Teclado Book Cover",
+            "results": 3
+          },
+          {
+            "id": "8994167",
+            "name": "Platinum A7",
+            "results": 2
+          },
+          {
+            "id": "8909558",
+            "name": "Google Nexus 7",
+            "results": 2
+          },
+          {
+            "id": "8894",
+            "name": "Fire",
+            "results": 2
+          },
+          {
+            "id": "8833644",
+            "name": "Xoom",
+            "results": 2
+          },
+          {
+            "id": "8663520",
+            "name": "Tab 3 10",
+            "results": 2
+          },
+          {
+            "id": "7787347",
+            "name": "Mi Pad 4 WiFi Edition",
+            "results": 2
+          },
+          {
+            "id": "7736262",
+            "name": "Tab A con S Pen",
+            "results": 2
+          },
+          {
+            "id": "7286970",
+            "name": "T1 7.0",
+            "results": 2
+          },
+          {
+            "id": "7278084",
+            "name": "ZenPad 10",
+            "results": 2
+          },
+          {
+            "id": "7041245",
+            "name": "FWIN232",
+            "results": 2
+          },
+          {
+            "id": "67351",
+            "name": "A8",
+            "results": 2
+          },
+          {
+            "id": "5597",
+            "name": "P80",
+            "results": 2
+          },
+          {
+            "id": "449703",
+            "name": "Pro 3",
+            "results": 2
+          },
+          {
+            "id": "4308",
+            "name": "M863",
+            "results": 2
+          },
+          {
+            "id": "42402",
+            "name": "X9",
+            "results": 2
+          },
+          {
+            "id": "39826",
+            "name": "M5",
+            "results": 2
+          },
+          {
+            "id": "30731",
+            "name": "M40",
+            "results": 2
+          },
+          {
+            "id": "291707",
+            "name": "3 Pro",
+            "results": 2
+          },
+          {
+            "id": "2312686",
+            "name": "ST-810",
+            "results": 2
+          },
+          {
+            "id": "13086418",
+            "name": "M10 Plus 3rd Gen",
+            "results": 2
+          },
+          {
+            "id": "12359081",
+            "name": "Tab10",
+            "results": 2
+          },
+          {
+            "id": "11770229",
+            "name": "M10 FHD Plus 2nd Gen with Smart Dock",
+            "results": 2
+          },
+          {
+            "id": "11770213",
+            "name": "M10 HD 2nd Gen with Folio Case and Film",
+            "results": 2
+          },
+          {
+            "id": "11518381",
+            "name": "P11 Plus",
+            "results": 2
+          },
+          {
+            "id": "11206638",
+            "name": "P11 Pro",
+            "results": 2
+          },
+          {
+            "id": "10633006",
+            "name": "P11 Pro with Keyboard Pack and Precision Pen 2",
+            "results": 2
+          },
+          {
+            "id": "9027810",
+            "name": "HD 7",
+            "results": 1
+          },
+          {
+            "id": "9027809",
+            "name": "7 LTE",
+            "results": 1
+          },
+          {
+            "id": "9015741",
+            "name": "10 \"",
+            "results": 1
+          },
+          {
+            "id": "8794063",
+            "name": "RCT6873W42",
+            "results": 1
+          },
+          {
+            "id": "8789313",
+            "name": "Hi10 X",
+            "results": 1
+          },
+          {
+            "id": "8757375",
+            "name": "7 Essential",
+            "results": 1
+          },
+          {
+            "id": "8748258",
+            "name": "10 EE G1",
+            "results": 1
+          },
+          {
+            "id": "8748252",
+            "name": "1012 G2",
+            "results": 1
+          },
+          {
+            "id": "8738580",
+            "name": "10XL",
+            "results": 1
+          },
+          {
+            "id": "8717275",
+            "name": "T1 10",
+            "results": 1
+          },
+          {
+            "id": "8577304",
+            "name": "M7-3G",
+            "results": 1
+          },
+          {
+            "id": "8352021",
+            "name": "10X2",
+            "results": 1
+          },
+          {
+            "id": "8141619",
+            "name": "Go 2",
+            "results": 1
+          },
+          {
+            "id": "7601667",
+            "name": "Tab 10.1N",
+            "results": 1
+          },
+          {
+            "id": "7278078",
+            "name": "VivoTab RT",
+            "results": 1
+          },
+          {
+            "id": "7278053",
+            "name": "Transformer Pad",
+            "results": 1
+          },
+          {
+            "id": "66594",
+            "name": "M6",
+            "results": 1
+          },
+          {
+            "id": "59360",
+            "name": "E",
+            "results": 1
+          },
+          {
+            "id": "59048",
+            "name": "Z1",
+            "results": 1
+          },
+          {
+            "id": "58615",
+            "name": "5",
+            "results": 1
+          },
+          {
+            "id": "573206",
+            "name": "Q88",
+            "results": 1
+          },
+          {
+            "id": "54285",
+            "name": "One",
+            "results": 1
+          },
+          {
+            "id": "52828",
+            "name": "7 Plus",
+            "results": 1
+          },
+          {
+            "id": "52703",
+            "name": "712",
+            "results": 1
+          },
+          {
+            "id": "5052868",
+            "name": "Tab S4",
+            "results": 1
+          },
+          {
+            "id": "49591",
+            "name": "Slate",
+            "results": 1
+          },
+          {
+            "id": "49551",
+            "name": "CL900",
+            "results": 1
+          },
+          {
+            "id": "49485",
+            "name": "S2109",
+            "results": 1
+          },
+          {
+            "id": "42915",
+            "name": "S",
+            "results": 1
+          },
+          {
+            "id": "35040",
+            "name": "A30",
+            "results": 1
+          },
+          {
+            "id": "34078",
+            "name": "A1000",
+            "results": 1
+          },
+          {
+            "id": "33213",
+            "name": "P10",
+            "results": 1
+          },
+          {
+            "id": "3272526",
+            "name": "EGQ235",
+            "results": 1
+          },
+          {
+            "id": "3179979",
+            "name": "2301",
+            "results": 1
+          },
+          {
+            "id": "31443",
+            "name": "A2",
+            "results": 1
+          },
+          {
+            "id": "2890188",
+            "name": "Tab Active2",
+            "results": 1
+          },
+          {
+            "id": "2792285",
+            "name": "A1048",
+            "results": 1
+          },
+          {
+            "id": "27212",
+            "name": "K1",
+            "results": 1
+          },
+          {
+            "id": "2476954",
+            "name": "SC-1010JBBT",
+            "results": 1
+          },
+          {
+            "id": "2460598",
+            "name": "FZ-G1",
+            "results": 1
+          },
+          {
+            "id": "2436594",
+            "name": "WT8-B32CN",
+            "results": 1
+          },
+          {
+            "id": "2436584",
+            "name": "HD8",
+            "results": 1
+          },
+          {
+            "id": "2409221",
+            "name": "RCT6303W87DK",
+            "results": 1
+          },
+          {
+            "id": "22733",
+            "name": "V410",
+            "results": 1
+          },
+          {
+            "id": "2097740",
+            "name": "10 Plus",
+            "results": 1
+          },
+          {
+            "id": "202220",
+            "name": "M8",
+            "results": 1
+          },
+          {
+            "id": "177063",
+            "name": "GT-8320",
+            "results": 1
+          },
+          {
+            "id": "175584",
+            "name": "A7",
+            "results": 1
+          },
+          {
+            "id": "11770196",
+            "name": "S7 + (LTE) with S Pen",
+            "results": 1
+          },
+          {
+            "id": "11282715",
+            "name": "Tab 13",
+            "results": 1
+          },
+          {
+            "id": "11197641",
+            "name": "P20HD",
+            "results": 1
+          },
+          {
+            "id": "11174028",
+            "name": "T 10 Kids Edition",
+            "results": 1
+          },
+          {
+            "id": "1087345",
+            "name": "Prestige 10",
+            "results": 1
+          },
+          {
+            "id": "10561",
+            "name": "M3",
+            "results": 1
+          },
+          {
+            "id": "10080595",
+            "name": "8WC1",
+            "results": 1
+          }
+        ]
+      },
+      {
+        "id": "OS_NAME",
+        "name": "Nombre del sistema operativo",
+        "type": "STRING",
+        "values": [
+          {
+            "id": "4743192",
+            "name": "Android",
+            "results": 2161
+          },
+          {
+            "id": "4743193",
+            "name": "iOS",
+            "results": 736
+          },
+          {
+            "id": "8999471",
+            "name": "iPadOS",
+            "results": 597
+          },
+          {
+            "id": "7156278",
+            "name": "Fire OS",
+            "results": 232
+          },
+          {
+            "id": "4830885",
+            "name": "Windows",
+            "results": 178
+          },
+          {
+            "id": "11201674",
+            "name": "HarmonyOS",
+            "results": 21
+          },
+          {
+            "id": "4439562",
+            "name": "Chrome OS",
+            "results": 3
+          },
+          {
+            "id": "7232871",
+            "name": "macOS",
+            "results": 2
+          }
+        ]
+      },
+      {
+        "id": "SHIPPING_ORIGIN",
+        "name": "Tipo de compra",
+        "type": "STRING",
+        "values": [
+          {
+            "id": "10215068",
+            "name": "Local",
+            "results": 5392
+          },
+          {
+            "id": "10215069",
+            "name": "Internacional",
+            "results": 425
+          }
+        ]
+      },
+      {
+        "id": "WEIGHT",
+        "name": "Peso",
+        "type": "range",
+        "values": [
+          {
+            "id": "(*-420g]",
+            "name": "420 g o menos",
+            "results": 737
+          },
+          {
+            "id": "[420g-469g]",
+            "name": "420 a 469 g",
+            "results": 922
+          },
+          {
+            "id": "[469g-570g]",
+            "name": "469 a 570 g",
+            "results": 790
+          },
+          {
+            "id": "[570g-*)",
+            "name": "570 g o más",
+            "results": 926
+          }
+        ]
+      },
+      {
+        "id": "WITH_FLASH",
+        "name": "Otras características",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "242085",
+            "name": "Con flash",
+            "results": 1067
+          }
+        ]
+      },
+      {
+        "id": "WITH_GPS",
+        "name": "Otras características",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "242085",
+            "name": "Con GPS",
+            "results": 1869
+          }
+        ]
+      },
+      {
+        "id": "WITH_HEADPHONES_OUTPUT",
+        "name": "Otras características",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "242085",
+            "name": "Con salida para audífonos",
+            "results": 1863
+          }
+        ]
+      },
+      {
+        "id": "WITH_MICROPHONE",
+        "name": "Otras características",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "242085",
+            "name": "Con micrófono",
+            "results": 2592
+          }
+        ]
+      },
+      {
+        "id": "WITH_MOBILE_NETWORK",
+        "name": "Otras características",
+        "type": "boolean",
+        "values": [
+          {
+            "id": "242085",
+            "name": "Con red móvil",
+            "results": 1009
+          }
+        ]
+      }
+    ]
+  }
+}

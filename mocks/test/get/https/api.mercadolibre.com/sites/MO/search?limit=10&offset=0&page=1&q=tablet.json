@@ -1,0 +1,31 @@
+{
+  "status": 400,
+  "statusText": "Bad Request",
+  "headers": {
+    "content-type": "application/json;charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "date": "Thu, 22 Sep 2022 17:03:31 GMT",
+    "vary": "accept,accept-encoding",
+    "cache-control": "max-age=0",
+    "content-encoding": "gzip",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "91e50bb7-44c7-4a72-b3fc-df6842244f2d",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Error from cloudfront",
+    "via": "1.1 264cb12aa5043fad64b302b378b99036.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD12-P2",
+    "x-amz-cf-id": "LuVJWzmKt_XTrlQu-mS2Ht9yD-bqqQyfm110_o_A4lnb3xysg1-odA=="
+  },
+  "data": {
+    "message": "This host is not serving site MO",
+    "error": "bad_request",
+    "status": 400,
+    "cause": []
+  }
+}

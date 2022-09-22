@@ -1,0 +1,31 @@
+{
+  "status": 400,
+  "statusText": "Bad Request",
+  "headers": {
+    "content-type": "application/json;charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "date": "Thu, 22 Sep 2022 16:33:50 GMT",
+    "vary": "accept,accept-encoding",
+    "cache-control": "max-age=0",
+    "content-encoding": "gzip",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "2b7c13b6-b382-4562-bf12-e786d0a85773",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Error from cloudfront",
+    "via": "1.1 7ba3a61255419c2e0d9e131796899e10.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD89-C3",
+    "x-amz-cf-id": "7VIheBvei9kayp9LZkltfo3_l6kZ1phNekICdYYrRi7Fap1qs-PCYA=="
+  },
+  "data": {
+    "message": "This host is not serving site MZYU",
+    "error": "bad_request",
+    "status": 400,
+    "cause": []
+  }
+}

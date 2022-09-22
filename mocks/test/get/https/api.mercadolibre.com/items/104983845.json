@@ -1,0 +1,27 @@
+{
+  "status": 404,
+  "statusText": "Not Found",
+  "headers": {
+    "content-type": "application/json",
+    "content-length": "204",
+    "connection": "keep-alive",
+    "date": "Thu, 22 Sep 2022 16:48:43 GMT",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "a04acfb3-194a-4913-819b-60585cb1503a",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "cache-control": "no-cache",
+    "x-cache": "Error from cloudfront",
+    "via": "1.1 1717f995f2ca7c5df4d0a972f90c1564.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD50-C2",
+    "x-amz-cf-id": "_EcRyfOHsktHlKuQrK25P7r9Qqjk9adFhMkOf_oZicBHzmvTPq3cpg=="
+  },
+  "data": {
+    "error": "resource not found",
+    "message": "Si quieres conocer los recursos de la API que se encuentran disponibles visita el Sitio de Desarrolladores de MercadoLibre (http://developers.mercadolibre.com)"
+  }
+}
