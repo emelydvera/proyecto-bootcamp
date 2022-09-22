@@ -30,7 +30,6 @@ describe('ProductsList', () => {
     component = render(<ProductsList products={[]} i18n={i18n} />);
     const message = screen.queryByText(/No se encontraron productos/);
     expect(message).toBeInTheDocument();
-    console.log(message);
   })
 
 })
