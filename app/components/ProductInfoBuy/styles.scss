@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+@import "../../styles/common";
+
+.info__buy {
+    &__price {
+        font-weight: $font-weight-regular;
+    }
+
+    &__amount {
+        align-self: center;
+    }
+
+    &__quantity-amount {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+}
+
+.buy__container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+
+    .buy__button {
+        text-align: center;
+        color: $white-base;
+    }
+}
