@@ -36,7 +36,7 @@ describe('FilterSection', () => {
     expect(sectionTitle).toBeInTheDocument();
   })
 
-  it('Should not show "Show more" button if there are less than 4 filter options', () => {
+  it('Should not render "Show more" button if there are less than 4 filter options', () => {
     render(<FilterSection filter={filter} urlGenerator={urlGenerator} />)
     const showMoreButton = screen.queryByText(/Mostrar más/);
     expect(showMoreButton).not.toBeInTheDocument();
@@ -81,7 +81,7 @@ describe('FilterSection', () => {
     ]
   }
 
-  it('Should show up to 4 options in the filter section', () => {
+  it('Should render up to 4 options in the filter section', () => {
     render(<FilterSection filter={filterWithSixOptions} urlGenerator={urlGenerator} />)
     const optionFour = screen.queryByText(filterWithSixOptions.values[3].name);
     expect(optionFour).toBeInTheDocument();
@@ -89,7 +89,7 @@ describe('FilterSection', () => {
     expect(optionFive).not.toBeInTheDocument();
   })
 
-  it('Should show "Show more" button if there are more than 3 filter options', () => {
+  it('Should render "Show more" button if there are more than 3 filter options', () => {
     render(<FilterSection filter={filterWithSixOptions} urlGenerator={urlGenerator} />)
     const showMoreButton = screen.queryByText(/Mostrar más/);
     expect(showMoreButton).toBeInTheDocument();
