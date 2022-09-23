@@ -11,6 +11,7 @@ const options = ["5", "10", "15", "20"];
 const SelectProductsPerPage = ({ urlGenerator }) => {
   const { i18n } = useI18n();
   const initialLimit = urlGenerator.getQueryByName("limit");
+
   const handleChange = (e, value) => {
     urlGenerator.setQuery("limit", parseInt(value));
     window.location.href = `/listado?${urlGenerator.getQueryString()}`;
