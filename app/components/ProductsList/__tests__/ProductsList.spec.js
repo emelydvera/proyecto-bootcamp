@@ -23,10 +23,10 @@ describe('ProductsList', () => {
 
   it('Should render all the products cards', () => {
     const productsCard = document.querySelectorAll(".card")
-    expect(productsCard.length).toBeGreaterThan(0)
+    expect(productsCard.length).toBe(10)
   })
 
-  it('Should show not products found message, ', () => {
+  it('Should show "not products found" message', () => {
     component = render(<ProductsList products={[]} i18n={i18n} />);
     const message = screen.queryByText(/No se encontraron productos/);
     expect(message).toBeInTheDocument();
