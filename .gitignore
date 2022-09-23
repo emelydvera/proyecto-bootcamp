@@ -21,3 +21,4 @@ errorshots
 
 # Mocks
 mocks/development/
+!mocks/__mocks__/nordic/i18n
