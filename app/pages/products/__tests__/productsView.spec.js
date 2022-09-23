@@ -1,6 +1,6 @@
 const React = require('react');
 const { render, screen } = require('@testing-library/react');
-const { I18n, I18nProvider } = require('nordic/i18n');
+const { I18n } = require('nordic/i18n');
 const View = require('../view');
 
 
@@ -27,9 +27,7 @@ describe('Products View Tests', () => {
   it('Should render the view correctly', () => {
 
     const { asFragment } = render(
-      <I18nProvider i18n={i18n}>
-        <View {...props} />
-      </I18nProvider>
+      <View {...props} />
     );
     expect(asFragment()).toMatchSnapshot();
   })
@@ -37,9 +35,7 @@ describe('Products View Tests', () => {
   it('Should show the breadcrumb if there is a path', () => {
 
     render(
-      <I18nProvider i18n={i18n}>
-        <View {...props} />
-      </I18nProvider>
+      <View {...props} />
     );
 
     const breadcrumb = screen.queryByLabelText(/lista de páginas/i)
@@ -49,9 +45,7 @@ describe('Products View Tests', () => {
   it('Should not show the breadcrumb if there is not a path', () => {
 
     render(
-      <I18nProvider i18n={i18n}>
-        <View {...props} filters={[]} />
-      </I18nProvider>
+      <View {...props} filters={[]} />
     );
     const breadcrumb = screen.queryByLabelText(/lista de páginas/i)
     expect(breadcrumb).toBe(null);

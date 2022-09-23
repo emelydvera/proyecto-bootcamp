@@ -26,7 +26,6 @@ describe('BreadCrumb', () => {
     const levelOne = screen.queryByText(path[0].name);
     expect(levelOne).toBeInTheDocument()
     expect(levelOne).toHaveAttribute('href', expect.stringContaining(path[0].id))
-    screen.debug(levelOne)
   })
 
   it('Should add the product title into the breadcrumb levels', () => {
