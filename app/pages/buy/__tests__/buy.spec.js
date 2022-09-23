@@ -1,7 +1,6 @@
 const React = require('react');
 const { screen, render, fireEvent } = require('@testing-library/react');
 const BuyView = require('../view');
-// const { getByText, debug, getByRole, getByLabelText } = screen
 const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json');
 
 describe('Buy page view', () => {
@@ -14,6 +13,7 @@ describe('Buy page view', () => {
     };
     beforeEach(() => {
         component = render(<BuyView {...props} />);
+
     })
 
     it('should render correctly', () => {

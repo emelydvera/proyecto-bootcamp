@@ -33,7 +33,7 @@ const Checkout = ({ product, quantity }) => {
   return (
     <div className="checkout" id="checkout">
       <h2
-        // aria-label={i18n.gettext("Resumen de compra")}
+        aria-label={i18n.gettext("Resumen de compra")}
         tabIndex={9}
         className="checkout__title"
       >
