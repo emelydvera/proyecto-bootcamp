@@ -1,0 +1,28 @@
+{
+  "status": 404,
+  "statusText": "Not Found",
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "83",
+    "connection": "keep-alive",
+    "date": "Fri, 23 Sep 2022 20:30:21 GMT",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "5ff66730-7aa9-4f1a-a930-f66cf0e5d362",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Error from cloudfront",
+    "via": "1.1 b3bd0018ceb2b4e7157fb699472ee5da.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "ORD53-C1",
+    "x-amz-cf-id": "l3ovvFRZTWUGIgnHP0Usa0OVg0tLhs_luLg2Isj983sXXudK_KLYiQ=="
+  },
+  "data": {
+    "message": "Category not found: O1648",
+    "error": "not_found",
+    "status": 404,
+    "cause": []
+  }
+}
