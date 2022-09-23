@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterSection Should render correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="filter__section"
+  >
+    <p
+      class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+    >
+      Otras características
+    </p>
+    <p
+      class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+    >
+      Con MercadoPago  
+      <span
+        class="filter__section__value__results"
+      >
+        (737732)
+      </span>
+    </p>
+  </section>
+</DocumentFragment>
+`;
