@@ -98,6 +98,97 @@ exports[`ProductCard ProuctCard with free shipping should render component 1`] =
 </DocumentFragment>
 `;
 
+exports[`ProductCard ProuctCard with state_name property empty or undefined should render component 1`] = `
+<DocumentFragment>
+  <article
+    class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+  >
+    <div
+      class="andes-card__content card"
+    >
+      <div
+        class="card__image"
+      >
+        <figure>
+          <a
+            href="/product/MCO640590621"
+          >
+            <img
+              alt="imagen del producto"
+              class="card__image__img lazy-loadable"
+              data-src="https://http2.mlstatic.com/D_666275-MCO48851447655_012022-I.jpg"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              tabindex="25"
+            />
+          </a>
+        </figure>
+      </div>
+      <div
+        class="card__description"
+      >
+        <div
+          class="card__description__main-info"
+        >
+          <div
+            aria-label="precio del producto: \${0}, {1}"
+            class="money__and__shipping"
+            tabindex="24"
+          >
+            <span
+              class="andes-money-amount price andes-money-amount--cents-superscript"
+              style="font-size: 24px;"
+            >
+              <span
+                class="andes-visually-hidden"
+              >
+                400000 pesos
+              </span>
+              <span
+                aria-hidden="true"
+                class="andes-money-amount__currency-symbol"
+              >
+                $
+              </span>
+              <span
+                aria-hidden="true"
+                class="andes-money-amount__fraction"
+              >
+                400.000
+              </span>
+              <span
+                aria-hidden="true"
+                class="andes-visually-hidden"
+              >
+                ,
+              </span>
+              <span
+                aria-hidden="true"
+                class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                style="font-size: 12px; margin-top: 4px;"
+              >
+                00
+              </span>
+            </span>
+          </div>
+          <h2
+            class="title"
+            tabindex="23"
+          >
+            Chevrolet Captiva Sport At 3.0 2012
+          </h2>
+        </div>
+        <span
+          aria-label="Sin ubicación"
+          class="card__description__location"
+          tabindex="24"
+        />
+      </div>
+    </div>
+  </article>
+</DocumentFragment>
+`;
+
 exports[`ProductCard ProuctCard without free shipping should render component 1`] = `
 <DocumentFragment>
   <article

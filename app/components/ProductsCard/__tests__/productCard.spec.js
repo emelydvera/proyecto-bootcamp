@@ -1,10 +1,11 @@
 const React = require("react");
 const ProductCard = require("../ProductsCard");
 const { render, screen } = require("@testing-library/react");
-const { getByRole, queryByText } = screen;
+const { getByRole, queryByText, getByLabelText } = screen;
 const mockProductWithFreeShipping = require("../../../../mocks/components/productCardMockWithFreeShipping.json");
 const mockProductWithoutFreeShipping = require("../../../../mocks/components/productCardMockWithoutFreeShipping.json");
 const mockProductWithoutInstallments = require("../../../../mocks/components/productCardMockWithoutInstallments.json");
+const mockProductWithFalsyAddress = require("../../../../mocks/components/productCardMockWithoutAddressState.json");
 
 describe("ProductCard", () => {
   const i18n = { gettext: (text) => text };
@@ -172,6 +173,47 @@ describe("ProductCard", () => {
     it("should not render a tag with 'Envío' when product has no free shipping", () => {
       const productFreeShipping = queryByText("Envío");
       expect(productFreeShipping).toBeNull();
+    });
+  });
+
+  describe("ProuctCard with state_name property empty or undefined", () => {
+    let component;
+    const props = {
+      product: mockProductWithFalsyAddress,
+      i18n,
+      index: 1,
+    };
+
+    beforeEach(() => {
+      component = render(<ProductCard {...props} />);
+    });
+
+    it("should render component", () => {
+      const { asFragment } = component;
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    it("should render the name of the product", () => {
+      const productName = getByRole("heading", { level: 2 });
+      expect(productName).toHaveTextContent(mockProductWithFalsyAddress.title);
+    });
+
+    it("should render 'Sin ubicación' when the city of is not available in the product", () => {
+      const productCity = getByLabelText("Sin ubicación");
+      expect(productCity).toBeInTheDocument();
+    });
+
+    it("should render the price of the product", () => {
+      const productPrice = queryByText(/400000/);
+      expect(productPrice).toBeInTheDocument();
+    });
+
+    it("should render the image of the product", () => {
+      const productImage = getByRole("img");
+      expect(productImage).toHaveAttribute(
+        "data-src",
+        mockProductWithFalsyAddress.thumbnail.replace("http", "https")
+      );
     });
   });
 });
