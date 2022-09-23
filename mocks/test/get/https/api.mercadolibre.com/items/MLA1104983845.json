@@ -32,7 +32,7 @@
     "original_price": null,
     "currency_id": "ARS",
     "initial_quantity": 151,
-    "available_quantity": 0,
+    "available_quantity": 1,
     "sold_quantity": 150,
     "sale_terms": [],
     "buying_mode": "buy_it_now",

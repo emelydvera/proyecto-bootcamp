@@ -1,5 +1,5 @@
 const React = require('react');
-const { screen, render, fireEvent } = require('@testing-library/react');
+const { render } = require('@testing-library/react');
 const BuyView = require('../view');
 const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json');
 
@@ -13,12 +13,11 @@ describe('Buy page view', () => {
     };
     beforeEach(() => {
         component = render(<BuyView {...props} />);
-
-    })
+    });
 
     it('should render correctly', () => {
         const { asFragment } = component;
         expect(asFragment()).toMatchSnapshot()
-    })
+    });
 
-})
+});
