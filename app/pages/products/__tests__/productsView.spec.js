@@ -7,7 +7,7 @@ const View = require('../view');
 const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/sites/MCO/search?limit=10&offset=0&page=1&q=tablet.json');
 
 const i18n = new I18n({
-  translations: {}
+  translations: []
 });
 
 

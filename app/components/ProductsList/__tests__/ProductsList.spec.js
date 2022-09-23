@@ -8,28 +8,46 @@ const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/
 describe('ProductsList', () => {
 
   const i18n = new I18n({
-    translations: {}
-  })
-
-  let component;
-  beforeEach(() => {
-    component = render(<ProductsList products={data.results} i18n={i18n} />);
+    translations: []
   })
 
   it('Should render correctly', () => {
-    const { asFragment } = component;
+    const { asFragment } = render(<ProductsList products={data.results} i18n={i18n} />);;
     expect(asFragment()).toMatchSnapshot();
   })
 
-  it('Should render all the products cards', () => {
-    const productsCard = document.querySelectorAll(".card")
-    expect(productsCard.length).toBe(10)
+  describe('Tests when the products are found', () => {
+
+    it('Should render all the products cards', () => {
+      render(<ProductsList products={data.results} i18n={i18n} />);
+      const productsCard = document.querySelectorAll(".card")
+      expect(productsCard.length).toBe(10)
+    })
+
+    it('Should not render "not products found" message when products are found', () => {
+      render(<ProductsList products={data.results} i18n={i18n} />);
+      const message = screen.queryByText(/No se encontraron productos/);
+      expect(message).toBe(null);
+    })
+
   })
 
-  it('Should show "not products found" message', () => {
-    component = render(<ProductsList products={[]} i18n={i18n} />);
-    const message = screen.queryByText(/No se encontraron productos/);
-    expect(message).toBeInTheDocument();
+  describe('tests when products are not found', () => {
+
+    it('Should not render products cards when products are not found', () => {
+      render(<ProductsList products={[]} i18n={i18n} />);
+      const productsCard = document.querySelectorAll(".card")
+      expect(productsCard.length).toBe(0)
+    })
+
+    it('Should render "not products found" message when products are not found', () => {
+      render(<ProductsList products={[]} i18n={i18n} />);
+      const message = screen.queryByText(/No se encontraron productos/);
+      expect(message).toBeInTheDocument();
+    })
+
   })
+
+
 
 })
