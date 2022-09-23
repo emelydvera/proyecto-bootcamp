@@ -1,15 +1,11 @@
 const React = require('react');
 const ProductSlider = require('..');
 const { render, screen, fireEvent } = require('@testing-library/react');
-const { I18n, I18nProvider } = require('nordic/i18n');
 const { getByAltText } = screen;
 
 
 const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json')
 
-const i18n = new I18n({
-    translations: {}
-})
 
 describe('<ProductSlider/>', () => {
 
@@ -21,11 +17,7 @@ describe('<ProductSlider/>', () => {
 
     beforeEach(() => {
 
-        component = render(
-            <I18nProvider i18n={i18n}>
-                <ProductSlider product={product} />
-            </I18nProvider>
-        )
+        component = render(<ProductSlider product={product} /> )
 
     })
 
