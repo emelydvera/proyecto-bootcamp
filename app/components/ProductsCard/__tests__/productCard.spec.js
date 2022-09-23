@@ -1,8 +1,7 @@
 const React = require("react");
 const ProductCard = require("../ProductsCard");
 const { render, screen } = require("@testing-library/react");
-const { getByLabelText, getByText, queryByLabelText, getByRole, queryByText } =
-  screen;
+const { getByRole, queryByText } = screen;
 const mockProductWithFreeShipping = require("../../../../mocks/components/productCardMockWithFreeShipping.json");
 const mockProductWithoutFreeShipping = require("../../../../mocks/components/productCardMockWithoutFreeShipping.json");
 const mockProductWithoutInstallments = require("../../../../mocks/components/productCardMockWithoutInstallments.json");
