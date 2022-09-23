@@ -1,7 +1,7 @@
 const React = require("react");
 const Pagination = require("../Pagination");
-const { render, screen, fireEvent } = require("@testing-library/react");
-const { queryByLabelText, getAllByRole, queryByTitle, debug } = screen;
+const { render, screen } = require("@testing-library/react");
+const { queryByLabelText } = screen;
 const UrlGenerator = require("../../../utils/urlGenerator");
 
 describe("Pagination component", () => {
