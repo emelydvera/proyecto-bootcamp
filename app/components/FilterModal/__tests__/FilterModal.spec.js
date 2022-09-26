@@ -3,9 +3,9 @@ const FilterModal = require('..');
 const { render, fireEvent, screen } = require('@testing-library/react');
 const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/sites/MCO/search?limit=10&offset=0&page=1&q=tablet.json');
 const UrlGenerator = require('../../../utils/urlGenerator');
-jest.mock('../../../utils/urlGenerator')
+jest.mock('../../../utils/urlGenerator');
 
-const filter = data.available_filters[0]
+const filter = data.available_filters[0];
 
 describe('FilterModal', () => {
 
@@ -24,7 +24,7 @@ describe('FilterModal', () => {
     render(<FilterModal filter={filter} urlGenerator={urlGenerator} />);
 
     const showMoreButton = screen.getByText(/Mostrar más/);
-    fireEvent.click(showMoreButton)
+    fireEvent.click(showMoreButton);
     const modalElementChild = screen.queryByText(/Todas las tiendas oficiales/);
     expect(modalElementChild).toBeInTheDocument();
 
@@ -36,32 +36,32 @@ describe('FilterModal', () => {
     render(<FilterModal filter={filter} urlGenerator={urlGenerator} />);
 
     const showMoreButton = screen.getByText(/Mostrar más/);
-    fireEvent.click(showMoreButton)
+    fireEvent.click(showMoreButton);
 
     const modalElementChild = screen.queryByText(/Todas las tiendas oficiales/);
     expect(urlGenerator.setFilter).toHaveBeenCalledTimes(0);
 
-    fireEvent.click(modalElementChild)
+    fireEvent.click(modalElementChild);
 
     expect(urlGenerator.setFilter).toHaveBeenCalledTimes(1);
     expect(urlGenerator.setFilter).toHaveBeenCalledWith("official_store", "all");
 
   })
 
-  xit('Should close the modal close button is clicked', () => {
+  xit('Should close the modal if close button is clicked', () => {
 
     const urlGenerator = new UrlGenerator();
     render(<FilterModal filter={filter} urlGenerator={urlGenerator} />);
 
     const showMoreButton = screen.getByText(/Mostrar más/);
-    fireEvent.click(showMoreButton)
+    fireEvent.click(showMoreButton);
 
     const modalElementChild = screen.queryByText(/Todas las tiendas oficiales/);
     expect(modalElementChild).toBeInTheDocument();
 
     const closeButton = screen.queryByRole('button');
 
-    fireEvent.click(closeButton)
+    fireEvent.click(closeButton);
 
     expect(modalElementChild).not.toBeInTheDocument();
 

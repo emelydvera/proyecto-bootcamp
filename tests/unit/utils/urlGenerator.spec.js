@@ -9,23 +9,23 @@ const spyOnMethod = {
     .spyOn(UrlGenerator.prototype, 'setQuery'),
   getQueryString: jest
     .spyOn(UrlGenerator.prototype, 'getQueryString'),
-}
+};
 
-let locationMock = jest.fn();
 delete window.location;
-window.location = { assign: locationMock };
+window.location = { assign: jest.fn() };
 
 
 describe('UrlGenerator', () => {
 
   const baseUrl = '/';
-  const query = { name: 'Laptop', page: 2, price: '5000-10000' }
-  const defaultQuery = { limit: 10, ...query }
-  let urlGenerator = new UrlGenerator(baseUrl, query);;
+  const query = { name: 'Laptop', page: 2, price: '5000-10000' };
+  let urlGenerator = new UrlGenerator(baseUrl, query);
+
+  const defaultQuery = { limit: 10, ...query };
 
   beforeEach(() => {
     urlGenerator = new UrlGenerator(baseUrl, query);
-    window.location.href = '/'
+    window.location.href = '/';
   })
 
 
@@ -50,27 +50,27 @@ describe('UrlGenerator', () => {
   describe('setQuery()', () => {
 
     it('Should modify the query property passed if it already exist', () => {
-      const queryId = 'limit'
-      const newQueryValue = 20
+      const queryId = 'limit';
+      const newQueryValue = 20;
       urlGenerator.setQuery(queryId, newQueryValue);
 
-      expect(urlGenerator.query).toEqual({ ...defaultQuery, [queryId]: newQueryValue })
+      expect(urlGenerator.query).toEqual({ ...defaultQuery, [queryId]: newQueryValue });
     })
 
     it('Should add a new property to the query object if it does´nt exist', () => {
       const queryId = 'price';
-      const queryValue = '0-6000'
+      const queryValue = '0-6000';
       urlGenerator.setQuery(queryId, queryValue);
 
-      const newQueryObject = { ...defaultQuery, [queryId]: queryValue }
-      expect(urlGenerator.query).toEqual(newQueryObject)
+      const newQueryObject = { ...defaultQuery, [queryId]: queryValue };
+      expect(urlGenerator.query).toEqual(newQueryObject);
     })
   })
 
 
   describe('setFilter()', () => {
     const queryId = 'price';
-    const queryValue = '0-5000'
+    const queryValue = '0-5000';
 
     beforeEach(() => {
       urlGenerator.setFilter(queryId, queryValue);
@@ -85,7 +85,7 @@ describe('UrlGenerator', () => {
     })
 
     it('Should add / modify the query, and navigate to the new location', () => {
-      expect(window.location.href).toBe('/?page=1&limit=10&name=Laptop&price=0-5000&')
+      expect(window.location.href).toBe('/?page=1&limit=10&name=Laptop&price=0-5000&');
     })
 
   })
@@ -111,7 +111,7 @@ describe('UrlGenerator', () => {
     })
 
     it('Should removed the query, and navigate to the new location', () => {
-      expect(window.location.href).toBe('/?page=1&limit=10&name=Laptop&')
+      expect(window.location.href).toBe('/?page=1&limit=10&name=Laptop&');
     })
   })
 
@@ -138,13 +138,13 @@ describe('UrlGenerator', () => {
 
   describe('getQueryByName()', () => {
     it('Should return the query property value', () => {
-      expect(urlGenerator.getQueryByName('limit')).toBe(10)
+      expect(urlGenerator.getQueryByName('limit')).toBe(10);
     })
   })
 
   describe('getQueries()', () => {
     it('Should return the query object', () => {
-      expect(urlGenerator.getQueries()).toEqual(defaultQuery)
+      expect(urlGenerator.getQueries()).toEqual(defaultQuery);
     })
   })
 
