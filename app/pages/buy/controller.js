@@ -20,6 +20,7 @@ exports.fetchProduct = function fetchProduct(req, res, next) {
     });
 };
 
+/* istanbul ignore next */
 exports.render = function render(req, res) {
   const imagesPrefix = config.assets.prefix;
   const CheckoutView = (props) => (
