@@ -4,21 +4,18 @@ const Button = require("@andes/button");
 const Form = require("@andes/form");
 const TextField = require("@andes/textfield");
 const { ButtonText } = Button;
-const { useState, useRef } = React;
+const { useState } = React;
 
 const SearchInput = ({ i18n }) => {
   const [value, setValue] = useState("");
-  const isMounted = useRef(false);
 
   const handleChange = (e) => {
-    isMounted.current = true;
     setValue(() => e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     window.location.href = `listado?q=${value}`;
-    setTimeout(() => setValue(() => ""), 1000);
   };
 
   return (

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home View Should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="search__container"
+  >
+    <form
+      class="search__form"
+    >
+      <div
+        class="andes-form-control andes-form-control--textfield andes-form-control--default search__form__input"
+      >
+        <label>
+          <div
+            class="andes-form-control__control"
+          >
+            <input
+              aria-label="Ingrese producto a buscar"
+              class="andes-form-control__field"
+              maxlength="120"
+              placeholder="Buscar productos, marcas y más..."
+              rows="1"
+              tabindex="11"
+              type="text"
+              value=""
+            />
+          </div>
+        </label>
+        <div
+          class="andes-form-control__bottom"
+        >
+          <span
+            class="andes-form-control__message"
+          />
+        </div>
+      </div>
+      <button
+        class="andes-button search__form__button andes-button--large andes-button--loud andes-button--disabled"
+        disabled=""
+        type="submit"
+      >
+        <span
+          class="andes-button__content"
+        >
+          <span
+            class="andes-button__text"
+          >
+            Buscar
+          </span>
+        </span>
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
