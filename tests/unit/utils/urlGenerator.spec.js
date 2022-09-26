@@ -3,9 +3,13 @@
 */
 
 const UrlGenerator = require('../../../app/utils/urlGenerator');
-const setQueryMock = jest
-  .spyOn(UrlGenerator.prototype, 'setQuery');
 
+const spyOnMethod = {
+  setQuery: jest
+    .spyOn(UrlGenerator.prototype, 'setQuery'),
+  getQueryString: jest
+    .spyOn(UrlGenerator.prototype, 'getQueryString'),
+}
 
 let locationMock = jest.fn();
 delete window.location;
@@ -73,7 +77,7 @@ describe('UrlGenerator', () => {
     })
 
     it('Should call setQuery method', () => {
-      expect(setQueryMock).toHaveBeenCalled();
+      expect(spyOnMethod.setQuery).toHaveBeenCalled();
     })
 
     it('Should set the page to 1', () => {
@@ -95,7 +99,7 @@ describe('UrlGenerator', () => {
     })
 
     it('Should call setQuery method', () => {
-      expect(setQueryMock).toHaveBeenCalled();
+      expect(spyOnMethod.setQuery).toHaveBeenCalled();
     })
 
     it('The query passed must be undefined in the query object of the class', () => {
@@ -112,18 +116,36 @@ describe('UrlGenerator', () => {
   })
 
   describe('getNewUrl()', () => {
+    it('Should call the method getQueryString()', () => {
+      expect(spyOnMethod.getQueryString).toHaveBeenCalled();
+    })
+
     it('Should generate and return the new URL', () => {
-      expect(urlGenerator.getNewUrl()).toBe('/?page=2&limit=10&name=Laptop&price=5000-10000&')
+      expect(urlGenerator.getNewUrl()).toBe('/?page=2&limit=10&name=Laptop&price=5000-10000&');
     })
   })
+
   describe('getQueryString()', () => {
-    it('', () => { })
+    it('Should generate the query string based on the query object', () => {
+      expect(urlGenerator.getQueryString()).toBe('page=2&limit=10&name=Laptop&price=5000-10000&');
+    })
+
+    it('Should generate the query string based on the query object with out the page property', () => {
+      expect(urlGenerator.getQueryString(false)).toBe('limit=10&name=Laptop&price=5000-10000&');
+    })
+
   })
+
   describe('getQueryByName()', () => {
-
+    it('Should return the query property value', () => {
+      expect(urlGenerator.getQueryByName('limit')).toBe(10)
+    })
   })
-  describe('getQueries()', () => {
 
+  describe('getQueries()', () => {
+    it('Should return the query object', () => {
+      expect(urlGenerator.getQueries()).toEqual(defaultQuery)
+    })
   })
 
 })
