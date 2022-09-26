@@ -2,7 +2,7 @@ const { fetchProduct } = require('../../../app/pages/buy/controller');
 const httpMocks = require('node-mocks-http');
 const mock = require('nordic-dev/mocks')();
 const apiDomain = 'https://api.mercadolibre.com';
-jest.setTimeout(5000);
+const eventEmitter = require("events").EventEmitter;
 
 describe('fetchProduct - Buy', () => {
 
@@ -44,13 +44,12 @@ describe('fetchProduct - Buy', () => {
                 quantityToBuy: 1,
             }
         });
-        const res = httpMocks.createResponse();
-        res.redirect = jest.fn();
-        fetchProduct(req, res, (error) => {
-            expect(res.redirect).toHaveBeenCalled()
-            done()
-        })
+        const res = httpMocks.createResponse({ eventEmitter });
 
+        fetchProduct(req, res, ()=>{
+            expect(res._getRedirectUrl()).toBe('/error404')
+            done()
+        });
 
     })
 
