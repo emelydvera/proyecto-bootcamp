@@ -1,7 +1,7 @@
 const React = require('react');
 const { screen, render } = require('@testing-library/react');
 const { within } = require('@testing-library/dom');
-const Checkout = require('../Checkout');
+const Checkout = require('..');
 const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json');
 
 describe('Checkout component', () => {
@@ -23,7 +23,7 @@ describe('Checkout component', () => {
         render(<Checkout {...props} />);
         const moneyAmount = document.querySelector('#checkout > div:nth-child(6) > span');
         let result = within(moneyAmount).getByText('30.999');
-        expect(result.textContent).toMatch('30.999');
+        expect(result).toHaveTextContent('30.999');
     });
 
     it('must display a shortened version of the title if it is longer than 70 characters', () => {
@@ -39,7 +39,7 @@ describe('Checkout component', () => {
         const title = screen.getByRole('heading', {
             name: /apple macbook air \(13 pulgadas, 2020, chip m1, 256 gb de ssd, 8 gb \.\.\./i
         });
-        expect(title.textContent).toMatch(/apple macbook air \(13 pulgadas, 2020, chip m1, 256 gb de ssd, 8 gb \.\.\./i);
+        expect(title).toHaveTextContent(/apple macbook air \(13 pulgadas, 2020, chip m1, 256 gb de ssd, 8 gb \.\.\./i);
     });
 
     it('must show shipping with cost to calculate if the product does not have free shipping', () => {
@@ -52,7 +52,7 @@ describe('Checkout component', () => {
         };
         render(<Checkout {...props} />);
         const shipping = screen.getByText(/envío con costo a determinar/i);
-        expect(shipping.textContent).toMatch(/envío con costo a determinar/i);
+        expect(shipping).toHaveTextContent(/envío con costo a determinar/i);
 
     });
 });
