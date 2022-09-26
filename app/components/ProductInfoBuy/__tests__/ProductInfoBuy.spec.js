@@ -1,9 +1,7 @@
 const React = require('react');
 const { render, screen, fireEvent } = require('@testing-library/react');
-const { getByRole, getByText, queryByText, debug } = screen
+const { getByRole, getByText, queryByText } = screen
 const ProductInfoBuy = require('../ProductInfoBuy');
-const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/items/MLA1104983845.json')
-
 
 describe('Component <ProductInfoBuy', () => {
 
