@@ -1,4 +1,4 @@
-const normalizerFilters = (filters = []) => {
+const normalizerFilters = (filters) => {
   let available = []
   let others = {
     name: "Otras características",
@@ -10,9 +10,7 @@ const normalizerFilters = (filters = []) => {
     } else {
       others.values.push({
         query: filter.id,
-        name: filter.values[0].name,
-        id: filter.values[0].id,
-        results: filter.values[0].results
+        ...filter.values[0]
       })
     }
 
