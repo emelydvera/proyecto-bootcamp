@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductAttribues component should render component 1`] = `
+<DocumentFragment>
+  <details
+    class="attributes"
+  >
+    <summary
+      class="attributes__title"
+      tabindex="23"
+    >
+      Características
+    </summary>
+    <table
+      class="attributes__table"
+    >
+      <tbody>
+        <tr
+          tabindex="23"
+        >
+          <td>
+            Modelo alfanumérico
+          </td>
+          <td>
+            15ALC6
+          </td>
+        </tr>
+        <tr
+          tabindex="23"
+        >
+          <td>
+            Marca
+          </td>
+          <td>
+            Lenovo
+          </td>
+        </tr>
+        <tr
+          tabindex="23"
+        >
+          <td>
+            Modelo detallado
+          </td>
+          <td>
+            82KU00AAUS
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+</DocumentFragment>
+`;
