@@ -1,8 +1,7 @@
 const React = require("react");
 const View = require("../view");
 const { render, screen } = require("@testing-library/react");
-const { getByLabelText, getByText, queryByLabelText, getByRole, getByAltText } =
-  screen;
+const { getByLabelText, queryByLabelText, getByRole, getByAltText } = screen;
 const mockProductWithNoEmptyPathFromRoot = require("../../../../mocks/pages/productMockWithNoEmptyPath.json");
 const mockProductWithEmptyPathFromRoot = require("../../../../mocks/pages/productMockWithEmptyPath.json");
 const mockProductDescription = require("../../../../mocks/pages/productDescriptionMock.json");
