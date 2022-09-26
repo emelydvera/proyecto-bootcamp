@@ -1,6 +1,6 @@
 const React = require('react');
 const FilterModal = require('..');
-const { render, fireEvent, screen } = require('@testing-library/react');
+const { render, fireEvent, screen, waitFor } = require('@testing-library/react');
 const { data } = require('../../../../mocks/test/get/https/api.mercadolibre.com/sites/MCO/search?limit=10&offset=0&page=1&q=tablet.json');
 const UrlGenerator = require('../../../utils/urlGenerator');
 jest.mock('../../../utils/urlGenerator');
@@ -48,7 +48,7 @@ describe('FilterModal', () => {
 
   })
 
-  xit('Should close the modal if close button is clicked', () => {
+  it('Should close the modal if close button is clicked', async () => {
 
     const urlGenerator = new UrlGenerator();
     render(<FilterModal filter={filter} urlGenerator={urlGenerator} />);
@@ -59,14 +59,36 @@ describe('FilterModal', () => {
     const modalElementChild = screen.queryByText(/Todas las tiendas oficiales/);
     expect(modalElementChild).toBeInTheDocument();
 
-    const closeButton = screen.queryByRole('button');
+    const closeButton = screen.getByRole('button', { name: "Cerrar Tiendas oficiales" })
 
     fireEvent.click(closeButton);
+    await waitFor(() => {
+      expect(modalElementChild).not.toBeInTheDocument();
+    });
+  });
 
-    expect(modalElementChild).not.toBeInTheDocument();
 
+  it('should render other features', () => {
+
+    const urlGenerator = new UrlGenerator();
+
+    const filter = {
+      "name": "Otras características",
+      "values": [
+        {
+          "query": "has_pictures",
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 36012
+        },
+      ]
+    }
+    const { asFragment } = render(<FilterModal filter={filter} urlGenerator={urlGenerator} />);
+    expect(asFragment()).toMatchSnapshot();
 
   })
 
 
 })
+
+

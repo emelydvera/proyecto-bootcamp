@@ -948,11 +948,11 @@ exports[` Component <ProductView/> should render the components 1`] = `
         </span>
       </div>
       <div
-        aria-label="Pagalo en $852 cuotas, cada una de  $1200"
+        aria-label="Pagalo en $2 cuotas, cada una de  $1200"
         class="info__buy__quantity-amount"
         tabindex="14"
       >
-        852 cuotas de 
+        2 cuotas de 
         <span
           class="andes-money-amount info__buy__amount andes-money-amount--cents-superscript"
           style="font-size: 16px;"
@@ -999,6 +999,7 @@ exports[` Component <ProductView/> should render the components 1`] = `
       </p>
       <div
         class="info__shipping"
+        role="envio"
       >
         <svg
           fill=" #00A650"
