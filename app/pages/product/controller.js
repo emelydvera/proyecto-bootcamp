@@ -38,7 +38,7 @@ exports.productPathFromRoot = (req, res, next) => {
       next();
     })
     .catch(() => {
-      res.redirect("/error");
+      res.redirect("/error404");
     });
 };
 
