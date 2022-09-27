@@ -46,10 +46,11 @@ describe('fetchProduct - Buy', () => {
         });
         const res = httpMocks.createResponse({ eventEmitter });
 
-        fetchProduct(req, res, ()=>{
+        fetchProduct(req, res);
+        res.on('end', ()=>{
             expect(res._getRedirectUrl()).toBe('/error404')
             done()
-        });
+        })
 
     })
 

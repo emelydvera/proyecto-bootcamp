@@ -14,9 +14,8 @@ exports.fetchProduct = function fetchProduct(req, res, next) {
       res.locals.quantityToBuy = quantityToBuy;
       next();
     })
-    .catch((error) => {
+    .catch(() => {
       res.redirect("/error404");
-      next();
     });
 };
 
