@@ -897,7 +897,7 @@ exports[` Component <ProductView/> should render the components 1`] = `
       </span>
       <span
         aria-label="150 productos vendidos"
-        class="info__use"
+        class="info__sold"
         tabindex="11"
       >
          - 150 vendidos
@@ -991,11 +991,11 @@ exports[` Component <ProductView/> should render the components 1`] = `
          cada una
       </div>
       <p
-        aria-label="hay $0 unidades disponibles"
+        aria-label="hay $1 unidades disponibles"
         class="info__available"
         tabindex="16"
       >
-        Cantidad disponible: 0
+        Cantidad disponible: 1
       </p>
       <div
         class="info__shipping"

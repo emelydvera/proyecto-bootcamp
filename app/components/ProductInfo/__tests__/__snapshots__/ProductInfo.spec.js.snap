@@ -116,6 +116,7 @@ exports[`must show product information matches snapshot 1`] = `
     </p>
     <div
       class="info__shipping"
+      role="envio"
     >
       <svg
         fill=" #00A650"
