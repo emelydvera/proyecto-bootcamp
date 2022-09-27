@@ -25,6 +25,7 @@ exports.fetchProducts = (req, res, next) => {
     });
 };
 
+/* istanbul ignore next */
 exports.render = (req, res) => {
   const imagesPrefix = config.assets.prefix;
 

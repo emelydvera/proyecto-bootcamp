@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreadCrumb Should render correctly 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="lista de páginas"
+  >
+    <ol
+      class="andes-breadcrumb breadcrumb"
+    >
+      <li
+        class="andes-breadcrumb__item"
+      >
+        <a
+          class="andes-breadcrumb__link"
+          href="/listado?category=MLA1648"
+          title="Ir a la sección Computación"
+        >
+          Computación
+        </a>
+        <div
+          class="andes-breadcrumb__chevron"
+        >
+          <svg
+            height="8"
+            width="6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 0l4 4-4 4"
+              fill="none"
+              stroke="#666"
+            />
+          </svg>
+        </div>
+      </li>
+      <li
+        class="andes-breadcrumb__item"
+      >
+        <a
+          aria-current="page"
+          class="andes-breadcrumb__link"
+          href="/listado?category=MLA430687"
+          title="Ir a la sección Laptops y Accesorios"
+        >
+          Laptops y Accesorios
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;

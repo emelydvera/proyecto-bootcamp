@@ -1,0 +1,1078 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Component <ProductView/> should render the components 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="product"
+    >
+      <div
+        class="slider__img"
+      >
+        <div
+          class="slider__img__carousel"
+        >
+          <div
+            class="image__container active"
+          >
+            <img
+              alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+              aria-label="imagen del producto"
+              class="slider__image  lazy-loadable"
+              data-src="https://http2.mlstatic.com/D_852458-MLA48270995220_112021-O.jpg"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            />
+          </div>
+          <div
+            class="image__container "
+          >
+            <img
+              alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+              aria-label="imagen del producto"
+              class="slider__image  lazy-loadable"
+              data-src="https://http2.mlstatic.com/D_887836-MLA47152640900_082021-O.jpg"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            />
+          </div>
+          <div
+            class="image__container "
+          >
+            <img
+              alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+              aria-label="imagen del producto"
+              class="slider__image  lazy-loadable"
+              data-src="https://http2.mlstatic.com/D_992922-MLA48271038089_112021-O.jpg"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            />
+          </div>
+          <div
+            class="image__container "
+          >
+            <img
+              alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+              aria-label="imagen del producto"
+              class="slider__image  lazy-loadable"
+              data-src="https://http2.mlstatic.com/D_636041-MLA48271038093_112021-O.jpg"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            />
+          </div>
+          <div
+            class="image__container "
+          >
+            <img
+              alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+              aria-label="imagen del producto"
+              class="slider__image  lazy-loadable"
+              data-src="https://http2.mlstatic.com/D_827704-MLA47152858202_082021-O.jpg"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            />
+          </div>
+          <div
+            class="image__container "
+          >
+            <img
+              alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+              aria-label="imagen del producto"
+              class="slider__image  lazy-loadable"
+              data-src="https://http2.mlstatic.com/D_935467-MLA48270794800_112021-O.jpg"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            />
+          </div>
+        </div>
+        <figure
+          aria-label="Imagen de  Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+          tabindex="9"
+        >
+          <img
+            alt="product"
+            class="slider__img__main"
+            decoding="async"
+            src="https://http2.mlstatic.com/D_852458-MLA48270995220_112021-O.jpg"
+          />
+          <figcaption>
+             Moto G20 64 Gb  Azul Cielo 4 Gb Ram
+          </figcaption>
+        </figure>
+      </div>
+      <h2>
+        Descripción del producto
+      </h2>
+      <p
+        tabindex="19"
+      >
+        descripcion del producto
+      </p>
+      <details
+        class="attributes"
+      >
+        <summary
+          class="attributes__title"
+          tabindex="23"
+        >
+          Características
+        </summary>
+        <table
+          class="attributes__table"
+        >
+          <tbody>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Capacidad de la batería
+              </td>
+              <td>
+                5000 mAh
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tipo de batería
+              </td>
+              <td>
+                Polímero de litio
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Marca
+              </td>
+              <td>
+                Motorola
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Características principales de las cámaras
+              </td>
+              <td>
+                Modo retrato,Face beauty,Foto HDR,Modo manual,Panorama,Night vision
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Compañía telefónica
+              </td>
+              <td>
+                Liberado
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tipo de conector de carga
+              </td>
+              <td>
+                USB-C
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Color
+              </td>
+              <td>
+                Azul cielo
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tamaños de tarjeta SIM compatibles
+              </td>
+              <td>
+                Nano-SIM
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Modelos de CPU
+              </td>
+              <td>
+                2x1.8 GHz Cortex-A75,6x1.8 GHz Cortex-A55
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Profundidad
+              </td>
+              <td>
+                9.14 mm
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Zoom digital
+              </td>
+              <td>
+                2x
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Relación de aspecto de la pantalla
+              </td>
+              <td>
+                20:9
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Píxeles por pulgada de la pantalla
+              </td>
+              <td>
+                269 ppi
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Frecuencia de actualización de la pantalla
+              </td>
+              <td>
+                90 Hz
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Resolución de la pantalla
+              </td>
+              <td>
+                720 px x 1600 px
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tipo de resolución de la pantalla 
+              </td>
+              <td>
+                HD+
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tamaño de la pantalla
+              </td>
+              <td>
+                6.5 "
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tecnología de la pantalla
+              </td>
+              <td>
+                IPS
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tipo de pantalla
+              </td>
+              <td>
+                Max Vision
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Cantidad de cámaras frontales
+              </td>
+              <td>
+                1
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Apertura del diafragma de la cámara frontal
+              </td>
+              <td>
+                f 2.2
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Resolución de video de la cámara frontal
+              </td>
+              <td>
+                1920 px x 1080 px
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Modelo de GPU
+              </td>
+              <td>
+                Mali-G52
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Velocidad del GPU
+              </td>
+              <td>
+                850 MHz
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Código universal de producto
+              </td>
+              <td>
+                7790894899851
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Altura
+              </td>
+              <td>
+                165.22 mm
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Memoria interna
+              </td>
+              <td>
+                64 GB
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Clasificación IP
+              </td>
+              <td>
+                IP52
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Es Dual SIM
+              </td>
+              <td>
+                No
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Es resistente a salpicaduras
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Condición del ítem
+              </td>
+              <td>
+                Nuevo
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Línea
+              </td>
+              <td>
+                Moto G
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Color principal
+              </td>
+              <td>
+                Azul
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Resolución de la cámara frontal principal
+              </td>
+              <td>
+                13 Mpx
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Resolución de la cámara trasera principal
+              </td>
+              <td>
+                48 Mpx
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Brillo máximo de la pantalla
+              </td>
+              <td>
+                625 cd/m²
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Capacidad máxima de la tarjeta de memoria
+              </td>
+              <td>
+                1 TB
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Tipos de tarjeta de memoria
+              </td>
+              <td>
+                Micro-SD
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Red
+              </td>
+              <td>
+                4G/LTE
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Modelo
+              </td>
+              <td>
+                G20
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                MPN
+              </td>
+              <td>
+                MOTG20BREEZEB
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Nombre del sistema operativo
+              </td>
+              <td>
+                Android
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Origen
+              </td>
+              <td>
+                Argentina
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Versión original del sistema operativo
+              </td>
+              <td>
+                11
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Capa original de personalización del sistema operativo
+              </td>
+              <td>
+                One UI
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Cantidad de núcleos del procesador
+              </td>
+              <td>
+                8
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Modelo del procesador
+              </td>
+              <td>
+                Unisoc T700
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Velocidad del procesador
+              </td>
+              <td>
+                1.8 GHz
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Memoria RAM
+              </td>
+              <td>
+                4 GB
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Cantidad de cámaras traseras
+              </td>
+              <td>
+                4
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Resolución de las cámaras traseras
+              </td>
+              <td>
+                48 Mpx/8 Mpx/2 Mpx/2 Mpx
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Apertura del diafragma de la cámara trasera
+              </td>
+              <td>
+                f 1.7/f 2.2/f 2.4/f 2.4
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Resolución de video de la cámara trasera
+              </td>
+              <td>
+                1920 px x 1080 px
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Mes de lanzamiento
+              </td>
+              <td>
+                Mayo
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Año de lanzamiento
+              </td>
+              <td>
+                2021
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                SKU
+              </td>
+              <td>
+                781492
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Cantidad de ranuras para tarjeta SIM
+              </td>
+              <td>
+                1
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Peso
+              </td>
+              <td>
+                200 g
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Ancho
+              </td>
+              <td>
+                75.73 mm
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con conector jack 3.5 mm
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con acelerómetro
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con Bluetooth
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con cámara
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con reconocimiento facial
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con lector de huella digital
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con GPS
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con giroscopio
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con IMEI
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con ranura para tarjeta de memoria
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con teclado QWERTY físico
+              </td>
+              <td>
+                No
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con sensor de proximidad
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con radio
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con batería removible
+              </td>
+              <td>
+                No
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con pantalla táctil
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con conector USB
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+            <tr
+              tabindex="23"
+            >
+              <td>
+                Con Wi-Fi
+              </td>
+              <td>
+                Sí
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </div>
+    <div
+      class="info"
+    >
+      <span
+        aria-label="Nuevo"
+        class="info__use"
+        tabindex="10"
+      >
+        Nuevo
+      </span>
+      <span
+        aria-label="150 productos vendidos"
+        class="info__use"
+        tabindex="11"
+      >
+         - 150 vendidos
+      </span>
+      <h2
+        aria-label=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+        tabindex="12"
+      >
+         Moto G20 64 Gb  Azul Cielo 4 Gb Ram
+      </h2>
+      <div
+        tabindex="13"
+      >
+        <span
+          class="andes-money-amount info__buy__price andes-money-amount--cents-superscript"
+          style="font-size: 48px;"
+        >
+          <span
+            class="andes-visually-hidden"
+          >
+            30999 pesos
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-money-amount__currency-symbol"
+          >
+            $
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-money-amount__fraction"
+          >
+            30.999
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-visually-hidden"
+          >
+            ,
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-money-amount__cents andes-money-amount__cents--superscript-48"
+            style="font-size: 24px; margin-top: 9px;"
+          >
+            00
+          </span>
+        </span>
+      </div>
+      <div
+        aria-label="Pagalo en $2 cuotas, cada una de  $1200"
+        class="info__buy__quantity-amount"
+        tabindex="14"
+      >
+        2 cuotas de 
+        <span
+          class="andes-money-amount info__buy__amount andes-money-amount--cents-superscript"
+          style="font-size: 16px;"
+        >
+          <span
+            class="andes-visually-hidden"
+          >
+            1200 pesos
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-money-amount__currency-symbol"
+          >
+            $
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-money-amount__fraction"
+          >
+            1.200
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-visually-hidden"
+          >
+            ,
+          </span>
+          <span
+            aria-hidden="true"
+            class="andes-money-amount__cents andes-money-amount__cents--superscript-16"
+            style="font-size: 10px; margin-top: 2px;"
+          >
+            00
+          </span>
+        </span>
+         cada una
+      </div>
+      <p
+        aria-label="hay $0 unidades disponibles"
+        class="info__available"
+        tabindex="16"
+      >
+        Cantidad disponible: 0
+      </p>
+      <div
+        class="info__shipping"
+        role="envio"
+      >
+        <svg
+          fill=" #00A650"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M13.499 3.75H3C1.75736 3.75 0.75 4.75736 0.75 6V16.4995C0.75 17.7421 1.75736 18.7495 3 18.7495H4.5563C4.89024 20.0646 6.08201 21.0375 7.501 21.0375C8.91999 21.0375 10.1118 20.0646 10.4457 18.7495H14.2643C14.5983 20.0646 15.79 21.0375 17.209 21.0375C18.628 21.0375 19.8198 20.0646 20.1537 18.7495H23.25V11.7708L19.8654 6.75H15.749V6C15.749 4.75736 14.7416 3.75 13.499 3.75ZM10.4457 17.2495H14.249V6C14.249 5.58579 13.9132 5.25 13.499 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V16.4995C2.25 16.9137 2.58579 17.2495 3 17.2495H4.5563C4.89024 15.9344 6.08201 14.9615 7.501 14.9615C8.91999 14.9615 10.1118 15.9344 10.4457 17.2495ZM17.209 14.9615C16.6803 14.9615 16.183 15.0966 15.75 15.3342V8.25H19.0676L21.75 12.2292V17.2495H20.1537C19.8198 15.9344 18.628 14.9615 17.209 14.9615ZM15.671 17.9995C15.671 18.8489 16.3596 19.5375 17.209 19.5375C18.0584 19.5375 18.747 18.8489 18.747 17.9995C18.747 17.1501 18.0584 16.4615 17.209 16.4615C16.3596 16.4615 15.671 17.1501 15.671 17.9995ZM7.501 19.5375C6.6516 19.5375 5.96302 18.8489 5.96302 17.9995C5.96302 17.1501 6.6516 16.4615 7.501 16.4615C8.3504 16.4615 9.03898 17.1501 9.03898 17.9995C9.03898 18.8489 8.3504 19.5375 7.501 19.5375Z"
+            fill=" #00A650"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <p
+          aria-label="el envio es gratis"
+          tabindex="17"
+        >
+          Envío gratis
+        </p>
+      </div>
+      <div
+        class="buy__container"
+      >
+        <div
+          class="input__quantity"
+        >
+          <div
+            class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default buy__input"
+          >
+            <label>
+              <span
+                class="andes-form-control__label"
+              >
+                Cantidad
+              </span>
+              <div
+                class="andes-form-control__control"
+              >
+                <input
+                  aria-label="Ingrese la cantidad de productos a comprar"
+                  class="andes-form-control__field"
+                  maxlength="120"
+                  rows="1"
+                  tabindex="18"
+                  type="number"
+                  value="1"
+                />
+              </div>
+            </label>
+            <div
+              class="andes-form-control__bottom"
+            >
+              <span
+                class="andes-form-control__message"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="botón para comprar producto"
+          class="andes-button buy__button andes-button--large andes-button--loud andes-button--full-width"
+          tabindex="18"
+          type="submit"
+        >
+          <span
+            class="andes-button__content"
+          >
+            Comprar
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

@@ -1,0 +1,940 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductsList Should render correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="list"
+  >
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO803537014?quantity=36&amount=15205.64"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_927966-MLA47146625521_082021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="15"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $547403, Envío gratis"
+              class="money__and__shipping"
+              tabindex="14"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  547403 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  547.403
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="13"
+            >
+              Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  32gb Gris Y 3gb De Memoria Ram
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Antioquia"
+            class="card__description__location"
+            tabindex="14"
+          >
+            Antioquia
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO889004547?quantity=36&amount=38583.33"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_836540-MLA45259560435_032021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="25"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $1389000, Envío gratis"
+              class="money__and__shipping"
+              tabindex="24"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  1389000 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  1.389.000
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="23"
+            >
+              Tablet  Samsung Galaxy Tab S6 Lite Sm-p610 10.4  64gb Oxford Gray Y 4gb De Memoria Ram
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Bogotá D.C."
+            class="card__description__location"
+            tabindex="24"
+          >
+            Bogotá D.C.
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO869909174?quantity=36&amount=47861.11"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_600562-MLA48203611250_112021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="35"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $1723000, Envío gratis"
+              class="money__and__shipping"
+              tabindex="34"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  1723000 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  1.723.000
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="33"
+            >
+              Apple iPad (9ª Generación) 10.2  Wi-fi 64gb - Color Plata
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Bogotá D.C."
+            class="card__description__location"
+            tabindex="34"
+          >
+            Bogotá D.C.
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO847990208?quantity=36&amount=19132.81"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_620927-MLA47146625536_082021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="45"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $688781, Envío gratis"
+              class="money__and__shipping"
+              tabindex="44"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  688781 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  688.781
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="43"
+            >
+              Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  64gb Gris Y 4gb De Memoria Ram
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Antioquia"
+            class="card__description__location"
+            tabindex="44"
+          >
+            Antioquia
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO848559323?quantity=36&amount=19163.89"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_608839-MLA47146625545_082021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="55"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $689900, Envío gratis"
+              class="money__and__shipping"
+              tabindex="54"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  689900 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  689.900
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="53"
+            >
+              Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  64gb Plateada Y 4gb De Memoria Ram
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Antioquia"
+            class="card__description__location"
+            tabindex="54"
+          >
+            Antioquia
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO861388138?quantity=36&amount=156666.67"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_830380-MLA46975173279_082021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="65"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $5640000, Envío gratis"
+              class="money__and__shipping"
+              tabindex="64"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  5640000 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  5.640.000
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="63"
+            >
+              Apple iPad Pro De 12.9  Wi-fi  256gb Gris Espacial (5ª Generación)
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Bogotá D.C."
+            class="card__description__location"
+            tabindex="64"
+          >
+            Bogotá D.C.
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO835799416?quantity=36&amount=73570.75"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_911599-MLA48108843044_112021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="75"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $2648547, Envío gratis"
+              class="money__and__shipping"
+              tabindex="74"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  2648547 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  2.648.547
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="73"
+            >
+              Tablet  Samsung Galaxy Tab S7 Fe With S Pen Sm-t733 12.4  128gb Mystic Black Y 6gb De Memoria Ram
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Bogotá D.C."
+            class="card__description__location"
+            tabindex="74"
+          >
+            Bogotá D.C.
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO846320123?quantity=36&amount=8163.89"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_810115-MLA45264846885_032021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="85"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $293900, Envío gratis"
+              class="money__and__shipping"
+              tabindex="84"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  293900 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  293.900
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="83"
+            >
+              Tablet  Amazon Fire Hd 8 2020 Kfonwi 8  32gb Twilight Blue Y 2gb De Memoria Ram
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Antioquia"
+            class="card__description__location"
+            tabindex="84"
+          >
+            Antioquia
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO862279865?quantity=36&amount=130555.56"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_761571-MLA46975166071_082021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="95"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $4700000, Envío gratis"
+              class="money__and__shipping"
+              tabindex="94"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  4700000 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  4.700.000
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="93"
+            >
+              Apple iPad Pro De 11  Wi-fi  256gb Gris Espacial (3ª Generación)
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Bogotá D.C."
+            class="card__description__location"
+            tabindex="94"
+          >
+            Bogotá D.C.
+          </span>
+        </div>
+      </div>
+    </article>
+    <article
+      class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+    >
+      <div
+        class="andes-card__content card"
+      >
+        <div
+          class="card__image"
+        >
+          <figure>
+            <a
+              href="/product/MCO839630257?quantity=36&amount=8182.61"
+            >
+              <img
+                alt="imagen del producto"
+                class="card__image__img lazy-loadable"
+                data-src="https://http2.mlstatic.com/D_677812-MLA45264860034_032021-I.jpg"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                tabindex="105"
+              />
+            </a>
+          </figure>
+        </div>
+        <div
+          class="card__description"
+        >
+          <div
+            class="card__description__main-info"
+          >
+            <div
+              aria-label="precio del producto: $294574, Envío gratis"
+              class="money__and__shipping"
+              tabindex="104"
+            >
+              <span
+                class="andes-money-amount price andes-money-amount--cents-superscript"
+                style="font-size: 24px;"
+              >
+                <span
+                  class="andes-visually-hidden"
+                >
+                  294574 pesos
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__currency-symbol"
+                >
+                  $
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__fraction"
+                >
+                  294.574
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-visually-hidden"
+                >
+                  ,
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                  style="font-size: 12px; margin-top: 4px;"
+                >
+                  00
+                </span>
+              </span>
+              <span
+                class="shipping"
+              >
+                Envío
+              </span>
+            </div>
+            <h2
+              class="title"
+              tabindex="103"
+            >
+              Tablet  Amazon Fire Hd 8 2020 Kfonwi 8  32gb Plum Y 2gb De Memoria Ram
+            </h2>
+          </div>
+          <span
+            aria-label="Ubicación del producto: Bogotá D.C."
+            class="card__description__location"
+            tabindex="104"
+          >
+            Bogotá D.C.
+          </span>
+        </div>
+      </div>
+    </article>
+  </section>
+</DocumentFragment>
+`;

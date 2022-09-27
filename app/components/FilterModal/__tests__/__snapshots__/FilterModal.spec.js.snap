@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterModal Should render correctly 1`] = `
+<DocumentFragment>
+  <p
+    class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+  >
+    Mostrar más
+  </p>
+</DocumentFragment>
+`;
+
+exports[`FilterModal should render other features 1`] = `
+<DocumentFragment>
+  <p
+    class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+  >
+    Mostrar más
+  </p>
+</DocumentFragment>
+`;

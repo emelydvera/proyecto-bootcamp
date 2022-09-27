@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component <FilterValue/> should render the components 1`] = `
+<DocumentFragment>
+  <p
+    class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+  >
+    Todas las tiendas oficiales  
+    <span
+      class="filter__section__value__results"
+    >
+      (66)
+    </span>
+  </p>
+</DocumentFragment>
+`;

@@ -5,9 +5,9 @@
     "content-type": "application/json",
     "content-length": "204",
     "connection": "keep-alive",
-    "date": "Thu, 22 Sep 2022 16:47:44 GMT",
+    "date": "Mon, 26 Sep 2022 20:14:19 GMT",
     "x-content-type-options": "nosniff",
-    "x-request-id": "4a736060-df2d-4a53-9ce2-bbb5b6f9f113",
+    "x-request-id": "53adc0ee-fd99-40c9-981a-101f5b14e9e1",
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block",
     "access-control-allow-origin": "*",
@@ -16,9 +16,9 @@
     "access-control-max-age": "86400",
     "cache-control": "no-cache",
     "x-cache": "Error from cloudfront",
-    "via": "1.1 77dc0904034d14a129bafe4c9d954f08.cloudfront.net (CloudFront)",
-    "x-amz-cf-pop": "IAD50-C2",
-    "x-amz-cf-id": "WnpUF1rQyjCtCCE1dHknD9-hqDvOo-6HKBD8Lkxntjk492on4VS6mg=="
+    "via": "1.1 663f2425a3138c20ed99538fc8652f3c.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD12-P2",
+    "x-amz-cf-id": "-IiwsSOqVcol1ZG_etins0Soovv03lzkj_KM3PCoewrsUpuLD_inFQ=="
   },
   "data": {
     "error": "resource not found",
