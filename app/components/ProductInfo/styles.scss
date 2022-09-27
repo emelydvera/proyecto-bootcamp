@@ -2,28 +2,28 @@
 @import "../../styles/common";
 
 .info {
-    padding-top: 20px;
-    min-width: 30%;
-    max-width: 30%;
+  padding-top: 20px;
+  min-width: 30%;
+  max-width: 30%;
 
-    &__use {
-      font-weight: $font-weight-light;
-      color: $gray-letters;
-    }
-
-    h2 {
-      font-size: 24px;
-      width: 90%;
-    }
-
-    &__shipping {
-      color: $green-base;
-      display: flex;
-      align-items: center;
-
-      p {
-        margin-left: 3px;
-      }
-    }
-
+  &__use,
+  &__sold {
+    font-weight: $font-weight-light;
+    color: $gray-letters;
   }
+
+  h2 {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  &__shipping {
+    color: $green-base;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-left: 3px;
+    }
+  }
+}
