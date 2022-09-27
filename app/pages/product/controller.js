@@ -5,7 +5,7 @@ const I18nProvider = require("nordic/i18n/I18nProvider");
 const ImageProvider = require("nordic/image/provider");
 const View = require("./view");
 
-exports.fetchProducts = (req, res, next) => {
+exports.fetchProduct = (req, res, next) => {
   const { id } = req.params;
 
   ProductService.getProductDetail(id)
@@ -20,6 +20,7 @@ exports.fetchProducts = (req, res, next) => {
 
 exports.productDescription = (req, res, next) => {
   const { id } = req.params;
+
   ProductService.getProductDescription(id)
     .then((response) => {
       res.locals.description = response;
@@ -41,6 +42,7 @@ exports.productPathFromRoot = (req, res, next) => {
     });
 };
 
+/* istanbul ignore next */
 exports.render = (req, res) => {
   const imagesPrefix = config.assets.prefix;
 
