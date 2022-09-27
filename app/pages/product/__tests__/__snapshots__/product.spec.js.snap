@@ -17,7 +17,7 @@ exports[`Product page view Product with a non empty path from root array should 
           <a
             class="andes-breadcrumb__link"
             href="/listado?category=MCO1648"
-            title="Ir a la sección {0}"
+            title="Ir a la sección Computación"
           >
             Computación
           </a>
@@ -134,7 +134,7 @@ exports[`Product page view Product with a non empty path from root array should 
           </div>
         </div>
         <figure
-          aria-label="Imagen de {0}"
+          aria-label="Imagen de Moto G20 64 Gb Azul Cielo 4 Gb Ram"
           tabindex="9"
         >
           <img
@@ -951,11 +951,11 @@ No todos los recursos y configuraciones están disponibles en todos los países.
         Nuevo
       </span>
       <span
-        aria-label="{0} productos vendidos"
-        class="info__use"
+        aria-label="150 productos vendidos"
+        class="info__sold"
         tabindex="11"
       >
-         - {0} vendidos
+         - 150 vendidos
       </span>
       <h2
         aria-label="Moto G20 64 Gb Azul Cielo 4 Gb Ram"
@@ -1003,14 +1003,15 @@ No todos los recursos y configuraciones están disponibles en todos los países.
         </span>
       </div>
       <p
-        aria-label="hay \${0} unidades disponibles"
+        aria-label="hay $0 unidades disponibles"
         class="info__available"
         tabindex="16"
       >
-        Cantidad disponible: {0}
+        Cantidad disponible: 0
       </p>
       <div
         class="info__shipping"
+        role="envio"
       >
         <svg
           fill=" #00A650"
@@ -1174,7 +1175,7 @@ exports[`Product page view Product with an empty path from root array should ren
           </div>
         </div>
         <figure
-          aria-label="Imagen de {0}"
+          aria-label="Imagen de Moto G20 64 Gb Azul Cielo 4 Gb Ram"
           tabindex="9"
         >
           <img
@@ -1991,11 +1992,11 @@ No todos los recursos y configuraciones están disponibles en todos los países.
         Nuevo
       </span>
       <span
-        aria-label="{0} productos vendidos"
-        class="info__use"
+        aria-label="150 productos vendidos"
+        class="info__sold"
         tabindex="11"
       >
-         - {0} vendidos
+         - 150 vendidos
       </span>
       <h2
         aria-label="Moto G20 64 Gb Azul Cielo 4 Gb Ram"
@@ -2043,14 +2044,15 @@ No todos los recursos y configuraciones están disponibles en todos los países.
         </span>
       </div>
       <p
-        aria-label="hay \${0} unidades disponibles"
+        aria-label="hay $0 unidades disponibles"
         class="info__available"
         tabindex="16"
       >
-        Cantidad disponible: {0}
+        Cantidad disponible: 0
       </p>
       <div
         class="info__shipping"
+        role="envio"
       >
         <svg
           fill=" #00A650"

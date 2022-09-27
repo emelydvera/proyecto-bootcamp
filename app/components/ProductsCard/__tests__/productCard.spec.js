@@ -3,9 +3,9 @@ const ProductCard = require("../ProductsCard");
 const { render, screen } = require("@testing-library/react");
 const { getByRole, queryByText, getByLabelText } = screen;
 const mockProductWithFreeShipping = require("../../../../mocks/components/productCard/productCardMockWithFreeShipping.json");
-const mockProductWithoutFreeShipping = require("../../../../mocks/components/productCardMockWithoutFreeShipping.json");
-const mockProductWithoutInstallments = require("../../../../mocks/components/productCardMockWithoutInstallments.json");
-const mockProductWithFalsyAddress = require("../../../../mocks/components/productCardMockWithoutAddressState.json");
+const mockProductWithoutFreeShipping = require("../../../../mocks/components/productCard/productCardMockWithoutFreeShipping.json");
+const mockProductWithoutInstallments = require("../../../../mocks/components/productCard/productCardMockWithoutInstallments.json");
+const mockProductWithFalsyAddress = require("../../../../mocks/components/productCard/productCardMockWithoutAddressState.json");
 
 describe("ProductCard", () => {
   const i18n = { gettext: (text) => text };
