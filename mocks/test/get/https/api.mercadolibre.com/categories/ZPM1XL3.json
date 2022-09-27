@@ -1,0 +1,28 @@
+{
+  "status": 404,
+  "statusText": "Not Found",
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "85",
+    "connection": "keep-alive",
+    "date": "Tue, 27 Sep 2022 13:09:20 GMT",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "d57a2516-da51-4108-9f0a-87ab74d0fe3c",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Error from cloudfront",
+    "via": "1.1 0148582ee6a23cb4e51044b01f72c9f2.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "BOG50-P2",
+    "x-amz-cf-id": "gFzJ3hgVmfJo4Tib1FwvKQny01Dm-cItm5Og7NEFWCZ1CJZJXXVNxA=="
+  },
+  "data": {
+    "message": "Category not found: ZPM1XL3",
+    "error": "not_found",
+    "status": 404,
+    "cause": []
+  }
+}

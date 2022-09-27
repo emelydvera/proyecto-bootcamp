@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputQuantity component should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="input__quantity"
+  >
+    <div
+      class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default checkout__input"
+    >
+      <label>
+        <span
+          class="andes-form-control__label"
+        >
+          Cantidad
+        </span>
+        <div
+          class="andes-form-control__control"
+        >
+          <input
+            aria-label="Ingrese la cantidad de productos a comprar"
+            class="andes-form-control__field"
+            maxlength="120"
+            rows="1"
+            tabindex="12"
+            type="number"
+            value="3"
+          />
+        </div>
+      </label>
+      <div
+        class="andes-form-control__bottom"
+      >
+        <span
+          class="andes-form-control__message"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

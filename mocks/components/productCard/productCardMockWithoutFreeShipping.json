@@ -1,0 +1,21 @@
+{
+  "id": "MCO640590627",
+  "title": "Apple Macbook Air (13 Pulgadas, 2020, Chip M1, 256 Gb De Ssd, 8 Gb De Ram) - Gris Espacial",
+  "price": 4749999,
+  "address": {
+    "state_id": "CO-ANT",
+    "state_name": "Bolívar",
+    "city_id": "TUNPQ0VOVjU5YjYx",
+    "city_name": "Cartagena"
+  },
+  "thumbnail": "http://http2.mlstatic.com/D_666275-MCO48851447655_012022-I.jpg",
+  "installments": {
+    "amount": 315833.33,
+    "currency_id": "COP",
+    "quantity": 12,
+    "rate": 0
+  },
+  "shipping": {
+    "free_shipping": false
+  }
+}

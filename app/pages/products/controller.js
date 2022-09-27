@@ -9,7 +9,7 @@ exports.fetchProducts = (req, res, next) => {
   const { siteId } = req.platform;
 
   if (!req.query.q && !req.query.category) {
-    return res.redirect("/error");
+    return res.redirect("/error404");
   }
 
   ProductService.getProducts(siteId, req.query)
@@ -21,7 +21,7 @@ exports.fetchProducts = (req, res, next) => {
       next();
     })
     .catch(() => {
-      return res.redirect("/error");
+      return res.redirect("/error404");
     });
 };
 

@@ -1,0 +1,31 @@
+{
+  "status": 400,
+  "statusText": "Bad Request",
+  "headers": {
+    "content-type": "application/json;charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "date": "Mon, 26 Sep 2022 23:03:07 GMT",
+    "vary": "accept,accept-encoding",
+    "cache-control": "max-age=0",
+    "content-encoding": "gzip",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "98a368c6-5886-4a0b-a7a3-b77add1efc1e",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Error from cloudfront",
+    "via": "1.1 5e1439d2277c06dce3f7e9e4522a4c20.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "GRU3-P1",
+    "x-amz-cf-id": "sY3CoEN2FrRPP8WthRGMHdKKgNF9AJID_znOSsh8saXBFPUkbSvB5A=="
+  },
+  "data": {
+    "message": "This host is not serving site MCC",
+    "error": "bad_request",
+    "status": 400,
+    "cause": []
+  }
+}

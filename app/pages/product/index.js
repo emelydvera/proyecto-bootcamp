@@ -1,6 +1,6 @@
 const router = require("nordic/ragnar").router();
 const {
-  fetchProducts,
+  fetchProduct,
   productDescription,
   productPathFromRoot,
   render,
@@ -8,7 +8,7 @@ const {
 
 router.get(
   "/:id",
-  fetchProducts,
+  fetchProduct,
   productDescription,
   productPathFromRoot,
   render

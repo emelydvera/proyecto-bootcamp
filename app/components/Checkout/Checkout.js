@@ -7,7 +7,7 @@ const InputQuantity = require("../InputQuantity");
 const FastShipping24 = require("@andes/icons/FastShipping24");
 const Shipping24 = require("@andes/icons/Shipping24");
 const MoneyAmount = require("@andes/money-amount");
-const amountFormater = require('../../utils/priceFormater')
+const amountFormater = require('../../utils/priceFormater');
 
 const Checkout = ({ product, quantity }) => {
   const {
@@ -24,11 +24,11 @@ const Checkout = ({ product, quantity }) => {
   const [quantityToBuy, setQuantityToBuy] = useState(quantity);
   const [error, setError] = useState("");
 
-  const priceCents = amountFormater(price)
+  const priceCents = amountFormater(price);
   const totalPriceCents = (quantityToBuy > available_quantity ?
     amountFormater(available_quantity * price) :
     amountFormater(quantityToBuy * price)
-  )
+  );
 
   return (
     <div className="checkout" id="checkout">

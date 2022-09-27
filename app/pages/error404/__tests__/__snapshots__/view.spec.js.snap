@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the 404 error component view matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="error"
+  >
+    <img
+      alt="error image"
+      class="lazy-loadable"
+      data-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      decoding="async"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    />
+    <h4
+      aria-label="Parece que esta página no existe"
+      class="error__title"
+    >
+      Parece que esta página no existe
+    </h4>
+    <a
+      class="error__link"
+      href="/"
+    >
+      <button
+        aria-label="volver a home"
+      >
+        Ir a la página principal
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;

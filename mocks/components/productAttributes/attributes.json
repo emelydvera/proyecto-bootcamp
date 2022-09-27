@@ -1,0 +1,56 @@
+[
+    {
+        "id": "ALPHANUMERIC_MODEL",
+        "value_id": "11188312",
+        "value_struct": null,
+        "values": [
+            {
+                "struct": null,
+                "source": 1,
+                "id": "11188312",
+                "name": "15ALC6"
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "name": "Modelo alfanumérico",
+        "value_name": "15ALC6",
+        "source": 1
+    },
+    {
+        "value_struct": null,
+        "values": [
+            {
+                "id": "7494",
+                "name": "Lenovo",
+                "struct": null,
+                "source": 1
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "name": "Marca",
+        "value_id": "7494",
+        "value_name": "Lenovo",
+        "attribute_group_name": "Otros",
+        "id": "BRAND"
+    },
+    {
+        "value_id": "11188317",
+        "value_name": "82KU00AAUS",
+        "source": 1,
+        "id": "DETAILED_MODEL",
+        "name": "Modelo detallado",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_struct": null,
+        "values": [
+            {
+                "id": "11188317",
+                "name": "82KU00AAUS",
+                "struct": null,
+                "source": 1
+            }
+        ]
+    }
+]
