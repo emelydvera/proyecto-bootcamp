@@ -128,13 +128,13 @@ npm run test:unit
 Coverage 100%
 ### Files and testers
 
--Views 
+- Views 
 
-  -Home - Susan Ortiz Muñoz
-  -Products - Enrique Chacon Mena
-  -Product - Ivan Batista Ochoa
-  -Buy - Gabriela Pacheco Abarcia
-  -Error404 - Nahuel Occhipinti
+  - Home - Susan Ortiz Muñoz 
+  - Products - Enrique Chacon Mena 
+  - Product - Ivan Batista Ochoa
+  - Buy - Gabriela Pacheco Abarcia
+  - Error404 - Nahuel Occhipinti
 
 - Components
 
