@@ -13,7 +13,7 @@ exports.fetchProduct = (req, res, next) => {
       res.locals.product = response;
       next();
     })
-    .catch((error) => {
+    .catch(() => {
       res.redirect("/error404");
     });
 };
@@ -26,7 +26,7 @@ exports.productDescription = (req, res, next) => {
       res.locals.description = response;
       next();
     })
-    .catch((error) => {
+    .catch(() => {
       res.redirect("/error404");
     });
 };
