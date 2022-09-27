@@ -2,23 +2,63 @@
 
 > BRIEF PROJECT DESCRIPTION
 
-## Description
+## Index
 
-- Feature/Search Bar: This feature allows users to perform a search in the search bar and shows them products that match with their search.
+* [1. Walk through and description](#1-Walk-through-and-description)
+* [2. Environment setup](#2-Environment-setup)
+* [3. Development](#3-Development)
+* [4. Debug](#4-Debug)
+* [5. Testing](#5-Testing)
 
-- Feature/Product Details: This feature allows users to get more information about a specific product when they click on an image.
+## 1. Walk through and description
 
-- Feature/Product Filter: This feature allows users to limit their search by different filters so they can easily get what they are looking for.
+### Pages
+- Home: This page show an search bar and button, here users can find products, not only by name, but also by category. The component we use are:
+  - SearchInput
 
-- Feature/Error Page: This feature was developed to allow users land in an friendly error page when there is an error in page by a server response error or an user request error or even some other errors that comes up during the interaction of the user with the page.
+    - <img src='./imagesReadme/home1.png' alt='page home'/>
+    - <img src='./imagesReadme/home2.png' alt='page home'/>
+    - <img src='./imagesReadme/home_error.png' alt='page home error'/>
 
-- Feature/Pagination: This feature allows users to better navigate among products; go to next page, go back to previous page, go to the first page or even hide buttons where there is only one page to show.
+- Products: This page shows a list of products that match what the user searched for on the home page, it also has filters such as: categories, discounts, location, price, products per page and pagination. The component we use are:
+  - Filters
+  - Breadcrumb
+  - SelectProductsPerPage
+  - ProductsList
+  - Pagination
 
-- Feature/Prepare Purchasing Process: This feature allows users to initiate a purchasing process by choosing the product quantity of the selected product) they want to buy; when users are ready they can press the purchase button and they will be taken to the checkout page.
+    - <img src='./imagesReadme/product_list.png' alt='page product list'/>
 
-- Feature/Checkout: This feature allows users to get a summary of their purchase and allows them to modify if needed. The summary allow users to see the name of the product, the image of the product, the quantity they are going, the price per unit and the total price.
+- Page Product: Here you can see the product chosen on the previous page with its information:
+  Product Images
+  Name
+  Condition(If it is new or used)
+  Quantity Sold
+  Quantity Available
+  Shipping type
+  Price
+And it also has a detailed description of the product and its characteristics.
+    Required components:
+   - ProductAttributes
+    -ProductInfo
+    -ProductView
+    -BreadCrumb
 
-## Environment setup
+      - <img src='./imagesReadme/product_detail.png' alt='page product detail'/>
+      - <img src='./imagesReadme/Input_error.png' alt='detail input error'/>
+
+- Checkout: This page shows a summary of the product or products that the user is going to buy, showing the number of products, the unit price of the product and the total price of the purchase. The component we use are:
+  - Checkout
+
+      - <img src='./imagesReadme/checkout.png' alt='page buy'/>
+
+- Page error404: It is redirected to this page when trying to enter an invalid address, the message appears along with an image and a button to redirect to the main page
+   Required component:
+  - Component404   
+
+    - <img src='./imagesReadme/page_error.png' alt='page error'/>
+
+## 2. Environment setup
 
 - Install [Node.js](https://nodejs.org/)
   - Recommended method is by using [NVM](https://github.com/creationix/nvm)
@@ -42,7 +82,7 @@ _These are just examples, please indicate the real list of domains that is used 
 
 - You may find convenient editing your `.bash_profile` to [auto pick the Node version](https://github.com/mercadolibre/frontend/wiki/Auto-Picking-Node-version) of each project.
 
-## Development
+## 3. Development
 
 ### 1) Run and build the app:
 
@@ -62,7 +102,7 @@ https://dev.mercadolibre.cl:8443/
 
 ```
 
-## Debug
+## 4. Debug
 
 ### 1) Build the assets:
 
@@ -77,6 +117,64 @@ _Alternatively you may use the watcher for automatic assets rebuilding: `npm run
 ```
 npm run debug
 ```
+## 5. Testing
+
+```
+npm run test:unit
+```
+
+*poner descripcion de testing*
+
+Coverage 100%
+### Files and testers
+
+-Views 
+
+  -Home - Susan Ortiz Muñoz
+  -Products - Enrique Chacon Mena
+  -Product - Ivan Batista Ochoa
+  -Buy - Gabriela Pacheco Abarcia
+  -Error404 - Nahuel Occhipinti
+
+- Components
+
+  - BreadCrumb - Enrique Chacon Mena
+  - Checkout - Gabriela Pacheco Abarcia
+  - Component404 - Nahuel Occhipinti
+  - Filter - Enrique Chacon Mena
+  - FilterModal - Enrique Chacon Mena
+  - FilterApplied - Enrique Chacon Mena
+  - FiltersAvailables  - Susan Ortiz Muñoz
+  - FilterValue - Emely Vera Villamizar
+  - FilterSections - Enrique Chacon Mena
+  - InputQuantity - Gabriela Pacheco Abarcia
+  - Pagination - Ivan Batista Ochoa
+  - ProductAttributes - Ivan Batista Ochoa
+  - ProductsCard - Ivan Batista Ochoa
+  - ProductInfo - Nahuel Occhipinti
+  - ProductInfoBuy - Emely Vera Villamizar
+  - ProductView - Emely Vera Villamizar
+  - SearchInput - Susan Ortiz Muñoz
+  - SelectProductPerPage - Ivan Batista Ochoa
+  - ProductSlider - Emely Vera Villamizar
+  - ProductsList - Enrique Chacon Mena
+
+- Services
+
+  - ProductService - All
+
+- Middlewares
+
+  - Buy Controller - Emely Vera & Enrique Chacon
+  - Product - Ivan Batista & Susan Ortiz
+  - Products - Gabriela Pacheco & Nahuel Occhipinti
+
+- Utils
+
+  - priceFormatter - Gabriela Pacheco Abarcia
+  - urlGenerator - Enrique Chacon Mena
+
+<img src='./imagesReadme/test_coverage.png' alt='test coverage 100%'/>
 
 ## Team:
 
@@ -89,4 +187,4 @@ npm run debug
 
 ## License
 
-© 2021 Mercado Libre
+© 2022 Mercado Libre
