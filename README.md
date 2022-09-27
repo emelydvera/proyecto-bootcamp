@@ -9,6 +9,10 @@
 * [3. Development](#3-Development)
 * [4. Debug](#4-Debug)
 * [5. Testing](#5-Testing)
+* [6. Work methodology](#6-Work-methodology)
+* [7. Improvement opportunities](#7-Improvement-opportunities)
+* [8. Team](#8-Team)
+* [9. License](#9-License)
 
 ## 1. Walk through and description
 
@@ -16,9 +20,10 @@
 - Home: This page show an search bar and button, here users can find products, not only by name, but also by category. The component we use are:
   - SearchInput
 
-    - <img src='./imagesReadme/home1.png' alt='page home'/>
-    - <img src='./imagesReadme/home2.png' alt='page home'/>
-    - <img src='./imagesReadme/home_error.png' alt='page home error'/>
+      <img src='./imagesReadme/home1.png' alt='page home'  width='70%'/>
+      <img src='./imagesReadme/home2.png' alt='page home'  width='70%'/>
+      <img src='./imagesReadme/home_error.png' alt='page home error'  width='70%'/>
+    <br>
 
 - Products: This page shows a list of products that match what the user searched for on the home page, it also has filters such as: categories, discounts, location, price, products per page and pagination. The component we use are:
   - Filters
@@ -27,7 +32,8 @@
   - ProductsList
   - Pagination
 
-    - <img src='./imagesReadme/product_list.png' alt='page product list'/>
+      <img src='./imagesReadme/product_list.png' alt='page product list'  width='70%'/>
+    <br>
 
 - Page Product: Here you can see the product chosen on the previous page with its information:
   Product Images
@@ -44,19 +50,22 @@ And it also has a detailed description of the product and its characteristics.
     -ProductView
     -BreadCrumb
 
-      - <img src='./imagesReadme/product_detail.png' alt='page product detail'/>
-      - <img src='./imagesReadme/Input_error.png' alt='detail input error'/>
+      <img src='./imagesReadme/product_detail.png' alt='page product detail'  width='70%'/>
+      <img src='./imagesReadme/Input_error.png' alt='detail input error'  width='30%'/>
+      <br>
 
 - Checkout: This page shows a summary of the product or products that the user is going to buy, showing the number of products, the unit price of the product and the total price of the purchase. The component we use are:
   - Checkout
 
-      - <img src='./imagesReadme/checkout.png' alt='page buy'/>
+      <img src='./imagesReadme/checkout.png' alt='page buy'  width='70%'/>
+      <br>
 
 - Page error404: It is redirected to this page when trying to enter an invalid address, the message appears along with an image and a button to redirect to the main page
    Required component:
   - Component404   
 
-    - <img src='./imagesReadme/page_error.png' alt='page error'/>
+      <img src='./imagesReadme/page_error.png' alt='page error' width='70%'/>
+    <br>
 
 ## 2. Environment setup
 
@@ -119,13 +128,12 @@ npm run debug
 ```
 ## 5. Testing
 
+Run all the tests with the following command:
+
 ```
 npm run test:unit
 ```
 
-*poner descripcion de testing*
-
-Coverage 100%
 ### Files and testers
 
 - Views 
@@ -134,7 +142,9 @@ Coverage 100%
   - Products - Enrique Chacon Mena 
   - Product - Ivan Batista Ochoa
   - Buy - Gabriela Pacheco Abarcia
-  - Error404 - Nahuel Occhipinti
+  - Error404 - Nahuel Occhipinti  
+
+<br/>
 
 - Components
 
@@ -159,9 +169,13 @@ Coverage 100%
   - ProductSlider - Emely Vera Villamizar
   - ProductsList - Enrique Chacon Mena
 
+<br>
+
 - Services
 
   - ProductService - All
+
+<br>
 
 - Middlewares
 
@@ -169,14 +183,35 @@ Coverage 100%
   - Product - Ivan Batista & Susan Ortiz
   - Products - Gabriela Pacheco & Nahuel Occhipinti
 
+<br>
+
 - Utils
 
   - priceFormatter - Gabriela Pacheco Abarcia
   - urlGenerator - Enrique Chacon Mena
 
-<img src='./imagesReadme/test_coverage.png' alt='test coverage 100%'/>
+    <img src='./imagesReadme/test_coverage.png' alt='test coverage 100%' width='80%' style='margin-top:30px'/>
+<br>
 
-## Team:
+## 6. Work methodology
+
+To work, we organized ourselves using Trello, where we associated the different user stories with the assigned person in order to have an overview of the progress of the project and what was causing us blockages.
+
+We organize ourselves by small groups to develop some functionalities together in the first 3 sprints.
+
+In Sprint 4 we work more independently to get to test all the functionalities of the application; we work some tests individually and some we work in teams.
+
+## 7. Improvement opportunities
+
+We believe that every project always has at least one opportunity for improvement. In our case, we are aware that the project can improve the following:
+
+- Accessibility: Especially the accessibility of the page that renders the product listing.
+
+- Adaptive Design: We can adjust the project so that it has a design that adapts to devices of different sizes.
+
+- SEO: Although the browser analysis indicates that our application has a 91 / 100, the reality is that we believe that we can optimize it a little more.
+
+## 8. Team:
 
 - Enrique Chacon Mena
 - Emely Vera Villamizar
@@ -185,6 +220,6 @@ Coverage 100%
 - Gabriela Pacheco Abarcia
 - Ivan Batista Ochoa
 
-## License
+## 9. License
 
 © 2022 Mercado Libre
