@@ -1,10 +1,10 @@
+/* istanbul ignore file */
 const React = require("react");
 const config = require("nordic/config");
 const I18nProvider = require("nordic/i18n/I18nProvider");
 const ImageProvider = require("nordic/image/provider");
 const View = require("./view");
 
-/* istanbul ignore next */
 exports.render = (req, res) => {
   const imagesPrefix = config.assets.prefix;
 

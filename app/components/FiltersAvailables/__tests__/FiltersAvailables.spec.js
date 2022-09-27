@@ -1,10 +1,9 @@
 const React = require("react");
 const FiltersAvailables = require("../FiltersAvailables");
-const { render, screen, fireEvent } = require("@testing-library/react");
-const { getByText, getByRole, getByPlaceholderText } = screen;
+const { render, screen } = require("@testing-library/react");
 const {
   data,
-} = require("../../../../mocks/development/get/https/internal-api.mercadolibre.com/sites/MLC/search?limit=10&offset=0&page=1&q=mac.json");
+} = require("../../../../mocks/components/FilterAvailables/datamock.json");
 
 const UrlGenerator = require("../../../utils/urlGenerator");
 
@@ -24,6 +23,5 @@ describe("Component FiltersAvailables", () => {
   it("Should render correctly", () => {
     const { asFragment } = component;
     expect(asFragment()).toMatchSnapshot();
-    screen.debug();
   });
 });
