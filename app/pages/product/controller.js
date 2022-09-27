@@ -34,7 +34,7 @@ exports.productDescription = (req, res, next) => {
 exports.productPathFromRoot = (req, res, next) => {
   ProductService.getProductPathFromRoot(res.locals.product.category_id)
     .then((response) => {
-      res.locals.product.path = response ;
+      res.locals.product.path = response;
       next();
     })
     .catch(() => {
