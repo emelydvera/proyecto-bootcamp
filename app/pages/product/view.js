@@ -1,6 +1,7 @@
 const React = require("react");
 const Styles = require("nordic/style");
 const Script = require("nordic/script");
+const Head = require("nordic/head");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
 const ProductView = require("../../components/ProductView");
@@ -20,6 +21,13 @@ function View(props) {
 
   return (
     <>
+      <Head>
+        <title>{i18n.gettext("Detalle del producto")}</title>
+        <meta
+          name="description"
+          content={i18n.gettext("Esta es la página del producto seleccionado")}
+        ></meta>
+      </Head>
       <Styles href="product.css" />
       <Script>
         {`

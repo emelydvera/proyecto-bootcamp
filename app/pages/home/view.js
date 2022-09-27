@@ -1,6 +1,7 @@
 const React = require("react");
 const PropTypes = require("prop-types");
 const Script = require("nordic/script");
+const Head = require("nordic/head");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
 const Style = require("nordic/style");
@@ -15,6 +16,13 @@ function View(props) {
 
   return (
     <>
+      <Head>
+        <title>{i18n.gettext("Bienvenido a Mercado Libre")}</title>
+        <meta
+          name="description"
+          content={i18n.gettext("Página de bienvenida de Mercado Libre")}
+        ></meta>
+      </Head>
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {

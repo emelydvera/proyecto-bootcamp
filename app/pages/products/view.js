@@ -3,6 +3,7 @@ const { useState } = React;
 const PropTypes = require("prop-types");
 const Script = require("nordic/script");
 const Styles = require("nordic/style");
+const Head = require("nordic/head");
 const serialize = require("serialize-javascript");
 const { injectI18n } = require("nordic/i18n");
 const ProductsList = require("../../components/ProductsList");
@@ -42,6 +43,15 @@ function View(props) {
 
   return (
     <div>
+      <Head>
+        <title>{i18n.gettext("Listado de productos")}</title>
+        <meta
+          name="description"
+          content={i18n.gettext(
+            "Esta es la página del listado de productos encontrados con la búsqueda realizada"
+          )}
+        ></meta>
+      </Head>
       <Styles href="products.css" />
       <Script>
         {`

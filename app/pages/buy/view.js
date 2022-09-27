@@ -1,6 +1,7 @@
 const React = require("react");
 const Script = require("nordic/script");
 const Styles = require("nordic/style");
+const Head = require("nordic/head");
 const serialize = require("serialize-javascript");
 const PropTypes = require("prop-types");
 const { injectI18n } = require("nordic/i18n");
@@ -16,12 +17,21 @@ function View(props) {
   };
   return (
     <>
+      <Head>
+        <title>{i18n.gettext("Detalle de la compra")}</title>
+        <meta
+          name="description"
+          content={i18n.gettext(
+            "Esta es la página para realizar la compra del producto seleccionado"
+          )}
+        ></meta>
+      </Head>
       <Styles href="buy.css" />
       <Script>
         {`
           window.__PRELOADED_STATE__ = ${serialize(preloadedState, {
-          isJSON: true,
-        })};
+            isJSON: true,
+          })};
         `}
       </Script>
       <Script src="vendor.js" />
