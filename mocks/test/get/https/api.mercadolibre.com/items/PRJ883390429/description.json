@@ -3,11 +3,11 @@
   "statusText": "Not Found",
   "headers": {
     "content-type": "application/json; charset=utf-8",
-    "content-length": "84",
+    "content-length": "75",
     "connection": "keep-alive",
-    "date": "Thu, 22 Sep 2022 17:01:34 GMT",
+    "date": "Mon, 26 Sep 2022 21:23:45 GMT",
     "x-content-type-options": "nosniff",
-    "x-request-id": "995705e6-115d-4aa2-9aaf-0b76f356733f",
+    "x-request-id": "92baac4b-9b95-439f-96a0-8c6cc1ce635d",
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block",
     "access-control-allow-origin": "*",
@@ -15,14 +15,14 @@
     "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
     "access-control-max-age": "86400",
     "x-cache": "Error from cloudfront",
-    "via": "1.1 0fd782cbc1c3c43778f2ac89b2bfb444.cloudfront.net (CloudFront)",
-    "x-amz-cf-pop": "IAD12-P2",
-    "x-amz-cf-id": "WdWltQs-wvJ-Mde5pWpDiyv_da5PZ1Jvyjw2l80A8jpHSbZI51J6zA=="
+    "via": "1.1 6f18ca2e5109f8aa7cd1212932dc4e9a.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD50-C2",
+    "x-amz-cf-id": "iZGKS745_95vL0EnuT6unEQtKfqwfnPFS5mtTBEfo-Ji-NP3UfgUwg=="
   },
   "data": {
-    "message": "Category not found: MO1648",
-    "error": "not_found",
-    "status": 404,
+    "message": "Invalid item id",
+    "error": "bad_request",
+    "status": 400,
     "cause": []
   }
 }

@@ -1,0 +1,2420 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products View Tests Should render the view correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      id="products-page"
+    >
+      <aside
+        class="filters"
+      >
+        <p
+          class="andes-typography andes-typography--type-title andes-typography--size-l andes-typography--color-primary"
+        >
+          Tablet
+        </p>
+        <p
+          class="andes-typography andes-typography--type-body andes-typography--size-l andes-typography--color-secondary"
+        >
+          1000 resultados
+        </p>
+        <div>
+          <div
+            class="andes-tag andes-tag--small andes-tag__color--default"
+          >
+            <div
+              class="andes-tag__label"
+            >
+              Tablets
+            </div>
+            <button
+              aria-label="Eliminar filtro: Categorías: Tablets"
+              class="andes-tag__close"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="andes-tag__icon-container"
+              >
+                <svg
+                  class="andes-tag__close-icon andes-tag__svg-fill"
+                  height="12"
+                  viewBox="0 0 16 16"
+                  width="12"
+                >
+                  <path
+                    d="M8.594.552l.855.842L5.87 5.022 9.45 8.6l-.849.848-3.572-3.572-3.521 3.572-.855-.842L4.18 5.028.552 1.4l.849-.848 3.621 3.62L8.594.553z"
+                    fill-opacity="0.45"
+                    transform="translate(3 3)"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Tiendas oficiales
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Todas las tiendas oficiales  
+              <span
+                class="filter__section__value__results"
+              >
+                (66)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Lenovo  
+              <span
+                class="filter__section__value__results"
+              >
+                (18)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Samsung  
+              <span
+                class="filter__section__value__results"
+              >
+                (8)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Huawei  
+              <span
+                class="filter__section__value__results"
+              >
+                (3)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Descuentos
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Desde 5% OFF  
+              <span
+                class="filter__section__value__results"
+              >
+                (158)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Desde 10% OFF  
+              <span
+                class="filter__section__value__results"
+              >
+                (106)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Desde 15% OFF  
+              <span
+                class="filter__section__value__results"
+              >
+                (63)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Desde 20% OFF  
+              <span
+                class="filter__section__value__results"
+              >
+                (51)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Ubicación
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Bogotá D.C.  
+              <span
+                class="filter__section__value__results"
+              >
+                (3089)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Antioquia  
+              <span
+                class="filter__section__value__results"
+              >
+                (775)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Cundinamarca  
+              <span
+                class="filter__section__value__results"
+              >
+                (389)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Valle Del Cauca  
+              <span
+                class="filter__section__value__results"
+              >
+                (298)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Precio
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Hasta $450.000  
+              <span
+                class="filter__section__value__results"
+              >
+                (1808)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              $450.000 a $1.000.000  
+              <span
+                class="filter__section__value__results"
+              >
+                (1821)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Más de $1.000.000  
+              <span
+                class="filter__section__value__results"
+              >
+                (2188)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Filtro por MercadoPago
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Con MercadoPago  
+              <span
+                class="filter__section__value__results"
+              >
+                (5817)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Pago
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              En cuotas  
+              <span
+                class="filter__section__value__results"
+              >
+                (5817)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Cuotas sin interés  
+              <span
+                class="filter__section__value__results"
+              >
+                (1350)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Envío
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Mercado Envíos  
+              <span
+                class="filter__section__value__results"
+              >
+                (5817)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Full  
+              <span
+                class="filter__section__value__results"
+              >
+                (54)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Filtro por calidad de vendedores
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Mejores vendedores  
+              <span
+                class="filter__section__value__results"
+              >
+                (1801)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Filtro por fecha de comienzo
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Publicados hoy  
+              <span
+                class="filter__section__value__results"
+              >
+                (17)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Filtro por fecha de finalización
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Finalizan hoy  
+              <span
+                class="filter__section__value__results"
+              >
+                (9)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Filtro por publicaciones con video
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Publicaciones con video  
+              <span
+                class="filter__section__value__results"
+              >
+                (706)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Filtro por publicaciones con imágenes
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Con fotos  
+              <span
+                class="filter__section__value__results"
+              >
+                (5815)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Descuentos para todos los medios de pago
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Desde 10% OFF  
+              <span
+                class="filter__section__value__results"
+              >
+                (29)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Desde 20% OFF  
+              <span
+                class="filter__section__value__results"
+              >
+                (6)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Desde 30% OFF  
+              <span
+                class="filter__section__value__results"
+              >
+                (2)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Campaña
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              P-MCO7309001  
+              <span
+                class="filter__section__value__results"
+              >
+                (6)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              P-MCO7456003  
+              <span
+                class="filter__section__value__results"
+              >
+                (6)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              MCO2298  
+              <span
+                class="filter__section__value__results"
+              >
+                (4)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              MCO4996  
+              <span
+                class="filter__section__value__results"
+              >
+                (2)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Tipo de promoción
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Oferta del día  
+              <span
+                class="filter__section__value__results"
+              >
+                (3)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Costo de envío
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Gratis  
+              <span
+                class="filter__section__value__results"
+              >
+                (5206)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Marca
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Dell  
+              <span
+                class="filter__section__value__results"
+              >
+                (3)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Capacidad
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Menos de 32 GB  
+              <span
+                class="filter__section__value__results"
+              >
+                (1252)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              32 a 63 GB  
+              <span
+                class="filter__section__value__results"
+              >
+                (1167)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              64 a 127 GB  
+              <span
+                class="filter__section__value__results"
+              >
+                (665)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              128 a 255 GB  
+              <span
+                class="filter__section__value__results"
+              >
+                (572)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Tamaño de la pantalla
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              7,9 " o menos  
+              <span
+                class="filter__section__value__results"
+              >
+                (966)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              7,9 a 9,7 "  
+              <span
+                class="filter__section__value__results"
+              >
+                (995)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              9,7 a 10,1 "  
+              <span
+                class="filter__section__value__results"
+              >
+                (1537)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              10,1 a 10,5 "  
+              <span
+                class="filter__section__value__results"
+              >
+                (1088)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Otras características
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Es multi-touch  
+              <span
+                class="filter__section__value__results"
+              >
+                (2410)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Condición
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Nuevo  
+              <span
+                class="filter__section__value__results"
+              >
+                (4415)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Usado  
+              <span
+                class="filter__section__value__results"
+              >
+                (1379)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Reacondicionado  
+              <span
+                class="filter__section__value__results"
+              >
+                (23)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Línea
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              iPad Pro  
+              <span
+                class="filter__section__value__results"
+              >
+                (532)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Galaxy  
+              <span
+                class="filter__section__value__results"
+              >
+                (427)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              iPad  
+              <span
+                class="filter__section__value__results"
+              >
+                (409)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Tab  
+              <span
+                class="filter__section__value__results"
+              >
+                (242)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Color principal
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Negro  
+              <span
+                class="filter__section__value__results"
+              >
+                (876)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Gris  
+              <span
+                class="filter__section__value__results"
+              >
+                (790)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Plateado  
+              <span
+                class="filter__section__value__results"
+              >
+                (596)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Azul  
+              <span
+                class="filter__section__value__results"
+              >
+                (312)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Máxima resolución de pantalla
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              2048 px x 1536 px  
+              <span
+                class="filter__section__value__results"
+              >
+                (303)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              1280 px x 800 px  
+              <span
+                class="filter__section__value__results"
+              >
+                (284)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              1920 px x 1200 px  
+              <span
+                class="filter__section__value__results"
+              >
+                (227)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              1024 px x 600 px  
+              <span
+                class="filter__section__value__results"
+              >
+                (174)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Modelo
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              2nd generation  
+              <span
+                class="filter__section__value__results"
+              >
+                (247)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              4th generation  
+              <span
+                class="filter__section__value__results"
+              >
+                (190)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              5th generation  
+              <span
+                class="filter__section__value__results"
+              >
+                (164)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              3rd generation  
+              <span
+                class="filter__section__value__results"
+              >
+                (151)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Nombre del sistema operativo
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Android  
+              <span
+                class="filter__section__value__results"
+              >
+                (2161)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              iOS  
+              <span
+                class="filter__section__value__results"
+              >
+                (736)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              iPadOS  
+              <span
+                class="filter__section__value__results"
+              >
+                (597)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Fire OS  
+              <span
+                class="filter__section__value__results"
+              >
+                (232)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+            >
+              Mostrar más
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Tipo de compra
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Local  
+              <span
+                class="filter__section__value__results"
+              >
+                (5392)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Internacional  
+              <span
+                class="filter__section__value__results"
+              >
+                (425)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Peso
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              420 g o menos  
+              <span
+                class="filter__section__value__results"
+              >
+                (737)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              420 a 469 g  
+              <span
+                class="filter__section__value__results"
+              >
+                (922)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              469 a 570 g  
+              <span
+                class="filter__section__value__results"
+              >
+                (790)
+              </span>
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              570 g o más  
+              <span
+                class="filter__section__value__results"
+              >
+                (926)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Otras características
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Con flash  
+              <span
+                class="filter__section__value__results"
+              >
+                (1067)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Otras características
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Con GPS  
+              <span
+                class="filter__section__value__results"
+              >
+                (1869)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Otras características
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Con salida para audífonos  
+              <span
+                class="filter__section__value__results"
+              >
+                (1863)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Otras características
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Con micrófono  
+              <span
+                class="filter__section__value__results"
+              >
+                (2592)
+              </span>
+            </p>
+          </section>
+          <section
+            class="filter__section"
+          >
+            <p
+              class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+            >
+              Otras características
+            </p>
+            <p
+              class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+            >
+              Con red móvil  
+              <span
+                class="filter__section__value__results"
+              >
+                (1009)
+              </span>
+            </p>
+          </section>
+        </div>
+      </aside>
+      <div
+        class="products"
+      >
+        <div
+          class="products__info"
+        >
+          <nav
+            aria-label="lista de páginas"
+          >
+            <ol
+              class="andes-breadcrumb breadcrumb"
+            >
+              <li
+                class="andes-breadcrumb__item"
+              >
+                <a
+                  class="andes-breadcrumb__link"
+                  href="/listado?category=MCO1648"
+                  title="Ir a la sección Computación"
+                >
+                  Computación
+                </a>
+                <div
+                  class="andes-breadcrumb__chevron"
+                >
+                  <svg
+                    height="8"
+                    width="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 0l4 4-4 4"
+                      fill="none"
+                      stroke="#666"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li
+                class="andes-breadcrumb__item"
+              >
+                <a
+                  class="andes-breadcrumb__link"
+                  href="/listado?category=MCO432947"
+                  title="Ir a la sección Tablets y Accesorios"
+                >
+                  Tablets y Accesorios
+                </a>
+                <div
+                  class="andes-breadcrumb__chevron"
+                >
+                  <svg
+                    height="8"
+                    width="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 0l4 4-4 4"
+                      fill="none"
+                      stroke="#666"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li
+                class="andes-breadcrumb__item"
+              >
+                <a
+                  aria-current="page"
+                  class="andes-breadcrumb__link"
+                  href="/listado?category=MCO82067"
+                  title="Ir a la sección Tablets"
+                >
+                  Tablets
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <div
+            class="products__per-page"
+          >
+            <div
+              class="andes-dropdown andes-dropdown--standalone products__dropdown andes-dropdown--compact"
+            >
+              <div
+                class="andes-floating-menu"
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  aria-invalid="false"
+                  aria-label="Ordenar por: 10 resultados por pagina"
+                  class="andes-dropdown__trigger"
+                  type="button"
+                >
+                  <span
+                    class="andes-dropdown__display-values"
+                  >
+                    10 resultados por pagina
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="andes-dropdown__standalone-arrow"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    width="12"
+                  >
+                    <path
+                      d="M6 7.057L9.352 3.705 10.148 4.5 6 8.648 1.852 4.5 2.648 3.705z"
+                      fill-opacity=".45"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section
+          class="list"
+        >
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO803537014?quantity=36&amount=15205.64"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_927966-MLA47146625521_082021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="15"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $547403, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="14"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        547403 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        547.403
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="13"
+                  >
+                    Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  32gb Gris Y 3gb De Memoria Ram
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Antioquia"
+                  class="card__description__location"
+                  tabindex="14"
+                >
+                  Antioquia
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO889004547?quantity=36&amount=38583.33"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_836540-MLA45259560435_032021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="25"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $1389000, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="24"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        1389000 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        1.389.000
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="23"
+                  >
+                    Tablet  Samsung Galaxy Tab S6 Lite Sm-p610 10.4  64gb Oxford Gray Y 4gb De Memoria Ram
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Bogotá D.C."
+                  class="card__description__location"
+                  tabindex="24"
+                >
+                  Bogotá D.C.
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO869909174?quantity=36&amount=47861.11"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_600562-MLA48203611250_112021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="35"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $1723000, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="34"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        1723000 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        1.723.000
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="33"
+                  >
+                    Apple iPad (9ª Generación) 10.2  Wi-fi 64gb - Color Plata
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Bogotá D.C."
+                  class="card__description__location"
+                  tabindex="34"
+                >
+                  Bogotá D.C.
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO847990208?quantity=36&amount=19132.81"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_620927-MLA47146625536_082021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="45"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $688781, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="44"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        688781 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        688.781
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="43"
+                  >
+                    Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  64gb Gris Y 4gb De Memoria Ram
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Antioquia"
+                  class="card__description__location"
+                  tabindex="44"
+                >
+                  Antioquia
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO848559323?quantity=36&amount=19163.89"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_608839-MLA47146625545_082021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="55"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $689900, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="54"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        689900 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        689.900
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="53"
+                  >
+                    Tablet  Samsung Galaxy Tab A7 Lite Sm-t220 8.7  64gb Plateada Y 4gb De Memoria Ram
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Antioquia"
+                  class="card__description__location"
+                  tabindex="54"
+                >
+                  Antioquia
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO861388138?quantity=36&amount=156666.67"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_830380-MLA46975173279_082021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="65"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $5640000, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="64"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        5640000 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        5.640.000
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="63"
+                  >
+                    Apple iPad Pro De 12.9  Wi-fi  256gb Gris Espacial (5ª Generación)
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Bogotá D.C."
+                  class="card__description__location"
+                  tabindex="64"
+                >
+                  Bogotá D.C.
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO835799416?quantity=36&amount=73570.75"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_911599-MLA48108843044_112021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="75"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $2648547, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="74"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        2648547 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        2.648.547
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="73"
+                  >
+                    Tablet  Samsung Galaxy Tab S7 Fe With S Pen Sm-t733 12.4  128gb Mystic Black Y 6gb De Memoria Ram
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Bogotá D.C."
+                  class="card__description__location"
+                  tabindex="74"
+                >
+                  Bogotá D.C.
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO846320123?quantity=36&amount=8163.89"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_810115-MLA45264846885_032021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="85"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $293900, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="84"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        293900 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        293.900
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="83"
+                  >
+                    Tablet  Amazon Fire Hd 8 2020 Kfonwi 8  32gb Twilight Blue Y 2gb De Memoria Ram
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Antioquia"
+                  class="card__description__location"
+                  tabindex="84"
+                >
+                  Antioquia
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO862279865?quantity=36&amount=130555.56"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_761571-MLA46975166071_082021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="95"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $4700000, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="94"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        4700000 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        4.700.000
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="93"
+                  >
+                    Apple iPad Pro De 11  Wi-fi  256gb Gris Espacial (3ª Generación)
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Bogotá D.C."
+                  class="card__description__location"
+                  tabindex="94"
+                >
+                  Bogotá D.C.
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="andes-card andes-card--flat andes-card--default andes-card--padding-default"
+          >
+            <div
+              class="andes-card__content card"
+            >
+              <div
+                class="card__image"
+              >
+                <figure>
+                  <a
+                    href="/product/MCO839630257?quantity=36&amount=8182.61"
+                  >
+                    <img
+                      alt="imagen del producto"
+                      class="card__image__img lazy-loadable"
+                      data-src="https://http2.mlstatic.com/D_677812-MLA45264860034_032021-I.jpg"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      tabindex="105"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="card__description"
+              >
+                <div
+                  class="card__description__main-info"
+                >
+                  <div
+                    aria-label="precio del producto: $294574, Envío gratis"
+                    class="money__and__shipping"
+                    tabindex="104"
+                  >
+                    <span
+                      class="andes-money-amount price andes-money-amount--cents-superscript"
+                      style="font-size: 24px;"
+                    >
+                      <span
+                        class="andes-visually-hidden"
+                      >
+                        294574 pesos
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__currency-symbol"
+                      >
+                        $
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__fraction"
+                      >
+                        294.574
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-visually-hidden"
+                      >
+                        ,
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        class="andes-money-amount__cents andes-money-amount__cents--superscript-24"
+                        style="font-size: 12px; margin-top: 4px;"
+                      >
+                        00
+                      </span>
+                    </span>
+                    <span
+                      class="shipping"
+                    >
+                      Envío
+                    </span>
+                  </div>
+                  <h2
+                    class="title"
+                    tabindex="103"
+                  >
+                    Tablet  Amazon Fire Hd 8 2020 Kfonwi 8  32gb Plum Y 2gb De Memoria Ram
+                  </h2>
+                </div>
+                <span
+                  aria-label="Ubicación del producto: Bogotá D.C."
+                  class="card__description__location"
+                  tabindex="104"
+                >
+                  Bogotá D.C.
+                </span>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section
+          class="pagination"
+        >
+          <nav
+            aria-label="Paginación"
+          >
+            <ul
+              class="andes-pagination"
+            >
+              <li
+                class="andes-pagination__button andes-pagination__button--back andes-pagination__button--disabled"
+              >
+                <a
+                  class="andes-pagination__link"
+                  href="/listado?page=0&limit=10&q=tablet&"
+                  title="Anterior"
+                >
+                  <span
+                    class="andes-pagination__arrow"
+                  />
+                  <span
+                    class="andes-pagination__arrow-title"
+                  >
+                    Anterior
+                  </span>
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button andes-pagination__button--current"
+              >
+                <a
+                  aria-current="page"
+                  aria-disabled="true"
+                  aria-label="Ir a la página 1"
+                  class="andes-pagination__link"
+                  href="/listado?page=1&limit=10&q=tablet&"
+                >
+                  1
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 2"
+                  class="andes-pagination__link"
+                  href="/listado?page=2&limit=10&q=tablet&"
+                >
+                  2
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 3"
+                  class="andes-pagination__link"
+                  href="/listado?page=3&limit=10&q=tablet&"
+                >
+                  3
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 4"
+                  class="andes-pagination__link"
+                  href="/listado?page=4&limit=10&q=tablet&"
+                >
+                  4
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 5"
+                  class="andes-pagination__link"
+                  href="/listado?page=5&limit=10&q=tablet&"
+                >
+                  5
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 6"
+                  class="andes-pagination__link"
+                  href="/listado?page=6&limit=10&q=tablet&"
+                >
+                  6
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 7"
+                  class="andes-pagination__link"
+                  href="/listado?page=7&limit=10&q=tablet&"
+                >
+                  7
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 8"
+                  class="andes-pagination__link"
+                  href="/listado?page=8&limit=10&q=tablet&"
+                >
+                  8
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 9"
+                  class="andes-pagination__link"
+                  href="/listado?page=9&limit=10&q=tablet&"
+                >
+                  9
+                </a>
+              </li>
+              <li
+                aria-hidden="true"
+                class="andes-pagination__button andes-pagination__dots"
+              >
+                <i
+                  class="andes-pagination__dot"
+                />
+                <i
+                  class="andes-pagination__dot"
+                />
+                <i
+                  class="andes-pagination__dot"
+                />
+              </li>
+              <li
+                class="andes-pagination__button"
+              >
+                <a
+                  aria-label="Ir a la página 100"
+                  class="andes-pagination__link"
+                  href="/listado?page=100&limit=10&q=tablet&"
+                >
+                  100
+                </a>
+              </li>
+              <li
+                class="andes-pagination__button andes-pagination__button--next"
+              >
+                <a
+                  class="andes-pagination__link"
+                  href="/listado?page=2&limit=10&q=tablet&"
+                  title="Siguiente"
+                >
+                  <span
+                    class="andes-pagination__arrow-title"
+                  >
+                    Siguiente
+                  </span>
+                  <span
+                    class="andes-pagination__arrow"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

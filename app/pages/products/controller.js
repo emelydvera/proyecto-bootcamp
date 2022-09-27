@@ -24,6 +24,7 @@ exports.fetchProducts = (req, res, next) => {
       return res.redirect("/error404");
     });
 };
+
 /* istanbul ignore next */
 exports.render = (req, res) => {
   const imagesPrefix = config.assets.prefix;

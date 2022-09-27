@@ -1,0 +1,928 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "date": "Mon, 26 Sep 2022 19:06:12 GMT",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "db58cee4-b7c6-469b-a6c6-712ea0030698",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Miss from cloudfront",
+    "via": "1.1 2ad6789a221bb559c9b8ce946b65a03a.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD12-P2",
+    "x-amz-cf-id": "5hqV7wGKQzlcRtaUJ00j4PmZ7WysvVmUaI6Wcdh-JQt5RkrMQz2PCA=="
+  },
+  "data": {
+    "id": "MCO847774027",
+    "site_id": "MCO",
+    "title": "Apple Macbook Pro (13 Pulgadas, 2020, Chip M1, 256 Gb De Ssd, 8 Gb De Ram) - Gris Espacial",
+    "subtitle": null,
+    "seller_id": 44664184,
+    "category_id": "MCO1652",
+    "official_store_id": null,
+    "price": 5990000,
+    "base_price": 5990000,
+    "original_price": null,
+    "currency_id": "COP",
+    "initial_quantity": 39,
+    "available_quantity": 1,
+    "sold_quantity": 25,
+    "sale_terms": [
+      {
+        "id": "WARRANTY_TYPE",
+        "name": "Tipo de garantía",
+        "value_id": "2230279",
+        "value_name": "Garantía de fábrica",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2230279",
+            "name": "Garantía de fábrica",
+            "struct": null
+          }
+        ]
+      },
+      {
+        "id": "WARRANTY_TIME",
+        "name": "Tiempo de garantía",
+        "value_id": null,
+        "value_name": "12 meses",
+        "value_struct": {
+          "number": 12,
+          "unit": "meses"
+        },
+        "values": [
+          {
+            "id": null,
+            "name": "12 meses",
+            "struct": {
+              "number": 12,
+              "unit": "meses"
+            }
+          }
+        ]
+      }
+    ],
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "start_time": "2022-01-06T02:11:42.000Z",
+    "stop_time": "2041-12-31T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://articulo.mercadolibre.com.co/MCO-847774027-apple-macbook-pro-13-pulgadas-2020-chip-m1-256-gb-de-ssd-8-gb-de-ram-gris-espacial-_JM",
+    "thumbnail_id": "729539-MLA48625650344_122021",
+    "thumbnail": "http://http2.mlstatic.com/D_729539-MLA48625650344_122021-I.jpg",
+    "secure_thumbnail": "https://http2.mlstatic.com/D_729539-MLA48625650344_122021-I.jpg",
+    "pictures": [
+      {
+        "id": "729539-MLA48625650344_122021",
+        "url": "http://http2.mlstatic.com/D_729539-MLA48625650344_122021-O.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_729539-MLA48625650344_122021-O.jpg",
+        "size": "500x295",
+        "max_size": "848x502",
+        "quality": ""
+      },
+      {
+        "id": "795285-MLA48625650349_122021",
+        "url": "http://http2.mlstatic.com/D_795285-MLA48625650349_122021-O.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_795285-MLA48625650349_122021-O.jpg",
+        "size": "500x477",
+        "max_size": "852x814",
+        "quality": ""
+      },
+      {
+        "id": "776844-MLA48625634491_122021",
+        "url": "http://http2.mlstatic.com/D_776844-MLA48625634491_122021-O.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_776844-MLA48625634491_122021-O.jpg",
+        "size": "500x374",
+        "max_size": "851x637",
+        "quality": ""
+      }
+    ],
+    "video_id": null,
+    "descriptions": [],
+    "accepts_mercadopago": true,
+    "non_mercado_pago_payment_methods": [],
+    "shipping": {
+      "mode": "me2",
+      "methods": [],
+      "tags": [
+        "self_service_in",
+        "mandatory_free_shipping"
+      ],
+      "dimensions": null,
+      "local_pick_up": true,
+      "free_shipping": true,
+      "logistic_type": "xd_drop_off",
+      "store_pick_up": false
+    },
+    "international_delivery_mode": "none",
+    "seller_address": {
+      "city": {
+        "id": "TUNPQ0FOVDMyNjIx",
+        "name": "Antonio Nariño"
+      },
+      "state": {
+        "id": "CO-DC",
+        "name": "Bogotá D.C."
+      },
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "search_location": {
+        "neighborhood": {
+          "id": "TUNPQlJFUzEzNjE1",
+          "name": "Restrepo"
+        },
+        "city": {
+          "id": "TUNPQ0FOVDMyNjIx",
+          "name": "Antonio Nariño"
+        },
+        "state": {
+          "id": "TUNPUEJPR1gxMDljZA",
+          "name": "Bogotá D.C."
+        }
+      },
+      "id": 1026429846
+    },
+    "seller_contact": null,
+    "location": {},
+    "coverage_areas": [],
+    "attributes": [
+      {
+        "id": "ASPECT_RATIO",
+        "name": "Relación de aspecto",
+        "value_id": "7184791",
+        "value_name": "16:10",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7184791",
+            "name": "16:10",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "BATTERY_LIFE",
+        "name": "Duración de la batería",
+        "value_id": "964031",
+        "value_name": "20 h",
+        "value_struct": {
+          "number": 20,
+          "unit": "h"
+        },
+        "values": [
+          {
+            "id": "964031",
+            "name": "20 h",
+            "struct": {
+              "number": 20,
+              "unit": "h"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "BATTERY_TYPE",
+        "name": "Tipo de batería",
+        "value_id": "7855848",
+        "value_name": "Polímero de litio",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7855848",
+            "name": "Polímero de litio",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "BRAND",
+        "name": "Marca",
+        "value_id": "9344",
+        "value_name": "Apple",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "9344",
+            "name": "Apple",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "COLOR",
+        "name": "Color",
+        "value_id": "162060",
+        "value_name": "Gris espacial",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "162060",
+            "name": "Gris espacial",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "CORES_NUMBER",
+        "name": "Cantidad de núcleos",
+        "value_id": "6838528",
+        "value_name": "8",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "6838528",
+            "name": "8",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "DEPTH",
+        "name": "Profundidad",
+        "value_id": "9947635",
+        "value_name": "212.3 mm",
+        "value_struct": {
+          "number": 212.3,
+          "unit": "mm"
+        },
+        "values": [
+          {
+            "id": "9947635",
+            "name": "212.3 mm",
+            "struct": {
+              "number": 212.3,
+              "unit": "mm"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "DISPLAY_RESOLUTION",
+        "name": "Resolución de la pantalla",
+        "value_id": "7306494",
+        "value_name": "2560 px x 1600 px",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7306494",
+            "name": "2560 px x 1600 px",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "DISPLAY_RESOLUTION_TYPE",
+        "name": "Tipo de resolución de la pantalla ",
+        "value_id": "9607110",
+        "value_name": "Full HD",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "9607110",
+            "name": "Full HD",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "DISPLAY_SIZE",
+        "name": "Tamaño de la pantalla",
+        "value_id": "2591190",
+        "value_name": "13.3 \"",
+        "value_struct": {
+          "number": 13.3,
+          "unit": "\""
+        },
+        "values": [
+          {
+            "id": "2591190",
+            "name": "13.3 \"",
+            "struct": {
+              "number": 13.3,
+              "unit": "\""
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "DISPLAY_TYPE",
+        "name": "Tipo de pantalla",
+        "value_id": "81830",
+        "value_name": "LED",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "81830",
+            "name": "LED",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "EXCLUSIVE_CHANNEL",
+        "name": "Canal exclusivo",
+        "value_id": "7865259",
+        "value_name": "Mercado Libre",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7865259",
+            "name": "Mercado Libre",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "GRAPHIC_CARD",
+        "name": "Tarjeta gráfica",
+        "value_id": "9959647",
+        "value_name": "Apple GPU",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "9959647",
+            "name": "Apple GPU",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "GTIN",
+        "name": "Código universal de producto",
+        "value_id": null,
+        "value_name": "194252166857",
+        "value_struct": null,
+        "values": [
+          {
+            "id": null,
+            "name": "194252166857",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "HEIGHT",
+        "name": "Altura",
+        "value_id": "9947634",
+        "value_name": "15.5 mm",
+        "value_struct": {
+          "number": 15.5,
+          "unit": "mm"
+        },
+        "values": [
+          {
+            "id": "9947634",
+            "name": "15.5 mm",
+            "struct": {
+              "number": 15.5,
+              "unit": "mm"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem",
+        "value_id": "2230284",
+        "value_name": "Nuevo",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "LINE",
+        "name": "Línea",
+        "value_id": "95588",
+        "value_name": "MacBook Pro",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "95588",
+            "name": "MacBook Pro",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "MAIN_COLOR",
+        "name": "Color principal",
+        "value_id": "2450294",
+        "value_name": "Gris",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2450294",
+            "name": "Gris",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "MAX_PROCESSOR_SPEED",
+        "name": "Velocidad máxima del procesador",
+        "value_id": "11369958",
+        "value_name": "3.1 GHz",
+        "value_struct": {
+          "number": 3.1,
+          "unit": "GHz"
+        },
+        "values": [
+          {
+            "id": "11369958",
+            "name": "3.1 GHz",
+            "struct": {
+              "number": 3.1,
+              "unit": "GHz"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "MAX_SUPPORTED_RAM_MEMORY_CAPACITY",
+        "name": "Capacidad máxima soportada de la memoria RAM",
+        "value_id": "1002320",
+        "value_name": "16 GB",
+        "value_struct": {
+          "number": 16,
+          "unit": "GB"
+        },
+        "values": [
+          {
+            "id": "1002320",
+            "name": "16 GB",
+            "struct": {
+              "number": 16,
+              "unit": "GB"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "MODEL",
+        "name": "Modelo",
+        "value_id": "9947636",
+        "value_name": "A2338",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "9947636",
+            "name": "A2338",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "MPN",
+        "name": "MPN",
+        "value_id": null,
+        "value_name": "MYD82LA/A,MYD82E/A,MYD82LL/A",
+        "value_struct": null,
+        "values": [
+          {
+            "id": null,
+            "name": "MYD82LA/A",
+            "struct": null
+          },
+          {
+            "id": null,
+            "name": "MYD82E/A",
+            "struct": null
+          },
+          {
+            "id": null,
+            "name": "MYD82LL/A",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "OS_NAME",
+        "name": "Nombre del sistema operativo",
+        "value_id": "7232871",
+        "value_name": "macOS",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7232871",
+            "name": "macOS",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "PROCESSOR_BRAND",
+        "name": "Marca del procesador",
+        "value_id": "9344",
+        "value_name": "Apple",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "9344",
+            "name": "Apple",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "PROCESSOR_MODEL",
+        "name": "Modelo del procesador",
+        "value_id": "17696",
+        "value_name": "M1",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "17696",
+            "name": "M1",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "RAM_MEMORY",
+        "name": "Memoria RAM",
+        "value_id": "579564",
+        "value_name": "8 GB",
+        "value_struct": {
+          "number": 8,
+          "unit": "GB"
+        },
+        "values": [
+          {
+            "id": "579564",
+            "name": "8 GB",
+            "struct": {
+              "number": 8,
+              "unit": "GB"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "RAM_MEMORY_TYPE",
+        "name": "Tipo de memoria RAM",
+        "value_id": "83821",
+        "value_name": "DDR3",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "83821",
+            "name": "DDR3",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "SOUND_MODES",
+        "name": "Modos de sonido",
+        "value_id": "564755",
+        "value_name": "Stereo",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "564755",
+            "name": "Stereo",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "SSD_DATA_STORAGE_CAPACITY",
+        "name": "Capacidad del SSD",
+        "value_id": "6724316",
+        "value_name": "256 GB",
+        "value_struct": {
+          "number": 256,
+          "unit": "GB"
+        },
+        "values": [
+          {
+            "id": "6724316",
+            "name": "256 GB",
+            "struct": {
+              "number": 256,
+              "unit": "GB"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "USB_PORTS",
+        "name": "Puertos USB",
+        "value_id": "7872108",
+        "value_name": "3.1",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7872108",
+            "name": "3.1",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "USB_TOTAL_PORTS_NUMBER",
+        "name": "Cantidad total de puertos USB",
+        "value_id": "2074704",
+        "value_name": "2",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2074704",
+            "name": "2",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "VIDEO_PORTS",
+        "name": "Puertos de video",
+        "value_id": "7873282",
+        "value_name": "Thunderbolt 3",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7873282",
+            "name": "Thunderbolt 3",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WEIGHT",
+        "name": "Peso",
+        "value_id": "37783",
+        "value_name": "1.4 kg",
+        "value_struct": {
+          "number": 1.4,
+          "unit": "kg"
+        },
+        "values": [
+          {
+            "id": "37783",
+            "name": "1.4 kg",
+            "struct": {
+              "number": 1.4,
+              "unit": "kg"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WIDTH",
+        "name": "Ancho",
+        "value_id": "7876076",
+        "value_name": "304 mm",
+        "value_struct": {
+          "number": 304,
+          "unit": "mm"
+        },
+        "values": [
+          {
+            "id": "7876076",
+            "name": "304 mm",
+            "struct": {
+              "number": 304,
+              "unit": "mm"
+            }
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_BLUETOOTH",
+        "name": "Con Bluetooth",
+        "value_id": "242085",
+        "value_name": "Sí",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sí",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_ETHERNET_PORT",
+        "name": "Con puerto ethernet",
+        "value_id": "242084",
+        "value_name": "No",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242084",
+            "name": "No",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_HEADPHONES_OUTPUT",
+        "name": "Con salida para audífonos",
+        "value_id": "242085",
+        "value_name": "Sí",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sí",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_MICROPHONE",
+        "name": "Con micrófono",
+        "value_id": "242085",
+        "value_name": "Sí",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sí",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_RETINA_DISPLAY",
+        "name": "Con pantalla retina",
+        "value_id": "242085",
+        "value_name": "Sí",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sí",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_USB",
+        "name": "Con USB",
+        "value_id": "242085",
+        "value_name": "Sí",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sí",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_WEBCAM",
+        "name": "Con cámara web",
+        "value_id": "242085",
+        "value_name": "Sí",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sí",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "WITH_WI_FI",
+        "name": "Con Wi-Fi",
+        "value_id": "242085",
+        "value_name": "Sí",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sí",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      }
+    ],
+    "warnings": [],
+    "listing_source": "",
+    "variations": [],
+    "status": "paused",
+    "sub_status": [],
+    "tags": [
+      "good_quality_picture",
+      "loyalty_discount_eligible",
+      "immediate_payment",
+      "cart_eligible"
+    ],
+    "warranty": "Garantía de fábrica: 12 meses",
+    "catalog_product_id": "MCO17828328",
+    "domain_id": "MCO-NOTEBOOKS",
+    "parent_item_id": null,
+    "differential_pricing": null,
+    "deal_ids": [],
+    "automatic_relist": false,
+    "date_created": "2022-01-06T02:11:42.000Z",
+    "last_updated": "2022-09-25T12:24:56.171Z",
+    "health": null,
+    "catalog_listing": true,
+    "channels": [
+      "marketplace"
+    ]
+  }
+}

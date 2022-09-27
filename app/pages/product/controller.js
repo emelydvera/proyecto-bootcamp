@@ -5,7 +5,7 @@ const I18nProvider = require("nordic/i18n/I18nProvider");
 const ImageProvider = require("nordic/image/provider");
 const View = require("./view");
 
-exports.fetchProducts = (req, res, next) => {
+exports.fetchProduct = (req, res, next) => {
   const { id } = req.params;
 
   ProductService.getProductDetail(id)
@@ -13,19 +13,20 @@ exports.fetchProducts = (req, res, next) => {
       res.locals.product = response;
       next();
     })
-    .catch((error) => {
+    .catch(() => {
       res.redirect("/error404");
     });
 };
 
 exports.productDescription = (req, res, next) => {
   const { id } = req.params;
+
   ProductService.getProductDescription(id)
     .then((response) => {
       res.locals.description = response;
       next();
     })
-    .catch((error) => {
+    .catch(() => {
       res.redirect("/error404");
     });
 };
@@ -37,10 +38,11 @@ exports.productPathFromRoot = (req, res, next) => {
       next();
     })
     .catch(() => {
-      res.redirect("/error");
+      res.redirect("/error404");
     });
 };
 
+/* istanbul ignore next */
 exports.render = (req, res) => {
   const imagesPrefix = config.assets.prefix;
 

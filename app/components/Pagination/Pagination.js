@@ -1,7 +1,5 @@
 const React = require("react");
-
 const PaginationComponent = require("@andes/pagination");
-
 const PropTypes = require("prop-types");
 const UrlGenerator = require("../../utils/urlGenerator");
 

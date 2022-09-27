@@ -5,9 +5,9 @@
     "content-type": "application/json; charset=utf-8",
     "content-length": "75",
     "connection": "keep-alive",
-    "date": "Thu, 22 Sep 2022 16:55:46 GMT",
+    "date": "Fri, 23 Sep 2022 20:30:20 GMT",
     "x-content-type-options": "nosniff",
-    "x-request-id": "40cdffac-47fd-4acf-8e6f-ea19bb685902",
+    "x-request-id": "ed96b950-3279-4e28-b5d0-e93974a2348e",
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block",
     "access-control-allow-origin": "*",
@@ -15,9 +15,9 @@
     "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
     "access-control-max-age": "86400",
     "x-cache": "Error from cloudfront",
-    "via": "1.1 c35f767218cbd1125d801b52fa785c8c.cloudfront.net (CloudFront)",
-    "x-amz-cf-pop": "IAD89-C3",
-    "x-amz-cf-id": "HFHSZ_gQQm9MeRwYlwjDmyEDIFTP64Vo7u2d14fFtT9lNUpWAVamWA=="
+    "via": "1.1 b3bd0018ceb2b4e7157fb699472ee5da.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "ORD53-C1",
+    "x-amz-cf-id": "KRPXl0VUUNUqSqScJWOOYDOX_X7xf1dYsXOOsr5W--KTmcqwTTmLvg=="
   },
   "data": {
     "message": "Invalid item id",

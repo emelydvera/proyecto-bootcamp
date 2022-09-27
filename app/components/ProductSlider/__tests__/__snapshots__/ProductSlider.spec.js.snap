@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductSlider/> should render the components 1`] = `
+<DocumentFragment>
+  <div
+    class="slider__img"
+  >
+    <div
+      class="slider__img__carousel"
+    >
+      <div
+        class="image__container active"
+      >
+        <img
+          alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+          aria-label="imagen del producto"
+          class="slider__image  lazy-loadable"
+          data-src="https://http2.mlstatic.com/D_852458-MLA48270995220_112021-O.jpg"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        />
+      </div>
+      <div
+        class="image__container "
+      >
+        <img
+          alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+          aria-label="imagen del producto"
+          class="slider__image  lazy-loadable"
+          data-src="https://http2.mlstatic.com/D_887836-MLA47152640900_082021-O.jpg"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        />
+      </div>
+      <div
+        class="image__container "
+      >
+        <img
+          alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+          aria-label="imagen del producto"
+          class="slider__image  lazy-loadable"
+          data-src="https://http2.mlstatic.com/D_992922-MLA48271038089_112021-O.jpg"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        />
+      </div>
+      <div
+        class="image__container "
+      >
+        <img
+          alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+          aria-label="imagen del producto"
+          class="slider__image  lazy-loadable"
+          data-src="https://http2.mlstatic.com/D_636041-MLA48271038093_112021-O.jpg"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        />
+      </div>
+      <div
+        class="image__container "
+      >
+        <img
+          alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+          aria-label="imagen del producto"
+          class="slider__image  lazy-loadable"
+          data-src="https://http2.mlstatic.com/D_827704-MLA47152858202_082021-O.jpg"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        />
+      </div>
+      <div
+        class="image__container "
+      >
+        <img
+          alt=" Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+          aria-label="imagen del producto"
+          class="slider__image  lazy-loadable"
+          data-src="https://http2.mlstatic.com/D_935467-MLA48270794800_112021-O.jpg"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        />
+      </div>
+    </div>
+    <figure
+      aria-label="Imagen de  Moto G20 64 Gb  Azul Cielo 4 Gb Ram"
+      tabindex="9"
+    >
+      <img
+        alt="product"
+        class="slider__img__main"
+        decoding="async"
+        src="https://http2.mlstatic.com/D_852458-MLA48270995220_112021-O.jpg"
+      />
+      <figcaption>
+         Moto G20 64 Gb  Azul Cielo 4 Gb Ram
+      </figcaption>
+    </figure>
+  </div>
+</DocumentFragment>
+`;

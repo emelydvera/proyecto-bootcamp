@@ -5,12 +5,12 @@
     "content-type": "application/json;charset=UTF-8",
     "transfer-encoding": "chunked",
     "connection": "keep-alive",
-    "date": "Thu, 22 Sep 2022 16:33:50 GMT",
+    "date": "Fri, 23 Sep 2022 20:30:20 GMT",
     "vary": "accept,accept-encoding",
     "cache-control": "max-age=0",
     "content-encoding": "gzip",
     "x-content-type-options": "nosniff",
-    "x-request-id": "2b7c13b6-b382-4562-bf12-e786d0a85773",
+    "x-request-id": "78dcb765-daca-4cae-8d37-8d1df16a6a45",
     "x-frame-options": "DENY",
     "x-xss-protection": "1; mode=block",
     "access-control-allow-origin": "*",
@@ -18,9 +18,9 @@
     "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
     "access-control-max-age": "86400",
     "x-cache": "Error from cloudfront",
-    "via": "1.1 7ba3a61255419c2e0d9e131796899e10.cloudfront.net (CloudFront)",
-    "x-amz-cf-pop": "IAD89-C3",
-    "x-amz-cf-id": "7VIheBvei9kayp9LZkltfo3_l6kZ1phNekICdYYrRi7Fap1qs-PCYA=="
+    "via": "1.1 b3bd0018ceb2b4e7157fb699472ee5da.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "ORD53-C1",
+    "x-amz-cf-id": "mOoW4ZZ7NoGnBMG9rvA_1ATVibYKhyXz0HAQd-__mKdMLibgBhcXng=="
   },
   "data": {
     "message": "This host is not serving site MZYU",

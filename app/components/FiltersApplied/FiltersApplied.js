@@ -42,10 +42,12 @@ function FiltersApplied(props) {
 }
 
 FiltersApplied.propTypes = {
-  filters: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-  }),
+  filters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
   urlGenerator: PropTypes.instanceOf(UrlGenerator).isRequired,
 };
 

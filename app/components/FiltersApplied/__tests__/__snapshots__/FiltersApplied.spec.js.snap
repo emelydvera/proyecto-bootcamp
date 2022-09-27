@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiltersApplied Should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="andes-tag andes-tag--small andes-tag__color--default"
+    >
+      <div
+        class="andes-tag__label"
+      >
+        Full
+      </div>
+      <button
+        aria-label="Eliminar filtro: Tipo de entrega: Full"
+        class="andes-tag__close"
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+          class="andes-tag__icon-container"
+        >
+          <svg
+            class="andes-tag__close-icon andes-tag__svg-fill"
+            height="12"
+            viewBox="0 0 16 16"
+            width="12"
+          >
+            <path
+              d="M8.594.552l.855.842L5.87 5.022 9.45 8.6l-.849.848-3.572-3.572-3.521 3.572-.855-.842L4.18 5.028.552 1.4l.849-.848 3.621 3.62L8.594.553z"
+              fill-opacity="0.45"
+              transform="translate(3 3)"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

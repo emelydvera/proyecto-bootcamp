@@ -88,7 +88,9 @@ const ProductInfoBuy = ({ product, quantity, amount }) => {
                 {i18n.gettext("Cantidad disponible: {0}", available_quantity)}
             </p>
             {shipping.free_shipping ? (
-                <div className="info__shipping">
+                <div 
+                role='envio'
+                className="info__shipping">
                     <Shipping24 color=" #00A650" />
                     <p tabIndex={17} aria-label={i18n.gettext(`el envio es gratis`)}>
                         {i18n.gettext("Envío gratis")}
