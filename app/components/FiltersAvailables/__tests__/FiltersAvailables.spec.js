@@ -6,9 +6,10 @@ const {
   data,
 } = require("../../../../mocks/development/get/https/internal-api.mercadolibre.com/sites/MLC/search?limit=10&offset=0&page=1&q=mac.json");
 
-console.log(data.available_filters);
+const UrlGenerator = require("../../../utils/urlGenerator");
+
 describe("Component FiltersAvailables", () => {
-  const urlGenerator = jest.fn();
+  const urlGenerator = new UrlGenerator();
   let component;
 
   beforeEach(() => {
@@ -20,8 +21,9 @@ describe("Component FiltersAvailables", () => {
     );
   });
 
-  it("should render correctly", () => {
+  it("Should render correctly", () => {
     const { asFragment } = component;
     expect(asFragment()).toMatchSnapshot();
+    screen.debug();
   });
 });

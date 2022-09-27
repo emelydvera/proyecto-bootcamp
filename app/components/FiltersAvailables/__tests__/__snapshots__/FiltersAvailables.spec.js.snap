@@ -1,0 +1,570 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component FiltersAvailables Should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Categorías
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Belleza y Cuidado Personal  
+        <span
+          class="filter__section__value__results"
+        >
+          (624)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Notebooks y Accesorios  
+        <span
+          class="filter__section__value__results"
+        >
+          (2651)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        PC de Escritorio  
+        <span
+          class="filter__section__value__results"
+        >
+          (332)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Periféricos de PC  
+        <span
+          class="filter__section__value__results"
+        >
+          (3138)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+      >
+        Mostrar más
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Tiendas oficiales
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Todas las tiendas oficiales  
+        <span
+          class="filter__section__value__results"
+        >
+          (359)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Apple  
+        <span
+          class="filter__section__value__results"
+        >
+          (7)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Descuentos
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Desde 5% OFF  
+        <span
+          class="filter__section__value__results"
+        >
+          (1044)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Desde 10% OFF  
+        <span
+          class="filter__section__value__results"
+        >
+          (713)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Desde 15% OFF  
+        <span
+          class="filter__section__value__results"
+        >
+          (528)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Desde 20% OFF  
+        <span
+          class="filter__section__value__results"
+        >
+          (417)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+      >
+        Mostrar más
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Ubicación
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        RM (Metropolitana)  
+        <span
+          class="filter__section__value__results"
+        >
+          (9166)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Valparaíso  
+        <span
+          class="filter__section__value__results"
+        >
+          (710)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Biobío  
+        <span
+          class="filter__section__value__results"
+        >
+          (305)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Los Ríos  
+        <span
+          class="filter__section__value__results"
+        >
+          (168)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+      >
+        Mostrar más
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Precio
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Hasta $20.000  
+        <span
+          class="filter__section__value__results"
+        >
+          (4156)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        $20.000 a $65.000  
+        <span
+          class="filter__section__value__results"
+        >
+          (5126)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Más de $65.000  
+        <span
+          class="filter__section__value__results"
+        >
+          (4725)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Filtro por MercadoPago
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Con MercadoPago  
+        <span
+          class="filter__section__value__results"
+        >
+          (13886)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Pago
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        En cuotas  
+        <span
+          class="filter__section__value__results"
+        >
+          (13878)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        12 cuotas sin interés  
+        <span
+          class="filter__section__value__results"
+        >
+          (5969)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Envío
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Mercado Envíos  
+        <span
+          class="filter__section__value__results"
+        >
+          (13496)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Full  
+        <span
+          class="filter__section__value__results"
+        >
+          (347)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Filtro por calidad de vendedores
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Mejores vendedores  
+        <span
+          class="filter__section__value__results"
+        >
+          (7198)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Filtro por fecha de comienzo
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Publicados hoy  
+        <span
+          class="filter__section__value__results"
+        >
+          (47)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Filtro por fecha de finalización
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Finalizan hoy  
+        <span
+          class="filter__section__value__results"
+        >
+          (18)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Filtro por publicaciones con video
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Publicaciones con video  
+        <span
+          class="filter__section__value__results"
+        >
+          (668)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Filtro por publicaciones con imágenes
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Con fotos  
+        <span
+          class="filter__section__value__results"
+        >
+          (14007)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Filtro de contenido adulto
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Contenido adulto  
+        <span
+          class="filter__section__value__results"
+        >
+          (1)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Campaña
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        MLC6880  
+        <span
+          class="filter__section__value__results"
+        >
+          (10)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        MLC1231  
+        <span
+          class="filter__section__value__results"
+        >
+          (3)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        MLC19  
+        <span
+          class="filter__section__value__results"
+        >
+          (2)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        MLC6745  
+        <span
+          class="filter__section__value__results"
+        >
+          (2)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__modal__show andes-typography--type-body andes-typography--size-m andes-typography--color-link"
+      >
+        Mostrar más
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Costo de envío
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Gratis  
+        <span
+          class="filter__section__value__results"
+        >
+          (9653)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Condición
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Nuevo  
+        <span
+          class="filter__section__value__results"
+        >
+          (11105)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Usado  
+        <span
+          class="filter__section__value__results"
+        >
+          (2779)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Reacondicionado  
+        <span
+          class="filter__section__value__results"
+        >
+          (103)
+        </span>
+      </p>
+    </section>
+    <section
+      class="filter__section"
+    >
+      <p
+        class="andes-typography filter__section__name andes-typography--type-title andes-typography--size-xs andes-typography--color-primary"
+      >
+        Tipo de compra
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Local  
+        <span
+          class="filter__section__value__results"
+        >
+          (11170)
+        </span>
+      </p>
+      <p
+        class="andes-typography filter__section__value andes-typography--type-body andes-typography--size-m andes-typography--color-secondary"
+      >
+        Internacional  
+        <span
+          class="filter__section__value__results"
+        >
+          (2837)
+        </span>
+      </p>
+    </section>
+  </div>
+</DocumentFragment>
+`;

@@ -28,7 +28,7 @@ function View(props) {
       <Script src="buy.js" />
 
       <div className="container">
-        <Checkout i18n={i18n} product={product} quantity={quantityToBuy} />
+        <Checkout product={product} quantity={quantityToBuy} />
       </div>
     </>
   );
