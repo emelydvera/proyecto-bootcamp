@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "1081",
+    "connection": "keep-alive",
+    "date": "Mon, 26 Sep 2022 21:02:03 GMT",
+    "cache-control": "max-age=0,stale-while-revalidate=0, stale-if-error=0",
+    "x-content-type-options": "nosniff",
+    "x-request-id": "7efd1694-6d66-4b81-81c3-4605c784d2a8",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Content-Type",
+    "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "access-control-max-age": "86400",
+    "x-cache": "Miss from cloudfront",
+    "via": "1.1 e418fd5667de46c635f0321ea814c2e0.cloudfront.net (CloudFront)",
+    "x-amz-cf-pop": "IAD89-P1",
+    "x-amz-cf-id": "b67I0CqvJRZrl_zWQhwnMliLPAujLMNIoZfFvWgDyuG17CPwpqdrxg=="
+  },
+  "data": {
+    "text": "",
+    "plain_text": "La notebook más delgada y ligera de Apple viene con los superpoderes del chip M1. Termina todos tus proyectos mucho más rápido con el CPU de 8 núcleos y disfruta como nunca antes de apps y juegos con gráficos avanzados gracias al GPU de hasta 8 núcleos. Además, el Neural Engine de 16 núcleos se encarga de acelerar todos los procesos de aprendizaje automático. Todo en un diseño silencioso sin ventilador que te ofrece la mayor duración de batería en una MacBook Air: hasta 18 horas. (1) Portátil como siempre, más poderosa que nunca.\n\n\nAvisos Legales\nNo todos los recursos y configuraciones están disponibles en todos los países.\n(1) La duración de la batería varía según el uso y la configuración.\n(2) Comparado con la generación anterior.\n(3) El tamaño de la pantalla se mide en diagonal.",
+    "last_updated": "2022-04-19T15:25:21.000Z",
+    "date_created": "2022-04-19T15:25:21.000Z",
+    "snapshot": {
+      "url": "http://descriptions.mlstatic.com/D-MCO883390429.jpg?hash=8520c3b8559cb08aa7e782b8f5334ffe_0x0",
+      "width": 0,
+      "height": 0,
+      "status": ""
+    }
+  }
+}
