@@ -50,7 +50,6 @@ describe("Component SearchInput", () => {
   it("Should show an error message", () => {
     const input = getByPlaceholderText("Buscar productos, marcas y más...");
     fireEvent.change(input, { target: { value: "k" } });
-    screen.logTestingPlaygroundURL();
     const errorSpan = getByText("Escriba al menos 2 carácteres");
     expect(errorSpan).toBeInTheDocument();
   });
