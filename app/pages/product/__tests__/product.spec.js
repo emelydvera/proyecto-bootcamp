@@ -3,7 +3,7 @@ const View = require("../view");
 const { render, screen } = require("@testing-library/react");
 const { getByLabelText, queryByLabelText, getByRole, getByAltText } = screen;
 const mockProductWithNoEmptyPathFromRoot = require("../../../../mocks/pages/productMockWithNoEmptyPath.json");
-const mockProductWithEmptyPathFromRoot = require("../../../../mocks/pages/productMockWithEmptyPath.json");
+const mockProductWithEmptyPathFromRoot = require("../../../../mocks/pages/product/productMockWithEmptyPath.json");
 const mockProductDescription = require("../../../../mocks/pages/productDescriptionMock.json");
 const I18nProvider = require("nordic/i18n/I18nProvider");
 
